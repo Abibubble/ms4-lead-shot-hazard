@@ -74,7 +74,7 @@ This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it 
 
 ## Icon key
 
-&#128272; <-- Admin only access
+&#128272; <-- Superuser only access
 
 &#128100; <-- Logged In Only
 
@@ -181,30 +181,50 @@ MAYBE USER DROPDOWNS TO SHOW APPLICABLE USER STORIES IDS AND THE LIKE???
 PROFILE - ALLAUTH, EXPLANATION OF DETAILS
 RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED FROM 320PX AND UP'
 
+#### Create and Delete a profile
+* This feature allows the user to :
+    * Register for an account with email address, username and password.
+    * Ensure no typos by entering the password twice, with the site checking to confirm that the passwords match.
+    * Ensure the correct email address by sending a verification email to the email address the user has supplied.
+    * Store their details for a faster checkout.
+    * Keep a record of their full order history.
+    * Delete their profile if they no longer want their details to be stored on the site.
+
+![Image of feature](static/docs/img/FEATURE.png)
+
+
+#### Products
+* This feature allows the user to :
+    * View all products on the website.
+    * Perform a keyword search for products by name and description.
+    * Browse products by category through the main navigation bar.
+    * Sort products alphabetically or by price.
+    * Click on a product to view the full product details, including :
+        * Name
+        * Category
+        * Price
+        * Image
+        * Description
+        * Sizes (if relevant)
+    * &#128272; Edit or delete any product.
+    * &#128272; Add a new product, including an image by either URL or by uploading directly from the superuser's computer.
+
+![Image of feature](static/docs/img/FEATURE.png)
+
+
 #### &#128272; Create, Edit and Delete merchandise
 * DESCRIBE
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
+
 #### &#128272; Confirm to delete modal
-* DESCRIBE
+* This feature allows the user to :
+    * Confirm deletion of a product.
+    * Avoid accidentally deleting a product.
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
-#### Create and Delete a profile
-* DESCRIBE
-
-![Image of feature](static/docs/img/FEATURE.png)
-
-#### Search for merchandise
-* DESCRIBE
-
-![Image of feature](static/docs/img/FEATURE.png)
-
-#### Auto-updating copyright year
-* The copyright year auto-updates to the current year.
-
-![Image of feature](static/docs/img/FEATURE.png)
 
 #### Shopping bag
 * This feature allows the user to :
@@ -216,6 +236,7 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
 * The grand total and shipping price are updated when any edits to the shopping bag are made.
 
 ![Image of feature](static/docs/img/FEATURE.png)
+
 
 #### Checkout
 * This feature allows the user to :
@@ -231,7 +252,8 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
-#### Payment.
+
+#### Payment
 * If the payment fails :
     * The user is directed back to the checkout form.
     * The user is shown a message that the payment failed.
@@ -243,13 +265,16 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
+
 #### Navigation bar
 The navigation bar changes depending on user status and screen size:
 
-| Nav Link | Logged Out | Logged In (User) | Logged In (Admin) |
+| Nav Link | &#128683; | &#128100; | &#128272; |
 |-------|-----|-----|-----|
 | Logo (Homepage) | &#9989; | &#9989; | &#9989; |
 | Home | &#9989; | &#9989; | &#9989; |
+| Products | &#9989; | &#9989; | &#9989; |
+| Product Details | &#9989; | &#9989; | &#9989; |
 | Profile | &#10060; | &#9989; | &#9989; |
 | Log Out | &#10060; | &#9989; | &#9989; |
 | Log In | &#9989; | &#10060; | &#10060; |
@@ -273,6 +298,12 @@ The navigation bar changes depending on user status and screen size:
 ![Mobile navigation bar expanded](static/docs/img/nav-mobile.png)
 
 
+#### Auto-updating copyright year
+* The copyright year auto-updates to the current year.
+
+![Image of feature](static/docs/img/FEATURE.png)
+
+
 #### SCREEN RECORD ANY ANIMATION, SAVE AS A GIF
 * DESCRIBE
 
@@ -282,6 +313,8 @@ The navigation bar changes depending on user status and screen size:
 ### Future Features
 * ADD FUTURE FEATURES
 Add to bag button is disabled if the product is out of stock.
+Recommended product at the bottom of checkout
+Retrieve password? Or re-set password?
 
 
 ### Audio
