@@ -168,6 +168,7 @@ SCOPE???? MORE DETAILED BREAKDOWN OF SCOPE WOULD BE GOOD
 ### Imagery
 * The images used in this project are all photos of the band Lead Shot Hazard, their merchandise, or their logo.
 * These have been used to create a strong link between the band and the website, ensuring that all visitors can tell at first glance that this site is for Lead Shot Hazard.
+* As I am a member of Lead Shot Hazard, I own joint rights to use all images and designs that the band have created.
 BOX SHADOW, GRADIENTS, UNDERLINED LINKS, BUTTONS, ICONS
 
 
@@ -186,9 +187,9 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
     * Register for an account with email address, username and password.
     * Ensure no typos by entering the password twice, with the site checking to confirm that the passwords match.
     * Ensure the correct email address by sending a verification email to the email address the user has supplied.
-    * Store their details for a faster checkout.
-    * Keep a record of their full order history.
-    * Delete their profile if they no longer want their details to be stored on the site.
+    * &#128100; Store their details for a faster checkout.
+    * &#128100; Keep a record of their full order history.
+    * &#128100; Delete their profile if they no longer want their details to be stored on the site.
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
@@ -206,22 +207,26 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
         * Image
         * Description
         * Sizes (if relevant)
-    * &#128272; Edit or delete any product.
-    * &#128272; Add a new product, including an image by either URL or by uploading directly from the superuser's computer.
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
 
-#### &#128272; Create, Edit and Delete merchandise
-* DESCRIBE
+#### &#128272; Create, Edit and Delete products
+* This feature allows the superuser to :
+    * Add a new product to the store.
+    * Edit an existing product.
+    * Delete an existing product.
+    * Include images, either by URL, or by uploading directly from the superuser's computer.
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
 
-#### &#128272; Confirm to delete modal
+#### Confirm to delete modal
 * This feature allows the user to :
-    * Confirm deletion of a product.
-    * Avoid accidentally deleting a product.
+    * &#128272; Confirm deletion of a product.
+    * &#128272; Avoid accidentally deleting a product.
+    * &#128100; Confirm deletion of the user's profile.
+    * &#128100; Avoid accidentally deleting the user's profile.
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
@@ -242,9 +247,8 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
 * This feature allows the user to :
     * Checkout as a guest.
     * Safely and securely buy the items in their shopping bag through Stripe.
-* &#128100;
-    * The shipping details will be filled from any details given in the user profile.
-    * The user can select the 'Remember my details' checkbox in the checkout form to save their latest details. This is helpful when :
+    * &#128100; The shipping details will be filled from any details given in the user profile.
+    * &#128100; The user can select the 'Remember my details' checkbox in the checkout form to save their latest details. This is helpful when :
         * No details are saved in the user's profile.
         * Any of the user's details have changed from what is saved in their profile.
 * The card details form is connected to Stripe, a payment platform. This ensures a fully secure payment.
@@ -262,6 +266,7 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
     * The email contains the order details and order number.
     * The user will be redirected to the checkout success page.
     * A message will display, informing the user that the payment succeeded, containing of the order details and order number.
+    * &#128100; The order will be added to the user's order history in their profile.
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
@@ -304,6 +309,20 @@ The navigation bar changes depending on user status and screen size:
 ![Image of feature](static/docs/img/FEATURE.png)
 
 
+#### Gigs feed
+* DESCRIBE
+    * HOW WILL THIS BE DONE? DIRECT FEED FROM FACEBOOK? OR MANUAL ADDITION?
+
+![Image of feature](static/docs/img/FEATURE.png)
+
+
+#### Contact section
+* This feature allows the user to :
+    * Contact the band for queries about merchandise or upcoming gigs.
+
+![Image of feature](static/docs/img/FEATURE.png)
+
+
 #### SCREEN RECORD ANY ANIMATION, SAVE AS A GIF
 * DESCRIBE
 
@@ -315,12 +334,12 @@ The navigation bar changes depending on user status and screen size:
 Add to bag button is disabled if the product is out of stock.
 Recommended product at the bottom of checkout
 Retrieve password? Or re-set password?
+Stock for each product size
 
 
 ### Audio
 * All audio is owned by the band Lead Shot Hazard.
-
-
+* As I am a member of Lead Shot Hazard, I own joint rights to use all audio that the band has created.
 
 
 ### Defensive Design
