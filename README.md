@@ -330,11 +330,12 @@ The navigation bar changes depending on user status and screen size:
 
 
 ### Future Features
-* ADD FUTURE FEATURES
-Add to bag button is disabled if the product is out of stock.
-Recommended product at the bottom of checkout
-Retrieve password? Or re-set password?
-Stock for each product size
+* Add to bag button is disabled if the product is out of stock.
+* Recommended product at the bottom of the checkout page.
+* Retrieve or re-set a forgotten password.
+* Stock count for each product size, including out of stock sizes.
+* Social media login, via Facebook or Google.
+* Having a 0 quantity of a product in shopping bag removes the item from the shopping bag.
 
 
 ### Audio
@@ -343,12 +344,33 @@ Stock for each product size
 
 
 ### Defensive Design
-* FORM VALIDATION
-* ADDING TOO MANY / TOO LITTLE PRODUCTS TO BAG
-* WHEN AN ACTION IS COMPLETED
-* DEFAULT IMAGE IF IMAGE IS BROKEN / NO IMAGE
-* CUSTOM ERROR PAGES - 404
+* Form validation
+    * This has been used on every form input on the site to ensure the correct data is added.
+    * If incorrect data is added, red warning text appears, to instruct the user of how to fix the error.
+* Adding products to the bag
+    * Custom validation has been added to ensure that users can't :
+        * Add less than one of a product into their bag (such as adding a 0 quantity of a product).
+        * Add more than 99 of a product into their bag.
+* Messages when an action is completed
+    * A message will appear in the top right of the screen when the following actions are completed :
+        * The user adds a product to their shopping bag.
+        * The user removes a product from their shopping bag.
+        * The user edits the quantity of a product in their shopping bag.
+        * A payment succeeds.
+        * A payment fails.
+        * An error occurs.
+        * &#128100; A user updates their profile information.
+        * &#128100; A user deletes their profile.
+        * &#128272; A superuser adds a new product.
+        * &#128272; A superuser edits a product.
+        * &#128272; A superuser deletes a product.
+* Default image
+    * A default image will display if there is no image added.
+    * A default image will display if the image link has broken.
+* Custom error pages - 404
+    * A custom 404 error page will show if the user attempts to visit a page that doesn't exist.
 * WEBHOOKS?
+
 
 ---
 
