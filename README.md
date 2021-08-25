@@ -9,7 +9,7 @@
 
 [Here is a link to the final project](https://ms4-lead-shot-hazard.herokuapp.com/homepage)
 
-This site is a merchandise and music e-commerce site for the band Lead Shot Hazard, a ska punk band from West London. This site is fully responsive on all modern screen sizes, and it allowed the band to easily add, edit or delete their merch and music that they have to sell.
+This site is a merchandise and music e-commerce site for the band Lead Shot Hazard&#8482;, a ska punk band from West London. This site is fully responsive on all modern screen sizes, and it allowed the band to easily add, edit or delete their merch and music that they have to sell.
 
 This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it uses a SQL database through PostgreSQL.
 
@@ -89,13 +89,13 @@ This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it 
 ## User Experience (UX)
 ### Initial Discussion
 * I wanted to create a website linked to a database, which allows users to login, search for and find merchandise and music.
-* This is something that Lead Shot Hazard has been discussing for a while, but we haven't had time to create until now.
+* This is something that Lead Shot Hazard&#8482; has been discussing for a while, but we haven't had time to create until now.
 * I wanted the band to be able to add, edit and delete items of merchandise and music for sale.
 
 
 ### User Stories
 #### Business Goals
-As a band member, this site should :
+As a band member, this site should:
 * Sell merchandise and music.
 * Match the design and personality of the band.
 * Offer a website that is easy to navigate and free of confusion.
@@ -104,7 +104,7 @@ As a band member, this site should :
 
 
 #### First Time Visitor Goals
-As a first time visitor to this site, a user should be able to :
+As a first time visitor to this site, a user should be able to:
 * Easily navigate the site.
 * Intuitively and easily understand what to do.
 * Create an account for future purchases.
@@ -122,7 +122,7 @@ As a first time visitor to this site, a user should be able to :
 
 
 #### Returning Visitor Goals
-In addition to the First Time Visitor Goals, a Returning Visitor should be able to :
+In addition to the First Time Visitor Goals, a Returning Visitor should be able to:
 * Log in / out.
 * Be confident that the user's password is be stored securely.
 * Navigate intuitively, with no need to use the browser's back button.
@@ -131,7 +131,7 @@ In addition to the First Time Visitor Goals, a Returning Visitor should be able 
 
 
 #### Admin Goals
-In addition to the First Time and Returning Visitor Goals, as an administrator of this site, an admin user should be able to :
+In addition to the First Time and Returning Visitor Goals, as an administrator of this site, an admin user should be able to:
 * Be confident that a user can't to brute force their way into the restricted pages.
 * Edit any product.
 * Delete any product.
@@ -142,7 +142,7 @@ MAYBE CONSIDER A TABLE AS WELL? USER STORY ID, AS A/AN, I WANT TO BE ABLE TO, SO
 SCOPE???? MORE DETAILED BREAKDOWN OF SCOPE WOULD BE GOOD
 
 ### Project Goals
-* The main goal is to create an easily editable merchandise site for Lead Shot Hazard, so it takes very little time to keep up to date with their constantly changing merchandise and music selection.
+* The main goal is to create an easily editable merchandise site for Lead Shot Hazard&#8482;, so it takes very little time to keep up to date with their constantly changing merchandise and music selection.
 * This project also demonstrates my understanding of maintaining a database attached to a website, with full CRUD (Create, Read, Update and Delete) functionality.
 
 ---
@@ -166,9 +166,9 @@ SCOPE???? MORE DETAILED BREAKDOWN OF SCOPE WOULD BE GOOD
 
 
 ### Imagery
-* The images used in this project are all photos of the band Lead Shot Hazard, their merchandise, or their logo.
-* These have been used to create a strong link between the band and the website, ensuring that all visitors can tell at first glance that this site is for Lead Shot Hazard.
-* As I am a member of Lead Shot Hazard, I own joint rights to use all images and designs that the band have created.
+* The images used in this project are all photos of the band Lead Shot Hazard&#8482;, their merchandise, or their logo.
+* These have been used to create a strong link between the band and the website, ensuring that all visitors can tell at first glance that this site is for Lead Shot Hazard&#8482;.
+* As I am a member of Lead Shot Hazard&#8482;, I own joint rights to use all images and designs that the band have created.
 BOX SHADOW, GRADIENTS, UNDERLINED LINKS, BUTTONS, ICONS
 
 
@@ -183,7 +183,7 @@ PROFILE - ALLAUTH, EXPLANATION OF DETAILS
 RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED FROM 320PX AND UP'
 
 #### Create and Delete a profile
-* This feature allows the user to :
+* This feature allows the user to:
     * Register for an account with email address, username and password.
     * Ensure no typos by entering the password twice, with the site checking to confirm that the passwords match.
     * Ensure the correct email address by sending a verification email to the email address the user has supplied.
@@ -195,12 +195,12 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
 
 
 #### Products
-* This feature allows the user to :
+* This feature allows the user to:
     * View all products on the website.
     * Perform a keyword search for products by name and description.
     * Browse products by category through the main navigation bar.
     * Sort products alphabetically or by price.
-    * Click on a product to view the full product details, including :
+    * Click on a product to view the full product details, including:
         * Name
         * Category
         * Price
@@ -212,7 +212,7 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
 
 
 #### &#128272; Create, Edit and Delete products
-* This feature allows the superuser to :
+* This feature allows the superuser to:
     * Add a new product to the store.
     * Edit an existing product.
     * Delete an existing product.
@@ -222,7 +222,7 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
 
 
 #### Confirm to delete modal
-* This feature allows the user to :
+* This feature allows the user to:
     * &#128272; Confirm deletion of a product.
     * &#128272; Avoid accidentally deleting a product.
     * &#128100; Confirm deletion of the user's profile.
@@ -232,7 +232,7 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
 
 
 #### Shopping bag
-* This feature allows the user to :
+* This feature allows the user to:
     * Add products to the shopping bag.
     * Adjust the quantity of products in the shopping bag.
     * Delete products in the shopping bag.
@@ -244,11 +244,11 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
 
 
 #### Checkout
-* This feature allows the user to :
+* This feature allows the user to:
     * Checkout as a guest.
     * Safely and securely buy the items in their shopping bag through Stripe.
     * &#128100; The shipping details will be filled from any details given in the user profile.
-    * &#128100; The user can select the 'Remember my details' checkbox in the checkout form to save their latest details. This is helpful when :
+    * &#128100; The user can select the 'Remember my details' checkbox in the checkout form to save their latest details. This is helpful when:
         * No details are saved in the user's profile.
         * Any of the user's details have changed from what is saved in their profile.
 * The card details form is connected to Stripe, a payment platform. This ensures a fully secure payment.
@@ -258,10 +258,10 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
 
 
 #### Payment
-* If the payment fails :
+* If the payment fails:
     * The user is directed back to the checkout form.
     * The user is shown a message that the payment failed.
-* If the payment succeeds :
+* If the payment succeeds:
     * The user will be sent a confirmation email.
     * The email contains the order details and order number.
     * The user will be redirected to the checkout success page.
@@ -317,7 +317,7 @@ The navigation bar changes depending on user status and screen size:
 
 
 #### Contact section
-* This feature allows the user to :
+* This feature allows the user to:
     * Contact the band for queries about merchandise or upcoming gigs.
 
 ![Image of feature](static/docs/img/FEATURE.png)
@@ -339,8 +339,8 @@ The navigation bar changes depending on user status and screen size:
 
 
 ### Audio
-* All audio is owned by the band Lead Shot Hazard.
-* As I am a member of Lead Shot Hazard, I own joint rights to use all audio that the band has created.
+* All audio is owned by the band Lead Shot Hazard&#8482;.
+* As I am a member of Lead Shot Hazard&#8482;, I own joint rights to use all audio that the band has created.
 
 
 ### Defensive Design
@@ -348,11 +348,11 @@ The navigation bar changes depending on user status and screen size:
     * This has been used on every form input on the site to ensure the correct data is added.
     * If incorrect data is added, red warning text appears, to instruct the user of how to fix the error.
 * Adding products to the bag
-    * Custom validation has been added to ensure that users can't :
+    * Custom validation has been added to ensure that users can't:
         * Add less than one of a product into their bag (such as adding a 0 quantity of a product).
         * Add more than 99 of a product into their bag.
 * Messages when an action is completed
-    * A message will appear in the top right of the screen when the following actions are completed :
+    * A message will appear in the top right of the screen when the following actions are completed:
         * The user adds a product to their shopping bag.
         * The user removes a product from their shopping bag.
         * The user edits the quantity of a product in their shopping bag.
@@ -389,14 +389,11 @@ INFO HERE
 
 #### JavaScript
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* This project uses JavaScript ES6.
-The project uses jQuery, a JavaScript library, for DOM Traversal, HTML Manipulation, and Event Handling.
-
+* This project uses JavaScript ES6 and jQuery.
 
 #### Python
 * [Python](https://www.python.org/)
-* VERSION
-
+* This project uses Python 3.8.11.
 
 
 ### Workspace
@@ -435,8 +432,8 @@ The project uses jQuery, a JavaScript library, for DOM Traversal, HTML Manipulat
 [Google Fonts](https://fonts.google.com/) was used to select all the fonts on the site.
 #### Favicon.io:
 [favicon.io](https://favicon.io/) used to create a site favicon.
-#### AWS S3 Bucket:
-[AWS S3 Bucket](LINK) was used to host images for this site.
+#### Amazon AWS S3:
+[Amazon AWS S3](https://s3.console.aws.amazon.com/s3) was used to host images and static files for this site.
 
 
 ### Database Design
@@ -444,28 +441,30 @@ The project uses jQuery, a JavaScript library, for DOM Traversal, HTML Manipulat
 
 
 ### Packages
-TABLE WITH NAME, PURPOSE
-Django
-Flake-8
-Pylint
-django-allauth
-Stripe
-Boto3
-Django-storages
-gunicorn
-django-crispy-forms
-dj-database-url
-psycopg2-binary
-coverage?
-pylint-django?
-pillow? 
+| Name | Purpose |
+|------|---------|
+| Django | Framework |
+| Flake-8 | Syntax |
+| Pylint | Syntax |
+| Pillow | Images |
+| django-allauth | Authentication |
+| Stripe | Secure Payment Services |
+| Boto3 | AWS Management |
+| django-storages | Custom Storage Backends |
+| django-countries | Django Countries |
+| gunicorn | WSGI HTTP Server |
+| django-crispy-forms | Front End Form Rendering |
+| dj-database-url | Database Configuration |
+| psycopg2-binary | PostgreSQL DB Adaptor |
+| coverage | Test Coverage |
+| | |
 
 
 ### Hosting
 #### Heroku:
 [Heroku](https://www.heroku.com) was used to deploy the live site.
-#### AWS S3
-[AWS S3 Bucket](LINK) was used to host this project's images.
+#### Amazon AWS S3
+[Amazon AWS S3](https://s3.console.aws.amazon.com/s3) was used to host this project's images.
 
 
 ### Frameworks, Libraries and Others
@@ -480,7 +479,7 @@ pillow?
 #### jQuery:
 [jQuery](https://jquery.com/), a JavaScript library was used for DOM traversal, HTML manipulation, and event handling.
 #### stripe.js
-[Stripe.js](LINK) library was used for handling Stripe payment objects.
+[Stripe.js](https://stripe.com/docs/js) library was used for handling Stripe payment objects.
 #### RandomKeygen:
 [RandomKeygen](https://randomkeygen.com/) was used to generate a strong `SECRET_KEY`.
 #### pip:
@@ -489,11 +488,16 @@ pillow?
 ---
 
 ## Deployment
-### Requirements for Deployment
-* Python
-* AWS S3 account
+### Basic Requirements
+* An IDE, such as GitPod or VSCode
+* Git, for version control
 * GitHub account
+* Python3
+* pip, for Python package installation
 * Heroku account
+* AWS S3 account
+* Stripe account
+* Email account
 
 
 ### Initial Deployment
@@ -504,30 +508,40 @@ This site was deployed to Heroku by following these steps:
 
 1. Heroku needs to be told what the requirements are for this project, so go into your GitPod terminal, and create files to explain the requirements by using the following commands:
     * `pip3 freeze --local > requirements.txt`
-    * `echo web: python run.py > Procfile` - Ensure there is no blank line after the contents of this file
+    * `echo web: python run.py > Procfile` - Ensure there is no blank line after the contents of this file.
 2. Push these changes to your repository.
 6. Login or sign up to [Heroku](https://www.heroku.com).
-7. Select 'Create New App' in the top right of your dashboard.
-8. Choose a unique app name, and select the region closest to you, before clicking 'Create App'.
-9. Go to the 'Deploy' tab, find 'Deployment Method' and select 'GitHub'.
-10. Search to find your GitHub repository, and click 'Connect'. Don't enable automatic deployment yet, as this can cause errors.
-11. Go to the 'Settings' tab, find 'Config Vars', and click 'Reveal Config Vars'.
-12. Enter key value pairs that match those in your env.py file, displayed like this :
+7. Select '**Create New App**' in the top right of your dashboard.
+8. Choose a unique app name, and select the region closest to you, before clicking '**Create App**'.
+9. Go to the '**Deploy**' tab, find '**Deployment Method**' and select '**GitHub**'.
+10. Search to find your GitHub repository, and click '**Connect**'. Don't enable automatic deployment yet, as this can cause errors.
+11. Go to the '**Settings**' tab, find '**Config Vars**', and click '**Reveal Config Vars**'.
+12. Enter key value pairs that match those in your project files, displayed like this :
 
 | Key | Value |
 |---|---|
 | SECRET_KEY | ## YOUR SECRET_KEY ## |
+| DATABASE_URL | ## YOUR DATABASE_URL ## |
+| STRIPE_PUBLIC_KEY | ## YOUR STRIPE_PUBLIC_KEY ## |
+| STRIPE_SECRET_KEY | ## YOUR STRIPE_SECRET_KEY ## |
+| STRIPE_WH_SECRET | ## YOUR STRIPE_WH_SECRET ## |
+| EMAIL_HOST_USER | ## YOUR EMAIL ADDRESS ## |
+| EMAIL_HOST_PASS | ## YOUR EMAIL APP PASS CODE ## |
+| AWS_SECRET_ACCESS_KEY | ## YOUR AWS_SECRET_ACCESS_KEY ## |
+| AWS_ACCESS_KEY_ID | ## YOUR AWS_ACCESS_KEY_ID ## |
+| USE_AWS | True |
+| | |
 
-13. Go to the 'Deploy' tab, and click 'Enable Automatic Deployment'.
-14. In 'Manual Deploy', choose which branch you'd like to deploy from (I chose 'master' branch, this is also known as 'main').
-15. Click 'Deploy Branch' to deploy your app onto the Heroku servers.
-16. Once the app has finished building, click 'Open App' to open your site.
+13. Go to the '**Deploy**' tab, and click '**Enable Automatic Deployment**'.
+14. In '**Manual Deploy**', choose which branch you'd like to deploy from (I chose 'master' branch, this is also known as 'main').
+15. Click '**Deploy Branch**' to deploy your app onto the Heroku servers.
+16. Once the app has finished building, click '**Open App**' to open your site.
 
 
 ### How to Fork it
 1. Login or Sign Up to [GitHub](www.github.com).
 2. On GitHub, go to [Abibubble/ms4-lead-shot-hazard](https://github.com/Abibubble/ms4-lead-shot-hazard).
-3. In the top right, click "Fork".
+3. In the top right, click '**Fork**'.
 4. You will need to create an env.py file with your own values, and create a MongoDB database with the data keys and types as shown above.
 5. You will also need to install all of the project requirements. This can be done using the command `pip3 install -r requirements.txt`.
 6. Type `python3 manage.py runserver` in your GitPod terminal to run your local site of this project.
@@ -535,7 +549,7 @@ This site was deployed to Heroku by following these steps:
 
 ### Making a Local Clone
 1. Log in to [GitHub](https://www.github.com) and locate the [Repository](https://github.com/Abibubble/ms4-lead-shot-hazard) for this site.
-2. Under the repository name, above the list of files, click "Code".
+2. Under the repository name, above the list of files, click '**Code**'.
 3. Here you can either Clone or Download the repository.
 4. You should clone the repository using HTTPS, clicking on the icon to copy the link.
 5. Open Git Bash.
@@ -553,13 +567,13 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 
 ## Testing
 ### Testing technologies
-The project's HTML was validated using W3C HTML Markup Validator.
-The project's CSS was validated using W3C Jigsaw CSS Validator.
-The project's JS was validated using JSHint.
-The project’s Python was validated using Pylint.
-The project's accessibility was assessed via WebAim's W.A.V.E and Contrast Checker and Google Chrome's Lighthouse.
-The project used Toptal's Colorfilter to assess how colour-blind-friendly the site was.
-The project was Unit Tested using django’s testing tools.
+* HTML was validated using W3C HTML Markup Validator.
+* CSS was validated using W3C Jigsaw CSS Validator.
+* JS was validated using JSHint.
+* Python was validated using Pylint.
+* Accessibility was checked via WebAim's W.A.V.E, Contrast Checker, and Google Chrome's Lighthouse.
+* Toptal's Colorfilter was used to check that the site was suitable for colorblind users, as well as manually testing it with my colorblind partner.
+* Unit Testing was done using django’s testing tools.
 
 ### W3C Validator
 W3C Markup Validator, W3C CSS Validator, JSHint, and PEP8 Online were used to validate the project to ensure there were no syntax errors within the site.
@@ -652,11 +666,13 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 
 
 ### Media
-* 
+* All media on this site is owned by Lead Shot Hazard&#8482;.
+* As a member of Lead Shot Hazard&#8482;, I own joint rights to use all media and images of the band.
 
 
 ### Acknowledgements
 * My mentor, Antonio Rodriguez, at [Code Institute](https://codeinstitute.net/), for continuous helpful feedback and support.
 * [Eve Crabb](https://github.com/evecrabb), for her support through my learning, for being a sounding board for bug fixes, and for being the best boss ever.
 * The team at [Code Institute](https://codeinstitute.net/), for teaching me the necessary skills to create this site.
-* Conor Nye for his continuous support throughout my coding journey.
+* My partner Conor Nye for his continuous support throughout my coding journey.
+* My bandmates in Lead Shot Hazard&#8482;, for giving me the inspiration to create this site.
