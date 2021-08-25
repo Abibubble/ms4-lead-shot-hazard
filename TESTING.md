@@ -31,11 +31,11 @@
 
 ## Icon key
 
-&#128100; <-- Logged In Only
-
 &#128272; <-- Admin only access
 
-&#128683; <-- Logged out only
+&#128100; <-- Logged In Only
+
+&#128683; <-- Logged Out only
 
 ## Devices and Browsers
 ### Desktop / Laptop
