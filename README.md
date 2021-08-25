@@ -9,11 +9,15 @@
 
 [Here is a link to the final project](https://ms4-lead-shot-hazard.herokuapp.com/homepage)
 
-This site is a merchandise and music e-commerce site for the band Lead Shot Hazard, a ska punk band from West London. This site is fully responsive on all modern screen sizes, and it allowed the band to easily add, edit or delete their merch and music that they have to sell. 
+This site is a merchandise and music e-commerce site for the band Lead Shot Hazard, a ska punk band from West London. This site is fully responsive on all modern screen sizes, and it allowed the band to easily add, edit or delete their merch and music that they have to sell.
+
+This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it uses a SQL database through PostgreSQL.
 
 ![Final project image home page](static/docs/img/finalpage.png)
 
 ## Contents
+
+* [Icon Key](#icon-key)
 
 * [User Experience (UX)](#user-experience-(ux))
     * [Initial Discussion](#initial-discussion)
@@ -68,6 +72,20 @@ This site is a merchandise and music e-commerce site for the band Lead Shot Haza
 
 ---
 
+## Icon key
+
+&#128272; <-- Admin only access
+
+&#128100; <-- Logged In Only
+
+&#128683; <-- Logged Out only
+
+&#9989; <-- Yes / Visible
+
+&#10060; <-- No / Not visible
+
+---
+
 ## User Experience (UX)
 ### Initial Discussion
 * I wanted to create a website linked to a database, which allows users to login, search for and find merchandise and music.
@@ -76,23 +94,40 @@ This site is a merchandise and music e-commerce site for the band Lead Shot Haza
 
 
 ### User Stories
+#### Business Goals
+As a band member, this site should :
+* Sell merchandise and music.
+* Match the design and personality of the band.
+* Offer a website that is easy to navigate and free of confusion.
+* Become another source of revenue for the band.
+* Become a platform where fans can follow the future gigs of the band.
+
+
 #### First Time Visitor Goals
 As a first time visitor to this site, a user should be able to :
 * Easily navigate the site.
 * Intuitively and easily understand what to do.
-* Register for an account.
-* Search for a specific product.
+* Create an account for future purchases.
+* Search for a specific product and it's information.
 * Browse through all merch.
-* Buy an item.
+* Buy products online as a guest.
 * Get visual feedback when an action on the site is completed.
+* Receive a confirmation email with all relevant information.
+* Contact the band through the website.
+* View full product information.
+* Add or remove items from the shopping bag.
+* Add multiple items to the shopping bag.
+* Receive an update of the shopping bag when the user performs an action.
+* Purchase products securely through Stripe.
 
 
 #### Returning Visitor Goals
 In addition to the First Time Visitor Goals, a Returning Visitor should be able to :
 * Log in / out.
 * Be confident that the user's password is be stored securely.
-* Store their address in their account.
 * Navigate intuitively, with no need to use the browser's back button.
+* Create, update or delete the user's personal information.
+* See a history of the user's previous purchases.
 
 
 #### Admin Goals
@@ -101,7 +136,10 @@ In addition to the First Time and Returning Visitor Goals, as an administrator o
 * Edit any product.
 * Delete any product.
 * Add a new product.
+* Create a stock of products to be sold online and keep track of the sales as a superuser.
 
+MAYBE CONSIDER A TABLE AS WELL? USER STORY ID, AS A/AN, I WANT TO BE ABLE TO, SO THAT I CAN. THEN CAN HAVE A TABLE IN TESTING JUST REFERENCING THE IDS
+SCOPE???? MORE DETAILED BREAKDOWN OF SCOPE WOULD BE GOOD
 
 ### Project Goals
 * The main goal is to create an easily editable merchandise site for Lead Shot Hazard, so it takes very little time to keep up to date with their constantly changing merchandise and music selection.
@@ -111,42 +149,101 @@ In addition to the First Time and Returning Visitor Goals, as an administrator o
 
 ## Design
 ### Color Scheme
-* Color scheme used
-* And why
+* The main colors used in this site are black, white, and yellow.
+* These are the colors in the band's logo, and they permeate through the site.
+* Other colors are used, such as in the social media icons.
+* These colors were used for the band to signify the ray of hope for a society that needs help, which is a popular ideology in the punk scene, and links with the band's song lyrics.
 
-![Color Scheme](static/docs/img/colors.png)
+![Color scheme](static/docs/img/colors.png)
+![Social media icons color ccheme](static/docs/img/social-colors.png)
 
 
 ### Typography
+* LOGO FONT, TEXT FONT, WHY USED
 * I have used a font from [Google Fonts](https://fonts.google.com/), called [FONT NAME](LINK).
 
 ![FONT NAME](IMAGE-LINK)
 
 
 ### Imagery
-* The images used in this project are all photos of the band Lead Shot Hazard, or their merch.
+* The images used in this project are all photos of the band Lead Shot Hazard, their merchandise, or their logo.
+* These have been used to create a strong link between the band and the website, ensuring that all visitors can tell at first glance that this site is for Lead Shot Hazard.
+BOX SHADOW, GRADIENTS, UNDERLINED LINKS, BUTTONS, ICONS
 
 
 ### Wireframes
 * [Wireframes for desktop, mobile and tablet for this project](static/docs/wireframes.pdf).
 * [Database schema for this project](static/docs/database.pdf).
-
+INCLUDE ANY EDITS FROM THE WIREFRAMES TO THE FINISHED SITE
 
 ### Features
-* Feature
+MAYBE USER DROPDOWNS TO SHOW APPLICABLE USER STORIES IDS AND THE LIKE???
+PROFILE - ALLAUTH, EXPLANATION OF DETAILS
+RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED FROM 320PX AND UP'
+
+#### &#128272; Create, Edit and Delete merchandise
+* DESCRIBE
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
+#### &#128272; Confirm to delete modal
+* DESCRIBE
 
-### Future Features
-* Add future features
+![Image of feature](static/docs/img/FEATURE.png)
 
+#### Create and Delete a profile
+* DESCRIBE
 
-### Audio
-* All audio is owned by the band Lead Shot Hazard.
+![Image of feature](static/docs/img/FEATURE.png)
 
+#### Search for merchandise
+* DESCRIBE
 
-### Navigation bar
+![Image of feature](static/docs/img/FEATURE.png)
+
+#### Auto-updating copyright year
+* The copyright year auto-updates to the current year.
+
+![Image of feature](static/docs/img/FEATURE.png)
+
+#### Shopping bag
+* This feature allows the user to :
+    * Add products to the shopping bag.
+    * Adjust the quantity of products in the shopping bag.
+    * Delete products in the shopping bag.
+    * View the grand total and details in the bag.
+* When a product is added, a preview of the shopping bag is displayed in a message.
+* The grand total and shipping price are updated when any edits to the shopping bag are made.
+
+![Image of feature](static/docs/img/FEATURE.png)
+
+#### Checkout
+* This feature allows the user to :
+    * Checkout as a guest.
+    * Safely and securely buy the items in their shopping bag through Stripe.
+* &#128100;
+    * The shipping details will be filled from any details given in the user profile.
+    * The user can select the 'Remember my details' checkbox in the checkout form to save their latest details. This is helpful when :
+        * No details are saved in the user's profile.
+        * Any of the user's details have changed from what is saved in their profile.
+* The card details form is connected to Stripe, a payment platform. This ensures a fully secure payment.
+* When the user confirms checkout, an animated loading screen shows whilst the payment details are checked by Stripe.
+
+![Image of feature](static/docs/img/FEATURE.png)
+
+#### Payment.
+* If the payment fails :
+    * The user is directed back to the checkout form.
+    * The user is shown a message that the payment failed.
+* If the payment succeeds :
+    * The user will be sent a confirmation email.
+    * The email contains the order details and order number.
+    * The user will be redirected to the checkout success page.
+    * A message will display, informing the user that the payment succeeded, containing of the order details and order number.
+
+![Image of feature](static/docs/img/FEATURE.png)
+
+#### Navigation bar
 The navigation bar changes depending on user status and screen size:
 
 | Nav Link | Logged Out | Logged In (User) | Logged In (Admin) |
@@ -175,6 +272,32 @@ The navigation bar changes depending on user status and screen size:
 ![Mobile navigation burger icon](static/docs/img/nav-mobile-burger.png)
 ![Mobile navigation bar expanded](static/docs/img/nav-mobile.png)
 
+
+#### SCREEN RECORD ANY ANIMATION, SAVE AS A GIF
+* DESCRIBE
+
+![Image of feature](static/docs/img/FEATURE.png)
+
+
+### Future Features
+* ADD FUTURE FEATURES
+Add to bag button is disabled if the product is out of stock.
+
+
+### Audio
+* All audio is owned by the band Lead Shot Hazard.
+
+
+
+
+### Defensive Design
+* FORM VALIDATION
+* ADDING TOO MANY / TOO LITTLE PRODUCTS TO BAG
+* WHEN AN ACTION IS COMPLETED
+* DEFAULT IMAGE IF IMAGE IS BROKEN / NO IMAGE
+* CUSTOM ERROR PAGES - 404
+* WEBHOOKS?
+
 ---
 
 ## Database Design
@@ -184,10 +307,22 @@ INFO HERE
 
 ## Technologies Used
 ### Languages Used
+#### HTML
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+
+#### CSS
 * [CSS3](https://developer.mozilla.org/en-US/docs/Archive/CSS3#:~:text=CSS3%20is%20the%20latest%20evolution,flexible%20box%20or%20grid%20layouts.)
+
+#### JavaScript
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* This project uses JavaScript ES6.
+The project uses jQuery, a JavaScript library, for DOM Traversal, HTML Manipulation, and Event Handling.
+
+
+#### Python
 * [Python](https://www.python.org/)
+* VERSION
+
 
 
 ### Workspace
@@ -234,9 +369,32 @@ INFO HERE
 #### DATABASE INFO
 
 
-### Frameworks, Libraries and Others
+### Packages
+TABLE WITH NAME, PURPOSE
+Django
+Flake-8
+Pylint
+django-allauth
+Stripe
+Boto3
+Django-storages
+gunicorn
+django-crispy-forms
+dj-database-url
+psycopg2-binary
+coverage?
+pylint-django?
+pillow? 
+
+
+### Hosting
 #### Heroku:
 [Heroku](https://www.heroku.com) was used to deploy the live site.
+#### AWS S3
+[AWS S3 Bucket](LINK) was used to host this project's images.
+
+
+### Frameworks, Libraries and Others
 #### Google DevTools:
 [Google DevTools](https://developer.chrome.com/docs/devtools/) was used to help find what code correlated to which feature.
 #### Lighthouse:
@@ -246,7 +404,9 @@ INFO HERE
 #### Materialize:
 [Materialize](https://materializecss.com/) was used to create a beautiful, responsive website.
 #### jQuery:
-[jQuery](https://jquery.com/) was used to make the DOM traversal easier within the JavaScript.
+[jQuery](https://jquery.com/), a JavaScript library was used for DOM traversal, HTML manipulation, and event handling.
+#### stripe.js
+[Stripe.js](LINK) library was used for handling Stripe payment objects.
 #### RandomKeygen:
 [RandomKeygen](https://randomkeygen.com/) was used to generate a strong `SECRET_KEY`.
 #### pip:
@@ -318,6 +478,15 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 ---
 
 ## Testing
+### Testing technologies
+The project's HTML was validated using W3C HTML Markup Validator.
+The project's CSS was validated using W3C Jigsaw CSS Validator.
+The project's JS was validated using JSHint.
+The project’s Python was validated using Pylint.
+The project's accessibility was assessed via WebAim's W.A.V.E and Contrast Checker and Google Chrome's Lighthouse.
+The project used Toptal's Colorfilter to assess how colour-blind-friendly the site was.
+The project was Unit Tested using django’s testing tools.
+
 ### W3C Validator
 W3C Markup Validator, W3C CSS Validator, JSHint, and PEP8 Online were used to validate the project to ensure there were no syntax errors within the site.
 
