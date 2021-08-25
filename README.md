@@ -9,7 +9,7 @@
 
 [Here is a link to the final project](https://ms4-lead-shot-hazard.herokuapp.com/homepage)
 
-DESCRIPTION OF SITE HERE.
+This site is a merchandise and music e-commerce site for the band Lead Shot Hazard, a ska punk band from West London. This site is fully responsive on all modern screen sizes, and it allowed the band to easily add, edit or delete their merch and music that they have to sell. 
 
 ![Final project image home page](static/docs/img/finalpage.png)
 
@@ -70,7 +70,9 @@ DESCRIPTION OF SITE HERE.
 
 ## User Experience (UX)
 ### Initial Discussion
-I wanted to create a website linked to a database, which allows users to login, search and find merchandise. This is something that Lead Shot Hazard has been discussing for a while, but we haven't had time to create until now.
+* I wanted to create a website linked to a database, which allows users to login, search for and find merchandise and music.
+* This is something that Lead Shot Hazard has been discussing for a while, but we haven't had time to create until now.
+* I wanted the band to be able to add, edit and delete items of merchandise and music for sale.
 
 
 ### User Stories
@@ -81,13 +83,15 @@ As a first time visitor to this site, a user should be able to :
 * Register for an account.
 * Search for a specific product.
 * Browse through all merch.
+* Buy an item.
 * Get visual feedback when an action on the site is completed.
 
 
 #### Returning Visitor Goals
 In addition to the First Time Visitor Goals, a Returning Visitor should be able to :
-* Log in.
+* Log in / out.
 * Be confident that the user's password is be stored securely.
+* Store their address in their account.
 * Navigate intuitively, with no need to use the browser's back button.
 
 
@@ -100,8 +104,8 @@ In addition to the First Time and Returning Visitor Goals, as an administrator o
 
 
 ### Project Goals
-* This project has the goal of demonstrating my understanding of maintaining a database attached to a website, with full CRUD (Create, Read, Update and Delete) functionality.
-* MORE GOALS
+* The main goal is to create an easily editable merchandise site for Lead Shot Hazard, so it takes very little time to keep up to date with their constantly changing merchandise and music selection.
+* This project also demonstrates my understanding of maintaining a database attached to a website, with full CRUD (Create, Read, Update and Delete) functionality.
 
 ---
 
