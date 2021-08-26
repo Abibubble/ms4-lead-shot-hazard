@@ -22,6 +22,7 @@
     * [Stripe](#stripe)
     * [Pagination](#pagination)
     * [404](#404)
+* [Validation](#validation)
 * [Database](#database)
 * [Accessibility](#accessibility)
     * [Tap Targets](#tap-targets)
@@ -285,6 +286,24 @@ On every device and browser listed above, I tested the following:
 
 ---
 
+## Validation
+FORM VALIDATION
+PASSWORD VALIDATION
+EMAIL VALIDATION
+
+---
+
+## Database
+* When the superuser adds products to the database, the information should be stored.
+* When the superuser edits a product in the database, the information should be populated from the current product data.
+* When the superuser edits a product in the database, the information should be stored.
+* When the superuser deletes a product from the database, the product should be permanently removed.
+* If products are added to the database, the phrase '{Item} Successfully Added' should display.
+* If products are deleted from the database, the phrase '{Item} Successfully Deleted' should display.
+* If products are edited in the database, the phrase '{Item} Successfully Updated' should display.
+
+---
+
 ## Accessibility
 ### Tap Targets
 * 48PX BY 48PX, 8PX GAP
@@ -306,17 +325,6 @@ On every device and browser listed above, I tested the following:
 
 ### Reading Level
 * READING LEVEL OF AGE 9 - AVERAGE
-
----
-
-## Database
-* When the superuser adds products to the database, the information should be stored.
-* When the superuser edits a product in the database, the information should be populated from the current product data.
-* When the superuser edits a product in the database, the information should be stored.
-* When the superuser deletes a product from the database, the product should be permanently removed.
-* If products are added to the database, the phrase '{Item} Successfully Added' should display.
-* If products are deleted from the database, the phrase '{Item} Successfully Deleted' should display.
-* If products are edited in the database, the phrase '{Item} Successfully Updated' should display.
 
 ---
 

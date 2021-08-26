@@ -472,6 +472,8 @@ INFO HERE
 [Google DevTools](https://developer.chrome.com/docs/devtools/) was used to help find what code correlated to which feature.
 #### Lighthouse:
 [Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to ensure that the code was as performant as possible, confirming to best practices, and SEO and Accessibility guidelines.
+#### WebPageTest:
+[WebPageTest](https://www.webpagetest.org/) was used to ensure that the code was as performant as possible, confirming to best practices, and SEO and Accessibility guidelines. As it is often more reliable than Lighthouse, this was used near the end of the project to fix any remaining issues.
 #### Flask:
 [Flask](https://flask.palletsprojects.com/en/2.0.x/) was used to help create the templating for this site.
 #### Materialize:
@@ -727,6 +729,10 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 
 #### SEO:
 * 
+
+
+### WebPageTest
+* [WebPageTest Results](LINK)
 
 ---
 
