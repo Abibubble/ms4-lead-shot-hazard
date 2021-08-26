@@ -6,19 +6,30 @@
 * [Devices and Browsers](#devices-and-browsers)
 * [Links and Navigation](#links-and-navigation)
     * [Navigation Bar](#navigation-bar)
-    * [Internal Navigation](#internal-navigation)
     * [Modals](#modals)
+    * [External Links](#external-links)
 * [Styling and Layout](#styling-and-layout)
 * [User Access](#user-access)
 * [Functions](#functions)
     * [Register](#register)
     * [Log In](#log-in)
     * [Log Out](#log-out)
-    * [Add Merchandise](#add-merchandise)
-    * [Edit Merchandise](#edit-merchandise)
-    * [Delete Merchandise](#delete-merchandise)
-    * [Search Merchandise](#search-merchandise)
+    * [Add Products](#add-products)
+    * [Edit Products](#edit-products)
+    * [Delete Products](#delete-products)
+    * [Search Products](#search-products)
+    * [Messages](#messages)
+    * [Stripe](#stripe)
+    * [Pagination](#pagination)
+    * [404](#404)
 * [Database](#database)
+* [Accessibility](#accessibility)
+    * [Tap Targets](#tap-targets)
+    * [Color Contrast](#color-contrast)
+    * [Image Text](#image-text)
+    * [Screen Readers](#screen-readers)
+    * [Switch Users](#switch-users)
+    * [Reading Level](#reading-level)
 * [Responsive Design](#responsive-design)
     * [Mobile](#mobile)
     * [Tablet](#tablet)
@@ -138,16 +149,20 @@ On every device and browser listed above, I tested the following:
 
 ---
 
-### Internal Navigation
-* &#128100; Click the Add Cocktail button to take the user to the Add Cocktail page from the Profile page.
-* &#128100; Click the Edit Cocktail button to take the user to the Edit Cocktail page from the Profile page.
-* &#128272; Click the Add Category button to take the user to the Add Category page from the Manage Categories page.
-* &#128272; Click the Edit Category button to take the user to the Edit Category page from the Manage Categories page.
+### Modals
+* &#128272; The Delete modal is visible in front of all other items on the screen, and clearly displays the Cancel and Delete buttons.
 
 ---
 
-### Modals
-* &#128272; The Delete Merchandise modal is visible in front of all other items on the screen, and clearly displays the Cancel and Delete buttons.
+### External Links
+* The Facebook social media icon opens up the Lead Shot Hazard Facebook page in a new tab.
+* The Bandcamp social media icon opens up the Lead Shot Hazard Bandcamp page in a new tab.
+* The Instagram social media icon opens up the Lead Shot Hazard Instagram page in a new tab.
+* The Twitter social media icon opens up the Lead Shot Hazard Twitter page in a new tab.
+* The YouTube social media icon opens up the Lead Shot Hazard YouTube page in a new tab.
+* The Spotify social media icon opens up the Lead Shot Hazard Spotify page in a new tab.
+* The TikTok social media icon opens up the Lead Shot Hazard TikTok page in a new tab.
+* The Soundcloud social media icon opens up the Lead Shot Hazard Soundcloud page in a new tab.
 
 ---
 
@@ -179,7 +194,7 @@ On every device and browser listed above, I tested the following:
 * Creates a new user account.
 * Confirm password field is checked against password field to ensure no typos are made.
 * If the username already exists, it informs the user and clears the form.
-* If the passwords don't match, the user is informed via a flash message.
+* If the passwords don't match, the user is informed via a toast message.
 
 ### Log In
 * &#128683;
@@ -196,8 +211,8 @@ On every device and browser listed above, I tested the following:
 
 ### Homepage
 * &#128683;
-* All items are displayed on this page.
-* There is a search function, as explained below in [Search Recipes](#search-recipes).
+* All products are displayed on this page.
+* There is a search function, as explained below in [Search Products](#search-products).
 
 ### Profile
 * &#128100;
@@ -214,14 +229,14 @@ On every device and browser listed above, I tested the following:
 * The user will be permanently deleted from the database.
 * &#128272; This function is not able to delete the superuser. -->
 
-### Add Merchandise
+### Add Products
 * &#128272;
 * Only accessible for the superuser.
 * Provides a form for users to fill in, with placeholder text.
 * All input elements have the correct validation on.
 * Once submitted, it adds an item into the database, which then populates it onto the site.
 
-### Edit Merchandise
+### Edit Products
 * &#128272;
 * Only accessible for the superuser.
 * Provides a form for users to fill in, with placeholder text.
@@ -229,19 +244,30 @@ On every device and browser listed above, I tested the following:
 * The form is pre-filled in with the current item details, for easy editing.
 * Once submitted, it edits the item in the database, which then populates those edits onto the site.
 
-### Delete Merchandise
+### Delete Products
 * &#128272;
 * Only accessible for the superuser.
 * Creates a modal to confirm if the user wishes to delete this item.
 * Once submitted, it deletes the item from the database, so the item can no longer be viewed on the site.
 * The item will be permanently deleted from the database.
 
-### Search Recipes
+### Search Products
 * Accessible by all users.
 * Searches through database for what the user has entered into the search box.
-* It uses the merchandise name and description to search within.
+* It uses the product name and description to search within.
 * It returns all results, or a message if there are no results.
 * The reset button then clears the search bar, and returns the page to it's standard state.
+
+### Messages
+* If products are added to the database, the phrase '{Item} Successfully Added' should display.
+* If products are deleted from the database, the phrase '{Item} Successfully Deleted' should display.
+* If products are edited in the database, the phrase '{Item} Successfully Updated' should display.
+* If a product is added to the user's shopping bag, the phrase '{Item} successfully added to your bag' should display, with a summary of the user's shopping bag shown.
+* If a product is removed from the user's shopping bag, the phrase '{Item} successfully removed from your bag' should display, with a summary of the user's shopping bag shown.
+* If a product quantity is updated in the user's shopping bag, the phrase '{Item} quantity successfully updated to {quantity}' should display, with a summary of the user's shopping bag shown.
+
+### Stripe
+* INFO ABOUT STRIPE HERE
 
 ### Pagination
 * Accessible by all users
@@ -259,13 +285,40 @@ On every device and browser listed above, I tested the following:
 
 ---
 
-## Database
-* When the user adds merchandise, the information should be stored.
-* If merchandise is added, the phrase '{Item} Successfully Added' should display.
-* If merchandise is deleted, the phrase '{Item} Successfully Deleted' should display.
-* If merchandise is edited, the phrase '{Item} Successfully Updated' should display.
+## Accessibility
+### Tap Targets
+* 48PX BY 48PX, 8PX GAP
 
---
+### Color Contrast
+* CONTRAST CHECKER
+* COLOUR BLIND CHECKER
+* CONOR CHECK
+
+### Image Text
+* ALT TEXT
+* ARIA-LABEL / ARIA-LABELLEDBY
+
+### Screen Readers
+* DOM ORDER
+
+### Switch Users
+* FOCUS / HOVER / ACTIVE
+
+### Reading Level
+* READING LEVEL OF AGE 9 - AVERAGE
+
+---
+
+## Database
+* When the superuser adds products to the database, the information should be stored.
+* When the superuser edits a product in the database, the information should be populated from the current product data.
+* When the superuser edits a product in the database, the information should be stored.
+* When the superuser deletes a product from the database, the product should be permanently removed.
+* If products are added to the database, the phrase '{Item} Successfully Added' should display.
+* If products are deleted from the database, the phrase '{Item} Successfully Deleted' should display.
+* If products are edited in the database, the phrase '{Item} Successfully Updated' should display.
+
+---
 
 ## Responsive Design
 ### Mobile
