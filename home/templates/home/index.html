@@ -1,6 +1,41 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
-    
+    <section class="container h-100">
+        <div class="row h-100 justify-content-center">
+            <div class="col-6 my-auto">
+                <img src="roundall.png" alt="The Lead Shot Hazard roundall logo" class="w-100">
+            </div>
+        </div>
+        <div class="row h-100 justify-content-center">
+            <div class="col-6 my-auto">
+                <a href="">Click to Enter</a>
+            </div>
+        </div>
+        <div class="row h-100 justify-content-center">
+            <div class="col-6 my-auto">
+                <div class="socials-links">
+                    <a href="https://leadshothazard.bandcamp.com/" target="_blank" rel="noopener" class="social-image" id="bandcamp" onmouseover="hover(this.id)" onmouseout="normal(this.id)"><i class="fab fa-bandcamp"></i></a>
+                    <a href="https://www.facebook.com/LeadShotHazard/" target="_blank" rel="noopener" class="social-image" id="facebook" onmouseover="hover(this.id)" onmouseout="normal(this.id)"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lead_shot_hazard/" target="_blank" rel="noopener" class="social-image" id="instagram" onmouseover="hover(this.id)" onmouseout="normal(this.id)"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/LeadShotHazard" target="_blank" rel="noopener" class="social-image" id="twitter" onmouseover="hover(this.id)" onmouseout="normal(this.id)"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/LeadShotHazard" target="_blank" rel="noopener" class="social-image" id="youtube" onmouseover="hover(this.id)" onmouseout="normal(this.id)"><i class="fab fa-youtube"></i></a>
+                    <a href="https://open.spotify.com/artist/7sIKGTFWXtmvRhE3CyoSa7" target="_blank" rel="noopener" class="social-image" id="spotify" onmouseover="hover(this.id)" onmouseout="normal(this.id)"><i class="fab fa-spotify"></i></a>
+                    <a href="https://www.tiktok.com/@leadshothazard?" target="_blank" rel="noopener" class="social-image" id="tiktok" onmouseover="hover(this.id)" onmouseout="normal(this.id)"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://soundcloud.com/leadshothazard" target="_blank" rel="noopener" class="social-image" id="soundcloud" onmouseover="hover(this.id)" onmouseout="normal(this.id)"><i class="fab fa-soundcloud"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
