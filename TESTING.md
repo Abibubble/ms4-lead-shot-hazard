@@ -56,6 +56,8 @@
 
 &#128683; <-- Logged Out only
 
+[Back to the top](#testing)
+
 ---
 
 ## Manual Testing
@@ -109,6 +111,8 @@
 
 A large amount of testing was done to ensure that all pages were displayed, and all functionality worked as it should. Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
+[Back to the top](#testing)
+
 ---
 
 ### Testing technologies
@@ -142,60 +146,78 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 ### Testing User Stories
 #### Business Goals
 ##### Sell merchandise and music.
-* How
+* This site provides a secure method for the band to earn money from their merchandise sales.
 
 ##### Match the design and personality of the band.
-* How
+* The color scheme has been directly taken from the band's artwork.
 
 ##### Offer a website that is easy to navigate and free of confusion.
-* How
+* Every page has the full navigation bar across the top of the page.
+* For long pages, there is a 'Back to top' button to help the user easily get back to the top.
 
 ##### Become another source of revenue for the band.
-* How
+* Currently the band is only able to sell merchandise at gigs, or via their Bandcamp page.
+* This site provides a dedicated site to sell all merchandise.
+* This can be linked to from all social media platforms, to allow easy online sales.
+* This means that the band can be earning money from merchandise sales whilst not actively gigging.
 
 ##### Become a platform where fans can follow the future gigs of the band.
-* How
+* All future gigs will be updated onto the site.
+* This will be collated on the 'Gigs' page.
 
 
 #### First Time Visitor Goals
 ##### Easily navigate the site.
-* How
+* Every page has the full navigation bar across the top of the page.
+* For long pages, there is a 'Back to top' button to help the user easily get back to the top.
 
 ##### Intuitively and easily understand what to do.
-* How
+* Everything is clearly laid out.
+* All buttons describe what they're for in simple terms.
+* Icons are used to help convey meaning.
 
 ##### Create an account for future purchases.
-* How
+* The user can navigate to the Register page via the navigation bar, which is visible on every page.
+* The registration process is clearly decribed, and all instructions are clear.
+* It only requires a username, an email address, a password, and a confirmation of that password to register an account.
+* The user then needs to verify their email address to gain full access to their account.
 
 ##### Search for a specific product and it's information.
-* How
+* There is a search bar on the products pages, so the user can search by product name, description
+* There is also the option in the navigation bar to search by category.
 
 ##### Browse through all merch.
-* How
+* The user can scroll through all available merch via a link in the navigation bar.
 
 ##### Buy products online as a guest.
-* How
+* Registration to the site is not required to make a purchase.
 
 ##### Get visual feedback when an action on the site is completed.
-* How
+* When any action is completed, a message will appear to inform the user of the action.
+* A full list of actions and messages can be found below in [Messages](#messages).
 
 ##### Receive a confirmation email with all relevant information.
-* How
+* Once an order has been paid for successfully, an email will be sent out with order details.
 
 ##### Contact the band through the website.
-* How
+* A contact page is available via the navigation bar.
+* Users can fill in the form to send a message to the band.
 
 ##### View full product information.
-* How
+* A user can click on any product to view the full product information.
 
 ##### Add or remove items from the shopping bag.
-* How
+* Products can be added to the shopping bag via any product details page.
+* Products can be removed from the shopping bag via the Shopping Bag page.
 
 ##### Add multiple items to the shopping bag.
-* How
+* Multiples of the same item can be added to the shopping bag by updating the quantity field.
+* This can be done on the product details page, or on the shopping bag page.
 
 ##### Receive an update of the shopping bag when the user performs an action.
-* How
+* When any action is completed, a message will appear to inform the user of the action.
+* This message will include a summary of the user's shopping bag.
+* A full list of actions and messages can be found below in [Messages](#messages).
 
 ##### Purchase products securely through Stripe.
 * How
@@ -203,36 +225,47 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 
 #### Returning Visitor Goals
 ##### Log in / out.
-* How
+* The Log In and Log Out button is visible in the navigation bar.
+* The Log In and Log Out process is intuitive and simple to use.
+* If the user is logged out, the Log In button will show.
+* If the user is logged in, the Log Out button will show.
 
 ##### Be confident that the user's password is be stored securely.
-* How
+* Werkzeug's password hashing methods have been used to store all user's passwords in a secure and safe way.
 
 ##### Navigate intuitively, with no need to use the browser's back button.
-* How
+* The navigation bar is constantly visible across the top of the site.
+* This is either the full navigation bar, or the condensed burger icon menu bar on smaller screen sizes.
 
 ##### Create, update or delete the user's personal information.
-* How
+* Once a user has created an account, they can store their name, phone number, email address and address details for faster checkout in the future.
 
 ##### See a history of the user's previous purchases.
-* How
+* All previous purchases of an account are listed on the user's profile under 'Order History'.
 
 
 #### Admin Goals
 ##### Be confident that a user can't to brute force their way into the restricted pages.
-* How
+* The superuser is set through Django, so there can only be one.
+* If a logged out user tried to access a restricted page, it directs them to the log in page.
+* If a logged in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message informing them of this.
 
 ##### Edit any product.
-* How
+* Only the superuser can edit an existing product.
+* This can be done on any product details page.
 
 ##### Delete any product.
-* How
+* Only the superuser can delete an existing product.
+* This can be done on any product details page.
 
 ##### Add a new product.
-* How
+* Only the superuser can add a new product.
+* This can be done on the Manage Products page.
 
 ##### Create a stock of products to be sold online and keep track of the sales as a superuser.
 * How
+
+[Back to the top](#testing)
 
 ---
 
@@ -312,10 +345,14 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Register button to take the user to the Register page from the Checkout page.
 * &#128683; Click the Register button to take the user to the Register page from the Order Success page.
 
+[Back to the top](#testing)
+
 ---
 
 ## Modals
 * &#128272; The Delete modal is visible in front of all other items on the screen, and clearly displays the Cancel and Delete buttons.
+
+[Back to the top](#testing)
 
 ---
 
@@ -329,12 +366,16 @@ On every device and browser listed above, I tested the following:
 * The TikTok social media icon opens up the Lead Shot Hazard TikTok page in a new tab.
 * The Soundcloud social media icon opens up the Lead Shot Hazard Soundcloud page in a new tab.
 
+[Back to the top](#testing)
+
 ---
 
 ## Styling and Layout
 * Ensure all images load correctly.
 * Ensure all grid layouts size correctly on all screen sizes.
 * Ensure all modals appear in front of all other content on the screen.
+
+[Back to the top](#testing)
 
 ---
 
@@ -350,6 +391,8 @@ On every device and browser listed above, I tested the following:
 ### Admin Users
 * &#128272;
 * Navigation bar will show Logo, Home, Profile, Manage Products, Log Out.
+
+[Back to the top](#testing)
 
 ---
 
@@ -430,6 +473,7 @@ On every device and browser listed above, I tested the following:
 * If a product is added to the user's shopping bag, the phrase '{Item} successfully added to your bag' should display, with a summary of the user's shopping bag shown.
 * If a product is removed from the user's shopping bag, the phrase '{Item} successfully removed from your bag' should display, with a summary of the user's shopping bag shown.
 * If a product quantity is updated in the user's shopping bag, the phrase '{Item} quantity successfully updated to {quantity}' should display, with a summary of the user's shopping bag shown.
+* If a logged in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message saying 'You do not have access to this page'.
 
 ### Stripe
 * To test the webhooks and payment process, I used the following Stripe testing card numbers:
@@ -469,6 +513,8 @@ On every device and browser listed above, I tested the following:
     * When a user is registering for an account, the site ensures the correct email address has been entered by sending a verification email to the email address the user has supplied.
     * The account cannot be used until the user has verified that their email address is correct by following the link in the validation email.
 
+[Back to the top](#testing)
+
 ---
 
 ## Database
@@ -479,6 +525,8 @@ On every device and browser listed above, I tested the following:
 * If products are added to the database, the phrase '{Item} Successfully Added' should display.
 * If products are deleted from the database, the phrase '{Item} Successfully Deleted' should display.
 * If products are edited in the database, the phrase '{Item} Successfully Updated' should display.
+
+[Back to the top](#testing)
 
 ---
 
@@ -505,6 +553,8 @@ On every device and browser listed above, I tested the following:
 ### Reading Level
 * All text content on the site has a maximum reading level of age 9, to aid people with cognitive impairments, and people who don't speak English as a first language, among others.
 * All text content on this site has been tested against the Automated Readability Index (ARI) on [Readability Formulas](https://readabilityformulas.com/free-readability-formula-tests.php).
+
+[Back to the top](#testing)
 
 ---
 
@@ -538,6 +588,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 
 ## WebPageTest
 * [WebPageTest Results](LINK)
+
+[Back to the top](#testing)
 
 ---
 
@@ -587,6 +639,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * All fonts are easy to read.
 * All images are scaled to the screen size, whilst maintaining the correct aspect ratio.
 
+[Back to the top](#testing)
+
 ---
 
 ## Images
@@ -598,6 +652,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ![Add Merchandise page](static/docs/testing/desktop/chrome/add-merch.png)
 ![Edit Merchandise page](static/docs/testing/desktop/chrome/edit-merch.png)
 
+[Back to the top](#testing)
+
 ---
 
 #### Edge
@@ -606,6 +662,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ![Register page](static/docs/testing/desktop/edge/register.jpeg)
 ![Add Merchandise page](static/docs/testing/desktop/edge/add-merch.jpeg)
 ![Edit Merchandise page](static/docs/testing/desktop/edge/edit-merch.jpeg)
+
+[Back to the top](#testing)
 
 ---
 
@@ -616,6 +674,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ![Add Merchandise page](static/docs/testing/desktop/moz/add-merch.png)
 ![Edit Merchandise page](static/docs/testing/desktop/moz/edit-merch.png)
 
+[Back to the top](#testing)
+
 ---
 
 #### Safari
@@ -624,6 +684,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ![Register page](static/docs/testing/desktop/safari/register.png)
 ![Add Merchandise page](static/docs/testing/desktop/safari/add-merch.png)
 ![Edit Merchandise page](static/docs/testing/desktop/safari/edit-merch.png)
+
+[Back to the top](#testing)
 
 ---
 
@@ -636,6 +698,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ![Edit Merchandise page](static/docs/testing/tablet/safari/edit-merch.jpg)
 ![Menu](static/docs/testing/tablet/safari/menu.jpg)
 
+[Back to the top](#testing)
+
 ---
 
 ### Mobile
@@ -647,6 +711,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ![Edit Merchandise page](static/docs/testing/mobile/chrome/edit-merch.jpg)
 ![Navigation menu](static/docs/testing/mobile/chrome/menu.jpg)
 
+[Back to the top](#testing)
+
 ---
 
 #### Safari
@@ -657,6 +723,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ![Edit Merchandise page](static/docs/testing/mobile/safari/edit-merch.jpg)
 ![Navigation menu](static/docs/testing/mobile/safari/menu.jpg)
 
+[Back to the top](#testing)
+
 ---
 
 #### Samsung Internet
@@ -666,3 +734,5 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ![Add Merchandise page](static/docs/testing/mobile/samsung/add-merch.jpg)
 ![Edit Merchandise page](static/docs/testing/mobile/samsung/edit-merch.jpg)
 ![Navigation menu](static/docs/testing/mobile/samsung/menu.jpg)
+
+[Back to the top](#testing)
