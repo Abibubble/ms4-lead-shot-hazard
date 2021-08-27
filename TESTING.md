@@ -27,9 +27,8 @@
 * [Accessibility](#accessibility)
     * [Tap Targets](#tap-targets)
     * [Color Contrast](#color-contrast)
-    * [Image Text](#image-text)
-    * [Screen Readers](#screen-readers)
-    * [Switch Users](#switch-users)
+    * [Visually-Impaired Users](#visually-impaired-users)
+    * [Assistive Technologies](#assistive-technologies)
     * [Reading Level](#reading-level)
 * [Responsive Design](#responsive-design)
     * [Mobile](#mobile)
@@ -43,11 +42,55 @@
 
 ## Icon key
 
-&#128272; <-- Admin only access
+&#128272; <-- Superuser only access
 
 &#128100; <-- Logged In Only
 
 &#128683; <-- Logged Out only
+
+## Testing technologies
+* HTML was validated using [W3C HTML Markup Validator](https://validator.w3.org/).
+* CSS was validated using [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/).
+* JS was validated using [JSHint](https://jshint.com/).
+* Python was validated using [PEP8 Online](http://pep8online.com/) and [Flake8](https://flake8.pycqa.org/en/latest/).
+* Accessibility was checked via [WebAim's W.A.V.E](https://wave.webaim.org/), [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/), and [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse).
+* [Toptal Color Blind Filter](https://www.toptal.com/designers/colorfilter/) was used to check that the site was suitable for color blind users, as well as manually testing it with my color blind partner.
+* Unit Testing was done using django’s testing tools.
+
+1. W3C HTML Markup Validator
+    * [Homepage](LINK)
+    * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
+
+2. W3C CSS Validator
+    * [Homepage](LINK)
+    * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
+
+3. JSHint
+    * [JSHint](https://jshint.com/)
+    * Explanations
+
+![Image of JSHint results](static/docs/img/jshint.png)
+
+4. PEP8 Online
+    * [PEP8 Online](http://pep8online.com/)
+
+![Image of PEP8 Online results](static/docs/img/pep8.png)
+
+
+### Testing User Stories
+#### First Time Visitor Goals
+##### Goal
+* How
+
+
+#### Returning Visitor Goals
+##### Goal
+* How
+
+
+#### Admin Goals
+##### Goal
+* How
 
 ## Devices and Browsers
 ### Desktop / Laptop
@@ -104,6 +147,10 @@ On every device and browser listed above, I tested the following:
 ## Links and Navigation
 ### Navigation Bar
 * Click the Logo to take the user to the Home page from the Home page.
+* Click the Logo to take the user to the Home page from the Product Details page.
+* Click the Logo to take the user to the Home page from the Shopping Bag page.
+* Click the Logo to take the user to the Home page from the Checkout page.
+* Click the Logo to take the user to the Home page from the Order Success page.
 * &#128100; Click the Logo to take the user to the Home page from the Profile page.
 * &#128272; Click the Logo to take the user to the Home page from the Manage Products page.
 * &#128683; Click the Logo to take the user to the Home page from the Log In page.
@@ -111,6 +158,10 @@ On every device and browser listed above, I tested the following:
 
 
 * Click the Home button to take the user to the Home page from the Home page.
+* Click the Home button to take the user to the Home page from the Product Details page.
+* Click the Home button to take the user to the Home page from the Shopping Bag page.
+* Click the Home button to take the user to the Home page from the Checkout page.
+* Click the Home button to take the user to the Home page from the Order Success page.
 * &#128100; Click the Home button to take the user to the Home page from the Profile page.
 * &#128272; Click the Home button to take the user to the Home page from the Manage Products page.
 * &#128683; Click the Home button to take the user to the Home page from the Log In page.
@@ -118,11 +169,19 @@ On every device and browser listed above, I tested the following:
 
 
 * &#128100; Click the Profile button to take the user to the Profile page from the Home page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Product Details page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Shopping Bag page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Checkout page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Order Success page.
 * &#128100; Click the Profile button to take the user to the Profile page from the Profile page.
 * &#128272; Click the Profile button to take the user to the Profile page from the Manage Products page.
 
 
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Home page.
+* &#128272; Click the Manage Products button to take the user to the Manage Products page from the Product Details page.
+* &#128272; Click the Manage Products button to take the user to the Manage Products page from the Shopping Bag page.
+* &#128272; Click the Manage Products button to take the user to the Manage Products page from the Checkout page.
+* &#128272; Click the Manage Products button to take the user to the Manage Products page from the Order Success page.
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Profile page.
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Manage Products page.
 
@@ -133,20 +192,30 @@ On every device and browser listed above, I tested the following:
 
 
 * &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Home page.
+* &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Product Details page.
+* &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Shopping Bag page.
+* &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Checkout page.
+* &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Order Success page.
 * &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Profile page.
 * &#128272; Click the Log Out button to log the user out and take them to the Log In page from the Manage Products page.
-* &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Log In page.
-* &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Register page.
 
 
 * &#128683; Click the Log In button to take the user to the Log In page from the Home page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Log In page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Register page.
+* &#128683; Click the Log In button to take the user to the Log In page from the Product Details page.
+* &#128683; Click the Log In button to take the user to the Log In page from the Shopping Bag page.
+* &#128683; Click the Log In button to take the user to the Log In page from the Checkout page.
+* &#128683; Click the Log In button to take the user to the Log In page from the Order Success page.
 
 
 * &#128683; Click the Register button to take the user to the Register page from the Home page.
 * &#128683; Click the Register button to take the user to the Register page from the Log In page.
 * &#128683; Click the Register button to take the user to the Register page from the Register page.
+* &#128683; Click the Register button to take the user to the Register page from the Product Details page.
+* &#128683; Click the Register button to take the user to the Register page from the Shopping Bag page.
+* &#128683; Click the Register button to take the user to the Register page from the Checkout page.
+* &#128683; Click the Register button to take the user to the Register page from the Order Success page.
 
 ---
 
@@ -220,15 +289,15 @@ On every device and browser listed above, I tested the following:
 * Only accessible for logged in users.
 * It allows users to view any order that they have made.
 * It allows users to edit their personal details.
-<!-- * There is also a button to allow a user to delete their account. -->
+* There is also a button to allow a user to delete their account.
 
-<!-- ### Delete Account - MAYBE ADD THIS FUNCTIONALITY?
+### Delete Account
 * &#128100;
 * Only accessible for logged in users.
 * Creates a modal to confirm if the user wishes to delete their account.
 * Once submitted, it deletes the user from the database, so the user can no longer log in and their address details will be removed.
 * The user will be permanently deleted from the database.
-* &#128272; This function is not able to delete the superuser. -->
+* &#128272; This function is not able to delete the superuser.
 
 ### Add Products
 * &#128272;
@@ -268,7 +337,14 @@ On every device and browser listed above, I tested the following:
 * If a product quantity is updated in the user's shopping bag, the phrase '{Item} quantity successfully updated to {quantity}' should display, with a summary of the user's shopping bag shown.
 
 ### Stripe
-* INFO ABOUT STRIPE HERE
+* To test the webhooks and payment process, I used the following Stripe testing card numbers:
+    * No authentication successful payment: 4242 4242 4242 4242
+    * Failed payment: 4000 0000 0000 9995
+    * Authentication required: 4000 0025 0000 3155
+* The no authentication successful card was run, didn't ask for authentication, and successfully paid.
+* The failed payment card was run and the card payment failed.
+* The authentication required card was run, asked for authentication, and successfully paid.
+* After each payment event, a message was shown to the user to explain the action that had just happened.
 
 ### Pagination
 * Accessible by all users
@@ -306,25 +382,60 @@ EMAIL VALIDATION
 
 ## Accessibility
 ### Tap Targets
-* 48PX BY 48PX, 8PX GAP
+* All tap targets are a minimum of 40px x 40px, to comply with WCAG Accessibility standards.
+* All tap targets have a minimum of an 8px gap between them, to avoid any overlapping tap targets.
 
 ### Color Contrast
-* CONTRAST CHECKER
-* COLOUR BLIND CHECKER
-* CONOR CHECK
+* All background and foreground colors have a sufficient contrast ratio.
+* This site has been checked by a user with deuteranopia color blindness with no issues present.
+* [Toptal Color Blind Filter](https://www.toptal.com/designers/colorfilter/) was used to check every accessible page against every type of color blindness, with no issues present. Unfortunately, the checker doesn't support loggin in, so the logged in only pages were not able to be checked this way.
+* All color contrasts were checked using [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/), with all large-scale text having a contrast ratio of at least 3:1, and all other text having a contrast ratio of at least 4.5:1.
 
-### Image Text
-* ALT TEXT
-* ARIA-LABEL / ARIA-LABELLEDBY
+### Visually-Impaired Users
+* All images have meaningful alt text.
+* All icons have an aria-label to describe them, unless semantic text is also visible.
+* All buttons that need more description for a visually-impaired user have an aria-labelledby attribute attached to them.
 
-### Screen Readers
-* DOM ORDER
-
-### Switch Users
-* FOCUS / HOVER / ACTIVE
+### Assistive Technologies
+* All actions are keyboard-focusable.
+* All interactable elements have hover and focus styling applied to them.
 
 ### Reading Level
-* READING LEVEL OF AGE 9 - AVERAGE
+* All text content on the site has a maximum reading level of age 9, to aid people with cognitive impairments, and people who don't speak English as a first language, among others.
+* All text content on this site has been tested against the Automated Readability Index (ARI) on [Readability Formulas](https://readabilityformulas.com/free-readability-formula-tests.php).
+
+---
+
+## Lighthouse
+I tested my website using DevTools Lighthouse feature, and got these results:
+
+
+### Desktop
+![Lighthouse desktop first try](static/docs/img/lighthousedesktop.png)
+
+
+### Mobile
+![Lighthouse mobile first try](static/docs/img/lighthousemobile.png)
+
+
+### Performance:
+* 
+
+
+### Accessibility:
+* 
+
+
+### Best Practices:
+* 
+
+
+### SEO:
+* 
+
+
+## WebPageTest
+* [WebPageTest Results](LINK)
 
 ---
 

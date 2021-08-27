@@ -9,7 +9,7 @@
 
 [Here is a link to the final project](https://ms4-lead-shot-hazard.herokuapp.com/homepage)
 
-This site is a merchandise and music e-commerce site for the band Lead Shot Hazard&#8482;, a ska punk band from West London. This site is fully responsive on all modern screen sizes, and it allowed the band to easily add, edit or delete their merch and music that they have to sell.
+This site is a merchandise and music e-commerce site for the band Lead Shot Hazard, a ska punk band from West London. This site is fully responsive on all modern screen sizes, and it allowed the band to easily add, edit or delete their merch and music that they have to sell.
 
 This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it uses a SQL database through PostgreSQL.
 
@@ -53,16 +53,8 @@ This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it 
     * [Making a Local Clone](#making-a-local-clone)
 
 * [Testing](#testing)
-    * [W3C Validator](#w3c-validator)
-    * [Testing User Stories](#testing-user-stories)
-    * [Full Testing](#full-testing)
     * [Solved Bugs](#solved-bugs)
     * [Known Bugs](#known-bugs)
-    * [Lighthouse](#lighthouse)
-        * [Performance](#performance)
-        * [Accessibility](#accessibility)
-        * [Best Practices](#best-practices)
-        * [SEO](#seo)
 
 * [Credits](#credits)
     * [Code](#code)
@@ -89,7 +81,7 @@ This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it 
 ## User Experience (UX)
 ### Initial Discussion
 * I wanted to create a website linked to a database, which allows users to login, search for and find merchandise and music.
-* This is something that Lead Shot Hazard&#8482; has been discussing for a while, but we haven't had time to create until now.
+* This is something that Lead Shot Hazard; has been discussing for a while, but we haven't had time to create until now.
 * I wanted the band to be able to add, edit and delete items of merchandise and music for sale.
 
 
@@ -142,7 +134,7 @@ MAYBE CONSIDER A TABLE AS WELL? USER STORY ID, AS A/AN, I WANT TO BE ABLE TO, SO
 SCOPE???? MORE DETAILED BREAKDOWN OF SCOPE WOULD BE GOOD
 
 ### Project Goals
-* The main goal is to create an easily editable merchandise site for Lead Shot Hazard&#8482;, so it takes very little time to keep up to date with their constantly changing merchandise and music selection.
+* The main goal is to create an easily editable merchandise site for Lead Shot Hazard, so it takes very little time to keep up to date with their constantly changing merchandise and music selection.
 * This project also demonstrates my understanding of maintaining a database attached to a website, with full CRUD (Create, Read, Update and Delete) functionality.
 
 ---
@@ -166,9 +158,9 @@ SCOPE???? MORE DETAILED BREAKDOWN OF SCOPE WOULD BE GOOD
 
 
 ### Imagery
-* The images used in this project are all photos of the band Lead Shot Hazard&#8482;, their merchandise, or their logo.
-* These have been used to create a strong link between the band and the website, ensuring that all visitors can tell at first glance that this site is for Lead Shot Hazard&#8482;.
-* As I am a member of Lead Shot Hazard&#8482;, I own joint rights to use all images and designs that the band have created.
+* The images used in this project are all photos of the band Lead Shot Hazard, their merchandise, or their logo.
+* These have been used to create a strong link between the band and the website, ensuring that all visitors can tell at first glance that this site is for Lead Shot Hazard.
+* As I am a member of Lead Shot Hazard, I own joint rights to use all images and designs that the band have created.
 BOX SHADOW, GRADIENTS, UNDERLINED LINKS, BUTTONS, ICONS
 
 
@@ -339,8 +331,8 @@ The navigation bar changes depending on user status and screen size:
 
 
 ### Audio
-* All audio is owned by the band Lead Shot Hazard&#8482;.
-* As I am a member of Lead Shot Hazard&#8482;, I own joint rights to use all audio that the band has created.
+* All audio is owned by the band Lead Shot Hazard.
+* As I am a member of Lead Shot Hazard, I own joint rights to use all audio that the band has created.
 
 
 ### Defensive Design
@@ -642,55 +634,6 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 ---
 
 ## Testing
-### Testing technologies
-* HTML was validated using W3C HTML Markup Validator.
-* CSS was validated using W3C Jigsaw CSS Validator.
-* JS was validated using JSHint.
-* Python was validated using Pylint.
-* Accessibility was checked via WebAim's W.A.V.E, Contrast Checker, and Google Chrome's Lighthouse.
-* Toptal's Colorfilter was used to check that the site was suitable for colorblind users, as well as manually testing it with my colorblind partner.
-* Unit Testing was done using django’s testing tools.
-
-### W3C Validator
-W3C Markup Validator, W3C CSS Validator, JSHint, and PEP8 Online were used to validate the project to ensure there were no syntax errors within the site.
-
-1. W3C HTML Markup Validator
-    * [Homepage](LINK)
-    * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
-
-2. W3C CSS Validator
-    * [Homepage](LINK)
-    * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
-
-3. JSHint
-    * [JSHint](https://jshint.com/)
-    * Explanations
-
-![Image of JSHint results](static/docs/img/jshint.png)
-
-4. PEP8 Online
-    * [PEP8 Online](http://pep8online.com/)
-
-![Image of PEP8 Online results](static/docs/img/pep8.png)
-
-
-### Testing User Stories
-#### First Time Visitor Goals
-##### Goal
-* How
-
-
-#### Returning Visitor Goals
-##### Goal
-* How
-
-
-#### Admin Goals
-##### Goal
-* How
-
-
-### Full Testing
 [Click here to view the full testing steps](static/docs/TESTING.md) that were completed on every device and browser, and screenshots of testing.
 
 
@@ -701,38 +644,6 @@ W3C Markup Validator, W3C CSS Validator, JSHint, and PEP8 Online were used to va
 
 ### Known Bugs
 * None found, if any errors are found, please contact me via my GitHub ([Abibubble](https://github.com/Abibubble/)) to get them fixed.
-
-
-### Lighthouse
-I tested my website using DevTools Lighthouse feature, and got these results:
-
-
-#### Desktop
-![Lighthouse desktop first try](static/docs/img/lighthousedesktop.png)
-
-
-#### Mobile
-![Lighthouse mobile first try](static/docs/img/lighthousemobile.png)
-
-
-#### Performance:
-* 
-
-
-#### Accessibility:
-* 
-
-
-#### Best Practices:
-* 
-
-
-#### SEO:
-* 
-
-
-### WebPageTest
-* [WebPageTest Results](LINK)
 
 ---
 
@@ -747,8 +658,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 
 
 ### Media
-* All media on this site is owned by Lead Shot Hazard&#8482;.
-* As a member of Lead Shot Hazard&#8482;, I own joint rights to use all media and images of the band.
+* All media on this site is owned by Lead Shot Hazard.
+* As a member of Lead Shot Hazard, I own joint rights to use all media and images of the band.
 
 
 ### Acknowledgements
@@ -756,4 +667,4 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * [Eve Crabb](https://github.com/evecrabb), for her support through my learning, for being a sounding board for bug fixes, and for being the best boss ever.
 * The team at [Code Institute](https://codeinstitute.net/), for teaching me the necessary skills to create this site.
 * My partner Conor Nye for his continuous support throughout my coding journey.
-* My bandmates in Lead Shot Hazard&#8482;, for giving me the inspiration to create this site.
+* My bandmates in Lead Shot Hazard, for giving me the inspiration to create this site.
