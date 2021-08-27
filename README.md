@@ -78,6 +78,8 @@ This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it 
 
 &#10060; <-- No / Not visible
 
+[Back to the top](#lead-shot-hazard)
+
 ---
 
 ## User Experience (UX)
@@ -138,6 +140,8 @@ SCOPE???? MORE DETAILED BREAKDOWN OF SCOPE WOULD BE GOOD
 ### Project Goals
 * The main goal is to create an easily editable merchandise site for Lead Shot Hazard, so it takes very little time to keep up to date with their constantly changing merchandise and music selection.
 * This project also demonstrates my understanding of maintaining a database attached to a website, with full CRUD (Create, Read, Update and Delete) functionality.
+
+[Back to the top](#lead-shot-hazard)
 
 ---
 
@@ -365,11 +369,14 @@ The navigation bar changes depending on user status and screen size:
     * A custom 404 error page will show if the user attempts to visit a page that doesn't exist.
 * WEBHOOKS?
 
+[Back to the top](#lead-shot-hazard)
 
 ---
 
 ## Database Design
 INFO HERE
+
+[Back to the top](#lead-shot-hazard)
 
 ---
 
@@ -476,6 +483,8 @@ INFO HERE
 [RandomKeygen](https://randomkeygen.com/) was used to generate a strong `SECRET_KEY`.
 #### pip:
 [pip](https://pip.pypa.io/en/stable/) was used to install the required dependancies for this site.
+
+[Back to the top](#lead-shot-hazard)
 
 ---
 
@@ -629,6 +638,8 @@ This site was deployed to Heroku by following these steps:
 
 For a more detailed version of these steps, go to the [Github Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) page on this topic.
 
+[Back to the top](#lead-shot-hazard)
+
 ---
 
 ## Testing
@@ -642,6 +653,8 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 
 ### Known Bugs
 * None found, if any errors are found, please contact me via my GitHub ([Abibubble](https://github.com/Abibubble/)) to get them fixed.
+
+[Back to the top](#lead-shot-hazard)
 
 ---
 
@@ -667,3 +680,5 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 * The team at [Code Institute](https://codeinstitute.net/), for teaching me the necessary skills to create this site.
 * My partner Conor Nye for his continuous support throughout my coding journey.
 * My bandmates in Lead Shot Hazard, for giving me the inspiration to create this site.
+
+[Back to the top](#lead-shot-hazard)
