@@ -3,50 +3,81 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Metas -->
-        <meta name="description" content="A merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
-        <meta name="keywords" content="lead, shot, hazard, ska, punk, band, merch, merchandise, skapunk, london, brass, trombone, saxophone">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
-        <meta name="robots" content="index, follow">
-        <title>Lead Shot Hazard</title>
-        <!-- Facebook, LinkedIn, Google -->
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Lead Shot Hazard" />
-        <meta property="og:description" content="A merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
-        <meta property="og:image" content="static/docs/img/finalsite.png" />
-        <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
-        <meta property="og:site_name" content="Lead Shot Hazard" />
-        <!-- Twitter -->
-        <meta name="twitter:title" content="Lead Shot Hazard">
-        <meta name="twitter:description" content="A merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
-        <meta name="twitter:image" content="static/docs/img/finalsite.png">
-        <meta name="twitter:site" content="@LeadShotHazard">
-        <meta name="twitter:creator" content="@Abi_Hazard">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/static/img/site.webmanifest" crossorigin="use-credentials">
+        {% block meta %}
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        {% endblock %}
+            
+        {% block extra_meta %}
+            <!-- Metas -->
+            <meta name="description" content="A merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+            <meta name="keywords" content="lead, shot, hazard, ska, punk, band, merch, merchandise, skapunk, london, brass, trombone, saxophone">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
+            <meta name="robots" content="index, follow">
+            <!-- Facebook, LinkedIn, Google -->
+            <meta property="og:type" content="article" />
+            <meta property="og:title" content="Lead Shot Hazard" />
+            <meta property="og:description" content="A merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
+            <meta property="og:image" content="static/docs/img/finalsite.png" />
+            <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
+            <meta property="og:site_name" content="Lead Shot Hazard" />
+            <!-- Twitter -->
+            <meta name="twitter:title" content="Lead Shot Hazard">
+            <meta name="twitter:description" content="A merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+            <meta name="twitter:image" content="static/docs/img/finalsite.png">
+            <meta name="twitter:site" content="@LeadShotHazard">
+            <meta name="twitter:creator" content="@Abi_Hazard">
+            <!-- Font Awesome -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+            <!-- Google Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+            <!-- Favicon -->
+            <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+            <link rel="manifest" href="/static/img/site.webmanifest" crossorigin="use-credentials">
+        {% endblock %}
+
+        {% block extra_css %}
+        {% endblock %}
+
+        {% block extra_js %}
+        {% endblock %}
+
+        {% block core_css %}
         <!-- Local stylesheets -->
         <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <!-- Boostrap scripts and jQuery -->
+        {% endblock %}
+        
+        {% block core_js %}
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        {% endblock %}
+
+        <title>Lead Shot Hazard {% block extra_title %}{% endblock %}</title>
     </head>
 
     <body>
+        <header class="container-fluid fixed-top"></header>
 
+        {% if messages %}
+            <div class="message-container"></div>
+        {% endif %}
+
+        {% block page_header %}
+        {% endblock %}
+
+        {% block content %}
+        {% endblock %}
+
+        {% block post_load_js %}
+        {% endblock %}
     </body>
 </html>
