@@ -1,0 +1,10 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    height: calc(100vh - 164px);
+    color: #fff;
+    font-family: Lato;
+}
