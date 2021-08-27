@@ -3,20 +3,44 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: black !important;
     height: calc(100vh - 164px);
-    color: #fff;
-    font-family: Lato;
+    color: #fff !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     text-transform: uppercase;
 }
 
-/* from Bulma */
+a {
+    color: white !important;
+}
+
+h4 {
+    font-size: 1.1rem !important;
+}
+
+.logo {
+    font-family: AlumniSans, sans-serif;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.bg-yellow {
+    background-color: #FEE101;
+}
+
+/* -------------------------------- Footer */
+
+.socials-links {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+    width: 48px;
+    height: 48px;
 }
 
 /* -------------------------------- Media Queries */

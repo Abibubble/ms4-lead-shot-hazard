@@ -66,10 +66,10 @@
 
     <body>
         <header class="container-fluid fixed-top">
-            <div class="row">
+            <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h1 class="my-0 logo-font">Lead Shot Hazard</h1>
+                        <h1 class="my-0 pt-2 logo">Lead Shot Hazard</h1>
                     </a>
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -89,10 +89,10 @@
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item dropdown">
-                            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
                                     <div><i class="fas fa-user fa-lg"></i></div>
-                                    <p class="my-0">My Account</p>
+                                    <p class="my-0 text-capitalize">My Account</p>
                                 </div>
                             </a>
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -109,7 +109,7 @@
                             </div>
                         </li>
                         <li class="list-inline-item">
-                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-yellow{% endif %} nav-link" href="">
                                 <div class="text-center">
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0">
@@ -124,6 +124,21 @@
                         </li>
                     </ul>
                 </div>
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark w-100">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    {% include 'includes/mobile-top-header.html' %}
+                    {% include 'includes/main-nav.html' %}
+                </nav>
+            </div>
+            <div id="delivery-banner" class="row text-center">
+                <div class="col bg-yellow text-black">
+                    <h4 class="my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>                
+                </div>            
             </div>
         </header>
 
@@ -136,6 +151,8 @@
 
         {% block content %}
         {% endblock %}
+
+        {% include 'includes/footer.html' %}
 
         {% block post_load_js %}
         {% endblock %}
