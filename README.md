@@ -48,6 +48,8 @@ This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it 
     * [Frameworks, Libraries and Others](#frameworks-libraries-and-others)
 
 * [Deployment](#deployment)
+    * [Basic Requirements](#basic-requirements)
+    * [Environment Variables](#environment-variables)
     * [Initial Deployment](#initial-deployment)
     * [How to Fork it](#how-to-fork-it)
     * [Making a Local Clone](#making-a-local-clone)
@@ -426,10 +428,6 @@ INFO HERE
 [favicon.io](https://favicon.io/) used to create a site favicon.
 #### Amazon AWS S3:
 [Amazon AWS S3](https://s3.console.aws.amazon.com/s3) was used to host images and static files for this site.
-
-
-### Database Design
-#### DATABASE INFO
 
 
 ### Packages
