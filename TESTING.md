@@ -3,7 +3,14 @@
 ## Contents
 
 * [Icon Key](#icon-key)
-* [Devices and Browsers](#devices-and-browsers)
+* [Manual Testing](#manual-testing)
+    * [Devices and Browsers](#devices-and-browsers)
+    * [Testing Technologies](#testing-technologies)
+    * [Testing User Stories](#testing-user-stories)
+        * [Business Goals](#business-goals)
+        * [First Time User Goals](#first-time-user-goals)
+        * [Returning User Goals](#returning-user-goals)
+        * [Admin Goals](#admin-goals)
 * [Links and Navigation](#links-and-navigation)
     * [Navigation Bar](#navigation-bar)
     * [Modals](#modals)
@@ -22,7 +29,7 @@
     * [Stripe](#stripe)
     * [Pagination](#pagination)
     * [404](#404)
-* [Validation](#validation)
+    * [Validation](#validation)
 * [Database](#database)
 * [Accessibility](#accessibility)
     * [Tap Targets](#tap-targets)
@@ -39,6 +46,7 @@
     * [Tablet](#tablet)
     * [Mobile](#mobile)
 
+---
 
 ## Icon key
 
@@ -48,52 +56,11 @@
 
 &#128683; <-- Logged Out only
 
-## Testing technologies
-* HTML was validated using [W3C HTML Markup Validator](https://validator.w3.org/).
-* CSS was validated using [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/).
-* JS was validated using [JSHint](https://jshint.com/).
-* Python was validated using [PEP8 Online](http://pep8online.com/) and [Flake8](https://flake8.pycqa.org/en/latest/).
-* Accessibility was checked via [WebAim's W.A.V.E](https://wave.webaim.org/), [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/), and [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse).
-* [Toptal Color Blind Filter](https://www.toptal.com/designers/colorfilter/) was used to check that the site was suitable for color blind users, as well as manually testing it with my color blind partner.
-* Unit Testing was done using django’s testing tools.
+---
 
-1. W3C HTML Markup Validator
-    * [Homepage](LINK)
-    * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
-
-2. W3C CSS Validator
-    * [Homepage](LINK)
-    * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
-
-3. JSHint
-    * [JSHint](https://jshint.com/)
-    * Explanations
-
-![Image of JSHint results](static/docs/img/jshint.png)
-
-4. PEP8 Online
-    * [PEP8 Online](http://pep8online.com/)
-
-![Image of PEP8 Online results](static/docs/img/pep8.png)
-
-
-### Testing User Stories
-#### First Time Visitor Goals
-##### Goal
-* How
-
-
-#### Returning Visitor Goals
-##### Goal
-* How
-
-
-#### Admin Goals
-##### Goal
-* How
-
-## Devices and Browsers
-### Desktop / Laptop
+## Manual Testing
+### Devices and Browsers
+#### Desktop / Laptop
 1. Google Chrome
     * All tested and working correctly.
 
@@ -106,11 +73,11 @@
 4. Safari
     * All tested and working correctly.
 
-### Tablet
+#### Tablet
 1. Safari
     * All tested and working correctly.
 
-### Mobile
+#### Mobile
 1. Google Chrome
     * All tested and working correctly.
 
@@ -120,7 +87,7 @@
 3. Samsung Internet
     * All tested and working correctly.
 
-### Full devices and browsers
+#### Full devices and browsers
 * The website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge, Safari and Samsung Internet browsers.
 * Testing was not done on Internet Explorer due to it being depreciated in favour of Microsoft Edge.
 * The website was viewed on a variety of devices, including:
@@ -142,10 +109,138 @@
 
 A large amount of testing was done to ensure that all pages were displayed, and all functionality worked as it should. Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
-On every device and browser listed above, I tested the following:
+---
+
+### Testing technologies
+* HTML was validated using [W3C HTML Markup Validator](https://validator.w3.org/).
+* CSS was validated using [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/).
+* JavaScript was validated using [JSHint](https://jshint.com/).
+* Python was validated using [PEP8 Online](http://pep8online.com/) and [Flake8](https://flake8.pycqa.org/en/latest/).
+* Accessibility was checked via [WebAim's W.A.V.E](https://wave.webaim.org/), [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/), and [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse).
+* [Toptal Color Blind Filter](https://www.toptal.com/designers/colorfilter/) was used to check that the site was suitable for color blind users, as well as manually testing it with my color blind partner.
+* Unit Testing was done using [Django’s testing tools](https://docs.djangoproject.com/en/3.2/topics/testing/).
+
+1. W3C HTML Markup Validator
+    * [Homepage](LINK)
+    * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
+
+2. W3C CSS Validator
+    * [Homepage](LINK)
+    * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
+
+3. JSHint
+    * [JSHint](https://jshint.com/)
+    * EXPLANATIONS
+
+![Image of JSHint results](static/docs/img/jshint.png)
+
+4. PEP8 Online
+    * [PEP8 Online](http://pep8online.com/)
+
+![Image of PEP8 Online results](static/docs/img/pep8.png)
+
+### Testing User Stories
+#### Business Goals
+##### Sell merchandise and music.
+* How
+
+##### Match the design and personality of the band.
+* How
+
+##### Offer a website that is easy to navigate and free of confusion.
+* How
+
+##### Become another source of revenue for the band.
+* How
+
+##### Become a platform where fans can follow the future gigs of the band.
+* How
+
+
+#### First Time Visitor Goals
+##### Easily navigate the site.
+* How
+
+##### Intuitively and easily understand what to do.
+* How
+
+##### Create an account for future purchases.
+* How
+
+##### Search for a specific product and it's information.
+* How
+
+##### Browse through all merch.
+* How
+
+##### Buy products online as a guest.
+* How
+
+##### Get visual feedback when an action on the site is completed.
+* How
+
+##### Receive a confirmation email with all relevant information.
+* How
+
+##### Contact the band through the website.
+* How
+
+##### View full product information.
+* How
+
+##### Add or remove items from the shopping bag.
+* How
+
+##### Add multiple items to the shopping bag.
+* How
+
+##### Receive an update of the shopping bag when the user performs an action.
+* How
+
+##### Purchase products securely through Stripe.
+* How
+
+
+#### Returning Visitor Goals
+##### Log in / out.
+* How
+
+##### Be confident that the user's password is be stored securely.
+* How
+
+##### Navigate intuitively, with no need to use the browser's back button.
+* How
+
+##### Create, update or delete the user's personal information.
+* How
+
+##### See a history of the user's previous purchases.
+* How
+
+
+#### Admin Goals
+##### Be confident that a user can't to brute force their way into the restricted pages.
+* How
+
+##### Edit any product.
+* How
+
+##### Delete any product.
+* How
+
+##### Add a new product.
+* How
+
+##### Create a stock of products to be sold online and keep track of the sales as a superuser.
+* How
+
+---
 
 ## Links and Navigation
+On every device and browser listed above, I tested the following:
+
 ### Navigation Bar
+#### Logo
 * Click the Logo to take the user to the Home page from the Home page.
 * Click the Logo to take the user to the Home page from the Product Details page.
 * Click the Logo to take the user to the Home page from the Shopping Bag page.
@@ -156,7 +251,7 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Logo to take the user to the Home page from the Log In page.
 * &#128683; Click the Logo to take the user to the Home page from the Register page.
 
-
+#### Home
 * Click the Home button to take the user to the Home page from the Home page.
 * Click the Home button to take the user to the Home page from the Product Details page.
 * Click the Home button to take the user to the Home page from the Shopping Bag page.
@@ -167,7 +262,7 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Home button to take the user to the Home page from the Log In page.
 * &#128683; Click the Home button to take the user to the Home page from the Register page.
 
-
+#### Profile
 * &#128100; Click the Profile button to take the user to the Profile page from the Home page.
 * &#128100; Click the Profile button to take the user to the Profile page from the Product Details page.
 * &#128100; Click the Profile button to take the user to the Profile page from the Shopping Bag page.
@@ -176,7 +271,7 @@ On every device and browser listed above, I tested the following:
 * &#128100; Click the Profile button to take the user to the Profile page from the Profile page.
 * &#128272; Click the Profile button to take the user to the Profile page from the Manage Products page.
 
-
+#### Manage Products
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Home page.
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Product Details page.
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Shopping Bag page.
@@ -185,12 +280,12 @@ On every device and browser listed above, I tested the following:
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Profile page.
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Manage Products page.
 
-
+#### Add / Edit / Delete Product
 * &#128272; Click the Add button to take the user to the Add page from the Manage Products page.
 * &#128272; Click the Edit button to take the user to the Edit page from the Manage Products page.
 * &#128272; Click the Delete button to open the Delete modal from the Manage Products page.
 
-
+#### Log Out
 * &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Home page.
 * &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Product Details page.
 * &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Shopping Bag page.
@@ -199,7 +294,7 @@ On every device and browser listed above, I tested the following:
 * &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Profile page.
 * &#128272; Click the Log Out button to log the user out and take them to the Log In page from the Manage Products page.
 
-
+#### Log In
 * &#128683; Click the Log In button to take the user to the Log In page from the Home page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Log In page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Register page.
@@ -208,7 +303,7 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Log In button to take the user to the Log In page from the Checkout page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Order Success page.
 
-
+#### Register
 * &#128683; Click the Register button to take the user to the Register page from the Home page.
 * &#128683; Click the Register button to take the user to the Register page from the Log In page.
 * &#128683; Click the Register button to take the user to the Register page from the Register page.
@@ -219,12 +314,12 @@ On every device and browser listed above, I tested the following:
 
 ---
 
-### Modals
+## Modals
 * &#128272; The Delete modal is visible in front of all other items on the screen, and clearly displays the Cancel and Delete buttons.
 
 ---
 
-### External Links
+## External Links
 * The Facebook social media icon opens up the Lead Shot Hazard Facebook page in a new tab.
 * The Bandcamp social media icon opens up the Lead Shot Hazard Bandcamp page in a new tab.
 * The Instagram social media icon opens up the Lead Shot Hazard Instagram page in a new tab.
@@ -360,12 +455,19 @@ On every device and browser listed above, I tested the following:
 * It states clearly that it's a 404 error, and that the page hasn't been found.
 * It directs the user to the navigation bar to continue back to the safety of the site.
 
----
-
-## Validation
-FORM VALIDATION
-PASSWORD VALIDATION
-EMAIL VALIDATION
+### Validation
+* Form validation
+    * This has been used on every form input on the site to ensure the correct data is added.
+    * If incorrect data is added, red warning text appears, to instruct the user of how to fix the error.
+* Adding products to the bag
+    * Custom validation has been added to ensure that users can't:
+        * Add less than one of a product into their bag (such as adding a 0 quantity of a product).
+        * Add more than 99 of a product into their bag.
+* Password validation
+    * When a user is registering for an account, the site ensures no typos happen by prompting the user to enter the password twice, with the site checking to confirm that the passwords match.
+* Email validation
+    * When a user is registering for an account, the site ensures the correct email address has been entered by sending a verification email to the email address the user has supplied.
+    * The account cannot be used until the user has verified that their email address is correct by following the link in the validation email.
 
 ---
 

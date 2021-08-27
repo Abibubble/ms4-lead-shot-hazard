@@ -575,7 +575,7 @@ This site was deployed to Heroku by following these steps:
     * Once the app has finished building, click '**Open App**' to open your site.
 23. If you don't want to automatically deploy to Heroku, do the following:
     * Enter `git push -u heroku main` or `git push -u heroku master`.
-24. Your app will now be running at https://{your-app-name}.herokuapp.com/
+24. Your app will now be running at **https://{your-app-name}.herokuapp.com/**
 
 
 ### How to Fork it
@@ -655,6 +655,7 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 
 ### Content
 * All content was created by [Abi Harrison](https://github.com/Abibubble).
+* [Click here to view links to all sites I used for research or testing](static/docs/LINKS.md)
 
 
 ### Media
