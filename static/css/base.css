@@ -42,11 +42,39 @@ h4 {
     border: 1px solid black !important;
 }
 
+.bg-black {
+    background-color: black !important;
+}
+
+.margin-auto {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
 .tap-target, .nav-item {
     height: 48px !important;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: black;
+    z-index: -1;
+}
+
+.card {
+    padding: 5px;
+}
+
 /* -------------------------------- Footer */
+
+.footer-allowance {
+    height: 100px;
+}
 
 .socials-links {
     font-size: 24px;
@@ -79,6 +107,16 @@ h4 {
     }
   
     .header-container {
-        padding-top: 164px;
+        padding-top: 165px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 165px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }

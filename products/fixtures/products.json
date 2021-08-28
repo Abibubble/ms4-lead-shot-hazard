@@ -139,7 +139,7 @@
         "price": 10.00,
         "category": 2,
         "image_url": "https://i.imgur.com/fYSMbHo.jpg",
-        "image": "ftfof-full.jpeg"
+        "image": "ftfof-album-full.jpeg"
     }
 }, {
     "pk": 12,
@@ -178,6 +178,6 @@
         "price": 5.00,
         "category": 3,
         "image_url": "https://i.imgur.com/EvHnHPZ.jpg",
-        "image": "lsh-mug.png"
+        "image": "lsh-mug.jpeg"
     }
 }]

@@ -18,18 +18,32 @@
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
-            <div class="col">
-
-            </div>
+            <div class="col"></div>
         </div>
     </div>
 {% endblock %}
 
 {% block content %}
-    <section class="container h-100">
-        <div class="row h-75 justify-content-center">
-            <div class="col-6 my-auto">
-                <img src="{{ MEDIA_URL }}roundall.png" alt="The Lead Shot Hazard roundall logo" class="w-100">
+    <div class="overlay"></div>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="image-container my-5">
+                    <a href="{{ product.image.url }}" target="_blank">
+                        {% if product.image %}
+                            <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid">
+                        {% else %}
+                            <img src="{{ MEDIA_URL }}roundall.png" alt="{{ product.name }}" class="card-img-top img-fluid">
+                        {% endif %}
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="product-details-container mb-5 mt-md-5">
+                    <h2 class="mb-0">{{ product.name }}</h2>
+                    <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                    <p class="mt-3 text-capitalize">{{ product.description }}</p>
+                </div>
             </div>
         </div>
     </section>

@@ -1,18 +1,18 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item dropdown">
+        <li class="nav-item">
             <a class="font-weight-bold nav-link mr-5" href="#">
                 T-shirts
             </a>
         </li>
         
-        <li class="nav-item dropdown">
+        <li class="nav-item">
             <a class="font-weight-bold nav-link mr-5" href="#">
                 Music
             </a>
         </li>
         
-        <li class="nav-item dropdown">
+        <li class="nav-item">
             <a class="font-weight-bold nav-link mr-5" href="#">
                 Misc.
             </a>
@@ -23,10 +23,10 @@
                 View Merch by...
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Merch</a>
+                <a href="" class="dropdown-item text-black">By Price</a>
+                <a href="" class="dropdown-item text-black">By Rating</a>
+                <a href="" class="dropdown-item text-black">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item text-black">All Merch</a>
             </div>
         </li>
     </ul>

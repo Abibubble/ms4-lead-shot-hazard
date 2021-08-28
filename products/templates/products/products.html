@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_meta %}
+    <!-- Metas -->
+    <meta name="description" content="A merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+    <meta name="keywords" content="lead, shot, hazard, ska, punk, band, merch, merchandise, skapunk, london, brass, trombone, saxophone">
+    <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
+    <!-- Facebook, LinkedIn, Google -->
+    <meta property="og:title" content="Lead Shot Hazard" />
+    <meta property="og:description" content="A merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
+    <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Lead Shot Hazard">
+    <meta name="twitter:description" content="A merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h1>Products</h1>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-container col-10 offset-1 text-black">
+                <div class="row mt-1 mb-2"></div>
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card h-100 border-0">
+                                <a href="{% url 'product_detail' product.id %}">
+                                    {% if product.image %}
+                                        <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid">
+                                    {% else %}
+                                        <img src="{{ MEDIA_URL }}roundall.png" alt="{{ product.name }}" class="card-img-top img-fluid">
+                                    {% endif %}
+                                </a>
+                                <div class="card-body pb-0">
+                                    <p class="mb-0">{{ product.name }}</p>
+                                </div>
+                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="lead mb-0 text-left font-weight-bold">
+                                                £{{ product.price }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% if forloop.counter|divisibleby:1 %}
+                            <div class="col-12 d-sm-none mb-4"></div>
+                        {% endif %}
+
+                        {% if forloop.counter|divisibleby:2 %}
+                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-4"></div>
+                        {% endif %}
+
+                        {% if forloop.counter|divisibleby:3 %}
+                            <div class="col-12 d-none d-lg-block d-xl-none mb-4"></div>
+                        {% endif %}
+
+                        {% if forloop.counter|divisibleby:4 %}
+                            <div class="col-12 d-none d-xl-block mb-4"></div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
