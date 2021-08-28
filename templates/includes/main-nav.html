@@ -29,9 +29,8 @@
                 View Merch by...
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item text-black">By Price</a>
-                <a href="" class="dropdown-item text-black">By Rating</a>
-                <a href="" class="dropdown-item text-black">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item text-black">By Price</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item text-black">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item text-black">All Merch</a>
             </div>
         </li>
