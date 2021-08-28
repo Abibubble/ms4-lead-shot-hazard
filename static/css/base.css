@@ -63,6 +63,18 @@ h4 {
     color: #ffffff !important;
 }
 
+.btt-button {
+    height: 48px;
+    width: 48px;
+    position: fixed;
+    bottom: 67px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
 /* -------------------------------- Utilities */
 
 .header-container {
