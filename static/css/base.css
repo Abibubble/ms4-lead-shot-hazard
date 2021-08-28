@@ -3,15 +3,18 @@ html {
 }
 
 body {
-    background-color: black !important;
+    background-color: #000000 !important;
     height: calc(100vh - 164px);
     color: #fff !important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     text-transform: uppercase;
 }
 
+
+/* -------------------------------- Text */
+
 a {
-    color: white !important;
+    color: #ffffff !important;
 }
 
 h4 {
@@ -23,27 +26,47 @@ h4 {
 }
 
 .text-black {
-    color: black !important;
+    color: #000000 !important;
 }
+
+.text-tag-dark {
+    color: #799CAF !important;
+}
+
+.text-tag-light {
+    color: #3F5B69 !important;
+}
+
+/* -------------------------------- Background */
 
 .bg-yellow {
     background-color: #FEE101;
 }
 
-.btn {
-    color: white !important;
+.bg-black {
+    background-color: #000000 !important;
 }
 
+/* -------------------------------- Borders */
+
 .border {
-    border: 1px solid white !important;
+    border: 1px solid #ffffff !important;
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #000000 !important;
 }
 
-.bg-black {
-    background-color: black !important;
+/* -------------------------------- Buttons */
+
+.btn {
+    color: #ffffff !important;
+}
+
+/* -------------------------------- Utilities */
+
+.header-container {
+    padding-top: 165px;
 }
 
 .margin-auto {
@@ -62,12 +85,24 @@ h4 {
     top: 0;
     left: 0;
     position: fixed;
-    background: black;
+    background: #000000;
     z-index: -1;
 }
 
 .card {
     padding: 5px;
+}
+
+a.category-badge > span.badge {
+    border: 1px solid #000000 !important;
+}
+
+/* -------------------------------- States */
+
+a.category-badge > span.badge:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
 }
 
 /* -------------------------------- Footer */
@@ -105,17 +140,9 @@ h4 {
         left: 0;
         z-index: 1030;
     }
-  
-    .header-container {
-        padding-top: 165px;
-    }
 }
 
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 165px;
-    }
-
     body {
         height: calc(100vh - 116px);
     }
