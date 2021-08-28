@@ -1,0 +1,22 @@
+[{
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+        "name": "tshirts",
+        "friendly_name": "T-Shirts"
+    }
+}, {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+        "name": "music",
+        "friendly_name": "Music"
+    }
+}, {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+        "name": "misc",
+        "friendly_name": "Misc."
+    }
+}]

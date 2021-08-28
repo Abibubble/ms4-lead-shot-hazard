@@ -13,6 +13,7 @@ This file includes a list of all sites I have used for research or testing.
 * [Readability Level - Yale University](https://usability.yale.edu/web-accessibility/articles/readability)
 * [Readability Level - AbilityNet](https://abilitynet.org.uk/news-blogs/writing-9-year-olds-six-expert-tips-creating-great-accessible-web-content-everyone)
 * [Github Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
+* [Size Matters - Medium](https://medium.com/@zacdicko/size-matters-accessibility-and-touch-targets-56e942adc0cc)
 
 ---
 

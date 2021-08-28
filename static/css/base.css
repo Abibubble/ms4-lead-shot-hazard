@@ -30,6 +30,22 @@ h4 {
     background-color: #FEE101;
 }
 
+.btn {
+    color: white !important;
+}
+
+.border {
+    border: 1px solid white !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.tap-target, .nav-item {
+    height: 48px !important;
+}
+
 /* -------------------------------- Footer */
 
 .socials-links {

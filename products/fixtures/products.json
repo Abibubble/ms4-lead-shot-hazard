@@ -1,0 +1,183 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp001",
+        "name": "Over Your Shoulder Baseball Tee",
+        "description": "Long sleeve baseball tee with single colour screen print. We suggest you order one up on your regular size as these come up tight, particularly on the arms. Includes 'Hacky Sack? Let's Have A Rebellion' high-quality download in MP3, FLAC and more.",
+        "has_sizes": true,
+        "price": 10.00,
+        "category": 1,
+        "image_url": "https://i.imgur.com/oK4CNuN.jpg",
+        "image": "baseball-tee.jpeg"
+    }
+}, {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp002",
+        "name": "Chained Tee - Ladies Fit",
+        "description": "2 colour screen print on black. Includes 'Hacky Sack? Let's Have A Rebellion' high-quality download in MP3, FLAC and more.",
+        "has_sizes": true,
+        "price": 10.00,
+        "category": 1,
+        "image_url": "https://i.imgur.com/jkNrXkg.jpg",
+        "image": "chains-ladies.jpeg"
+    }
+}, {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp003",
+        "name": "Chained Tee - Straight Fit",
+        "description": "2 colour screen print on black. Includes 'Hacky Sack? Let's Have A Rebellion' high-quality download in MP3, FLAC and more.",
+        "has_sizes": true,
+        "price": 10.00,
+        "category": 1,
+        "image_url": "https://i.imgur.com/8Y8f8KC.jpg",
+        "image": "chains-mens.jpeg"
+    }
+}, {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp004",
+        "name": "Fires Album Shirt",
+        "description": "Fires To Find Our Friends album artwork shirt. 3 colour screen print. Includes 'Hacky Sack? Let's Have A Rebellion' high-quality download in MP3, FLAC and more.",
+        "has_sizes": true,
+        "price": 10.00,
+        "category": 1,
+        "image_url": "https://i.imgur.com/efjsyTC.jpg",
+        "image": "fires-album-tee.jpeg"
+    }
+}, {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp005",
+        "name": "League Perry Polo",
+        "description": "Navy blue traditional Perry-esque poloshirt. Includes 'Hacky Sack? Let's Have A Rebellion' high-quality download in MP3, FLAC and more.",
+        "has_sizes": true,
+        "price": 10.00,
+        "category": 1,
+        "image_url": "https://i.imgur.com/GVFaVMo.jpg",
+        "image": "logo-polo.jpeg"
+    }
+}, {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp006",
+        "name": "Old No. 7 Ska Band",
+        "description": "Knock-off whiskey tee, because, why the hell not! Includes 'Hacky Sack? Let's Have A Rebellion' high-quality download in MP3, FLAC and more.",
+        "has_sizes": true,
+        "price": 7.00,
+        "category": 1,
+        "image_url": "https://i.imgur.com/MmuXtGs.jpg",
+        "image": "old-7-tee.jpeg"
+    }
+}, {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp007",
+        "name": "Offbeat Roundall Tee (Tan)",
+        "description": "Single colour screen print. Includes 'Hacky Sack? Let's Have A Rebellion' high-quality download in MP3, FLAC and more.",
+        "has_sizes": true,
+        "price": 7.00,
+        "category": 1,
+        "image_url": "https://i.imgur.com/sLeBxym.jpg",
+        "image": "offbeat-roundall-tan.jpeg"
+    }
+}, {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp008",
+        "name": "Offbeat Roundall Men's Tee (Grey)",
+        "description": "Single colour screen print. Includes 'Hacky Sack? Let's Have A Rebellion' high-quality download in MP3, FLAC and more.",
+        "has_sizes": true,
+        "price": 7.00,
+        "category": 1,
+        "image_url": "https://i.imgur.com/zoMj2Cb.jpg",
+        "image": "offbeat-roundall-mens.jpeg"
+    }
+}, {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp009",
+        "name": "Offbeat Roundall Ladies Tee (Grey)",
+        "description": "Single colour screen print. Includes 'Hacky Sack? Let's Have A Rebellion' high-quality download in MP3, FLAC and more.",
+        "has_sizes": true,
+        "price": 7.00,
+        "category": 1,
+        "image_url": "https://i.imgur.com/mM6CzQs.jpg",
+        "image": "offbeat-roundall-ladies.jpeg"
+    }
+}, {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp010",
+        "name": "Fires To Find Our Friends Album (Digital)",
+        "description": "Digital download of the full Fires To Find Our Friends album, released in 2019.",
+        "has_sizes": false,
+        "price": 7.00,
+        "category": 2,
+        "image_url": "https://i.imgur.com/0n83ovp.jpg",
+        "image": "ftfof-album.jpeg"
+    }
+}, {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp011",
+        "name": "Fires To Find Our Friends Album, Poster and Sticker Pack",
+        "description": "CD of the full Fires To Find Our Friends album, released in 2019. 6 Panel CD DigiPak including lyric booklet, double-sided poster and sticker pack. Includes unlimited high-quality downloads in MP3, FLAC and more.",
+        "has_sizes": false,
+        "price": 10.00,
+        "category": 2,
+        "image_url": "https://i.imgur.com/fYSMbHo.jpg",
+        "image": "ftfof-full.jpeg"
+    }
+}, {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp012",
+        "name": "Stickers and Pin Badges",
+        "description": "A random assortment of Lead Shot Hazard stickers and pin badges.",
+        "has_sizes": false,
+        "price": 3.00,
+        "category": 3,
+        "image_url": "https://i.imgur.com/Q93TcMJ.png",
+        "image": "roundall.png"
+    }
+}, {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp013",
+        "name": "War & Pieces EP",
+        "description": "Digital download of the 3-track EP, released in 2016. Includes unlimited high-quality downloads in MP3, FLAC and more. Contains the tracks 'Current State Of Play', 'Safe From Harm', and 'Grids & Markers'.",
+        "has_sizes": false,
+        "price": 1.00,
+        "category": 2,
+        "image_url": "https://i.imgur.com/DonkCVY.jpg",
+        "image": "war-pieces.jpeg"
+    }
+}, {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp014",
+        "name": "Lead Shot Hazard Mug",
+        "description": "A limited edition Lead Shot Hazard mug. Perfect for your tea!",
+        "has_sizes": false,
+        "price": 5.00,
+        "category": 3,
+        "image_url": "https://i.imgur.com/EvHnHPZ.jpg",
+        "image": "lsh-mug.png"
+    }
+}]
