@@ -1,20 +1,26 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item">
-            <a class="font-weight-bold nav-link mr-5" href="#">
+            <a class="font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=tshirts">
                 T-shirts
             </a>
         </li>
         
         <li class="nav-item">
-            <a class="font-weight-bold nav-link mr-5" href="#">
+            <a class="font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=music">
                 Music
             </a>
         </li>
         
         <li class="nav-item">
-            <a class="font-weight-bold nav-link mr-5" href="#">
+            <a class="font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=misc">
                 Misc.
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=tshirts,misc,music">
+                All Merch
             </a>
         </li>
 
