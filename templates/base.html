@@ -10,17 +10,17 @@
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <!-- Facebook, LinkedIn, Google -->
             <meta property="og:type" content="article" />
-            <meta property="og:image" content="static/docs/img/finalsite.png" />
+            <meta property="og:image" content="/static/docs/img/finalsite.png" />
             <meta property="og:site_name" content="Lead Shot Hazard" />
             <!-- Twitter -->
-            <meta name="twitter:image" content="static/docs/img/finalsite.png">
+            <meta name="twitter:image" content="/static/docs/img/finalsite.png">
             <meta name="twitter:site" content="@LeadShotHazard">
             <meta name="twitter:creator" content="@Abi_Hazard">
             <!-- Favicon -->
-            <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
-            <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
-            <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
-            <link rel="manifest" href="../static/favicon/site.webmanifest" crossorigin="use-credentials">
+            <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+            <link rel="manifest" href="/static/favicon/site.webmanifest" crossorigin="use-credentials">
         {% endblock %}
             
         {% block extra_meta %}
@@ -100,7 +100,7 @@
                             </div>
                         </li>
                         <li class="list-inline-item">
-                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-yellow{% endif %} nav-link" href="{% url 'view_bag' %}">
+                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
                                 <div class="text-center">
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0">

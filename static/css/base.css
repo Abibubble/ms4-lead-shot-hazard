@@ -66,6 +66,18 @@ h4 {
     color: #ffffff !important;
 }
 
+.btn-black {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+}
+
+.btn-white {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
 .btt-button {
     height: 48px;
     width: 48px;
@@ -100,6 +112,10 @@ h4 {
     height: 48px !important;
 }
 
+.text-transform-none {
+    text-transform: none;
+}
+
 .overlay {
     height: 100%;
     width: 100%;
@@ -121,7 +137,19 @@ a.category-badge > span.badge {
 /* -------------------------------- States */
 
 a.category-badge > span.badge:hover {
-    background: #000000 !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+}
+
+.btn-black:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+.btn-white:hover {
+    background-color: #000000 !important;
     color: #ffffff !important;
     border: 1px solid #ffffff !important;
 }
