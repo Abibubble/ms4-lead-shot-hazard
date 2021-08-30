@@ -96,6 +96,12 @@ h4 {
     cursor: pointer;
 }
 
+.btn-disabled {
+    background-color: lightgray !important;
+    color: #000000 !important;
+    cursor: none;
+}
+
 /* -------------------------------- Images */
 
 .main-logo {
