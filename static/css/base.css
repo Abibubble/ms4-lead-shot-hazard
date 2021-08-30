@@ -87,7 +87,7 @@ h4 {
 /* -------------------------------- Utilities */
 
 .header-container {
-    padding-top: 194px;
+    padding-top: 186px;
 }
 
 .margin-auto {
@@ -165,6 +165,6 @@ a.category-badge > span.badge:hover {
 
 @media (max-width: 991px) {
     body {
-        height: calc(100vh - 194px);
+        height: calc(100vh - 186px);
     }
 }
