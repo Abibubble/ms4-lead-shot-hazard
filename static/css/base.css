@@ -92,7 +92,9 @@ h4 {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
@@ -168,6 +170,11 @@ a.category-badge > span.badge:hover {
     background-color: #000000 !important;
     color: #ffffff !important;
     border: 1px solid #ffffff !important;
+}
+
+.update-link:hover,
+.text-danger.remove-item:hover {
+    color: #FEE101 !important;
 }
 
 /* -------------------------------- Footer */
