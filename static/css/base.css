@@ -10,6 +10,9 @@ body {
     text-transform: uppercase;
 }
 
+.navbar {
+    padding: 0 !important;
+}
 
 /* -------------------------------- Text */
 
@@ -75,10 +78,16 @@ h4 {
     cursor: pointer;
 }
 
+/* -------------------------------- Images */
+
+.main-logo {
+    width: 60%;
+}
+
 /* -------------------------------- Utilities */
 
 .header-container {
-    padding-top: 165px;
+    padding-top: 194px;
 }
 
 .margin-auto {
@@ -156,6 +165,6 @@ a.category-badge > span.badge:hover {
 
 @media (max-width: 991px) {
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 194px);
     }
 }

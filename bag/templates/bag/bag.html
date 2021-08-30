@@ -26,11 +26,29 @@
 {% endblock %}
 
 {% block content %}
-    <section class="container h-100">
-        <div class="row h-75 justify-content-center">
-            <div class="col-6 my-auto">
-                <img src="../../../media/roundall.png" alt="The Lead Shot Hazard roundall logo" class="mt-5 pt-4 w-100">
+    <div class="overlay"></div>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2 class="mb-4">Shopping Bag</h2>
+                <hr>
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="col">
+                {% if bag_items %}
+                    <div class="table-responsive rounded"></div>
+                {% else %}
+                    <p class="mb-5">Your bag is empty.</p>
+                    <a href="{% url 'products' %}" class="btn btn-outline-white rounded-0 btn-lg">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span>Keep Shopping</span>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
