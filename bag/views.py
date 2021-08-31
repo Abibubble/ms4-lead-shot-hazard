@@ -37,8 +37,8 @@ def add_to_bag(request, item_id):
         else:
             bag[item_id] = {'items_by_size': {size: quantity}}
             messages.success(
-                request, f'Added {bag[item_id]} size {size.upper()} \
-                    {product.name} to your bag')
+                request, f'Added {bag[item_id]["items_by_size"][size]} size \
+                    {size.upper()} {product.name} to your bag')
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
@@ -67,7 +67,7 @@ def adjust_bag(request, item_id):
         if quantity > 0:
             bag[item_id]['items_by_size'][size] = quantity
             messages.success(
-                request, f'Updated {product.name} quantity to \
+                request, f'Updated {product.name} size {size.upper()} quantity to \
                     {bag[item_id]["items_by_size"][size]}')
         else:
             del bag[item_id]['items_by_size'][size]
@@ -109,4 +109,5 @@ def remove_from_bag(request, item_id):
         request.session['bag'] = bag
         return HttpResponse(status=200)
     except Exception as e:
+        print(e)
         return HttpResponse(status=500)
