@@ -148,6 +148,28 @@ a.category-badge > span.badge {
     border: 1px solid #000000 !important;
 }
 
+/* -------------------------------- Toasts */
+
+.toast {
+    color: #000000 !important;
+    text-transform: none;
+}
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 2000;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 5px;
+}
+
 /* -------------------------------- States */
 
 .nav-link:hover {

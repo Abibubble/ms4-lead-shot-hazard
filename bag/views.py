@@ -1,6 +1,7 @@
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.contrib import messages
+
 from products.models import Product
 
 
@@ -26,18 +27,18 @@ def add_to_bag(request, item_id):
             if size in bag[item_id]['items_by_size'].keys():
                 bag[item_id]['items_by_size'][size] += quantity
                 messages.success(
-                    request, f'Added {size.upper()} {product.name} quantity'
-                    + f' to {bag[item_id]["items_by_size"][size]}')
+                    request, f'Added {size.upper()} {product.name} quantity \
+                        to {bag[item_id]["items_by_size"][size]}')
             else:
                 bag[item_id]['items_by_size'][size] = quantity
                 messages.success(
-                    request, f'Added size {size.upper()} {product.name} to'
-                    + ' your bag')
+                    request, f'Added {bag[item_id]["items_by_size"][size]} \
+                        size {size.upper()} {product.name} to your bag')
         else:
             bag[item_id] = {'items_by_size': {size: quantity}}
             messages.success(
-                request, f'Added size {size.upper()} {product.name} to '
-                + 'your bag')
+                request, f'Added {bag[item_id]} size {size.upper()} \
+                    {product.name} to your bag')
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
@@ -45,7 +46,8 @@ def add_to_bag(request, item_id):
                 request, f'Added {product.name} quantity to {bag[item_id]}')
         else:
             bag[item_id] = quantity
-            messages.success(request, f'Added {product.name} to your bag')
+            messages.success(request, f'Added {bag[item_id]} \
+                {product.name} to your bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
@@ -65,7 +67,8 @@ def adjust_bag(request, item_id):
         if quantity > 0:
             bag[item_id]['items_by_size'][size] = quantity
             messages.success(
-                request, f'Updated {product.name} quantity to {bag[item_id]}')
+                request, f'Updated {product.name} quantity to \
+                    {bag[item_id]["items_by_size"][size]}')
         else:
             del bag[item_id]['items_by_size'][size]
             if not bag[item_id]['items_by_size']:
