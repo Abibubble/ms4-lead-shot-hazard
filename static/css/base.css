@@ -157,9 +157,9 @@ a.category-badge > span.badge {
 
 .message-container {
     position: fixed;
-    top: 72px;
+    top: 100px;
     right: 15px;
-    z-index: 2000;
+    z-index: 999999;
 }
 
 .custom-toast {
@@ -168,6 +168,12 @@ a.category-badge > span.badge {
 
 .toast-capper {
     height: 5px;
+}
+
+.bag-notification-wrapper {
+    height: 125px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* -------------------------------- States */
