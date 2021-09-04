@@ -4,16 +4,20 @@
 
 {% block extra_meta %}
     <!-- Metas -->
-    <meta name="description" content="A merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
-    <meta name="keywords" content="lead, shot, hazard, ska, punk, band, merch, merchandise, skapunk, london, brass, trombone, saxophone">
+    <meta name="description" content="A shopping bag on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+    <meta name="keywords" content="lead, shot, hazard, ska, punk, band, merch, shopping, bag, music, merchandise, skapunk, london, brass, trombone, saxophone">
     <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
     <!-- Facebook, LinkedIn, Google -->
-    <meta property="og:title" content="Lead Shot Hazard" />
-    <meta property="og:description" content="A merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
+    <meta property="og:title" content="Lead Shot Hazard Shopping Bag" />
+    <meta property="og:description" content="A shopping bag on the  merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
     <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
     <!-- Twitter -->
-    <meta name="twitter:title" content="Lead Shot Hazard">
-    <meta name="twitter:description" content="A merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+    <meta name="twitter:title" content="Lead Shot Hazard Shopping Bag">
+    <meta name="twitter:description" content="A shopping bag on the  merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+{% endblock %}
+
+{% block extra_title %}
+    Shopping Bag
 {% endblock %}
 
 {% block page_header %}
@@ -106,7 +110,7 @@
                                         </span>
                                         <span>Keep Shopping</span>
                                     </a>
-                                    <a href="" class="btn btn-black rounded-0 btn-lg">
+                                    <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
                                         <span>Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
