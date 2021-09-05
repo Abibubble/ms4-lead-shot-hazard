@@ -14,7 +14,7 @@
 .StripeElement--focus,
 .stripe-style-input:focus,
 .stripe-style-input:active {
-  box-shadow: 0 1px 3px 0 #cfd7df;
+  box-shadow: 0 1px 3px 0 #6C757D;
 }
 
 .StripeElement--webkit-autofill {
@@ -22,7 +22,7 @@
 }
 
 .stripe-style-input::placeholder {
-  color: #aab7c4;
+  color: #6C757D;
 }
 
 .fieldset-label {
@@ -34,6 +34,16 @@
 #card-element {
   color: #000;
   border: 1px solid #fff;
+}
+
+select,
+select option {
+  color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+  color: #6C757D !important;
 }
 
 #loading-overlay {
