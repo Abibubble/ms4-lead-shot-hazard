@@ -22,6 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-vkb$2m(eorsrpndz=(\
     h+709m3xdt%0@y-h-61e9+cph7q=3+h2'
+# SOCIAL_AUTH_FACEBOOK_KEY = os.environ.get('SOCIAL_AUTH_FACEBOOK_KEY')
+# SOCIAL_AUTH_FACEBOOK_SECRET = os.environ.get('SOCIAL_AUTH_FACEBOOK_SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,9 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    # 3rd party apps
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
+    # Custom apps
     'home',
     'products',
     'bag',
@@ -51,6 +57,35 @@ INSTALLED_APPS = [
     # Other
     'crispy_forms',
 ]
+
+# SOCIALACCOUNT_PROVIDERS = {
+#     'facebook': {
+#         'METHOD': 'oauth2',
+#         'SCOPE': ['email', ],
+#         'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
+#         'FIELDS': [
+#             'id',
+#             'email',
+#             'name',
+#             'first_name',
+#             'last_name',
+#             'verified'
+#         ],
+#         'EXCHANGE_TOKEN': True,
+#         'LOCALE_FUNC': lambda request: 'kr_KR',
+#         'VERIFIED_EMAIL': False,
+#         'VERSION': 'v3.2'
+#     },
+#     'google': {
+#         'SCOPE': [
+#             'profile',
+#             'email',
+#         ],
+#         'AUTH_PARAMS': {
+#             'access_type': 'online',
+#         }
+#     }
+# }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
