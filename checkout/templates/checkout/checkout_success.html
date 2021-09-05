@@ -1,6 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_meta %}
+    <!-- Metas -->
+    <meta name="description" content="Checkout success page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+    <meta name="keywords" content="lead, shot, hazard, ska, punk, band, merch, shopping, bag, checkout, music, merchandise, skapunk, london, brass, trombone, saxophone">
+    <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
+    <!-- Facebook, LinkedIn, Google -->
+    <meta property="og:title" content="Lead Shot Hazard Success" />
+    <meta property="og:description" content="Checkout success page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
+    <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Lead Shot Hazard Success">
+    <meta name="twitter:description" content="Checkout success page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+{% endblock %}
+
+{% block extra_title %}
+    Success
+{% endblock %}
+
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
@@ -206,6 +224,13 @@
                             <i class="fas fa-angle-left"></i>
                         </span>
                         <span>Back to Profile</span>
+                    </a>
+                {% else %}
+                    <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
+                        <span class="icon mr-2">
+                            <i class="fas fa-shopping-bag"></i>
+                        </span>
+                        <span>Continue shopping</span>
                     </a>
                 {% endif %}
             </div>
