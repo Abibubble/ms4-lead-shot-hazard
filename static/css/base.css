@@ -108,7 +108,7 @@ h4 {
 /* -------------------------------- Images */
 
 .main-logo {
-    width: 60%;
+    max-height: 100px;
 }
 
 /* -------------------------------- Utilities */
@@ -118,7 +118,7 @@ hr {
 }
 
 .header-container {
-    padding-top: 186px;
+    padding-top: 193px;
 }
 
 .margin-auto {
@@ -249,6 +249,6 @@ a.category-badge > span.badge:hover {
 
 @media (max-width: 991px) {
     body {
-        height: calc(100vh - 186px);
+        height: calc(100vh - 193px);
     }
 }
