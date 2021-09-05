@@ -46,6 +46,10 @@ h4 {
     color: #ffffff !important;
 }
 
+.placeholder {
+    color: #6C757D;
+}
+
 /* -------------------------------- Background */
 
 .bg-yellow {
@@ -153,6 +157,10 @@ a.category-badge > span.badge {
     border: 1px solid #000000 !important;
 }
 
+input[name="q"]::placeholder {
+    color: #6C757D;
+}
+
 /* -------------------------------- Toasts */
 
 .toast {
@@ -179,6 +187,12 @@ a.category-badge > span.badge {
     height: 125px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* -------------------------------- Allauth forms */
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
 }
 
 /* -------------------------------- States */
@@ -208,6 +222,13 @@ a.category-badge > span.badge:hover {
 .update-link:hover,
 .text-danger.remove-item:hover {
     color: #FEE101 !important;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+    color: #fff;
+    background-color: #222;
+    border-color: #222;
 }
 
 /* -------------------------------- Footer */
