@@ -47,7 +47,7 @@ h4 {
 }
 
 .placeholder {
-    color: #6C757D;
+    color: #828A90;
 }
 
 /* -------------------------------- Background */
@@ -158,7 +158,7 @@ a.category-badge > span.badge {
 }
 
 input[name="q"]::placeholder {
-    color: #6C757D;
+    color: #828A90;
 }
 
 /* -------------------------------- Toasts */
