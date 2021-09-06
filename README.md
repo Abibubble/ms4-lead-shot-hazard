@@ -647,8 +647,18 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 
 
 ### Solved Bugs
-1. Bug
-    * Bug fix steps
+1. No images are being displayed.
+    * I checked my `MEDIA_URL` and `MEDIA_ROOT` in settings.py were defined.
+    * I looked through the HTML and the project app's urls.py for any discrepancies.
+    * I searched on the Code Institute Slack channels and on Stack Overflow for anyone who had a similar issue, but didn't find anything.
+    * I then asked on Slack, and was prompted to check my use of a tuple.
+    * I had set `MEDIA_ROOT = (os.path.join(BASE_DIR, 'media'),)` instead of `MEDIA_ROOT = os.path.join(BASE_DIR, 'media')`.
+    * I changed this, which fixed this bug.
+2. `OperationalError at /accounts/login/ no such column: profiles_userprofile.user_id`
+    * I checked through my code, to see if I'd referenced something incorrectly.
+    * I saw that inside the `def __str__` of the `UserProfile` class, the `self` was showing a `Instance of 'OneToOneField' has no 'username' member` error.
+    * I realised I had previously named the variable `default_user` instead of `user`.
+    * I ran migrations to update this, which fixed the bug.
 
 
 ### Known Bugs
