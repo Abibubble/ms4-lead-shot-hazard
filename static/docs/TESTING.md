@@ -3,6 +3,7 @@
 ## Contents
 
 * [Icon Key](#icon-key)
+
 * [Manual Testing](#manual-testing)
     * [Devices and Browsers](#devices-and-browsers)
     * [Testing Technologies](#testing-technologies)
@@ -11,12 +12,16 @@
         * [First Time User Goals](#first-time-user-goals)
         * [Returning User Goals](#returning-user-goals)
         * [Admin Goals](#admin-goals)
+
 * [Links and Navigation](#links-and-navigation)
     * [Navigation Bar](#navigation-bar)
     * [Modals](#modals)
     * [External Links](#external-links)
+
 * [Styling and Layout](#styling-and-layout)
+
 * [User Access](#user-access)
+
 * [Functions](#functions)
     * [Register](#register)
     * [Log In](#log-in)
@@ -30,17 +35,21 @@
     * [Pagination](#pagination)
     * [404](#404)
     * [Validation](#validation)
+
 * [Database](#database)
+
 * [Accessibility](#accessibility)
     * [Tap Targets](#tap-targets)
     * [Color Contrast](#color-contrast)
     * [Visually-Impaired Users](#visually-impaired-users)
     * [Assistive Technologies](#assistive-technologies)
     * [Reading Level](#reading-level)
+
 * [Responsive Design](#responsive-design)
     * [Mobile](#mobile)
     * [Tablet](#tablet)
     * [Computer](#computer)
+
 * [Images](#images)
     * [Desktop and Laptop](#desktop-and-laptop)
     * [Tablet](#tablet)
@@ -140,6 +149,10 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 
 4. PEP8 Online
     * [PEP8 Online](http://pep8online.com/)
+    * `Class 'x' has no 'objects' member`
+        * This is just a warning from VSC. Django adds the `objects` property to all model classes, so the IDE isn't aware of this.
+    * `Avoid using null=True on string-based fields such CharField`
+        * This error is there to avoid a field having two values if left blank - an empty string, and `null`. This would usually be a valid error, but because I need to allow empty values in forms, this is required, as the `null` parameter only affects database storage.
 
 ![Image of PEP8 Online results](static/docs/img/pep8.png)
 
