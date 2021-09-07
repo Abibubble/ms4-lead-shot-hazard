@@ -102,14 +102,14 @@ This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it 
 ||| **Viewing & Navigation** ||
 | B1 | Shopper | Easily navigate the site | Have a good user experience |
 | B2 | Shopper | View all products | Choose some to buy |
-| B3 | Shopper | Search for a specific product and it's information | Find the item that I want |
+| B3 | Shopper | Search for a specific product and its information | Find the item that I want |
 | B4 | Shopper | View a specific type of product | Quickly find items I'm interested in |
 | B5 | Shopper | View full product information | See the details of a specific product including price, description, image and sizes |
 | B6 | Shopper | Easily see my bag total | Stick to a budget |
 | B7 | Shopper | Get visual feedback when an action on the site is completed | Easily see when an action has been completed |
 | B9 | Shopper | Contact the band through the website | Ask questions |
 ||| **Registration & User Accounts** ||
-| C1 | Site User | Create an account for future purchases | View my order history |
+| C1 | Site User | Create an account for future purchases | View my order history or checkout quicker |
 | C2 | Site User | Log In | Access my account |
 | C3 | Site User | Log Out | Keep my account private on a shared device |
 | C4 | Site User | Get an email confirmation after registering | Verify my registration was successful |
@@ -119,7 +119,7 @@ This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it 
 | D1 | Shopper | Sort the available products | Sort alphabetically or by price |
 | D2 | Shopper | Sort a category of products | Sort relevant products alphabetically or by price |
 | D3 | Shopper | Search for a specific product by name or description | Quickly find items I'm interested in |
-| D4 | Shopper | Easily see what I've searched, and total numnber of results | QDecide whether the product I'm looking for is available |
+| D4 | Shopper | Easily see what I've searched, and total number of results | Decide whether the product I'm looking for is available |
 ||| **Purchasing & Checkout** ||
 | E1 | Shopper | Buy products online as a guest | Checkout without having to create an account |
 | E2 | Shopper | Easily add, update the quantity, or delete products in my bag | Adjust my purchase to fit budget or personal choice |

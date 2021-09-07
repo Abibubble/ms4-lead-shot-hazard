@@ -157,126 +157,56 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 ![Image of PEP8 Online results](static/docs/img/pep8.png)
 
 ### Testing User Stories
-#### Business Goals
-##### Sell merchandise and music.
-* This site provides a secure method for the band to earn money from their merchandise sales.
 
-##### Match the design and personality of the band.
-* The color scheme has been directly taken from the band's artwork.
+| **User Story Id** | **User Story Statement** | **Testing** |
+| --- | --- | --- |
+|| **Overall** ||
+| A1 | Band member - Sell merchandise and music - Have an online form of income | This site provides a secure method for the band to earn money from their merchandise sales |
+| A2 | Band member - Match the design and personality of the band with that of the site - Easily show fans that this site is linked to the band | The color scheme and images have been directly taken from the band's artwork |
+| A3 | Band member - Offer a website that is easy to navigate and free of confusion - Avoid stress of fans needing more assistance than necessary | Every page has the full navigation bar across the top of the page. For long pages, there is a 'Back to top' button to help the user easily get back to the top. |
+| A4 | Band member - Have another source of revenue for the band - Spend more time making music | Currently the band is only able to sell merchandise at gigs, or via their Bandcamp page. This site provides a dedicated site to sell all merchandise. This can be linked to from all social media platforms, to allow easy online sales. This means that the band can be earning money from merchandise sales whilst not actively gigging. |
+| A5 | Band member - Have a platform where fans can follow the future gigs of the band - Ensure our fans know when and where our upcoming gigs are | All future gigs will be updated onto the site. This will be collated on the 'Gigs' page, which is available in the footer. |
+|| **Viewing & Navigation** ||
+| B1 | Shopper - Easily navigate the site - Have a good user experience | Every page has the full navigation bar across the top of the page. For long pages, there is a 'Back to top' button to help the user easily get back to the top. Everything is clearly laid out. All buttons describe what they're for in simple terms. Icons are used to help convey meaning. |
+| B2 | Shopper - View all products - Choose some to buy | The user can scroll through all available merch via a link in the navigation bar. |
+| B3 | Shopper - Search for a specific product and its information - Find the item that I want | There is a search bar at the top of all pages, so the user can search by product name or description from anywhere on the site. |
+| B4 | Shopper - View a specific type of product - Quickly find items I'm interested in | There is a categories navigation bar at the top of all pages, so the user can quickly search by category from anywhere on the site. |
+| B5 | Shopper - View full product information - See the details of a specific product including price, description, image and sizes | A user can click on any product to view the full product information. |
+| B6 | Shopper - Easily see my bag total - Stick to a budget | Every time the shopping bag is updated, a preview is shown in a message in the top right of the screen, which displays the total at the bottom. The total is also visible on the shopping bag and checkout pages, and a warning message is shown by the 'Checkout Securely' button, including the grand total, so the user is never unsure of their total. |
+| B7 | Shopper - Get visual feedback when an action on the site is completed - Easily see when an action has been completed | When any action is completed, a message will appear to inform the user of the action. A full list of actions and messages can be found below in [Messages](#messages). |
+| B9 | Shopper - Contact the band through the website - Ask questions | A contact page is available in the footer. Users can fill in the form to send a message to the band. |
+|| **Registration & User Accounts** ||
+| C1 | Site User - Create an account for future purchases - View my order history or checkout quicker | The user can navigate to the Register page via the navigation bar, which is visible on every page. The registration process is clearly decribed, and all instructions are clear. It only requires a username, an email address, a password, and a confirmation of that password to register an account. The user then needs to verify their email address to gain full access to their account. The user can then view their order history, and save their details on their Profile. |
+| C2 | Site User - Log In - Access my account | The Log In and Log Out button is visible in the navigation bar. The Log In and Log Out process is intuitive and simple to use. If the user is logged out, the Log In button will show. |
+| C3 | Site User - Log Out - Keep my account private on a shared device | The Log In and Log Out button is visible in the navigation bar. The Log In and Log Out process is intuitive and simple to use. If the user is logged in, the Log Out button will show. |
+| C4 | Site User - Get an email confirmation after registering - Verify my registration was successful | Once a user has registered, they will be sent an email to confirm their email address. Once they have verified their email address, a message appears to confirm their email address is verified. |
+| C5 | Site User - See a history of my previous purchases - Check what I have bought before | All previous purchases of an account are listed on the user's profile under 'Order History'. |
+| C6 | Site User - Create, update or delete my personal information - Always have up-to-date personal information | Once a user has created an account, they can store their name, phone number, email address and address details for faster checkout in the future. |
+|| **Sorting & Searching** ||
+| D1 | Shopper - Sort the available products - Sort alphabetically or by price | Just above the products on the Products page, the user has a dropdown box allowing them to select how they would like to sort the available products. |
+| D2 | Shopper - Sort a category of products - Sort relevant products alphabetically or by price | Just above the products on the chosen category page, the user has a dropdown box allowing them to select how they would like to sort the available products. |
+| D3 | Shopper - Search for a specific product and its information - Find the item that I want | There is a search bar at the top of all pages, so the user can search by product name or description from anywhere on the site. |
+| D4 | Shopper - View a specific type of product - Quickly find items I'm interested in | There is a categories navigation bar at the top of all pages, so the user can quickly search by category from anywhere on the site. |
+| D5 | Shopper - Easily see what I've searched, and total number of results - Decide whether the product I'm looking for is available | At the top fo the search page, the category the user has selected is displayed at the top. If the user has searched by name or description, the search term is visible at the top left, along with the total number of results. |
+|| **Purchasing & Checkout** ||
+| E1 | Shopper - Buy products online as a guest - Checkout without having to create an account | Registration to the site is not required to make a purchase. |
+| E2 | Shopper - Easily add, update the quantity, or delete products in my bag - Adjust my purchase to fit budget or personal choice | Products can be added to the shopping bag via any product details page. Products can be removed from the shopping bag via the Shopping Bag page, either by pressing the 'Remove' button under that item, or by updating the quantity to 0. Multiples of the same item can be added to the shopping bag by updating the quantity field. This can be done on the product details page, or on the shopping bag page. |
+| E5 | Shopper - Receive an update of the shopping bag when I perform an action - Be aware of the status of my shopping bag | When any action is completed, a message will appear to inform the user of the action. This message will include a summary of the user's shopping bag. A full list of actions and messages can be found below in [Messages](#messages). |
+| E4 | Shopper - View details about items in my bag - Decide if I want to purchase an item | All item deatils except description will display in the shopping bag. If the user wishes to view the item description again, they can click on the product in the shopping bag to return to that product's details page to view the description. |
+| E4 | Shopper - Revisit my shopping bag after logging out and in - Continue my purchase | The user's shopping bag is stored until they checkout. If they log out and back in, the shopping bag will still be saved. |
+| E6 | Shopper - Purchase products securely on the site - Be confident that my card and personal details are safe | Stripe is used to handle all card payments on this site. Stripe is certified to PCI Service Provider Level 1, which is the most stringent level of certification available in the payments industry. All card numbers are encrypted with AES-256 (Advanced Encryption Standard - 256 bits), and decryption keys are stored on separate machines. |
+| E2 | Shopper - Receive a confirmation email with information of my order - View my order details | Once an order has been paid for successfully, an email will be sent out with full order details. |
+|| **Product Management** ||
+| F1 | Site Owner - Edit any product - Update details of products | Only the superuser can edit an existing product. This can be done on any product details page. |
+| F2 | Site Owner - Delete any product - Remove old products from the site | Only the superuser can delete an existing product. This can be done on any product details page. |
+| F3 | Site Owner - Add a new product - Add new products to the site | Only the superuser can add a new product. This can be done on the Manage Products page. |
+| F4 | Site Owner - Create a stock of products to be sold online - Keep the site's in stock products up to date |  |
+|| **Authentication & Security** ||
+| G1 | Site User - Recover my password - Regain access to my account |  |
+| G2 | Site User - Verify my email address - Ensure my account is set up securely | Once a user has registered, they will be sent an email to confirm their email address. Once they have verified their email address, a message appears to confirm their email address is verified. The user's account will not be accessible until the user has verified their email address. |
+| G3 | Site User - Be confident that my password is stored securely - Feel safe from malicious activity |  |
+| G4 | Site Owner - Be confident of the security of the restricted pages - Feel safe from malicious activity | The superuser is set through Django, so there can only be one. If a logged out user tried to access a restricted page, it directs them to the log in page. If a logged in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message informing them of this. |
 
-##### Offer a website that is easy to navigate and free of confusion.
-* Every page has the full navigation bar across the top of the page.
-* For long pages, there is a 'Back to top' button to help the user easily get back to the top.
-
-##### Become another source of revenue for the band.
-* Currently the band is only able to sell merchandise at gigs, or via their Bandcamp page.
-* This site provides a dedicated site to sell all merchandise.
-* This can be linked to from all social media platforms, to allow easy online sales.
-* This means that the band can be earning money from merchandise sales whilst not actively gigging.
-
-##### Become a platform where fans can follow the future gigs of the band.
-* All future gigs will be updated onto the site.
-* This will be collated on the 'Gigs' page.
-
-
-#### First Time Visitor Goals
-##### Easily navigate the site.
-* Every page has the full navigation bar across the top of the page.
-* For long pages, there is a 'Back to top' button to help the user easily get back to the top.
-
-##### Intuitively and easily understand what to do.
-* Everything is clearly laid out.
-* All buttons describe what they're for in simple terms.
-* Icons are used to help convey meaning.
-
-##### Create an account for future purchases.
-* The user can navigate to the Register page via the navigation bar, which is visible on every page.
-* The registration process is clearly decribed, and all instructions are clear.
-* It only requires a username, an email address, a password, and a confirmation of that password to register an account.
-* The user then needs to verify their email address to gain full access to their account.
-
-##### Search for a specific product and it's information.
-* There is a search bar on the products pages, so the user can search by product name, description
-* There is also the option in the navigation bar to search by category.
-
-##### Browse through all merch.
-* The user can scroll through all available merch via a link in the navigation bar.
-
-##### Buy products online as a guest.
-* Registration to the site is not required to make a purchase.
-
-##### Get visual feedback when an action on the site is completed.
-* When any action is completed, a message will appear to inform the user of the action.
-* A full list of actions and messages can be found below in [Messages](#messages).
-
-##### Receive a confirmation email with all relevant information.
-* Once an order has been paid for successfully, an email will be sent out with order details.
-
-##### Contact the band through the website.
-* A contact page is available via the navigation bar.
-* Users can fill in the form to send a message to the band.
-
-##### View full product information.
-* A user can click on any product to view the full product information.
-
-##### Add or remove items from the shopping bag.
-* Products can be added to the shopping bag via any product details page.
-* Products can be removed from the shopping bag via the Shopping Bag page.
-
-##### Add multiple items to the shopping bag.
-* Multiples of the same item can be added to the shopping bag by updating the quantity field.
-* This can be done on the product details page, or on the shopping bag page.
-
-##### Receive an update of the shopping bag when the user performs an action.
-* When any action is completed, a message will appear to inform the user of the action.
-* This message will include a summary of the user's shopping bag.
-* A full list of actions and messages can be found below in [Messages](#messages).
-
-##### Purchase products securely through Stripe.
-* How
-
-
-#### Returning Visitor Goals
-##### Log in / out.
-* The Log In and Log Out button is visible in the navigation bar.
-* The Log In and Log Out process is intuitive and simple to use.
-* If the user is logged out, the Log In button will show.
-* If the user is logged in, the Log Out button will show.
-
-##### Be confident that the user's password is be stored securely.
-* Werkzeug's password hashing methods have been used to store all user's passwords in a secure and safe way.
-
-##### Navigate intuitively, with no need to use the browser's back button.
-* The navigation bar is constantly visible across the top of the site.
-* This is either the full navigation bar, or the condensed burger icon menu bar on smaller screen sizes.
-
-##### Create, update or delete the user's personal information.
-* Once a user has created an account, they can store their name, phone number, email address and address details for faster checkout in the future.
-
-##### See a history of the user's previous purchases.
-* All previous purchases of an account are listed on the user's profile under 'Order History'.
-
-
-#### Admin Goals
-##### Be confident that a user can't to brute force their way into the restricted pages.
-* The superuser is set through Django, so there can only be one.
-* If a logged out user tried to access a restricted page, it directs them to the log in page.
-* If a logged in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message informing them of this.
-
-##### Edit any product.
-* Only the superuser can edit an existing product.
-* This can be done on any product details page.
-
-##### Delete any product.
-* Only the superuser can delete an existing product.
-* This can be done on any product details page.
-
-##### Add a new product.
-* Only the superuser can add a new product.
-* This can be done on the Manage Products page.
-
-##### Create a stock of products to be sold online and keep track of the sales as a superuser.
-* How
 
 [Back to the top](#testing)
 
