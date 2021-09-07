@@ -90,52 +90,55 @@ This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it 
 
 
 ### User Stories
-#### Business Goals
-As a band member, this site should:
-* Sell merchandise and music.
-* Match the design and personality of the band.
-* Offer a website that is easy to navigate and free of confusion.
-* Become another source of revenue for the band.
-* Become a platform where fans can follow the future gigs of the band.
 
+| **User Story Id** | **As a / an...** | **I should be able to...** | **So that I can...** |
+| --- | --- | --- | --- |
+||| **Overall** ||
+| A1 | Band member | Sell merchandise and music | Have an online form of income |
+| A2 | Band member | Match the design and personality of the band with that of the site | Easily show fans that this site is linked to the band |
+| A3 | Band member | Offer a website that is easy to navigate and free of confusion | Avoid stress of fans needing more assistance than necessary |
+| A4 | Band member | Have another source of revenue for the band | Spend more time making music |
+| A5 | Band member | Have a platform where fans can follow the future gigs of the band | Ensure our fans know when and where our upcoming gigs are |
+||| **Viewing & Navigation** ||
+| B1 | Shopper | Easily navigate the site | Have a good user experience |
+| B2 | Shopper | View all products | Choose some to buy |
+| B3 | Shopper | Search for a specific product and it's information | Find the item that I want |
+| B4 | Shopper | View a specific type of product | Quickly find items I'm interested in |
+| B5 | Shopper | View full product information | See the details of a specific product including price, description, image and sizes |
+| B6 | Shopper | Easily see my bag total | Stick to a budget |
+| B7 | Shopper | Get visual feedback when an action on the site is completed | Easily see when an action has been completed |
+| B9 | Shopper | Contact the band through the website | Ask questions |
+||| **Registration & User Accounts** ||
+| C1 | Site User | Create an account for future purchases | View my order history |
+| C2 | Site User | Log In | Access my account |
+| C3 | Site User | Log Out | Keep my account private on a shared device |
+| C4 | Site User | Get an email confirmation after registering | Verify my registration was successful |
+| C5 | Site User | See a history of my previous purchases | Check what I have bought before |
+| C6 | Site User | Create, update or delete my personal information | Always have up-to-date personal information |
+||| **Sorting & Searching** ||
+| D1 | Shopper | Sort the available products | Sort alphabetically or by price |
+| D2 | Shopper | Sort a category of products | Sort relevant products alphabetically or by price |
+| D3 | Shopper | Search for a specific product by name or description | Quickly find items I'm interested in |
+| D4 | Shopper | Easily see what I've searched, and total numnber of results | QDecide whether the product I'm looking for is available |
+||| **Purchasing & Checkout** ||
+| E1 | Shopper | Buy products online as a guest | Checkout without having to create an account |
+| E2 | Shopper | Easily add, update the quantity, or delete products in my bag | Adjust my purchase to fit budget or personal choice |
+| E5 | Shopper | Receive an update of the shopping bag when I perform an action | Be aware of the status of my shopping bag |
+| E4 | Shopper | View details about items in my bag | Decide if I want to purchase an item |
+| E4 | Shopper | Revisit my shopping bag after logging out and in | Continue my purchase |
+| E6 | Shopper | Purchase products securely on the site | Be confident that my card and personal details are safe |
+| E2 | Shopper | Receive a confirmation email with information of my order | View my order details |
+||| **Product Management** ||
+| F1 | Site Owner | Edit any product | Update details of products |
+| F2 | Site Owner | Delete any product | Remove old products from the site |
+| F3 | Site Owner | Add a new product | Add new products to the site |
+| F4 | Site Owner | Create a stock of products to be sold online | Keep the site's in stock products up to date |
+||| **Authentication & Security** ||
+| G1 | Site User | Recover my password | Regain access to my account |
+| G2 | Site User | Verify my email address | Ensure my account is set up securely |
+| G3 | Site User | Be confident that my password is stored securely | Feel safe from malicious activity |
+| G4 | Site Owner | Be confident of the security of the restricted pages | Feel safe from malicious activity |
 
-#### First Time Visitor Goals
-As a first time visitor to this site, a user should be able to:
-* Easily navigate the site.
-* Intuitively and easily understand what to do.
-* Create an account for future purchases.
-* Search for a specific product and it's information.
-* Browse through all merch.
-* Buy products online as a guest.
-* Get visual feedback when an action on the site is completed.
-* Receive a confirmation email with all relevant information.
-* Contact the band through the website.
-* View full product information.
-* Add or remove items from the shopping bag.
-* Add multiple items to the shopping bag.
-* Receive an update of the shopping bag when the user performs an action.
-* Purchase products securely through Stripe.
-
-
-#### Returning Visitor Goals
-In addition to the First Time Visitor Goals, a Returning Visitor should be able to:
-* Log in / out.
-* Be confident that the user's password is be stored securely.
-* Navigate intuitively, with no need to use the browser's back button.
-* Create, update or delete the user's personal information.
-* See a history of the user's previous purchases.
-
-
-#### Admin Goals
-In addition to the First Time and Returning Visitor Goals, as an administrator of this site, an admin user should be able to:
-* Be confident that a user can't to brute force their way into the restricted pages.
-* Edit any product.
-* Delete any product.
-* Add a new product.
-* Create a stock of products to be sold online and keep track of the sales as a superuser.
-
-MAYBE CONSIDER A TABLE AS WELL? USER STORY ID, AS A/AN, I WANT TO BE ABLE TO, SO THAT I CAN. THEN CAN HAVE A TABLE IN TESTING JUST REFERENCING THE IDS
-SCOPE???? MORE DETAILED BREAKDOWN OF SCOPE WOULD BE GOOD
 
 ### Project Goals
 * The main goal is to create an easily editable merchandise site for Lead Shot Hazard, so it takes very little time to keep up to date with their constantly changing merchandise and music selection.
@@ -197,8 +200,12 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
     * View all products on the website.
     * Perform a keyword search for products by name and description.
     * Browse products by category through the main navigation bar.
-    * Sort products alphabetically or by price.
-    * Click on a product to view the full product details, including:
+    * Sort products
+        * Alphabetically (A-Z)
+        * Alphabetically (Z-A)
+        * By price (low to high)
+        * By price (high to low)
+    * Click on a product card to view the full product details, including:
         * Name
         * Category
         * Price
@@ -235,8 +242,9 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
     * Adjust the quantity of products in the shopping bag.
     * Delete products in the shopping bag.
     * View the grand total and details in the bag.
-* When a product is added, a preview of the shopping bag is displayed in a message.
+* When a product is updated, a preview of the shopping bag is displayed in a message.
 * The grand total and shipping price are updated when any edits to the shopping bag are made.
+* Updating a product quantity to 0 in the shopping bag removes the item from the shopping bag.
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
@@ -329,11 +337,11 @@ The navigation bar changes depending on user status and screen size:
 
 ### Future Features
 * Add to bag button is disabled if the product is out of stock.
-* Recommended product at the bottom of the checkout page.
+* Recommended products at the bottom of the checkout page.
 * Retrieve or re-set a forgotten password.
 * Stock count for each product size, including out of stock sizes.
 * Social media login, via Facebook or Google.
-* Having a 0 quantity of a product in shopping bag removes the item from the shopping bag.
+* Special offers
 
 
 ### Audio
@@ -367,7 +375,11 @@ The navigation bar changes depending on user status and screen size:
     * A default image will display if the image link has broken.
 * Custom error pages - 404
     * A custom 404 error page will show if the user attempts to visit a page that doesn't exist.
-* WEBHOOKS?
+* Webhooks
+    * Webhooks form a notification system for every secure action on your site (most notably, payment intents).
+    * Webhooks return an event object, containing all the relevant information about the action, including the type of action, and the data associated with it.
+    * If the user leaves the page before the order is complete but the payment goes through, the billing details and shipping address will be sent with the payment, and can be accessed via the webhooks.
+
 
 [Back to the top](#lead-shot-hazard)
 
@@ -433,8 +445,6 @@ INFO HERE
 [Google Fonts](https://fonts.google.com/) was used to select all the fonts on the site.
 #### Favicon.io:
 [favicon.io](https://favicon.io/) used to create a site favicon.
-#### Amazon AWS S3:
-[Amazon AWS S3](https://s3.console.aws.amazon.com/s3) was used to host images and static files for this site.
 
 
 ### Packages
@@ -461,7 +471,7 @@ INFO HERE
 #### Heroku:
 [Heroku](https://www.heroku.com) was used to deploy the live site.
 #### Amazon AWS S3
-[Amazon AWS S3](https://s3.console.aws.amazon.com/s3) was used to host this project's images.
+[Amazon AWS S3](https://s3.console.aws.amazon.com/s3) was used to host this project's images and static files.
 
 
 ### Frameworks, Libraries and Others
@@ -473,8 +483,8 @@ INFO HERE
 [WebPageTest](https://www.webpagetest.org/) was used to ensure that the code was as performant as possible, confirming to best practices, and SEO and Accessibility guidelines. As it is often more reliable than Lighthouse, this was used near the end of the project to fix any remaining issues.
 #### Flask:
 [Flask](https://flask.palletsprojects.com/en/2.0.x/) was used to help create the templating for this site.
-#### Materialize:
-[Materialize](https://materializecss.com/) was used to create a beautiful, responsive website.
+#### Bootstrap:
+[Bootstrap](https://getbootstrap.com/) was used to create a beautiful, responsive website.
 #### jQuery:
 [jQuery](https://jquery.com/), a JavaScript library was used for DOM traversal, HTML manipulation, and event handling.
 #### stripe.js
@@ -483,6 +493,8 @@ INFO HERE
 [RandomKeygen](https://randomkeygen.com/) was used to generate a strong `SECRET_KEY`.
 #### pip:
 [pip](https://pip.pypa.io/en/stable/) was used to install the required dependancies for this site.
+#### Slack
+[Slack](https://slack.com/intl/en-gb/) was used to communicate with the [Code Institute](https://codeinstitute.net/) community for help and support with bug fixes, and for a peer code review.
 
 [Back to the top](#lead-shot-hazard)
 
@@ -542,9 +554,9 @@ os.environ["DEVELOPMENT"] = True
 To find the values of each key:
 * SECRET_KEY: this is a custom string set up to keep sessions secure. I recommend using a 'Fork Knox' level password generated by [RandomKeygen](https://randomkeygen.com/).
 * DATABASE_URL: this is temporary.
-* STRIPE_PUBLIC_KEY: on the Stripe Dashboard in the Developer's API section.
-* STRIPE_SECRET_KEY: on the Stripe Dashboard in the Developer's API section.
-* STRIPE_WH_SECRET: in the Developer'sAPI section after creating a webhook.
+* STRIPE_PUBLIC_KEY: on the Stripe Dashboard in the Developer's API section - Publishable key.
+* STRIPE_SECRET_KEY: on the Stripe Dashboard in the Developer's API section - Secret key.
+* STRIPE_WH_SECRET: in the Developer's API section after creating an endpoint for your webhook - Signing secret.
 * EMAIL_HOST_USER: your email address
 * EMAIL_HOST_PASS: 
 * AWS_SECRET_ACCESS_KEY: 
@@ -574,7 +586,7 @@ This site was deployed to Heroku by following these steps:
 18. Add the hostname of your Heroku app to '**ALLOWED HOSTS**' in your settings.py file. This can beb found in Heroku Settings > App Name.
 19. Connect Heroku to Git using `git remote add heroku {your heroku git url}`.
 20. Create a '**media**' file in your S3 Bucket, and import all your media files.
-21. CREATE A STATIC FOLDER??!?!?!!??!?!
+21. CREATE A STATIC FOLDER??!?!?!!??!?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 22. If you'd like to automatically deploy to Heroku whenever you push to GitHub, do the following:
     * Go to the '**Deploy**' tab in Heroku, and click '**Enable Automatic Deployment**'.
     * In '**Manual Deploy**', choose which branch you'd like to deploy from (I chose 'main' branch, this is sometimes 'master').
@@ -648,10 +660,10 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 
 ### Solved Bugs
 1. No images are being displayed.
-    * I checked my `MEDIA_URL` and `MEDIA_ROOT` in settings.py were defined.
-    * I looked through the HTML and the project app's urls.py for any discrepancies.
+    * I checked my `MEDIA_URL` and `MEDIA_ROOT` in `settings.py` were defined.
+    * I looked through the HTML and the project app's `urls.py` for any discrepancies.
     * I searched on the Code Institute Slack channels and on Stack Overflow for anyone who had a similar issue, but didn't find anything.
-    * I then asked on Slack, and was prompted to check my use of a tuple.
+    * I then asked on Slack, and was prompted to check my use of a tuple in the `settings.py` file.
     * I had set `MEDIA_ROOT = (os.path.join(BASE_DIR, 'media'),)` instead of `MEDIA_ROOT = os.path.join(BASE_DIR, 'media')`.
     * I changed this, which fixed this bug.
 2. The Stripe card section of the checkout form wasn't appearing.
@@ -661,9 +673,9 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
     * I re-started my Gitpod workspace for the new `STRIPE_WH_SECRET` variable to take effect.
     * Finally, I double checked my file paths to ensure my script file was being accessed correctly.
     * I had accidently created my `js` file inside my `css` file, so I moved it into the `static` file, which fixed this bug.
-3. `OperationalError at /accounts/login/ no such column: profiles_userprofile.user_id`
+3. `OperationalError at /accounts/login/ no such column: profiles_userprofile.user_id` was occurring when I tried to log in to the site as superuser for the first time.
     * I checked through my code, to see if I'd referenced something incorrectly.
-    * I saw that inside the `def __str__` of the `UserProfile` class, the `self` was showing a `Instance of 'OneToOneField' has no 'username' member` error.
+    * I saw that inside the `def __str__` of the `UserProfile` class in `profiles/models.py`, the `self` in `return self.user.username` was showing an `Instance of 'OneToOneField' has no 'username' member` error.
     * I realised I had previously named the variable `default_user` instead of `user`.
     * I ran migrations to update this, which fixed the bug.
 
@@ -679,6 +691,8 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 ### Code
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
 * This website was made following the tutorials of Code institute for the Boutique Ado project by Chris Zielinski.
+* [Django Documentation](https://docs.djangoproject.com/en/3.2/) has been used to ensure correct syntax usage throughout the code.
+* [Stack Overflow](https://stackoverflow.com/) has been used to help with deciphering the django error codes.
 
 
 ### Content
@@ -699,3 +713,15 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 * My bandmates in Lead Shot Hazard, for giving me the inspiration to create this site.
 
 [Back to the top](#lead-shot-hazard)
+
+
+<!-- Inside Deployment:
+If you want to use the allauth social accounts:
+    * Set up Facebook secrets, add them to your environment variables
+Key	Value
+SOCIAL_AUTH_FACEBOOK_KEY
+SOCIAL_AUTH_FACEBOOK_SECRET
+If you are not using the social accounts login features, comment out lines x and y in settings.py (INSTALLED_APPS) socialaccounts -->
+
+
+<!-- The project’s code was developed by following the Code Institutevideo lessons and based on the understanding of the course material, The code has been customized and enhanced to fit with the purpose of the project. In some places the logic is used and in others the code. Some comments with credits have been added where needed. -->
