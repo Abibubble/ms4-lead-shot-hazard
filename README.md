@@ -654,7 +654,14 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
     * I then asked on Slack, and was prompted to check my use of a tuple.
     * I had set `MEDIA_ROOT = (os.path.join(BASE_DIR, 'media'),)` instead of `MEDIA_ROOT = os.path.join(BASE_DIR, 'media')`.
     * I changed this, which fixed this bug.
-2. `OperationalError at /accounts/login/ no such column: profiles_userprofile.user_id`
+2. The Stripe card section of the checkout form wasn't appearing.
+    * I checked through my code for typos.
+    * I checked through my environment variables, to ensure no variables were missing.
+    * I re-set my `STRIPE_WH_SECRET` variable to ensure that it was set correctly.
+    * I re-started my Gitpod workspace for the new `STRIPE_WH_SECRET` variable to take effect.
+    * Finally, I double checked my file paths to ensure my script file was being accessed correctly.
+    * I had accidently created my `js` file inside my `css` file, so I moved it into the `static` file, which fixed this bug.
+3. `OperationalError at /accounts/login/ no such column: profiles_userprofile.user_id`
     * I checked through my code, to see if I'd referenced something incorrectly.
     * I saw that inside the `def __str__` of the `UserProfile` class, the `self` was showing a `Instance of 'OneToOneField' has no 'username' member` error.
     * I realised I had previously named the variable `default_user` instead of `user`.
