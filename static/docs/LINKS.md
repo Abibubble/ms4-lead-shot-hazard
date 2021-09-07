@@ -22,8 +22,8 @@ This file includes a list of all sites I have used for research or testing.
 * [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
 * [JSHint](https://jshint.com/)
 * [PEP8 Online](http://pep8online.com/)
-* [Python Support](https://pulp.plan.io/issues/3446) - To explain the `Avoid using null=True on string-based fields such CharField` error message
 * [Flake8](https://flake8.pycqa.org/en/latest/)
+* [Python Support](https://pulp.plan.io/issues/3446) - To explain the `Avoid using null=True on string-based fields such CharField` error message
 * [WebPageTest](https://www.webpagetest.org/)
 * [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
 * [WebAim's W.A.V.E](https://wave.webaim.org/)

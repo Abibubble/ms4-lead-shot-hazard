@@ -9,9 +9,9 @@
 
 [Here is a link to the final project](https://ms4-lead-shot-hazard.herokuapp.com/homepage)
 
-This site is a merchandise and music e-commerce site for the band Lead Shot Hazard, a ska punk band from West London. This site is fully responsive on all modern screen sizes, and it allowed the band to easily add, edit or delete their merch and music that they have to sell.
+This site is a merchandise and music e-commerce site for the band Lead Shot Hazard, a ska punk band from West London. This site is fully responsive on all modern screen sizes, and it allows the band to easily add, edit or delete the merchandise and music that they have to sell.
 
-This site was built using HTML, CSS, JavaScript, jQuery, Python, Django, and it uses a SQL database through PostgreSQL.
+This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Django, and it uses a SQL database through PostgreSQL.
 
 ![Final project image home page](static/docs/img/finalpage.png)
 
@@ -387,7 +387,14 @@ The navigation bar changes depending on user status and screen size:
 ---
 
 ## Database Design
-INFO HERE
+This database uses a SQL database through PostgreSQL. It was originally built in a JSON file, [which can be found here](products/fixtures).
+
+### Categories
+![JSON file screenshot of categories](static/docs/img/categories.png)
+
+### Products
+![JSON file screenshot of products](static/docs/img/products.png)
+
 
 [Back to the top](#lead-shot-hazard)
 
@@ -418,6 +425,7 @@ INFO HERE
 ### Version Control
 #### Git:
 [Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to add and commit to Git and push to GitHub.
+
 #### GitHub:
 [GitHub](https://github.com/) is used to store the code for this project after being pushed from Git.
 
@@ -430,6 +438,7 @@ INFO HERE
 ### Responsive Design
 #### Am I Responsive Design:
 [Am I Responsive Design](http://ami.responsivedesign.is/#) was used to check the responsive design of the site, and to create the final site image.
+
 #### Responsinator:
 [Responsinator](http://www.responsinator.com/) was used to help improve the responsive design on a variety of devices.
 
@@ -438,12 +447,17 @@ INFO HERE
 #### Shields.io:
 [Shields.io](https://shields.io/) was used to create the GitHub badges for the top of this README.md file.
 
+#### Carbon
+[Carbon](https://carbon.now.sh/) was used to take elegant screenshots of code for this documentation.
+
 
 ### Site Design
 #### Font Awesome:
 [Font Awesome](https://fontawesome.com/) was used on all pages to add the icons.
+
 #### Google Fonts:
 [Google Fonts](https://fonts.google.com/) was used to select all the fonts on the site.
+
 #### Favicon.io:
 [favicon.io](https://favicon.io/) used to create a site favicon.
 
@@ -471,6 +485,7 @@ INFO HERE
 ### Hosting
 #### Heroku:
 [Heroku](https://www.heroku.com) was used to deploy the live site.
+
 #### Amazon AWS S3
 [Amazon AWS S3](https://s3.console.aws.amazon.com/s3) was used to host this project's images and static files.
 
@@ -478,24 +493,34 @@ INFO HERE
 ### Frameworks, Libraries and Others
 #### Google DevTools:
 [Google DevTools](https://developer.chrome.com/docs/devtools/) was used to help find what code correlated to which feature.
+
 #### Lighthouse:
 [Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to ensure that the code was as performant as possible, confirming to best practices, and SEO and Accessibility guidelines.
+
 #### WebPageTest:
 [WebPageTest](https://www.webpagetest.org/) was used to ensure that the code was as performant as possible, confirming to best practices, and SEO and Accessibility guidelines. As it is often more reliable than Lighthouse, this was used near the end of the project to fix any remaining issues.
+
 #### Flask:
 [Flask](https://flask.palletsprojects.com/en/2.0.x/) was used to help create the templating for this site.
+
 #### Bootstrap:
 [Bootstrap](https://getbootstrap.com/) was used to create a beautiful, responsive website.
+
 #### jQuery:
 [jQuery](https://jquery.com/), a JavaScript library was used for DOM traversal, HTML manipulation, and event handling.
+
 #### stripe.js
 [Stripe.js](https://stripe.com/docs/js) library was used for handling Stripe payment objects.
+
 #### RandomKeygen:
 [RandomKeygen](https://randomkeygen.com/) was used to generate a strong `SECRET_KEY`.
+
 #### pip:
 [pip](https://pip.pypa.io/en/stable/) was used to install the required dependancies for this site.
+
 #### Slack
 [Slack](https://slack.com/intl/en-gb/) was used to communicate with the [Code Institute](https://codeinstitute.net/) community for help and support with bug fixes, and for a peer code review.
+
 
 [Back to the top](#lead-shot-hazard)
 
