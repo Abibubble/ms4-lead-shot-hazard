@@ -325,6 +325,7 @@ The navigation bar changes depending on user status and screen size:
 #### Contact section
 * This feature allows the user to:
     * Contact the band for queries about merchandise or upcoming gigs.
+    * Navigate to any of the band's social media pages.
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
@@ -698,6 +699,10 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 ### Content
 * All content was created by [Abi Harrison](https://github.com/Abibubble).
 * [Click here to view links to all sites I used for research or testing](static/docs/LINKS.md)
+
+
+### Testing
+* [Chris Anstey](https://github.com/ansteychris), a Digital Experience Lead at Google, for the discussion we had about Lighthouse vs WebPageTest.
 
 
 ### Media

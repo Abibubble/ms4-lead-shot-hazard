@@ -45,6 +45,10 @@
     * [Assistive Technologies](#assistive-technologies)
     * [Reading Level](#reading-level)
 
+* [Site Performance and Optimisation](#site-performance-and-optimisation)
+    * [Lighthouse](#lighthouse)
+    * [WebPageTest](#webpagetest)
+
 * [Responsive Design](#responsive-design)
     * [Mobile](#mobile)
     * [Tablet](#tablet)
@@ -420,12 +424,13 @@ On every device and browser listed above, I tested the following:
 
 ### Stripe
 * To test the webhooks and payment process, I used the following Stripe testing card numbers:
-    * No authentication successful payment: 4242 4242 4242 4242
+    * No authentication required, successful payment: 4242 4242 4242 4242
     * Failed payment: 4000 0000 0000 9995
     * Authentication required: 4000 0025 0000 3155
-* The no authentication successful card was run, didn't ask for authentication, and successfully paid.
+* The no authentication required, successful card was run, didn't ask for authentication, and successfully paid.
 * The failed payment card was run and the card payment failed.
-* The authentication required card was run, asked for authentication, and successfully paid.
+* The authentication required card was run, asked for authentication, was given authentication, and successfully paid.
+* The authentication required card was run, asked for authentication, was not given authentication, and failed.
 * After each payment event, a message was shown to the user to explain the action that had just happened.
 
 ### Pagination
@@ -455,6 +460,15 @@ On every device and browser listed above, I tested the following:
 * Email validation
     * When a user is registering for an account, the site ensures the correct email address has been entered by sending a verification email to the email address the user has supplied.
     * The account cannot be used until the user has verified that their email address is correct by following the link in the validation email.
+* Image validation
+    * A default image will display if there is no image added.
+    * A default image will display if the image link has broken.
+* Page validation
+    * A custom 404 error page will show if the user attempts to visit a page that doesn't exist.
+* Webhook validation
+    * Webhooks form a notification system for every secure action on your site.
+    * Webhooks return an event object, containing all the relevant information about the action, including the type of action, and the data associated with it.
+    * If the user leaves the page before the order is complete but the payment goes through, the billing details and shipping address will be sent with the payment, and can be accessed via the webhooks.
 
 [Back to the top](#testing)
 
@@ -475,7 +489,7 @@ On every device and browser listed above, I tested the following:
 
 ## Accessibility
 ### Tap Targets
-* All tap targets are a minimum of 40px x 40px, to comply with WCAG Accessibility standards.
+* All tap targets are a minimum of 40px width and 40px height, to comply with WCAG Accessibility standards.
 * All tap targets have a minimum of an 8px gap between them, to avoid any overlapping tap targets.
 
 ### Color Contrast
@@ -494,43 +508,52 @@ On every device and browser listed above, I tested the following:
 * All interactable elements have hover and focus styling applied to them.
 
 ### Reading Level
-* All text content on the site has a maximum reading level of age 9, to aid people with cognitive impairments, and people who don't speak English as a first language, among others.
-* All text content on this site has been tested against the Automated Readability Index (ARI) on [Readability Formulas](https://readabilityformulas.com/free-readability-formula-tests.php).
+* All text content on the site has a maximum reading level of age 9 using the Automated Readability Index (ARI), to aid people with cognitive impairments, and people who don't speak English as a first language, among others.
+* All text content on this site has been tested against the ARI on [Readability Formulas](https://readabilityformulas.com/free-readability-formula-tests.php).
+* The full report of all text on the site can be viewed in [Readability Checker Results](static/docs/READABILITY.md)
+
 
 [Back to the top](#testing)
 
 ---
 
-## Lighthouse
+## Site Performance and Optimisation
+Upon speaking to [Chris Anstey](https://github.com/ansteychris), a Digital Experience Lead at Google, he recommended testing with both Lighthouse and WebPageTest. Whilst they both test for the same things, Lighthouse often suffers from inaccurate readings for to a wide variety of reasons. This ranges from how many browser tabs / windows you have open while you're doing the test, to how well your internet speed is performing that day. WebPageTest bypasses all of these issues, as it tests externally.
+
+
+### Lighthouse
 I tested my website using DevTools Lighthouse feature, and got these results:
 
 
-### Desktop
+#### Desktop
 ![Lighthouse desktop first try](static/docs/img/lighthousedesktop.png)
 
 
-### Mobile
+#### Mobile
 ![Lighthouse mobile first try](static/docs/img/lighthousemobile.png)
 
 
-### Performance:
+#### Performance:
 * 
 
 
-### Accessibility:
+#### Accessibility:
 * 
 
 
-### Best Practices:
+#### Best Practices:
 * 
 
 
-### SEO:
+#### SEO:
 * 
 
 
-## WebPageTest
+### WebPageTest
+I tested my website using WebPageTest, and got these results:
+
 * [WebPageTest Results](LINK)
+
 
 [Back to the top](#testing)
 
