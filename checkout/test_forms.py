@@ -114,6 +114,8 @@ class TestOrderForm(TestCase):
 
     def test_fields_are_correct_in_meta_class(self):
         form = OrderForm()
+        # Check that the form vields that are visible
+        # to the user are the correct ones
         self.assertEqual(form.Meta.fields, (
             'full_name', 'email', 'phone_number', 'country', 'postcode',
             'town_or_city', 'street_address1', 'street_address2', 'county',
