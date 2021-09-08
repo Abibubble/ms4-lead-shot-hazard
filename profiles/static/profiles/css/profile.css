@@ -1,3 +1,8 @@
+.order-history {
+    max-height: 416px; /* height of profile form and submit button */
+    overflow-y: auto;
+}
+
 #profile-update-form .form-control,
 #id_default_country,
 #id_default_country option:not(:first-child) {

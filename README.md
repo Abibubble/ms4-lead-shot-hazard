@@ -6,6 +6,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/abibubble/ms4-lead-shot-hazard)
 ![Font Awesome version](https://img.shields.io/badge/Font%20Awesome-v5.15.1-blue)
 ![GitHub forks](https://img.shields.io/github/forks/abibubble/ms4-lead-shot-hazard?style=social)
+![Travis CI Build](https://secure.travis-ci.org/abibubble/ms4-lead-shot-hazard.png)
 
 [Here is a link to the final project](https://ms4-lead-shot-hazard.herokuapp.com/homepage)
 

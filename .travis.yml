@@ -4,5 +4,13 @@ python:
 install:
     - pip install -r requirements.txt
 
+# Command to run tests
 scripts:
     -  python manage.py test
+
+notifications:
+    email:
+        recipients:
+            - abi.yamaha.neo@gmail.com
+        on_success: never
+        on_failure: always
