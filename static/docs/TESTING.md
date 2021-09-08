@@ -153,9 +153,9 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 
 4. PEP8 Online
     * [PEP8 Online](http://pep8online.com/)
-    * `Class 'x' has no 'objects' member`
-        * This is just a warning from VSC. Django adds the `objects` property to all model classes, so the IDE isn't aware of this.
-    * `Avoid using null=True on string-based fields such CharField`
+    * `Class 'x' has no 'objects' member` and `Class 'UserProfile' has no 'DoesNotExist' member`:
+        * These are just warnings from pylint. Django adds the `objects` and 'DoesNotExist' properties to all model classes, so the IDE isn't aware of this.
+    * `Avoid using null=True on string-based fields such CharField`:
         * This error is there to avoid a field having two values if left blank - an empty string, and `null`. This would usually be a valid error, but because I need to allow empty values in forms, this is required, as the `null` parameter only affects database storage.
 
 ![Image of PEP8 Online results](static/docs/img/pep8.png)
