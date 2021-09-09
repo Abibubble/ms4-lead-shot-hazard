@@ -13,23 +13,25 @@ class TestProduct(TestCase):
 
     def test_products_get(self):
         product = Product.objects.get(id=11)
-        resp = self.client.get(reverse('products'))
-        self.assertEqual(resp.status_code, 200)
-        self.assertContains(resp, product.name)
+        response = self.client.get(reverse('products'))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, product.name)
 
     def test_views_contains_products_get(self):
         product = Product.objects.get(id=11)
-        resp = self.client.get(reverse('products'))
-        self.assertContains(resp, product.name)
+        response = self.client.get(reverse('products'))
+        self.assertContains(response, product.name)
 
     def test_product_search_post(self):
-        resp = self.client.get(
+        response = self.client.get(
             '/products/?', {'q': 'tee'})
-        self.assertEqual(resp.status_code, 200)
-        self.assertEqual(resp.context['search_term'], 'tee')
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.context['search_term'], 'tee')
 
     def test_categories_get(self):
         product = Product.objects.get(id=11)
-        resp = self.client.get(reverse('products'))
-        self.assertEqual(resp.status_code, 200)
-        self.assertContains(resp, product.category)
+        category = Category.objects.get(pk=2)
+        response = self.client.get(reverse('products'))
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(product.category, category)
+        self.assertContains(response, product.category)
