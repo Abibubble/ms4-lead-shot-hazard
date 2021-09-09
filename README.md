@@ -471,6 +471,14 @@ This database uses a SQL database through PostgreSQL. It was originally built in
 
 [Carbon](https://carbon.now.sh/) was used to take elegant screenshots of code for this documentation.
 
+#### JSHint extension
+
+[JSHint Extension](https://open-vsx.org/vscode/item?itemName=dbaeumer.jshint) was used on GitPod to maintain code quality at all times.
+
+#### markdownlint extension
+
+[markdownlint Extension](https://open-vsx.org/vscode/item?itemName=DavidAnson.vscode-markdownlint) was used on GitPod to ensure all markdown was correctly formatted.
+
 ### Site Design
 
 #### Font Awesome
@@ -595,7 +603,7 @@ This database uses a SQL database through PostgreSQL. It was originally built in
 
 #### Non-GitPod IDE
 
-```json
+```python
 import os
 
 os.environ["SECRET_KEY"] = "## YOUR SECRET_KEY ##"
