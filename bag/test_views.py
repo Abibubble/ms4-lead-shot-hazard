@@ -4,6 +4,9 @@ from django.shortcuts import reverse
 
 
 class TestBagViews(TestCase):
+    """
+    Test that the shopping bag works as expected
+    """
 
     def test_view_bag(self):
         response = self.client.get(reverse('view_bag'))

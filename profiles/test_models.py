@@ -1,13 +1,14 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
-from django.test import Client
-
-from .models import UserProfile
 
 
 class UserProfileTest(TestCase):
+    """
+    Test that the user profile works as expected
+    """
 
-    def test_get_profile(self):
+    # Test retrieving the user profile
+    def test_getting_user_profile(self):
         user = User.objects.create(username='testuser')
         user.set_password('te12345st')
         user.save()

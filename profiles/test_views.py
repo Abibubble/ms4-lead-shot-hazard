@@ -14,6 +14,7 @@ class TestProfileViews(TestCase):
         User.objects.create_user(
             username="testuser", email="test@test.com", password="te12345st")
 
+    # Test that a logged in user can access their profile page, and a logged out user can't
     def test_logged_in_user_profile_page(self):
         if not AnonymousUser:
             response = self.client.get(reverse('profile'))

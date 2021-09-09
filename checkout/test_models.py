@@ -4,6 +4,9 @@ from .models import Order
 
 
 class TestOrderModels(TestCase):
+    """
+    Test that the order models work as expected
+    """
 
     @classmethod
     def setUpTestData(cls):
@@ -16,6 +19,7 @@ class TestOrderModels(TestCase):
             street_address1='test'
         )
 
+    # Test that the checkout fields auto-fill from the user's information
     def test_checkout_details(self):
         order = Order.objects.get(id=1)
         self.assertEqual(order.full_name, 'tester test')
