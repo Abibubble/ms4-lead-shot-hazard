@@ -4,7 +4,7 @@ from django.shortcuts import reverse
 from django.contrib.auth.models import User, AnonymousUser
 
 
-class TestViews(TestCase):
+class TestProfileViews(TestCase):
     """
     Test that the user profile page displays when logged in
     """

@@ -3,7 +3,7 @@ from django.test import TestCase
 from django.shortcuts import reverse
 
 
-class TestViews(TestCase):
+class TestHomeViews(TestCase):
     """
     Test that the home page displays
     """

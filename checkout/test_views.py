@@ -1,11 +1,10 @@
 from django.test import TestCase
 
 from django.shortcuts import reverse
-from django.contrib.auth.models import User, AnonymousUser
+from django.contrib.auth.models import User
 
-from checkout.models import Order
 
-class TestViews(TestCase):
+class TestCheckoutViews(TestCase):
 
     @classmethod
     def setUpTestData(cls):

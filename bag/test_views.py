@@ -3,7 +3,7 @@ from django.test import TestCase
 from django.shortcuts import reverse
 
 
-class TestViews(TestCase):
+class TestBagViews(TestCase):
 
     def test_view_bag(self):
         response = self.client.get(reverse('view_bag'))

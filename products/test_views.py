@@ -4,7 +4,7 @@ from django.shortcuts import reverse
 from .models import Category, Product
 
 
-class TestProduct(TestCase):
+class TestProductViews(TestCase):
 
     fixtures = [
         'categories.json',
