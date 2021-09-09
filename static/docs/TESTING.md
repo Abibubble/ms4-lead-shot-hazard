@@ -5,59 +5,59 @@
 * [Icon Key](#icon-key)
 
 * [Manual Testing](#manual-testing)
-    * [Devices and Browsers](#devices-and-browsers)
-    * [Testing Technologies](#testing-technologies)
-    * [Testing User Stories](#testing-user-stories)
-        * [Business Goals](#business-goals)
-        * [First Time User Goals](#first-time-user-goals)
-        * [Returning User Goals](#returning-user-goals)
-        * [Admin Goals](#admin-goals)
+  * [Devices and Browsers](#devices-and-browsers)
+  * [Testing Technologies](#testing-steps-technologies)
+  * [Testing User Stories](#testing-steps-user-stories)
+    * [Business Goals](#business-goals)
+    * [First Time User Goals](#first-time-user-goals)
+    * [Returning User Goals](#returning-user-goals)
+    * [Admin Goals](#admin-goals)
 
 * [Links and Navigation](#links-and-navigation)
-    * [Navigation Bar](#navigation-bar)
-    * [Modals](#modals)
-    * [External Links](#external-links)
+  * [Navigation Bar](#navigation-bar)
+  * [Modals](#modals)
+  * [External Links](#external-links)
 
 * [Styling and Layout](#styling-and-layout)
 
 * [User Access](#user-access)
 
 * [Functions](#functions)
-    * [Register](#register)
-    * [Log In](#log-in)
-    * [Log Out](#log-out)
-    * [Add Products](#add-products)
-    * [Edit Products](#edit-products)
-    * [Delete Products](#delete-products)
-    * [Search Products](#search-products)
-    * [Messages](#messages)
-    * [Stripe](#stripe)
-    * [Pagination](#pagination)
-    * [404](#404)
-    * [Validation](#validation)
+  * [Register](#register)
+  * [Log In](#log-in)
+  * [Log Out](#log-out)
+  * [Add Products](#add-products)
+  * [Edit Products](#edit-products)
+  * [Delete Products](#delete-products)
+  * [Search Products](#search-products)
+  * [Messages](#messages)
+  * [Stripe](#stripe)
+  * [Pagination](#pagination)
+  * [404](#404)
+  * [Validation](#validation)
 
 * [Database](#database)
 
 * [Accessibility](#accessibility)
-    * [Tap Targets](#tap-targets)
-    * [Color Contrast](#color-contrast)
-    * [Visually-Impaired Users](#visually-impaired-users)
-    * [Assistive Technologies](#assistive-technologies)
-    * [Reading Level](#reading-level)
+  * [Tap Targets](#tap-targets)
+  * [Color Contrast](#color-contrast)
+  * [Visually-Impaired Users](#visually-impaired-users)
+  * [Assistive Technologies](#assistive-technologies)
+  * [Reading Level](#reading-level)
 
 * [Site Performance and Optimisation](#site-performance-and-optimisation)
-    * [Lighthouse](#lighthouse)
-    * [WebPageTest](#webpagetest)
+  * [Lighthouse](#lighthouse)
+  * [WebPageTest](#webpagetest)
 
 * [Responsive Design](#responsive-design)
-    * [Mobile](#mobile)
-    * [Tablet](#tablet)
-    * [Computer](#computer)
+  * [Mobile](#mobile)
+  * [Tablet](#tablet)
+  * [Computer](#computer)
 
 * [Images](#images)
-    * [Desktop and Laptop](#desktop-and-laptop)
-    * [Tablet](#tablet)
-    * [Mobile](#mobile)
+  * [Desktop and Laptop Screenshots](#desktop-and-laptop-screenshots)
+  * [Tablet Screenshots](#tablet-screenshots)
+  * [Mobile Screenshots](#mobile-screenshots)
 
 ---
 
@@ -69,13 +69,16 @@
 
 &#128683; <-- Logged Out only
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
 ## Manual Testing
+
 ### Devices and Browsers
+
 #### Desktop / Laptop
+
 1. Google Chrome
     * All tested and working correctly.
 
@@ -89,10 +92,12 @@
     * All tested and working correctly.
 
 #### Tablet
+
 1. Safari
     * All tested and working correctly.
 
 #### Mobile
+
 1. Google Chrome
     * All tested and working correctly.
 
@@ -103,32 +108,34 @@
     * All tested and working correctly.
 
 #### Full devices and browsers
+
 * The website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge, Safari and Samsung Internet browsers.
 * Testing was not done on Internet Explorer due to it being depreciated in favour of Microsoft Edge.
 * The website was viewed on a variety of devices, including:
-    * Custom built desktop PC, running Windows 10
-    * Acer Aspire V Nitro Laptop, running Windows 10
-    * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
-    * MacBook Air7,2 (13-inch, 2017)
-    * MacBook Pro (15-inch, 2017), running macOS Catalina
-    * iPad 6,11 5th generation, running iOS 10.3
-    * iPhone 7
-    * iPhone X
-    * iPhone 12
-    * OPPO Find X2 Lite
-    * OPPO Find X2
-    * Samsung Galaxy A70
-    * Samsung Galaxy S9
-    * Samsung A20
-    * xBox One
+  * Custom built desktop PC, running Windows 10
+  * Acer Aspire V Nitro Laptop, running Windows 10
+  * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
+  * MacBook Air7,2 (13-inch, 2017)
+  * MacBook Pro (15-inch, 2017), running macOS Catalina
+  * iPad 6,11 5th generation, running iOS 10.3
+  * iPhone 7
+  * iPhone X
+  * iPhone 12
+  * OPPO Find X2 Lite
+  * OPPO Find X2
+  * Samsung Galaxy A70
+  * Samsung Galaxy S9
+  * Samsung A20
+  * xBox One
 
 A large amount of testing was done to ensure that all pages were displayed, and all functionality worked as it should. Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
 ### Testing technologies
+
 * HTML was validated using [W3C HTML Markup Validator](https://validator.w3.org/).
 * CSS was validated using [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/).
 * JavaScript was validated using [JSHint](https://jshint.com/).
@@ -148,8 +155,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 3. JSHint
     * [JSHint](https://jshint.com/)
     * EXPLANATIONS
-
-![Image of JSHint results](static/docs/img/jshint.png)
+    * ![Image of JSHint results](static/docs/img/jshint.png)
 
 4. PEP8 Online
     * [PEP8 Online](http://pep8online.com/)
@@ -157,8 +163,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
         * These are just warnings from pylint. Django adds the `objects` and 'DoesNotExist' properties to all model classes, so the IDE isn't aware of this.
     * `Avoid using null=True on string-based fields such CharField`:
         * This error is there to avoid a field having two values if left blank - an empty string, and `null`. This would usually be a valid error, but because I need to allow empty values in forms, this is required, as the `null` parameter only affects database storage.
-
-![Image of PEP8 Online results](static/docs/img/pep8.png)
+    * ![Image of PEP8 Online results](static/docs/img/pep8.png)
 
 ### Testing User Stories
 
@@ -211,16 +216,18 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 | G3 | Site User - Be confident that my password is stored securely - Feel safe from malicious activity |  |
 | G4 | Site Owner - Be confident of the security of the restricted pages - Feel safe from malicious activity | The superuser is set through Django, so there can only be one. If a logged out user tried to access a restricted page, it directs them to the log in page. If a logged in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message informing them of this. |
 
-
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
 ## Links and Navigation
+
 On every device and browser listed above, I tested the following:
 
 ### Navigation Bar
-#### Logo
+
+#### Logo Testing
+
 * Click the Logo to take the user to the Home page from the Home page.
 * Click the Logo to take the user to the Home page from the Product Details page.
 * Click the Logo to take the user to the Home page from the Shopping Bag page.
@@ -231,7 +238,8 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Logo to take the user to the Home page from the Log In page.
 * &#128683; Click the Logo to take the user to the Home page from the Register page.
 
-#### Home
+#### Home Testing
+
 * Click the Home button to take the user to the Home page from the Home page.
 * Click the Home button to take the user to the Home page from the Product Details page.
 * Click the Home button to take the user to the Home page from the Shopping Bag page.
@@ -242,7 +250,8 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Home button to take the user to the Home page from the Log In page.
 * &#128683; Click the Home button to take the user to the Home page from the Register page.
 
-#### Profile
+#### Profile Testing
+
 * &#128100; Click the Profile button to take the user to the Profile page from the Home page.
 * &#128100; Click the Profile button to take the user to the Profile page from the Product Details page.
 * &#128100; Click the Profile button to take the user to the Profile page from the Shopping Bag page.
@@ -251,7 +260,8 @@ On every device and browser listed above, I tested the following:
 * &#128100; Click the Profile button to take the user to the Profile page from the Profile page.
 * &#128272; Click the Profile button to take the user to the Profile page from the Manage Products page.
 
-#### Manage Products
+#### Manage Products Testing
+
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Home page.
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Product Details page.
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Shopping Bag page.
@@ -260,12 +270,14 @@ On every device and browser listed above, I tested the following:
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Profile page.
 * &#128272; Click the Manage Products button to take the user to the Manage Products page from the Manage Products page.
 
-#### Add / Edit / Delete Product
+#### Add / Edit / Delete Product Testing
+
 * &#128272; Click the Add button to take the user to the Add page from the Manage Products page.
 * &#128272; Click the Edit button to take the user to the Edit page from the Manage Products page.
 * &#128272; Click the Delete button to open the Delete modal from the Manage Products page.
 
-#### Log Out
+#### Log Out Testing
+
 * &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Home page.
 * &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Product Details page.
 * &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Shopping Bag page.
@@ -274,7 +286,8 @@ On every device and browser listed above, I tested the following:
 * &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Profile page.
 * &#128272; Click the Log Out button to log the user out and take them to the Log In page from the Manage Products page.
 
-#### Log In
+#### Log In Testing
+
 * &#128683; Click the Log In button to take the user to the Log In page from the Home page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Log In page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Register page.
@@ -283,7 +296,8 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Log In button to take the user to the Log In page from the Checkout page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Order Success page.
 
-#### Register
+#### Register Testing
+
 * &#128683; Click the Register button to take the user to the Register page from the Home page.
 * &#128683; Click the Register button to take the user to the Register page from the Log In page.
 * &#128683; Click the Register button to take the user to the Register page from the Register page.
@@ -292,18 +306,20 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Register button to take the user to the Register page from the Checkout page.
 * &#128683; Click the Register button to take the user to the Register page from the Order Success page.
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
 ## Modals
+
 * &#128272; The Delete modal is visible in front of all other items on the screen, and clearly displays the Cancel and Delete buttons.
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
 ## External Links
+
 * The Facebook social media icon opens up the Lead Shot Hazard Facebook page in a new tab.
 * The Bandcamp social media icon opens up the Lead Shot Hazard Bandcamp page in a new tab.
 * The Instagram social media icon opens up the Lead Shot Hazard Instagram page in a new tab.
@@ -313,38 +329,45 @@ On every device and browser listed above, I tested the following:
 * The TikTok social media icon opens up the Lead Shot Hazard TikTok page in a new tab.
 * The Soundcloud social media icon opens up the Lead Shot Hazard Soundcloud page in a new tab.
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
 ## Styling and Layout
+
 * Ensure all images load correctly.
 * Ensure all grid layouts size correctly on all screen sizes.
 * Ensure all modals appear in front of all other content on the screen.
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
 ## User Access
+
 ### Logged Out Users
+
 * &#128683;
 * Navigation bar will show Logo, Home, Log In, Register.
 
 ### Logged In Users
+
 * &#128100;
 * Navigation bar will show Logo, Home, Profile, Log Out.
 
 ### Admin Users
+
 * &#128272;
 * Navigation bar will show Logo, Home, Profile, Manage Products, Log Out.
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
 ## Functions
+
 ### Register
+
 * &#128683;
 * Creates a new user account.
 * Confirm password field is checked against password field to ensure no typos are made.
@@ -352,6 +375,7 @@ On every device and browser listed above, I tested the following:
 * If the passwords don't match, the user is informed via a toast message.
 
 ### Log In
+
 * &#128683;
 * Logs the user into their existing account.
 * Checks their password entry against the hashed password stored in their user in the database.
@@ -360,16 +384,19 @@ On every device and browser listed above, I tested the following:
 * The user is able to view their password before logging in to check for typos.
 
 ### Log Out
+
 * &#128100;
 * Logs the user out of the current session user account.
 * Removes all session data.
 
 ### Homepage
+
 * &#128683;
 * All products are displayed on this page.
 * There is a search function, as explained below in [Search Products](#search-products).
 
 ### Profile
+
 * &#128100;
 * Only accessible for logged in users.
 * It allows users to view any order that they have made.
@@ -377,6 +404,7 @@ On every device and browser listed above, I tested the following:
 * There is also a button to allow a user to delete their account.
 
 ### Delete Account
+
 * &#128100;
 * Only accessible for logged in users.
 * Creates a modal to confirm if the user wishes to delete their account.
@@ -385,6 +413,7 @@ On every device and browser listed above, I tested the following:
 * &#128272; This function is not able to delete the superuser.
 
 ### Add Products
+
 * &#128272;
 * Only accessible for the superuser.
 * Provides a form for users to fill in, with placeholder text.
@@ -392,6 +421,7 @@ On every device and browser listed above, I tested the following:
 * Once submitted, it adds an item into the database, which then populates it onto the site.
 
 ### Edit Products
+
 * &#128272;
 * Only accessible for the superuser.
 * Provides a form for users to fill in, with placeholder text.
@@ -400,6 +430,7 @@ On every device and browser listed above, I tested the following:
 * Once submitted, it edits the item in the database, which then populates those edits onto the site.
 
 ### Delete Products
+
 * &#128272;
 * Only accessible for the superuser.
 * Creates a modal to confirm if the user wishes to delete this item.
@@ -407,6 +438,7 @@ On every device and browser listed above, I tested the following:
 * The item will be permanently deleted from the database.
 
 ### Search Products
+
 * Accessible by all users.
 * Searches through database for what the user has entered into the search box.
 * It uses the product name and description to search within.
@@ -414,6 +446,7 @@ On every device and browser listed above, I tested the following:
 * The reset button then clears the search bar, and returns the page to it's standard state.
 
 ### Messages
+
 * If products are added to the database, the phrase '{Item} Successfully Added' should display.
 * If products are deleted from the database, the phrase '{Item} Successfully Deleted' should display.
 * If products are edited in the database, the phrase '{Item} Successfully Updated' should display.
@@ -423,10 +456,11 @@ On every device and browser listed above, I tested the following:
 * If a logged in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message saying 'You do not have access to this page'.
 
 ### Stripe
+
 * To test the webhooks and payment process, I used the following Stripe testing card numbers:
-    * No authentication required, successful payment: 4242 4242 4242 4242
-    * Failed payment: 4000 0000 0000 9995
-    * Authentication required: 4000 0025 0000 3155
+  * No authentication required, successful payment: 4242 4242 4242 4242
+  * Failed payment: 4000 0000 0000 9995
+  * Authentication required: 4000 0025 0000 3155
 * The no authentication required, successful card was run, didn't ask for authentication, and successfully paid.
 * The failed payment card was run and the card payment failed.
 * The authentication required card was run, asked for authentication, was given authentication, and successfully paid.
@@ -434,6 +468,7 @@ On every device and browser listed above, I tested the following:
 * After each payment event, a message was shown to the user to explain the action that had just happened.
 
 ### Pagination
+
 * Accessible by all users
 * If there are more than 10 items visible on the page, it displays only the first 10, and shows pagination information and links under the items to allow easy navigation.
 * This also works within the search function.
@@ -441,6 +476,7 @@ On every device and browser listed above, I tested the following:
 * The user can click the arrow buttons to take them forwards or backwards one page.
 
 ### 404
+
 * Accessible by all users
 * This page will display if a user has tried to access a page that doesn't exist, or if a user doesn't have access to the page they're trying to reach.
 * It accesses whether the user is logged in or not, and if logged in, whether they are a superuser or not, and displays the corresponding navigation bar.
@@ -448,33 +484,35 @@ On every device and browser listed above, I tested the following:
 * It directs the user to the navigation bar to continue back to the safety of the site.
 
 ### Validation
-* Form validation
-    * This has been used on every form input on the site to ensure the correct data is added.
-    * If incorrect data is added, red warning text appears, to instruct the user of how to fix the error.
-* Adding products to the bag
-    * Custom validation has been added to ensure that users can't:
-        * Add less than one of a product into their bag (such as adding a 0 quantity of a product).
-        * Add more than 99 of a product into their bag.
-* Password validation
-    * When a user is registering for an account, the site ensures no typos happen by prompting the user to enter the password twice, with the site checking to confirm that the passwords match.
-* Email validation
-    * When a user is registering for an account, the site ensures the correct email address has been entered by sending a verification email to the email address the user has supplied.
-    * The account cannot be used until the user has verified that their email address is correct by following the link in the validation email.
-* Image validation
-    * A default image will display if there is no image added.
-    * A default image will display if the image link has broken.
-* Page validation
-    * A custom 404 error page will show if the user attempts to visit a page that doesn't exist.
-* Webhook validation
-    * Webhooks form a notification system for every secure action on your site.
-    * Webhooks return an event object, containing all the relevant information about the action, including the type of action, and the data associated with it.
-    * If the user leaves the page before the order is complete but the payment goes through, the billing details and shipping address will be sent with the payment, and can be accessed via the webhooks.
 
-[Back to the top](#testing)
+* Form validation
+  * This has been used on every form input on the site to ensure the correct data is added.
+  * If incorrect data is added, red warning text appears, to instruct the user of how to fix the error.
+* Adding products to the bag
+  * Custom validation has been added to ensure that users can't:
+    * Add less than one of a product into their bag (such as adding a 0 quantity of a product).
+    * Add more than 99 of a product into their bag.
+* Password validation
+  * When a user is registering for an account, the site ensures no typos happen by prompting the user to enter the password twice, with the site checking to confirm that the passwords match.
+* Email validation
+  * When a user is registering for an account, the site ensures the correct email address has been entered by sending a verification email to the email address the user has supplied.
+  * The account cannot be used until the user has verified that their email address is correct by following the link in the validation email.
+* Image validation
+  * A default image will display if there is no image added.
+  * A default image will display if the image link has broken.
+* Page validation
+  * A custom 404 error page will show if the user attempts to visit a page that doesn't exist.
+* Webhook validation
+  * Webhooks form a notification system for every secure action on your site.
+  * Webhooks return an event object, containing all the relevant information about the action, including the type of action, and the data associated with it.
+  * If the user leaves the page before the order is complete but the payment goes through, the billing details and shipping address will be sent with the payment, and can be accessed via the webhooks.
+
+[Back to the top](#testing-steps)
 
 ---
 
 ## Database
+
 * When the superuser adds products to the database, the information should be stored.
 * When the superuser edits a product in the database, the information should be populated from the current product data.
 * When the superuser edits a product in the database, the information should be stored.
@@ -483,84 +521,91 @@ On every device and browser listed above, I tested the following:
 * If products are deleted from the database, the phrase '{Item} Successfully Deleted' should display.
 * If products are edited in the database, the phrase '{Item} Successfully Updated' should display.
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
 ## Accessibility
+
 ### Tap Targets
+
 * All tap targets are a minimum of 40px width and 40px height, to comply with WCAG Accessibility standards.
 * All tap targets have a minimum of an 8px gap between them, to avoid any overlapping tap targets.
 
 ### Color Contrast
+
 * All background and foreground colors have a sufficient contrast ratio.
 * This site has been checked by a user with deuteranopia color blindness with no issues present.
 * [Toptal Color Blind Filter](https://www.toptal.com/designers/colorfilter/) was used to check every accessible page against every type of color blindness, with no issues present. Unfortunately, the checker doesn't support loggin in, so the logged in only pages were not able to be checked this way.
 * All color contrasts were checked using [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/), with all large-scale text having a contrast ratio of at least 3:1, and all other text having a contrast ratio of at least 4.5:1.
 
 ### Visually-Impaired Users
+
 * All images have meaningful alt text.
 * All icons have an aria-label to describe them, unless semantic text is also visible.
 * All buttons that need more description for a visually-impaired user have an aria-labelledby attribute attached to them.
 
 ### Assistive Technologies
+
 * All actions are keyboard-focusable.
 * All interactable elements have hover and focus styling applied to them.
 
 ### Reading Level
+
 * All text content on the site has a maximum reading level of age 9 using the Automated Readability Index (ARI), to aid people with cognitive impairments, and people who don't speak English as a first language, among others.
 * All text content on this site has been tested against the ARI on [Readability Formulas](https://readabilityformulas.com/free-readability-formula-tests.php).
 * The full report of all text on the site can be viewed in [Readability Checker Results](static/docs/READABILITY.md)
 
-
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
 ## Site Performance and Optimisation
+
 Upon speaking to [Chris Anstey](https://github.com/ansteychris), a Digital Experience Lead at Google, he recommended testing with both Lighthouse and WebPageTest. Whilst they both test for the same things, Lighthouse often suffers from inaccurate readings for to a wide variety of reasons. This ranges from how many browser tabs / windows you have open while you're doing the test, to how well your internet speed is performing that day. WebPageTest bypasses all of these issues, as it tests externally.
 
-
 ### Lighthouse
+
 I tested my website using DevTools Lighthouse feature, and got these results:
 
+#### Desktop Lighthouse
 
-#### Desktop
 ![Lighthouse desktop first try](static/docs/img/lighthousedesktop.png)
 
+#### Mobile Lighthouse
 
-#### Mobile
 ![Lighthouse mobile first try](static/docs/img/lighthousemobile.png)
 
+#### Performance Lighthouse
 
-#### Performance:
-* 
+*
 
+#### Accessibility Lighthouse
 
-#### Accessibility:
-* 
+*
 
+#### Best Practices Lighthouse
 
-#### Best Practices:
-* 
+*
 
+#### SEO Lighthouse
 
-#### SEO:
-* 
-
+*
 
 ### WebPageTest
+
 I tested my website using WebPageTest, and got these results:
 
 * [WebPageTest Results](LINK)
 
-
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
 ## Responsive Design
-### Mobile
+
+### Mobile Testing
+
 * The Home page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The Log In page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The Log Out page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
@@ -575,7 +620,8 @@ I tested my website using WebPageTest, and got these results:
 * All fonts are easy to read.
 * All images are scaled to the screen size, whilst maintaining the correct aspect ratio.
 
-### Tablet
+### Tablet Testing
+
 * The Home page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The Log In page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The Log Out page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
@@ -590,7 +636,8 @@ I tested my website using WebPageTest, and got these results:
 * All fonts are easy to read.
 * All images are scaled to the screen size, whilst maintaining the correct aspect ratio.
 
-### Computer
+### Computer Testing
+
 * The Home page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The Log In page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The Log Out page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
@@ -605,58 +652,66 @@ I tested my website using WebPageTest, and got these results:
 * All fonts are easy to read.
 * All images are scaled to the screen size, whilst maintaining the correct aspect ratio.
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
 ## Images
-### Desktop and Laptop
-#### Chrome
+
+### Desktop and Laptop Screenshots
+
+#### Chrome Desktop Screenshots
+
 ![Home page](static/docs/testing/desktop/chrome/home.png)
 ![Log In page](static/docs/testing/desktop/chrome/log-in.png)
 ![Register page](static/docs/testing/desktop/chrome/register.png)
 ![Add Merchandise page](static/docs/testing/desktop/chrome/add-merch.png)
 ![Edit Merchandise page](static/docs/testing/desktop/chrome/edit-merch.png)
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
-#### Edge
+#### Edge Desktop Screenshots
+
 ![Home page](static/docs/testing/desktop/edge/home.jpeg)
 ![Log In page](static/docs/testing/desktop/edge/log-in.jpeg)
 ![Register page](static/docs/testing/desktop/edge/register.jpeg)
 ![Add Merchandise page](static/docs/testing/desktop/edge/add-merch.jpeg)
 ![Edit Merchandise page](static/docs/testing/desktop/edge/edit-merch.jpeg)
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
-#### Mozilla Firefox
+#### Mozilla Firefox Desktop Screenshots
+
 ![Home page](static/docs/testing/desktop/moz/home.png)
 ![Log In page](static/docs/testing/desktop/moz/log-in.png)
 ![Register page](static/docs/testing/desktop/moz/register.png)
 ![Add Merchandise page](static/docs/testing/desktop/moz/add-merch.png)
 ![Edit Merchandise page](static/docs/testing/desktop/moz/edit-merch.png)
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
-#### Safari
+#### Safari Desktop Screenshots
+
 ![Home page](static/docs/testing/desktop/safari/home.png)
 ![Log In page](static/docs/testing/desktop/safari/log-in.png)
 ![Register page](static/docs/testing/desktop/safari/register.png)
 ![Add Merchandise page](static/docs/testing/desktop/safari/add-merch.png)
 ![Edit Merchandise page](static/docs/testing/desktop/safari/edit-merch.png)
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
-### Tablet
-#### Safari
+### Tablet Screenshots
+
+#### Safari Tablet Screenshots
+
 ![Home page](static/docs/testing/tablet/safari/home.jpg)
 ![Log In page](static/docs/testing/tablet/safari/log-in.jpg)
 ![Register page](static/docs/testing/tablet/safari/register.jpg)
@@ -664,12 +719,14 @@ I tested my website using WebPageTest, and got these results:
 ![Edit Merchandise page](static/docs/testing/tablet/safari/edit-merch.jpg)
 ![Menu](static/docs/testing/tablet/safari/menu.jpg)
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
-### Mobile
-#### Chrome
+### Mobile Screenshots
+
+#### Chrome Mobile Screenshots
+
 ![Home page](static/docs/testing/mobile/chrome/home.jpg)
 ![Log In page](static/docs/testing/mobile/chrome/log-in.jpg)
 ![Register page](static/docs/testing/mobile/chrome/register.jpg)
@@ -677,11 +734,12 @@ I tested my website using WebPageTest, and got these results:
 ![Edit Merchandise page](static/docs/testing/mobile/chrome/edit-merch.jpg)
 ![Navigation menu](static/docs/testing/mobile/chrome/menu.jpg)
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
-#### Safari
+#### Safari Mobile Screenshots
+
 ![Home page](static/docs/testing/mobile/safari/home.jpg)
 ![Log In page](static/docs/testing/mobile/safari/log-in.jpg)
 ![Register page](static/docs/testing/mobile/safari/register.jpg)
@@ -689,11 +747,12 @@ I tested my website using WebPageTest, and got these results:
 ![Edit Merchandise page](static/docs/testing/mobile/safari/edit-merch.jpg)
 ![Navigation menu](static/docs/testing/mobile/safari/menu.jpg)
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
 
 ---
 
-#### Samsung Internet
+#### Samsung Internet Mobile Screenshots
+
 ![Home page](static/docs/testing/mobile/samsung/home.jpg)
 ![Log In page](static/docs/testing/mobile/samsung/log-in.jpg)
 ![Register page](static/docs/testing/mobile/samsung/register.jpg)
@@ -701,4 +760,4 @@ I tested my website using WebPageTest, and got these results:
 ![Edit Merchandise page](static/docs/testing/mobile/samsung/edit-merch.jpg)
 ![Navigation menu](static/docs/testing/mobile/samsung/menu.jpg)
 
-[Back to the top](#testing)
+[Back to the top](#testing-steps)
