@@ -15,7 +15,7 @@ class TestProductViews(TestCase):
     ]
 
     # Test that a product can be retrieved
-    def test_products_get(self):
+    def test_products(self):
         product = Product.objects.get(id=11)
         response = self.client.get(reverse('products'))
         self.assertEqual(response.status_code, 200)
@@ -29,10 +29,19 @@ class TestProductViews(TestCase):
         self.assertEqual(response.context['search_term'], 'tee')
 
     # Test that the category sort feature works as expected
-    def test_categories_get(self):
+    def test_categories(self):
         product = Product.objects.get(id=11)
         category = Category.objects.get(pk=2)
         response = self.client.get(reverse('products'))
         self.assertEqual(response.status_code, 200)
         self.assertEqual(product.category, category)
         self.assertContains(response, product.category)
+
+    # Test that a product detail can be retrieved
+    def test_product_detail(self):
+        product = Product.objects.get(id=11)
+        response = self.client.get(reverse('products'))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, product.name)
+        self.assertTemplateUsed(
+            response, template_name="products/products.html")

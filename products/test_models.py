@@ -18,6 +18,7 @@ class TestProductModels(TestCase):
         product = Product.objects.get(pk=6)
         self.assertEqual(product.name, 'Old No. 7 Ska Band')
         self.assertNotEqual(product.name, 'Test name')
+        self.assertEqual(str(product), product.name)
 
     # Test that the product description is retrieved correctly
     def test_product_description(self):
@@ -47,9 +48,15 @@ class TestCategoryModels(TestCase):
     ]
 
     # Test that the category name and friendly name are retrieved correctly
-    def test_category_name_and_friendly_name(self):
+    def test_category_name(self):
         category = Category.objects.get(pk=2)
         self.assertEqual(category.name, 'music')
         self.assertNotEqual(category.name, 'test')
+        self.assertEqual(str(category), category.name)
+
+    def test_category_friendly_name(self):
+        category = Category.objects.get(pk=2)
         self.assertEqual(category.friendly_name, 'Music')
         self.assertNotEqual(category.friendly_name, 'Test Category')
+        self.assertEqual(
+            Category.get_friendly_name(category), category.friendly_name)
