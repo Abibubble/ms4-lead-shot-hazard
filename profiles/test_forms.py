@@ -1,4 +1,5 @@
 from django.test import TestCase
+
 from .forms import UserProfileForm
 
 
@@ -22,8 +23,10 @@ class TestUserProfileForm(TestCase):
         self.assertTrue(form.is_valid())
         self.assertFalse(form.errors)
 
+    # Test that placeholder has a * if it's a required field
+    # def test_placeholder_star(self):
+
     # Test that the user field is excluded in the profile UserProfileForm
     def test_user_profile_form_metaclass(self):
-
         form = UserProfileForm()
         self.assertEqual(form.Meta.exclude, ('user',))
