@@ -33,12 +33,15 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
-                    <a href="{{ product.image.url }}" target="_blank">
-                        {% if product.image %}
+                    {% if product.image %}
+                        <a href="{{ product.image.url }}" target="_blank" rel="noopener">
                             <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid">
-                        {% else %}
+                        </a>
+                    {% else %}
+                        <a href="{{ MEDIA_URL }}roundall.png" target="_blank" rel="noopener">
                             <img src="{{ MEDIA_URL }}roundall.png" alt="{{ product.name }}" class="card-img-top img-fluid">
-                        {% endif %}
+                        </a>
+                    {% endif %}
                     </a>
                 </div>
             </div>
