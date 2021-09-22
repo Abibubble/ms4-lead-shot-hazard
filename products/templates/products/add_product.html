@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_meta %}
+    <!-- Metas -->
+    <meta name="description" content="Product Management page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+    <meta name="keywords" content="lead, shot, hazard, ska, punk, band, merch, shopping, bag, checkout, music, merchandise, skapunk, london, brass, trombone, saxophone">
+    <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
+    <!-- Facebook, LinkedIn, Google -->
+    <meta property="og:title" content="Lead Shot Hazard Product Management" />
+    <meta property="og:description" content="Product Management page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
+    <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Lead Shot Hazard Product Management">
+    <meta name="twitter:description" content="Product Management page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+{% endblock %}
+
+{% block extra_title %}
+    Product Management
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <hr>
+                <h2 class="mb-4">Product Management</h2>
+                <h3 class="text-tag-dark text-transform-none">Add a Product</h3>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <form action="{% url 'add_product' %}" class="form mb-2" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="text-right">
+                        <a href="{% url 'products' %}" class="btn btn-white rounded-0">Cancel</a>
+                        <button class="btn btn-black rounded-0" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
