@@ -97,6 +97,12 @@
                                                     </a>
                                                 </p>
                                             {% endif %}
+                                            {% if request.user.is_superuser %}
+                                                <div class="mt-2">
+                                                    <a href="{% url 'edit_product' product.id %}" class="text-tag-light mr-2">Edit</a>
+                                                    <a href="{% url 'delete_product' product.id %}" class="text-danger">Delete</a>
+                                                </div>
+                                            {% endif %}
                                         </div>
                                     </div>
                                 </div>

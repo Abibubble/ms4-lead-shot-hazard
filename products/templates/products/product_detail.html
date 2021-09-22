@@ -57,6 +57,12 @@
                         </p>
                     {% endif %}
                     <p class="mt-3 text-transform-none">{{ product.description }}</p>
+                    {% if request.user.is_superuser %}
+                        <div class="mt-2">
+                            <a href="{% url 'edit_product' product.id %}" class="text-tag-dark mr-2">Edit</a>
+                            <a href="{% url 'delete_product' product.id %}" class="text-danger">Delete</a>
+                        </div>
+                    {% endif %}
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
