@@ -43,7 +43,13 @@
             <div class="col-12 col-md-6">
                 <form action="{% url 'add_product' %}" class="form mb-2" method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ form | crispy }}
+                    {% for field in form %}
+                        {% if field.name != 'image' %}
+                            {{ field | as_crispy_field }}
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
+                    {% endfor %}
                     <div class="text-right">
                         <a href="{% url 'products' %}" class="btn btn-white rounded-0">Cancel</a>
                         <button class="btn btn-black rounded-0" type="submit">Add Product</button>
@@ -52,4 +58,15 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block post_load_js %}
+    {{ block.super }}
+    <!-- Thanks to the Boutique Ado tutorials for this code -->
+    <script type="text/javascript">
+        $('#js-new-image').change(function() {
+            var file = $('#js-new-image')[0].files[0];
+            $('#js-filename').text(`Image will be set to: ${file.name}`);
+        })
+    </script>
 {% endblock %}

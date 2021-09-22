@@ -4,6 +4,7 @@
     --lsh-yellow: #FEE101;
     --placeholder: #828A90;
     --allauth: #222222;
+    --warning-red: #d81b2e;
 }
 
 html {
@@ -197,6 +198,34 @@ input[name="q"]::placeholder {
 
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
+}
+
+/* -------------------------------- Product form */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    righT: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-color: var(--warning-red);
+    border-width: 2px;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: var(--warning-red);
+    border-color: var(--warning-red);
+    border-width: 2px;
 }
 
 /* -------------------------------- States */
