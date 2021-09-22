@@ -2,6 +2,8 @@
 
 This file includes a list of all sites I have used for research or testing.
 
+[Click here to return to the main README file](README.md)
+
 ## Contents
 
 * [Research](#research)

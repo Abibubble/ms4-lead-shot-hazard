@@ -1,5 +1,7 @@
 # Testing Steps
 
+[Click here to return to the main README file](README.md)
+
 ## Contents
 
 * [Icon Key](#icon-key)

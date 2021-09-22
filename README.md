@@ -20,7 +20,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 
 * [Icon Key](#icon-key)
 
-* [User Experience (UX)](#user-experience-(ux))
+* [User Experience](#user-experience)
   * [Initial Discussion](#initial-discussion)
   * [User Stories](#user-stories)
   * [Project goals](#project-goals)
@@ -33,6 +33,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
   * [Features](#features)
   * [Future Features](#future-features)
   * [Audio](#audio)
+  * [Video](#video)
   * [Navigation bar](#navigation-bar)
 
 * [Database Design](#database-design)
@@ -83,7 +84,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 
 ---
 
-## User Experience (UX)
+## User Experience
 
 ### Initial Discussion
 
@@ -165,7 +166,6 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 ### Typography
 
 * LOGO FONT, TEXT FONT, WHY USED
-* I have used a font from [Google Fonts](https://fonts.google.com/), called [FONT NAME](LINK).
 
 ![FONT NAME](IMAGE-LINK)
 
@@ -174,7 +174,11 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 * The images used in this project are all photos of the band Lead Shot Hazard, their merchandise, or their logo.
 * These have been used to create a strong link between the band and the website, ensuring that all visitors can tell at first glance that this site is for Lead Shot Hazard.
 * As I am a member of Lead Shot Hazard, I own joint rights to use all images and designs that the band have created.
-BOX SHADOW, GRADIENTS, UNDERLINED LINKS, BUTTONS, ICONS
+* No box shadows or gradients have been used, to link with the styling of the Lead Shot Hazard graphics, which use strong, bold colors with harsh lines.
+* All links have their underlines removed for stylistic purposes. The links in the footer re-gain their underlines when they're hovered over or focused on.
+* All interactable objects have hover and focus styles applied to make it clear to the user that those objects are interactable.
+* Icons from [Font Awesome](https://fontawesome.com/) have been used throughout the site to add meaning where relevant. These icons also have text either visible or in aria labels where required.
+* Button colors have been used to convey meaning, mainly in the use of the color red to convey 'Delete' or 'Cancel' as dangerous actions.
 
 ### Wireframes
 
@@ -355,6 +359,12 @@ The navigation bar changes depending on user status and screen size:
 * All audio is owned by the band Lead Shot Hazard.
 * As I am a member of Lead Shot Hazard, I own joint rights to use all audio that the band has created.
 
+### Video
+
+* All videos are owned by the band Lead Shot Hazard and the videographer Conor Nye.
+* Conor Nye has given Lead Shot Hazard permission to use all of his videos for any purpose.
+* As I am a member of Lead Shot Hazard, I own joint rights to use all videos of the band.
+
 ### Defensive Design
 
 * Form validation
@@ -393,7 +403,7 @@ The navigation bar changes depending on user status and screen size:
 
 ## Database Design
 
-This database uses a SQL database through PostgreSQL. It was originally built in a JSON file, [which can be found here](products/fixtures).
+This database uses a SQL database through PostgreSQL. They were originally built in JSON files, [which can be found here](products/fixtures).
 
 ### Categories Database
 
@@ -628,7 +638,7 @@ To find the values of each key:
 * STRIPE_PUBLIC_KEY: on the Stripe Dashboard in the Developer's API section - Publishable key.
 * STRIPE_SECRET_KEY: on the Stripe Dashboard in the Developer's API section - Secret key.
 * STRIPE_WH_SECRET: in the Developer's API section after creating an endpoint for your webhook - Signing secret.
-* EMAIL_HOST_USER: your email address
+* EMAIL_HOST_USER: your email address.
 * EMAIL_HOST_PASS:
 * AWS_SECRET_ACCESS_KEY:
 * AWS_ACCESS_KEY_ID:
@@ -656,10 +666,10 @@ This site was deployed to Heroku by following these steps:
 15. Add the hostname of your Heroku app to '**ALLOWED HOSTS**' in your settings.py file. This can beb found in Heroku Settings > App Name.
 16. Connect Heroku to Git using `git remote add heroku {your heroku git url}`.
 17. Create a '**media**' file in your S3 Bucket, and import all your media files.
-18. CREATE A STATIC FOLDER??!?!?!!??!?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+18. CREATE A STATIC FOLDER??!?!?!!??!?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Also above in Technologies
 19. If you'd like to automatically deploy to Heroku whenever you push to GitHub, do the following:
     * Go to the '**Deploy**' tab in Heroku, and click '**Enable Automatic Deployment**'.
-    * In '**Manual Deploy**', choose which branch you'd like to deploy from (I chose 'main' branch, this is sometimes 'master').
+    * In '**Manual Deploy**', choose which branch you'd like to deploy from (I chose '**main**' branch, this is sometimes '**master**').
     * Click '**Deploy Branch**' to deploy your app onto the Heroku servers.
     * Once the app has finished building, click '**Open App**' to open your site.
 20. If you don't want to automatically deploy to Heroku, do the following:
@@ -762,7 +772,7 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 ### Code
 
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
-* This website was made following the tutorials of Code institute for the Boutique Ado project by Chris Zielinski.
+* This website was made with the tutorials from Code institute for the Boutique Ado project by Chris Zielinski. The code has been customised and improved to fit this project.
 * [Django Documentation](https://docs.djangoproject.com/en/3.2/) has been used to ensure correct syntax usage throughout the code.
 * [Stack Overflow](https://stackoverflow.com/) has been used to help with deciphering the django error codes.
 * [Chris Anstey](https://github.com/ansteychris), a Digital Experience Lead at Google, for the discussion we had about Lighthouse vs WebPageTest.
@@ -794,5 +804,3 @@ Key	Value
 SOCIAL_AUTH_FACEBOOK_KEY
 SOCIAL_AUTH_FACEBOOK_SECRET
 If you are not using the social accounts login features, comment out lines x and y in settings.py (INSTALLED_APPS) socialaccounts -->
-
-<!-- The project’s code was developed by following the Code Institutevideo lessons and based on the understanding of the course material, The code has been customized and enhanced to fit with the purpose of the project. In some places the logic is used and in others the code. Some comments with credits have been added where needed. -->
