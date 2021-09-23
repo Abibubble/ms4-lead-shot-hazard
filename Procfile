@@ -1,0 +1,1 @@
+web: gunicorn lead_shot_hazard.wsgi:application
