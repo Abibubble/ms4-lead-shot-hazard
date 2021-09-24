@@ -463,6 +463,7 @@ On every device and browser listed above, I tested the following:
   * No authentication required, successful payment: 4242 4242 4242 4242
   * Failed payment: 4000 0000 0000 9995
   * Authentication required: 4000 0025 0000 3155
+  * Any expiry date in the future, 3-digit CVC code, and 5-digit ZIP code can be used.
 * The no authentication required, successful card was run, didn't ask for authentication, and successfully paid.
 * The failed payment card was run and the card payment failed.
 * The authentication required card was run, asked for authentication, was given authentication, and successfully paid.
