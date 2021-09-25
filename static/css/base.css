@@ -42,10 +42,6 @@ body {
     color: white;
 }
 
-.navbar-collapse {
-    border: solid 1px white !important;
-}
-
 /* -------------------------------- Text */
 
 a {
@@ -250,6 +246,10 @@ input[name="q"]::placeholder {
     border-width: 2px;
 }
 
+.form-control-sm {
+    border-radius: .2rem !important;
+}
+
 /* -------------------------------- States */
 
 .nav-link:hover {
@@ -358,6 +358,10 @@ a.category-badge > span.badge:hover {
         margin-bottom: 20px !important;
     }
 
+    .navbar-collapse {
+        border: solid 1px white !important;
+    }
+
     .cart-icon {
         margin-right: 4px;
     }
@@ -369,7 +373,7 @@ a.category-badge > span.badge:hover {
     .btn.btn-black.rounded-0.btn-lg,
     .btn.btn-black.rounded-0 {
         padding: .5rem;
-        font-size: .9rem;
+        font-size: .8rem;
     }
 
     .increment-qty, .decrement-qty {

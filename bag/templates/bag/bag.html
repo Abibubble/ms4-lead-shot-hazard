@@ -43,7 +43,7 @@
         <div class="row">
             <div class="col">
                 {% if bag_items %}
-                    <div class="d-block d-md none">
+                    <div class="d-block d-md-none">
                         <div class="row">
                             <div class="col">
                                 {% include "bag/bag-total.html" %}
@@ -52,7 +52,7 @@
                         <div class="row">
                             <div class="col">
                                 {% include "bag/checkout-buttons.html" %}
-                                <p class="text-tag-dark mb-5 mt-1">A summary of your bag contents is below</p>
+                                <p class="text-tag-dark mb-5 mt-1 text-transform-none">A summary of your bag contents is below</p>
                             </div>
                         </div>
                         {% for item in bag_items %}
@@ -63,9 +63,9 @@
                                 <div class="col-12 col-sm-6 mb-2">
                                     {% include "bag/product-info.html" %}
                                 </div>
-                                <div class="col-12 col-sm-6 order-sm-last">
-                                    <p class="my-0">Price Each: £{{ item.product.price }}</p>
-                                    <p class="my-0"><strong>Subtotal:</strong> £{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                <div class="col-12 col-sm-6 order-sm-last mb-2">
+                                    <p class="my-0 text-transform-none">Price Each: £{{ item.product.price }}</p>
+                                    <p class="my-0 text-transform-none"><strong>Subtotal:</strong> £{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     {% include "bag/quantity-form.html" %}
