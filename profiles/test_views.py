@@ -1,8 +1,7 @@
 from django.test import TestCase
 
 from django.shortcuts import reverse
-from django.contrib.auth.models import User, AnonymousUser
-from django.contrib.messages import get_messages
+from django.contrib.auth.models import User
 
 from .forms import UserProfileForm
 

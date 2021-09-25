@@ -24,7 +24,7 @@ class TestProductModels(TestCase):
     def test_product_description(self):
         product = Product.objects.get(pk=6)
         self.assertEqual(
-            product.description, "Knock-off whiskey tee, because, why the hell not! Includes 'Hacky Sack? Let's Have A Rebellion' high-quality download in MP3, FLAC and more."
+            product.description, "Knock-off whiskey tee, because, why the hell not! Includes 'Hacky Sack? Let's Have A Rebellion' high-quality download in MP3, FLAC and more." # noqa
         )
         self.assertNotEqual(product.description, 'test if not equal')
 
