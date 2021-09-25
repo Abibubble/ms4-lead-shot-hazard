@@ -260,16 +260,18 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 
 ## Email Setup
 
+Before beginning these steps, go to `settings.py` and change the `DEFAULT_FROM_EMAIL` to your own email address.
+
 ### Gmail
 
 1. Go to your Gmail, and enter the '**Settings**' tab.
-2. Go to '**Accounts and Imports**', Other '**Google Account Settings**'.
+2. Go to '**Accounts and Imports**', '**Other Google Account Settings**'.
 3. Go to the '**Security**' tab, and scroll down to '**Signing in to Google**'.
 4. Click on '**2-step Verification**', click '**Get Started**', and enter your Gmail password.
 5. Verify using your preferred method, and then turn on 2-step verification.
-6. Go back to Security, Signing in to Google, then go to App Passwords.
-7. Enter your password again if prompted, then set App to Mail, Device to Other, and type in Django.
-8. Copy and paste the pass code that shows up, this is your EMAIL_HOST_PASS variable.
+6. Go back to '**Security**', '**Signing in to Google**', then go to '**App Passwords**'.
+7. Enter your password again if prompted, then set '**App**' to `Mail`, '**Device**' to `Other`, and type in `Django`.
+8. Copy and paste the pass code that shows up, this is your '**EMAIL_HOST_PASS**' variable.
 
 ### Outlook
 
