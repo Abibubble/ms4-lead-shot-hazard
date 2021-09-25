@@ -354,8 +354,12 @@ a.category-badge > span.badge:hover {
     }
 
     .navbar-toggler {
-        padding: .6rem .6rem;
-        font-size: 1rem;
+        padding: .5rem .5rem !important;
+        margin-bottom: 20px !important;
+    }
+
+    .cart-icon {
+        margin-right: 4px;
     }
 
     #delivery-banner h4 {
