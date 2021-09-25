@@ -108,13 +108,13 @@
                                 </div>
 
                                 <div class="col{% if s %}-12 mt-2{% endif %}">
-                                    <a href="{% url 'products' %}" class="btn btn-black rounded-0 mt-5">
+                                    <a href="{% url 'products' %}" class="btn btn-black rounded-0 button-margins">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
                                         <span>Keep Shopping</span>
                                     </a>
-                                    <input type="submit" class="btn btn-black rounded-0 mt-5" value="ADD TO BAG">
+                                    <input type="submit" class="btn btn-black rounded-0 button-margins" value="ADD TO BAG">
                                 </div>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% endwith %}
