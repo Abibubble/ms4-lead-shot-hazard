@@ -25,6 +25,22 @@ body {
     padding: 0 !important;
 }
 
+.navbar ul {
+    padding-left: 0 !important;
+}
+
+.navbar-toggler {
+    border-color: white !important;
+}
+
+.navbar-toggler-icon {
+    background-image: none !important;
+}
+
+.navbar-toggler-icon i {
+    padding-top: 5px;
+}
+
 /* -------------------------------- Text */
 
 a {
@@ -98,8 +114,9 @@ h4 {
     height: 48px;
     width: 48px;
     position: fixed;
-    bottom: 67px;
     right: 10px;
+    bottom: 100px;
+    background-color: black;
 }
 
 .btt-link,
@@ -127,7 +144,7 @@ hr {
 }
 
 .header-container {
-    padding-top: 193px;
+    padding-top: 95px;
 }
 
 .margin-auto {
@@ -299,6 +316,10 @@ a.category-badge > span.badge:hover {
         left: 0;
         z-index: 1030;
     }
+
+    .header-container {
+        height: 193px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -306,9 +327,13 @@ a.category-badge > span.badge:hover {
         height: calc(100vh - 193px);
     }
 
+    .navbar ul {
+        padding-left: 40px !important;
+    }
+
     .nav-link {
         margin-left: 10px;
-        padding: 0.15rem;
+        padding: 0.15rem !important;
     }
 
     .nav-link i.fa-lg {
@@ -321,7 +346,7 @@ a.category-badge > span.badge:hover {
     }
 
     #delivery-banner h4 {
-        font-size: .9rem;
+        font-size: .9rem !important;
     }
 
     .btn.btn-black.rounded-0.btn-lg,
@@ -332,5 +357,9 @@ a.category-badge > span.badge:hover {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+
+    .btt-button {
+        bottom: 67px;
     }
 }
