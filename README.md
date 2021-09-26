@@ -498,6 +498,10 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 [favicon.io](https://favicon.io/) used to create a site favicon.
 
+#### Audio Trimmer
+
+[Audio Trimmer](https://audiotrimmer.com/) was used to trim the audio down to sample clips.
+
 ### Packages
 
 | Name | Purpose |
@@ -635,6 +639,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 * All media on this site is owned by Lead Shot Hazard.
 * As a member of Lead Shot Hazard, I own joint rights to use all media and images of the band.
+* The audio selections were cropped down to a sample size using [Audio Trimmer](https://audiotrimmer.com/).
 
 ### Acknowledgements
 
