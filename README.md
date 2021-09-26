@@ -140,7 +140,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 ### Project Goals
 
 * The main goal is to create an easily editable merchandise site for Lead Shot Hazard, so it takes very little time to keep up to date with their constantly changing merchandise and music selection.
-* This project also demonstrates my understanding of maintaining a database attached to a website, with full CRUD (Create, Read, Update and Delete) functionality.
+* This project also demonstrates my understanding of maintaining a database attached to a website, with full CRUD (Create, Read, Update and Delete) functionality, using a PostgreSQL database, and Amazon Web Services.
 
 [Back to the top](#lead-shot-hazard)
 
@@ -160,9 +160,11 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 
 ### Typography
 
-* LOGO FONT, TEXT FONT, WHY USED
+* For the font, I decided to stick with the standard HTML font family. As they're sans-serif fonts, they are easy to read for dyslexic and visually impaired users.
+* As the standard HTML font size is 16px, I kept it at that, ensuring to not have any fonts smaller than that, to aid visually impaired users.
+* The recommended smallest font size for accessible websites is 12px, so I ensured to keep all font sizes above that.
 
-![FONT NAME](IMAGE-LINK)
+![An example of the font used](static/docs/img/fonts.png)
 
 ### Imagery
 
@@ -183,7 +185,6 @@ INCLUDE ANY EDITS FROM THE WIREFRAMES TO THE FINISHED SITE
 
 ### Features
 
-MAYBE USER DROPDOWNS TO SHOW APPLICABLE USER STORIES IDS AND THE LIKE???
 PROFILE - ALLAUTH, EXPLANATION OF DETAILS
 RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED FROM 320PX AND UP'
 
@@ -317,7 +318,7 @@ The navigation bar changes depending on user status and screen size:
 
 * The copyright year auto-updates to the current year.
 
-![Image of feature](static/docs/img/FEATURE.png)
+![The auto-updating copyright feature](static/docs/img/copyright.png)
 
 #### Gigs feed
 
@@ -353,6 +354,7 @@ The navigation bar changes depending on user status and screen size:
 
 * All audio is owned by the band Lead Shot Hazard.
 * As I am a member of Lead Shot Hazard, I own joint rights to use all audio that the band has created.
+* The audio that is available on the site has been trimmed down to approximately 30 seconds, to allow the user to hear a sample of the band's music, without being able to listen to the entire songs for free.
 
 ### Video
 
@@ -588,7 +590,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 ## Testing
 
-[Click here to view the full testing steps](static/docs/TESTING.md) that were completed on every device and browser, and screenshots of testing.
+[Click here to view the full testing steps](static/docs/TESTING.md), which were completed on every device and browser, and screenshots of testing.
 
 ### Solved Bugs
 
