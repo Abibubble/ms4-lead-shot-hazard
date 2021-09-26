@@ -56,32 +56,81 @@
                             </a>
                         </p>
                     {% endif %}
+                    <p class="mt-3 text-transform-none">{{ product.description }}</p>
                     {% if product.has_audio %}
-                        <div class="row">
+                        <div class="row mt-2">
                             <div class="col">
                                 {% if product.audio == "fires-" %}
-                                    <audio controls>
+                                    <p class="text-tag-dark mb-1">Jokers, Then Kings & Queens</p>
+                                    <audio controls controlsList="nodownload">
                                         <source src="{{ MEDIA_URL }}{{ product.audio }}jokers.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
                                     </audio>
-                                    <audio controls>
+                                    <p class="text-tag-dark mb-1">Chase This Down</p>
+                                    <audio controls controlsList="nodownload">
                                         <source src="{{ MEDIA_URL }}{{ product.audio }}chase.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
                                     </audio>
-                                    <audio controls>
+                                    <p class="text-tag-dark mb-1">Hacky Sack? Let's Have A Rebellion</p>
+                                    <audio controls controlsList="nodownload">
                                         <source src="{{ MEDIA_URL }}{{ product.audio }}hacky.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
                                     </audio>
-                                {% else if product.audio == "war-and-pieces-" %}
-                                    <audio controls>
+                                    <p class="text-tag-dark mb-1">Off Beat On</p>
+                                    <audio controls controlsList="nodownload">
+                                        <source src="{{ MEDIA_URL }}{{ product.audio }}off.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <p class="text-tag-dark mb-1">Red / Blue / Black</p>
+                                    <audio controls controlsList="nodownload">
+                                        <source src="{{ MEDIA_URL }}{{ product.audio }}rbb.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <p class="text-tag-dark mb-1">When The Daylight Ends</p>
+                                    <audio controls controlsList="nodownload">
+                                        <source src="{{ MEDIA_URL }}{{ product.audio }}daylight.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <p class="text-tag-dark mb-1">The Best Horse Doesn't Win This Race</p>
+                                    <audio controls controlsList="nodownload">
+                                        <source src="{{ MEDIA_URL }}{{ product.audio }}horse.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <p class="text-tag-dark mb-1">Rinse, Repeat</p>
+                                    <audio controls controlsList="nodownload">
+                                        <source src="{{ MEDIA_URL }}{{ product.audio }}rinse.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <p class="text-tag-dark mb-1">Braggin' Rights</p>
+                                    <audio controls controlsList="nodownload">
+                                        <source src="{{ MEDIA_URL }}{{ product.audio }}braggin.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <p class="text-tag-dark mb-1">The Self-Obsessed</p>
+                                    <audio controls controlsList="nodownload">
+                                        <source src="{{ MEDIA_URL }}{{ product.audio }}self.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <p class="text-tag-dark mb-1">Move Your Mouth!</p>
+                                    <audio controls controlsList="nodownload">
+                                        <source src="{{ MEDIA_URL }}{{ product.audio }}mym.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <p class="text-tag-dark mb-1">Between Hell And High Water</p>
+                                    <audio controls controlsList="nodownload">
+                                        <source src="{{ MEDIA_URL }}{{ product.audio }}hell.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                {% elif product.audio == "war-and-pieces-" %}
+                                    <audio controls controlsList="nodownload">
                                         <source src="{{ MEDIA_URL }}{{ product.audio }}csop.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
                                     </audio>
-                                    <audio controls>
+                                    <audio controls controlsList="nodownload">
                                         <source src="{{ MEDIA_URL }}{{ product.audio }}gam.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
                                     </audio>
-                                    <audio controls>
+                                    <audio controls controlsList="nodownload">
                                         <source src="{{ MEDIA_URL }}{{ product.audio }}sfh.mp3" type="audio/mpeg">
                                         Your browser does not support the audio element.
                                     </audio>
@@ -89,7 +138,6 @@
                             </div>
                         </div>
                     {% endif %}
-                    <p class="mt-3 text-transform-none">{{ product.description }}</p>
                     {% if request.user.is_superuser %}
                         <div class="mt-2">
                             <a href="{% url 'edit_product' product.id %}" class="text-tag-dark mr-2">Edit</a>

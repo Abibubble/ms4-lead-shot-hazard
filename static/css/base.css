@@ -212,6 +212,12 @@ input[name="q"]::placeholder {
     overflow-y: auto;
 }
 
+/* -------------------------------- Audio */
+
+audio {
+    margin-bottom: 1rem;
+}
+
 /* -------------------------------- Allauth forms */
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -382,5 +388,11 @@ a.category-badge > span.badge:hover {
 
     .product-details-container h2 {
         font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    audio {
+        width: 290px;
     }
 }
