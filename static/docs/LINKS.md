@@ -18,6 +18,9 @@ This file includes a list of all sites I have used for research or testing.
 * [Readability Level - AbilityNet](https://abilitynet.org.uk/news-blogs/writing-9-year-olds-six-expert-tips-creating-great-accessible-web-content-everyone)
 * [Github Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
 * [Size Matters - Medium](https://medium.com/@zacdicko/size-matters-accessibility-and-touch-targets-56e942adc0cc)
+* [Travis CI](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml)
+
+[Back to the top](#links)
 
 ---
 
@@ -36,6 +39,9 @@ This file includes a list of all sites I have used for research or testing.
 * [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse)
 * [Toptal Color Blind Filter](https://www.toptal.com/designers/colorfilter/)
 * [Django’s testing tools](https://docs.djangoproject.com/en/3.2/topics/testing/)
+* [Travis CI](https://www.travis-ci.com/)
 * [Am I Responsive Design](http://ami.responsivedesign.is/#)
 * [Responsinator](http://www.responsinator.com/)
 * [Google DevTools](https://developer.chrome.com/docs/devtools/)
+
+[Back to the top](#links)

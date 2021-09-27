@@ -621,7 +621,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 5. Travis CI builds were failing with an output error of `django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.`.
     * I considered the context in which the error was occurring.
     * I realised this error started happening once I'd deployed my site and moved my environment variables.
-    * I looked through the Travis CI documentation, and realised I could include a dummy SECRET_KEY in my travis.yml file.
+    * I looked through the [Travis CI documentation](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml), and realised I could include a dummy SECRET_KEY in my travis.yml file.
     * I included `SECRET_KEY="whatever" python manage.py test` in my travis.yml file, which fixed this issue.
 
 ### Known Bugs

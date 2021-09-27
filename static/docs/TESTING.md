@@ -8,12 +8,8 @@
 
 * [Manual Testing](#manual-testing)
   * [Devices and Browsers](#devices-and-browsers)
-  * [Testing Technologies](#testing-steps-technologies)
-  * [Testing User Stories](#testing-steps-user-stories)
-    * [Business Goals](#business-goals)
-    * [First Time User Goals](#first-time-user-goals)
-    * [Returning User Goals](#returning-user-goals)
-    * [Admin Goals](#admin-goals)
+  * [Testing Technologies](#testing-technologies)
+  * [Testing User Stories](#testing-user-stories)
 
 * [Links and Navigation](#links-and-navigation)
   * [Navigation Bar](#navigation-bar)
@@ -34,7 +30,6 @@
   * [Search Products](#search-products)
   * [Messages](#messages)
   * [Stripe](#stripe)
-  * [Pagination](#pagination)
   * [404](#404)
   * [Validation](#validation)
 
@@ -52,9 +47,9 @@
   * [WebPageTest](#webpagetest)
 
 * [Responsive Design](#responsive-design)
-  * [Mobile](#mobile)
-  * [Tablet](#tablet)
-  * [Computer](#computer)
+  * [Mobile Testing](#mobile-testing)
+  * [Tablet Testing](#tablet-testing)
+  * [Computer Testing](#computer-testing)
 
 * [Images](#images)
   * [Desktop and Laptop Screenshots](#desktop-and-laptop-screenshots)
@@ -166,6 +161,8 @@ A large amount of testing was done to ensure that all pages were displayed, and 
     * `Avoid using null=True on string-based fields such CharField`:
         * This error is there to avoid a field having two values if left blank - an empty string, and `null`. This would usually be a valid error, but because I need to allow empty values in forms, this is required, as the `null` parameter only affects database storage.
     * ![Image of PEP8 Online results](static/docs/img/pep8.png)
+
+[Back to the top](#testing-steps)
 
 ### Testing User Stories
 
@@ -469,14 +466,6 @@ On every device and browser listed above, I tested the following:
 * The authentication required card was run, asked for authentication, was given authentication, and successfully paid.
 * The authentication required card was run, asked for authentication, was not given authentication, and failed.
 * After each payment event, a message was shown to the user to explain the action that had just happened.
-
-### Pagination
-
-* Accessible by all users
-* If there are more than 10 items visible on the page, it displays only the first 10, and shows pagination information and links under the items to allow easy navigation.
-* This also works within the search function.
-* The user can click the number buttons to take them to a specific page.
-* The user can click the arrow buttons to take them forwards or backwards one page.
 
 ### 404
 
