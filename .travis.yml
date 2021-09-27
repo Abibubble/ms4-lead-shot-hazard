@@ -5,8 +5,8 @@ install:
     - pip install -r requirements.txt
 
 # Command to run tests
-scripts:
-    -  python manage.py test
+script:
+  - SECRET_KEY="whatever" python manage.py test
 
 notifications:
     email:
