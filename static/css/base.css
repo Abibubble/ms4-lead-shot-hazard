@@ -138,6 +138,16 @@ h4 {
     max-height: 100px;
 }
 
+.social-image {
+    height: 48px;
+    width: 48px;
+}
+
+.songkick {
+    max-width: 150px;
+    width: 75%;
+}
+
 /* -------------------------------- Utilities */
 
 hr {
