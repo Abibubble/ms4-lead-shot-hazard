@@ -353,6 +353,10 @@ a.category-badge > span.badge:hover {
     .button-margins {
         margin-top: 3rem !important;
     }
+
+    .allauth-header {
+        margin-top: 92px;
+    }
 }
 
 @media (max-width: 991px) {
