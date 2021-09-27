@@ -5,8 +5,8 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/abibubble/ms4-lead-shot-hazard)
 ![GitHub top language](https://img.shields.io/github/languages/top/abibubble/ms4-lead-shot-hazard)
 ![Font Awesome version](https://img.shields.io/badge/Font%20Awesome-v5.15.1-blue)
-![GitHub forks](https://img.shields.io/github/forks/abibubble/ms4-lead-shot-hazard?style=social)
 ![Travis CI Build](https://secure.travis-ci.org/abibubble/ms4-lead-shot-hazard.png)
+![GitHub forks](https://img.shields.io/github/forks/abibubble/ms4-lead-shot-hazard?style=social)
 
 [Here is a link to the final project](https://ms4-lead-shot-hazard.herokuapp.com/homepage)
 
@@ -181,7 +181,6 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 
 * [Wireframes for desktop, mobile and tablet for this project](static/docs/wireframes.pdf).
 * [Database schema for this project](static/docs/database.pdf).
-INCLUDE ANY EDITS FROM THE WIREFRAMES TO THE FINISHED SITE
 
 ### Features
 
@@ -323,7 +322,7 @@ The navigation bar changes depending on user status and screen size:
 #### Gigs feed
 
 * DESCRIBE
-  * HOW WILL THIS BE DONE? DIRECT FEED FROM FACEBOOK? OR MANUAL ADDITION?
+  * HOW WILL THIS BE DONE - API FROM SONGKICK
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
@@ -522,6 +521,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 | dj-database-url | Database Configuration |
 | psycopg2-binary | PostgreSQL DB Adaptor |
 | coverage | Test Coverage |
+| travis.ci | Testing |
 | | |
 
 ### Hosting
@@ -566,7 +566,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 #### RandomKeygen
 
-[RandomKeygen](https://randomkeygen.com/) was used to generate a strong `SECRET_KEY`.
+[Djecrety](https://djecrety.ir/) was used to generate a strong `SECRET_KEY`.
 
 #### pip
 
@@ -613,6 +613,16 @@ This database uses a SQL database through PostgreSQL. They were originally built
     * I saw that inside the `def __str__` of the `UserProfile` class in `profiles/models.py`, the `self` in `return self.user.username` was showing an `Instance of 'OneToOneField' has no 'username' member` error.
     * I realised I had previously named the variable `default_user` instead of `user`.
     * I ran migrations to update this, which fixed the bug.
+4. When I added the `has_audio` and `audio` fields to my products fixture, it wasn't taking effect on my live site.
+    * I checked that I'd run `python3 manage.py makemigrations`, `python3 manage.py migrate`, `python3 manage.py loaddata categories` and `python3 manage.py loaddata products` in GitPod.
+    * Everything was correct there, so I checked that I'd updated my `models.py` file to include the new fields.
+    * I then asked for advice on the [Code Institute](https://codeinstitute.net/) Slack channel, and [Simen Daehlin](https://github.com/Eventyret) suggested that I hadn't run the above commands in my Heroku CLI as well.
+    * I ran the commands in the Heroku CLI, which fixed this issue.
+5. Travis CI builds were failing with an output error of `django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.`.
+    * I considered the context in which the error was occurring.
+    * I realised this error started happening once I'd deployed my site and moved my environment variables.
+    * I looked through the Travis CI documentation, and realised I could include a dummy SECRET_KEY in my travis.yml file.
+    * I included `SECRET_KEY="whatever" python manage.py test` in my travis.yml file, which fixed this issue.
 
 ### Known Bugs
 
