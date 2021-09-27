@@ -19,6 +19,14 @@
     Contact Us
 {% endblock %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'band/css/social_media.css' %}">
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'band/js/social_hover.js' %}"></script>
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -39,14 +47,54 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
-
+            <div class="col-12 mt-2">
+                <p>Follow any of the below links to get in contact with us!</p>
+            </div>
+            <div class="col-sm-12 col-md-7 mt-2">
+                <a href="mailto: leadshothazard@gmail.com" target="_blank" rel="noopener" class="social-image" id="email" onmouseover="hover(this.id)" onmouseout="normal(this.id)">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-7 mt-3">
+                <a href="https://bandcamp.com/" target="_blank" rel="noopener" class="social-image" id="bandcamp" onmouseover="hover(this.id)" onmouseout="normal(this.id)">
+                    <i class="fab fa-bandcamp"></i> Bandcamp
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-7 mt-3">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-image" id="facebook" onmouseover="hover(this.id)" onmouseout="normal(this.id)">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-7 mt-3">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-image" id="instagram" onmouseover="hover(this.id)" onmouseout="normal(this.id)">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-7 mt-3">
+                <a href="https://twitter.com/" target="_blank" rel="noopener" class="social-image" id="twitter" onmouseover="hover(this.id)" onmouseout="normal(this.id)">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-7 mt-3">
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-image" id="youtube" onmouseover="hover(this.id)" onmouseout="normal(this.id)">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-7 mt-3">
+                <a href="https://spotify.com" target="_blank" rel="noopener" class="social-image" id="spotify" onmouseover="hover(this.id)" onmouseout="normal(this.id)">
+                    <i class="fab fa-spotify"></i> Spotfiy
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-7 mt-3">
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="social-image" id="tiktok" onmouseover="hover(this.id)" onmouseout="normal(this.id)">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-7 mt-3">
+                <a href="https://soundcloud.com/" target="_blank" rel="noopener" class="social-image" id="soundcloud" onmouseover="hover(this.id)" onmouseout="normal(this.id)">
+                    <i class="fab fa-soundcloud"></i> Soundcloud
+                </a>
             </div>
         </div>
     </section>
-{% endblock %}
-
-{% block post_load_js %}
-    {{ block.super }}
-    
 {% endblock %}
