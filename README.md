@@ -641,6 +641,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 * [Django Documentation](https://docs.djangoproject.com/en/3.2/) has been used to ensure correct syntax usage throughout the code.
 * [Stack Overflow](https://stackoverflow.com/) has been used to help with deciphering the django error codes.
 * [Chris Anstey](https://github.com/ansteychris), a Digital Experience Lead at Google, for the discussion we had about Lighthouse vs WebPageTest.
+* I followed [this video from JustDjango](https://www.youtube.com/watch?v=NG48CLLsb1A) to add the Google social login functionality.
 
 ### Content
 

@@ -11,7 +11,18 @@
   <h2 class="mb-4">{% trans "Sign Up" %}</h2>
   <hr>
 
-  <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}" class="text-tag-dark">sign in</a>.{% endblocktrans %}</p>
+  {% get_providers as socialaccount_providers %}
+
+  {% if socialaccount_providers %}
+    <a class="google-login" href="{% provider_login_url 'google' %}">
+      <img src="{{ MEDIA_URL }}google-icon.svg" alt="Sign up with Google Button" />
+      <span class="google-text">Continue with Google</span>
+    </a>
+    <p class="my-3">or</p>
+    {% include "socialaccount/snippets/login_extra.html" %}
+  {% else %}
+    <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}" class="text-tag-dark">sign in</a>.{% endblocktrans %}</p>
+  {% endif %}
 
   <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
     {% csrf_token %}

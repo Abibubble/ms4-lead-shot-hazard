@@ -45,8 +45,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    # 'allauth.socialaccount.providers.facebook',
-    # 'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.google',
     # Custom apps
     'home',
     'products',
@@ -60,34 +59,17 @@ INSTALLED_APPS = [
     'storages',
 ]
 
-# SOCIALACCOUNT_PROVIDERS = {
-#     'facebook': {
-#         'METHOD': 'oauth2',
-#         'SCOPE': ['email', ],
-#         'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
-#         'FIELDS': [
-#             'id',
-#             'email',
-#             'name',
-#             'first_name',
-#             'last_name',
-#             'verified'
-#         ],
-#         'EXCHANGE_TOKEN': True,
-#         'LOCALE_FUNC': lambda request: 'kr_KR',
-#         'VERIFIED_EMAIL': False,
-#         'VERSION': 'v3.2'
-#     },
-#     'google': {
-#         'SCOPE': [
-#             'profile',
-#             'email',
-#         ],
-#         'AUTH_PARAMS': {
-#             'access_type': 'online',
-#         }
-#     }
-# }
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        }
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -148,6 +130,14 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 2
 ACCOUNT_EMAIL_SUBJECT_PREFIX = 'Lead Shot Hazard - '
+ACCOUNT_USERNAME_BLACKLIST = [
+    'admin',
+    'superuser',
+    'staff',
+    'leadshothazard',
+    'lead-shot-hazard',
+    'lead_shot_hazard'
+    ]
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
