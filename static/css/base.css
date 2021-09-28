@@ -341,6 +341,10 @@ a.category-badge > span.badge:hover {
     border-color: var(--allauth);
 }
 
+.social-image:hover {
+    text-decoration: none;
+}
+
 /* -------------------------------- Footer */
 
 .footer-allowance {

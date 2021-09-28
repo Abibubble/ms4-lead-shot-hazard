@@ -3,41 +3,55 @@
 // Change the colors of links
 function hover(id){
     let hoverLink = document.getElementById(id);
+    let socialIcon = hoverLink.children[0];
+    let socialText = hoverLink.children[1];
     switch (id) {
         case "email":
-            hoverLink.style.color = "#FEE101";
+            socialIcon.style.color = "#FEE101";
+            socialText.style.color = "#FEE101";
             break;
         case "bandcamp":
-            hoverLink.style.color = "#1da0c3";
+            socialIcon.style.color = "#1DA0C3";
+            socialText.style.color = "#1DA0C3";
             break;
         case "facebook":
-            hoverLink.style.color = "#1298f6";
+            socialIcon.style.color = "#1298F6";
+            socialText.style.color = "#1298F6";
             break;
         case "instagram":
-            hoverLink.style.color = "#c9006b";
+            socialIcon.style.color = "#C9006B";
+            socialText.style.color = "#C9006B";
             break;
         case "twitter":
-            hoverLink.style.color = "#00a2f3";
+            socialIcon.style.color = "#00A2F3";
+            socialText.style.color = "#00A2F3";
             break;
         case "youtube":
-            hoverLink.style.color = "#ff0000";
+            socialIcon.style.color = "#FF0000";
+            socialText.style.color = "#FF0000";
             break;
         case "spotify":
-            hoverLink.style.color = "#1ed760";
+            socialIcon.style.color = "#1ED760";
+            socialText.style.color = "#1ED760";
             break;
         case "tiktok":
-            hoverLink.style.color = "#00f7f2";
+            socialIcon.style.color = "#00F7F2";
+            socialText.style.color = "#00F7F2";
             break;
         case "soundcloud":
-            hoverLink.style.color = "#ff5500";
+            socialIcon.style.color = "#FF5500";
+            socialText.style.color = "#FF5500";
             break;
         default:
-            hoverLink.style.color = "#fff";
+            socialIcon.style.color = "#FFF";
+            socialText.style.color = "#FFF";
             break;
     }    
 }
 
 // Reset to normal after hover
 function normal(id) {
-	document.getElementById(id).style.color = "#fff";
+    let hoverLink = document.getElementById(id);
+    hoverLink.children[0].style.color = "#fff";
+    hoverLink.children[1].style.color = "#fff";
 }
