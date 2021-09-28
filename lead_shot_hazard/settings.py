@@ -22,8 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
-# SOCIAL_AUTH_FACEBOOK_KEY = os.environ.get('SOCIAL_AUTH_FACEBOOK_KEY')
-# SOCIAL_AUTH_FACEBOOK_SECRET = os.environ.get('SOCIAL_AUTH_FACEBOOK_SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
@@ -236,6 +234,12 @@ STRIPE_CURRENCY = 'gbp'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
+
+SONGKICK_API_KEY = os.environ.get('SONGKICK_API_KEY', '')
+SONGKICK_ARTIST_NUMBER = 6174339
+SONGKICK_API = (
+    'https://api.songkick.com/api/3.0/artists/'
+    f'{SONGKICK_ARTIST_NUMBER}/calendar.json?apikey={SONGKICK_API_KEY}')
 
 # Emails
 if 'DEVELOPMENT' in os.environ:

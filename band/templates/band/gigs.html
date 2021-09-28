@@ -19,6 +19,8 @@
     Upcoming Gigs
 {% endblock %}
 
+https://api.songkick.com/api/3.0/artists/6174339/gigography.json?apikey={SONGKICK_API_KEY}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -46,13 +48,24 @@
                 <p>Venue location</p>
                 <p>More details</p>
             </div>
-            <div class="col-5">
-                <p>Venue Name</p>
-                <p>01/01/22 8pm</p>
-                <p>LSH</p>
-                <p>Location</p>
-                <a href="#">Link to Songkick</a>
-            </div>
+            {% for event in content %}
+                <div class="col-5">
+                    <p>{{ event.venue_name }}</p>
+                    <p>{{ event.date }}</p>
+                    <p>{{ event.time }}</p>
+                    <ul>
+                        {% for band in event.band_line_up %}
+                            {% if band == 'Lead Shot Hazard' %}
+                                <li><strong>{{ band }}</strong></li>
+                            {% else %}
+                                <li>{{ band }}</li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                    <p>{{ event.location }}</p>
+                    <a href="{{ event.songkick_link }}">Click here for more details</a>
+                </div>
+            {% endfor %}
             <div class="col-3">
                 <img src="{{ MEDIA_URL }}songkick.png" alt="Songkick logo" class="songkick">
             </div>
