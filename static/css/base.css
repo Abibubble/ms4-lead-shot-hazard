@@ -194,6 +194,12 @@ input[name="q"]::placeholder {
     color: var(--placeholder);
 }
 
+.event-listing {
+    border: 2px solid var(--lsh-yellow);
+    margin: 20px;
+    padding: 10px;
+}
+
 /* -------------------------------- Toasts */
 
 .toast {
