@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.conf import settings
 import requests
-import datetime
 
 
 def view_contact(request):
