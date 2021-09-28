@@ -143,6 +143,10 @@ h4 {
     width: 48px;
 }
 
+.social-text {
+    padding-left: 15px;
+}
+
 .songkick {
     max-width: 150px;
     width: 75%;
@@ -196,7 +200,8 @@ input[name="q"]::placeholder {
 
 .event-listing {
     border: 2px solid var(--lsh-yellow);
-    margin: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     padding: 10px;
 }
 
