@@ -576,6 +576,10 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 [Slack](https://slack.com/intl/en-gb/) was used to communicate with the [Code Institute](https://codeinstitute.net/) community for help and support with bug fixes, and for a peer code review.
 
+#### Songkick API
+
+[Songkick API](https://www.songkick.com/developer) was used to populate the data of upcoming gigs for the band.
+
 [Back to the top](#lead-shot-hazard)
 
 ---
@@ -623,6 +627,14 @@ This database uses a SQL database through PostgreSQL. They were originally built
     * I realised this error started happening once I'd deployed my site and moved my environment variables.
     * I looked through the [Travis CI documentation](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml), and realised I could include a dummy SECRET_KEY in my travis.yml file.
     * I included `SECRET_KEY="whatever" python manage.py test` in my travis.yml file, which fixed this issue.
+6. The [Songkick API](https://www.songkick.com/developer) wasn't providing the correct data, and was only providing data up to 2016.
+    * I checked that my Songkick API key was being accessed correctly, and that my band ID was correct.
+    * I read through the [Songkick API docs](https://www.songkick.com/developer), and checked I was using the correct syntax.
+    * I then looked at the raw JSON data, and saw at the bottom it said 'page 1, showing 50 items out of 122'.
+    * I looked up the correct syntax to display the final page of the data.
+    * I then realised that the data being provided was only of past gigs, not upcoming gigs.
+    * I searched in the [Songkick API group](https://groups.google.com/g/songkick-api), and found that I was using the `gigography` rather than `calendar` in the API URL.
+    * I changed this, which then provided me with the correct data.
 
 ### Known Bugs
 
@@ -642,6 +654,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 * [Stack Overflow](https://stackoverflow.com/) has been used to help with deciphering the django error codes.
 * [Chris Anstey](https://github.com/ansteychris), a Digital Experience Lead at Google, for the discussion we had about Lighthouse vs WebPageTest.
 * I followed [this video from JustDjango](https://www.youtube.com/watch?v=NG48CLLsb1A) to add the Google social login functionality.
+* [Dave Horrocks](https://github.com/DaveyJH) helped me with working out the logic and syntax for the Songkick API data.
 
 ### Content
 
