@@ -186,7 +186,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 
 ### Features
 
-#### Create and Delete a profile
+#### Create a user profile
 
 * This feature allows the user to:
   * Register for an account with email address, username and password.
@@ -194,7 +194,6 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
   * Ensure the correct email address by sending a verification email to the email address the user has supplied.
   * &#128100; Store their details for a faster checkout.
   * &#128100; Keep a record of their full order history.
-  * &#128100; Delete their profile if they no longer want their details to be stored on the site.
 
 ![User's profile, including details update form and order history](static/docs/img/profile-feature.png)
 
@@ -235,8 +234,6 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 * This feature allows the user to:
   * &#128272; Confirm deletion of a product.
   * &#128272; Avoid accidentally deleting a product.
-  * &#128100; Confirm deletion of the user's profile.
-  * &#128100; Avoid accidentally deleting the user's profile.
 
 ![Confirm to delete modal](static/docs/img/modal-feature.png)
 
@@ -378,7 +375,6 @@ The navigation bar changes depending on user status and screen size:
     * A payment fails.
     * An error occurs.
     * &#128100; A user updates their profile information.
-    * &#128100; A user deletes their profile.
     * &#128272; A superuser adds a new product.
     * &#128272; A superuser edits a product.
     * &#128272; A superuser deletes a product.
