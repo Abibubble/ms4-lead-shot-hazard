@@ -42,6 +42,10 @@ body {
     color: white;
 }
 
+.navbar-nav .dropdown-menu {
+    position: absolute !important;
+}
+
 /* -------------------------------- Text */
 
 a {
