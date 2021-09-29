@@ -544,9 +544,10 @@ On every device and browser listed above, I tested the following:
 
 ### Reading Level
 
-* All text content on the site has a maximum reading level of age 9 using the Automated Readability Index (ARI), to aid people with cognitive impairments, and people who don't speak English as a first language, among others.
+* All text content on the site has a maximum reading level of age 11 using the Automated Readability Index (ARI), to aid people with cognitive impairments, and people who don't speak English as a first language, among others.
+* While this isn't ideal, as the recommended maximum reading level is age 9, given the site is for a ska punk band with swear words in their songs, I decided that this was an acceptable level to be at.
 * All text content on this site has been tested against the ARI on [Readability Formulas](https://readabilityformulas.com/free-readability-formula-tests.php).
-* The full report of all text on the site can be viewed in [Readability Checker Results](static/docs/READABILITY.md)
+* The full report of all text on the site can be viewed in the [Readability Checker Results](static/docs/READABILITY.md) file.
 
 [Back to the top](#testing-steps)
 
