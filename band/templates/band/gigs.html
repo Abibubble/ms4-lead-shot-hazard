@@ -40,14 +40,14 @@ https://api.songkick.com/api/3.0/artists/6174339/gigography.json?apikey={SONGKIC
                 <hr>
             </div>
         </div>
-        <div class="row">
+        <div class="row text-transform-none">
             {% for event in content %}
                 <div class="col-12 col-md-5 event-listing">
                     <h3><b>Venue:</b> {{ event.venue_name }}</h3>
                     <p><b>Location:</b> {{ event.location }}</p>
-                    <p><b>Date:</b> {{ event.date }}</p>
+                    <p><b>Date:</b> {{ event.weekday }} {{ event.day }} {{ event.month }}, {{ event.year }}</p>
                     <p><b>Time:</b> {{ event.time }}</p>
-                    <p><b>Line Up:</b> 
+                    <p><b>Line Up:</b>
                         <ul>
                             {% for band in event.band_line_up %}
                                 {% if band == 'Lead Shot Hazard' %}

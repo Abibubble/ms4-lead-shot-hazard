@@ -311,8 +311,8 @@ audio {
 
 /* -------------------------------- States */
 
-.nav-link:hover {
-    color: var(--tag-dark) !important;
+.nav-link:hover, a:hover {
+    color: var(--lsh-yellow) !important;
 }
 
 a.category-badge > span.badge:hover {
