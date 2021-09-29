@@ -156,7 +156,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 3. JSHint
     * [JSHint](https://jshint.com/)
     * EXPLANATIONS
-    * ![Image of JSHint results](static/docs/testing/jshint.png)
+    * ![Image of JSHint results](testing/jshint.png)
 
 4. Flake8
     * [Flake8](https://pypi.org/project/flake8/)
@@ -165,7 +165,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
     * `Avoid using null=True on string-based fields such CharField`:
         * This error is there to avoid a field having two values if left blank - an empty string, and `null`. This would usually be a valid error, but because I need to allow empty values in forms, this is required, as the `null` parameter only affects database storage.
     * There are also several warning being shown from the migrations files. These are acceptable to ignore, as they are created by Django, and [this issue has been marked as a 'won't fix'](https://code.djangoproject.com/ticket/30555) by the Django team.
-    * ![Image of Flake8 results](static/docs/testing/flake8.png)
+    * ![Image of Flake8 results](testing/flake8.png)
 
 [Back to the top](#testing-steps)
 
@@ -244,7 +244,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 * Test that delivery cost is correct
 * Test that calc_subtotal works
 
-![Bag App testing report from coverage](static/docs/testing/bag-testing.png)
+![Bag App testing report from coverage](testing/bag-testing.png)
 
 #### Checkout App
 
@@ -269,7 +269,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 * Test the checkout page view
 * Test the cache_checkout_data view
 
-![Checkout App testing report from coverage](static/docs/testing/checkout-testing.png)
+![Checkout App testing report from coverage](testing/checkout-testing.png)
 
 #### Home App
 
@@ -277,7 +277,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 
 * Test the home page view
 
-![Home App testing report from coverage](static/docs/testing/home-testing.png)
+![Home App testing report from coverage](testing/home-testing.png)
 
 #### Products
 
@@ -296,7 +296,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 * Test the categories view
 * Test the product_detail view
 
-![Products App testing report from coverage](static/docs/testing/products-testing.png)
+![Products App testing report from coverage](testing/products-testing.png)
 
 #### Profiles
 
@@ -318,7 +318,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 * Test that the string method returns the username
 * Test the user string
 
-![Profiles App testing report from coverage](static/docs/testing/profiles-testing.png)
+![Profiles App testing report from coverage](testing/profiles-testing.png)
 
 ---
 
@@ -651,7 +651,7 @@ On every device and browser listed above, I tested the following:
 * All text content on the site has a maximum reading level of age 11 using the Automated Readability Index (ARI), to aid people with cognitive impairments, and people who don't speak English as a first language, among others.
 * While this isn't ideal, as the recommended maximum reading level is age 9, given the site is for a ska punk band with swear words in their songs, I decided that this was an acceptable level to be at.
 * All text content on this site has been tested against the ARI on [Readability Formulas](https://readabilityformulas.com/free-readability-formula-tests.php).
-* The full report of all text on the site can be viewed in the [Readability Checker Results file](static/docs/READABILITY.md).
+* The full report of all text on the site can be viewed in the [Readability Checker Results file](READABILITY.md).
 
 [Back to the top](#testing-steps)
 
@@ -667,11 +667,11 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 
 #### Desktop Lighthouse
 
-![Lighthouse desktop first try](static/docs/testing/lighthousedesktop.png)
+![Lighthouse desktop first try](testing/lighthousedesktop.png)
 
 #### Mobile Lighthouse
 
-![Lighthouse mobile first try](static/docs/testing/lighthousemobile.png)
+![Lighthouse mobile first try](testing/lighthousemobile.png)
 
 #### Performance Lighthouse
 
@@ -759,11 +759,11 @@ I tested my website using WebPageTest, and got these results:
 
 #### Chrome Desktop Screenshots
 
-![Home page](static/docs/testing/desktop/chrome/home.png)
-![Log In page](static/docs/testing/desktop/chrome/log-in.png)
-![Register page](static/docs/testing/desktop/chrome/register.png)
-![Add Merchandise page](static/docs/testing/desktop/chrome/add-merch.png)
-![Edit Merchandise page](static/docs/testing/desktop/chrome/edit-merch.png)
+![Home page](testing/desktop/chrome/home.png)
+![Log In page](testing/desktop/chrome/log-in.png)
+![Register page](testing/desktop/chrome/register.png)
+![Add Merchandise page](testing/desktop/chrome/add-merch.png)
+![Edit Merchandise page](testing/desktop/chrome/edit-merch.png)
 
 [Back to the top](#testing-steps)
 
@@ -771,11 +771,11 @@ I tested my website using WebPageTest, and got these results:
 
 #### Edge Desktop Screenshots
 
-![Home page](static/docs/testing/desktop/edge/home.jpeg)
-![Log In page](static/docs/testing/desktop/edge/log-in.jpeg)
-![Register page](static/docs/testing/desktop/edge/register.jpeg)
-![Add Merchandise page](static/docs/testing/desktop/edge/add-merch.jpeg)
-![Edit Merchandise page](static/docs/testing/desktop/edge/edit-merch.jpeg)
+![Home page](testing/desktop/edge/home.jpeg)
+![Log In page](testing/desktop/edge/log-in.jpeg)
+![Register page](testing/desktop/edge/register.jpeg)
+![Add Merchandise page](testing/desktop/edge/add-merch.jpeg)
+![Edit Merchandise page](testing/desktop/edge/edit-merch.jpeg)
 
 [Back to the top](#testing-steps)
 
@@ -783,11 +783,11 @@ I tested my website using WebPageTest, and got these results:
 
 #### Mozilla Firefox Desktop Screenshots
 
-![Home page](static/docs/testing/desktop/moz/home.png)
-![Log In page](static/docs/testing/desktop/moz/log-in.png)
-![Register page](static/docs/testing/desktop/moz/register.png)
-![Add Merchandise page](static/docs/testing/desktop/moz/add-merch.png)
-![Edit Merchandise page](static/docs/testing/desktop/moz/edit-merch.png)
+![Home page](testing/desktop/moz/home.png)
+![Log In page](testing/desktop/moz/log-in.png)
+![Register page](testing/desktop/moz/register.png)
+![Add Merchandise page](testing/desktop/moz/add-merch.png)
+![Edit Merchandise page](testing/desktop/moz/edit-merch.png)
 
 [Back to the top](#testing-steps)
 
@@ -795,11 +795,11 @@ I tested my website using WebPageTest, and got these results:
 
 #### Safari Desktop Screenshots
 
-![Home page](static/docs/testing/desktop/safari/home.png)
-![Log In page](static/docs/testing/desktop/safari/log-in.png)
-![Register page](static/docs/testing/desktop/safari/register.png)
-![Add Merchandise page](static/docs/testing/desktop/safari/add-merch.png)
-![Edit Merchandise page](static/docs/testing/desktop/safari/edit-merch.png)
+![Home page](testing/desktop/safari/home.png)
+![Log In page](testing/desktop/safari/log-in.png)
+![Register page](testing/desktop/safari/register.png)
+![Add Merchandise page](testing/desktop/safari/add-merch.png)
+![Edit Merchandise page](testing/desktop/safari/edit-merch.png)
 
 [Back to the top](#testing-steps)
 
@@ -809,12 +809,12 @@ I tested my website using WebPageTest, and got these results:
 
 #### Safari Tablet Screenshots
 
-![Home page](static/docs/testing/tablet/safari/home.jpg)
-![Log In page](static/docs/testing/tablet/safari/log-in.jpg)
-![Register page](static/docs/testing/tablet/safari/register.jpg)
-![Add Merchandise page](static/docs/testing/tablet/safari/add-merch.jpg)
-![Edit Merchandise page](static/docs/testing/tablet/safari/edit-merch.jpg)
-![Menu](static/docs/testing/tablet/safari/menu.jpg)
+![Home page](testing/tablet/safari/home.jpg)
+![Log In page](testing/tablet/safari/log-in.jpg)
+![Register page](testing/tablet/safari/register.jpg)
+![Add Merchandise page](testing/tablet/safari/add-merch.jpg)
+![Edit Merchandise page](testing/tablet/safari/edit-merch.jpg)
+![Menu](testing/tablet/safari/menu.jpg)
 
 [Back to the top](#testing-steps)
 
@@ -824,12 +824,12 @@ I tested my website using WebPageTest, and got these results:
 
 #### Chrome Mobile Screenshots
 
-![Home page](static/docs/testing/mobile/chrome/home.jpg)
-![Log In page](static/docs/testing/mobile/chrome/log-in.jpg)
-![Register page](static/docs/testing/mobile/chrome/register.jpg)
-![Add Merchandise page](static/docs/testing/mobile/chrome/add-merch.jpg)
-![Edit Merchandise page](static/docs/testing/mobile/chrome/edit-merch.jpg)
-![Navigation menu](static/docs/testing/mobile/chrome/menu.jpg)
+![Home page](testing/mobile/chrome/home.jpg)
+![Log In page](testing/mobile/chrome/log-in.jpg)
+![Register page](testing/mobile/chrome/register.jpg)
+![Add Merchandise page](testing/mobile/chrome/add-merch.jpg)
+![Edit Merchandise page](testing/mobile/chrome/edit-merch.jpg)
+![Navigation menu](testing/mobile/chrome/menu.jpg)
 
 [Back to the top](#testing-steps)
 
@@ -837,12 +837,12 @@ I tested my website using WebPageTest, and got these results:
 
 #### Safari Mobile Screenshots
 
-![Home page](static/docs/testing/mobile/safari/home.jpg)
-![Log In page](static/docs/testing/mobile/safari/log-in.jpg)
-![Register page](static/docs/testing/mobile/safari/register.jpg)
-![Add Merchandise page](static/docs/testing/mobile/safari/add-merch.jpg)
-![Edit Merchandise page](static/docs/testing/mobile/safari/edit-merch.jpg)
-![Navigation menu](static/docs/testing/mobile/safari/menu.jpg)
+![Home page](testing/mobile/safari/home.jpg)
+![Log In page](testing/mobile/safari/log-in.jpg)
+![Register page](testing/mobile/safari/register.jpg)
+![Add Merchandise page](testing/mobile/safari/add-merch.jpg)
+![Edit Merchandise page](testing/mobile/safari/edit-merch.jpg)
+![Navigation menu](testing/mobile/safari/menu.jpg)
 
 [Back to the top](#testing-steps)
 
@@ -850,11 +850,11 @@ I tested my website using WebPageTest, and got these results:
 
 #### Samsung Internet Mobile Screenshots
 
-![Home page](static/docs/testing/mobile/samsung/home.jpg)
-![Log In page](static/docs/testing/mobile/samsung/log-in.jpg)
-![Register page](static/docs/testing/mobile/samsung/register.jpg)
-![Add Merchandise page](static/docs/testing/mobile/samsung/add-merch.jpg)
-![Edit Merchandise page](static/docs/testing/mobile/samsung/edit-merch.jpg)
-![Navigation menu](static/docs/testing/mobile/samsung/menu.jpg)
+![Home page](testing/mobile/samsung/home.jpg)
+![Log In page](testing/mobile/samsung/log-in.jpg)
+![Register page](testing/mobile/samsung/register.jpg)
+![Add Merchandise page](testing/mobile/samsung/add-merch.jpg)
+![Edit Merchandise page](testing/mobile/samsung/edit-merch.jpg)
+![Navigation menu](testing/mobile/samsung/menu.jpg)
 
 [Back to the top](#testing-steps)
