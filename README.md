@@ -238,7 +238,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
   * &#128100; Confirm deletion of the user's profile.
   * &#128100; Avoid accidentally deleting the user's profile.
 
-![Confirm to delete modal](static/docs/img/FEATURE.png)
+![Confirm to delete modal](static/docs/img/modal-feature.png)
 
 #### Shopping bag
 
