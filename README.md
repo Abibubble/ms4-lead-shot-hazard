@@ -33,7 +33,6 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
   * [Features](#features)
   * [Future Features](#future-features)
   * [Audio](#audio)
-  * [Video](#video)
   * [Navigation bar](#navigation-bar)
 
 * [Database Design](#database-design)
@@ -157,7 +156,6 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 * The social media icon colors have been taken directly from each external website's logo, to reference where the link would take them.
 
 ![Color scheme](static/docs/img/colors.png)
-![Social media icons color ccheme](static/docs/img/social-colors.png)
 
 ### Typography
 
@@ -200,7 +198,7 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
   * &#128100; Keep a record of their full order history.
   * &#128100; Delete their profile if they no longer want their details to be stored on the site.
 
-![Image of feature](static/docs/img/FEATURE.png)
+![User's profile, including details update form and order history](static/docs/img/profile-feature.png)
 
 #### Products
 
@@ -220,8 +218,9 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
     * Image
     * Description
     * Sizes (if relevant)
+  * Click the back to top arrow button to return to the top of the page.
 
-![Image of feature](static/docs/img/FEATURE.png)
+![Products page with back to top button](static/docs/img/products-feature.png)
 
 #### &#128272; Create, Edit and Delete products
 
@@ -231,7 +230,7 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
   * Delete an existing product.
   * Include images, either by URL, or by uploading directly from the superuser's computer.
 
-![Image of feature](static/docs/img/FEATURE.png)
+![Admin functionality to create and update products](static/docs/img/crud-feature.png)
 
 #### Confirm to delete modal
 
@@ -241,7 +240,7 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
   * &#128100; Confirm deletion of the user's profile.
   * &#128100; Avoid accidentally deleting the user's profile.
 
-![Image of feature](static/docs/img/FEATURE.png)
+![Confirm to delete modal](static/docs/img/FEATURE.png)
 
 #### Shopping bag
 
@@ -254,7 +253,7 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
 * The grand total and shipping price are updated when any edits to the shopping bag are made.
 * Updating a product quantity to 0 in the shopping bag removes the item from the shopping bag.
 
-![Image of feature](static/docs/img/FEATURE.png)
+![A shopping bag with an item in it](static/docs/img/bag-feature.png)
 
 #### Checkout
 
@@ -268,7 +267,7 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
 * The card details form is connected to Stripe, a payment platform. This ensures a fully secure payment.
 * When the user confirms checkout, an animated loading screen shows whilst the payment details are checked by Stripe.
 
-![Image of feature](static/docs/img/FEATURE.png)
+![The checkout form](static/docs/img/checkout-feature.png)
 
 #### Payment
 
@@ -282,7 +281,7 @@ RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED 
   * A message will display, informing the user that the payment succeeded, containing of the order details and order number.
   * &#128100; The order will be added to the user's order history in their profile.
 
-![Image of feature](static/docs/img/FEATURE.png)
+![Stripe's card information form, with a validation error showing](static/docs/img/payment-feature.png)
 
 #### Navigation bar
 
@@ -294,22 +293,28 @@ The navigation bar changes depending on user status and screen size:
 | Home | &#9989; | &#9989; | &#9989; |
 | Products | &#9989; | &#9989; | &#9989; |
 | Product Details | &#9989; | &#9989; | &#9989; |
+| Upcoming Gigs | &#9989; | &#9989; | &#9989; |
+| Product Management | &#10060; | &#10060; | &#9989; |
 | Profile | &#10060; | &#9989; | &#9989; |
 | Log Out | &#10060; | &#9989; | &#9989; |
 | Log In | &#9989; | &#10060; | &#10060; |
 | Register | &#9989; | &#10060; | &#10060; |
 
+* Navigation bar
+
+![Overall navigation bar](static/docs/img/nav-overall.png)
+
 * Logged in
 
-![Logged in navigation bar](static/docs/img/nav-logged-in.png)
+![Logged in navigation dropdown](static/docs/img/nav-logged-in.png)
 
 * Logged out
 
-![Logged out navigation bar](static/docs/img/nav-logged-out.png)
+![Logged out navigation dropdown](static/docs/img/nav-logged-out.png)
 
 * An admin
 
-![Admin navigation bar](static/docs/img/nav-admin.png)
+![Admin navigation dropdown](static/docs/img/nav-admin.png)
 
 * On small screen sizes
 
@@ -328,16 +333,19 @@ The navigation bar changes depending on user status and screen size:
   * This has been connected to the [Songkick API](https://www.songkick.com/developer), which is updated by either the band, the venue, or the promoter each time a new gig is booked.
   * The Upcoming Gigs page will then take this data automatically and display it clearly on the page for users to see.
   * This allows users to keep up with when and where the band will be performing in the future.
+  * The data has been formatted for ease of reading for the user.
+  * The date data using the [calendar](https://docs.python.org/3/library/calendar.html) Python module to get the day of the week that the gig falls on, as well as displaying the date in a user-friendly way.
 
-![Image of feature](static/docs/img/FEATURE.png)
+![A gig shown on the Upcoming Gigs page, populated from the Songkick API](static/docs/img/gigs.png)
 
 #### Contact section
 
 * This feature allows the user to:
   * Contact the band via email for queries about merchandise or upcoming gigs.
   * Navigate to any of the band's social media pages.
+  * It also has a customised hover feature, where when the user hovers over each link, the link becomes the main color of the site that it is linking to.
 
-![Image of feature](static/docs/img/FEATURE.png)
+![The Contact Us page, with an example of the hover effect applied](static/docs/img/contact-feature.png)
 
 ### Future Features
 
@@ -345,20 +353,14 @@ The navigation bar changes depending on user status and screen size:
 * Recommended products at the bottom of the checkout page.
 * Retrieve or re-set a forgotten password.
 * Stock count for each product size, including out of stock sizes.
-* Social media login, via Facebook or Google.
+* Social media login via Facebook
 * Special offers
 
 ### Audio
 
 * All audio is owned by the band Lead Shot Hazard.
 * As I am a member of Lead Shot Hazard, I own joint rights to use all audio that the band has created.
-* The audio that is available on the site has been trimmed down to approximately 30 seconds, to allow the user to hear a sample of the band's music, without being able to listen to the entire songs for free.
-
-### Video
-
-* All videos are owned by the band Lead Shot Hazard and the videographer Conor Nye.
-* Conor Nye has given Lead Shot Hazard permission to use all of his videos for any purpose.
-* As I am a member of Lead Shot Hazard, I own joint rights to use all videos of the band.
+* The audio that is available on the individual product details pages has been trimmed down to approximately 30 seconds, to allow the user to hear a sample of the band's music, without being able to listen to the entire songs for free.
 
 ### Defensive Design
 
@@ -577,7 +579,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 #### Songkick API
 
-[Songkick API](https://www.songkick.com/developer) was used to populate the data of upcoming gigs for the band.
+[Songkick API](https://www.songkick.com/developer) was used to populate and auto-update the data of upcoming gigs for the band.
 
 [Back to the top](#lead-shot-hazard)
 

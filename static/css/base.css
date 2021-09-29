@@ -4,7 +4,7 @@
     --lsh-yellow: #FEE101;
     --placeholder: #828A90;
     --allauth: #222222;
-    --warning-red: #d81b2e;
+    --warning-red: #D81B2E;
 }
 
 html {
@@ -12,9 +12,9 @@ html {
 }
 
 body {
-    background-color: #000000 !important;
+    background-color: #000 !important;
     height: calc(100vh - 164px);
-    color: #fff !important;
+    color: #FFF !important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     text-transform: uppercase;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .navbar-toggler {
-    border-color: white !important;
+    border-color: #FFF !important;
 }
 
 .navbar-toggler-icon {
@@ -39,7 +39,7 @@ body {
 
 .navbar-toggler-icon i {
     padding-top: 5px;
-    color: white;
+    color: #FFF;
 }
 
 .navbar-nav .dropdown-menu {
@@ -49,7 +49,7 @@ body {
 /* -------------------------------- Text */
 
 a {
-    color: #ffffff !important;
+    color: #FFF !important;
 }
 
 h4 {
@@ -57,7 +57,7 @@ h4 {
 }
 
 .text-black {
-    color: #000000 !important;
+    color: #000 !important;
 }
 
 .text-tag-dark {
@@ -69,7 +69,7 @@ h4 {
 }
 
 .table {
-    color: #ffffff !important;
+    color: #FFF !important;
 }
 
 .placeholder {
@@ -83,36 +83,36 @@ h4 {
 }
 
 .bg-black {
-    background-color: #000000 !important;
+    background-color: #000 !important;
 }
 
 /* -------------------------------- Borders */
 
 .border {
-    border: 1px solid #ffffff !important;
+    border: 1px solid #FFF !important;
 }
 
 .border-black {
-    border: 1px solid #000000 !important;
+    border: 1px solid #000 !important;
 }
 
 /* -------------------------------- Buttons */
 
 .btn {
-    color: #ffffff !important;
+    color: #FFF !important;
     text-transform: uppercase;
 }
 
 .btn-black {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-    border: 1px solid #ffffff !important;
+    background-color: #000 !important;
+    color: #FFF !important;
+    border: 1px solid #FFF !important;
 }
 
 .btn-white {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-    border: 1px solid #000000 !important;
+    background-color: #FFF !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
 }
 
 .btt-button {
@@ -121,7 +121,7 @@ h4 {
     position: fixed;
     right: 10px;
     bottom: 100px;
-    background-color: black;
+    background-color: #000;
 }
 
 .btt-link,
@@ -131,8 +131,8 @@ h4 {
 }
 
 .btn-disabled {
-    background-color: lightgray !important;
-    color: #000000 !important;
+    background-color: #D3D3D3 !important;
+    color: #000 !important;
     cursor: none;
 }
 
@@ -186,7 +186,7 @@ hr {
     top: 0;
     left: 0;
     position: fixed;
-    background: #000000;
+    background: #000;
     z-index: -1;
 }
 
@@ -195,7 +195,7 @@ hr {
 }
 
 a.category-badge > span.badge {
-    border: 1px solid #000000 !important;
+    border: 1px solid #000 !important;
 }
 
 input[name="q"]::placeholder {
@@ -212,7 +212,7 @@ input[name="q"]::placeholder {
 /* -------------------------------- Toasts */
 
 .toast {
-    color: #000000 !important;
+    color: #000 !important;
     text-transform: none;
 }
 
@@ -287,7 +287,7 @@ audio {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #FFF;
     background: #2D88FF;
     height: 48px;
     width: 250px;
@@ -300,7 +300,7 @@ audio {
     position: absolute;
     left: 10px;
     width: 35px;
-    background: #fff;
+    background: #FFF;
     border-radius: 50%;
     padding: 5px;
 }
@@ -316,21 +316,21 @@ audio {
 }
 
 a.category-badge > span.badge:hover {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-    border: 1px solid #ffffff !important;
+    background-color: #000 !important;
+    color: #FFF !important;
+    border: 1px solid #FFF !important;
 }
 
 .btn-black:hover {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-    border: 1px solid #000000 !important;
+    background-color: #FFF !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
 }
 
 .btn-white:hover {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-    border: 1px solid #ffffff !important;
+    background-color: #000 !important;
+    color: #FFF !important;
+    border: 1px solid #FFF !important;
 }
 
 .update-link:hover,
@@ -340,7 +340,7 @@ a.category-badge > span.badge:hover {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-    color: #fff;
+    color: #FFF;
     background-color: var(--allauth);
     border-color: var(--allauth);
 }
@@ -426,7 +426,7 @@ a.category-badge > span.badge:hover {
     }
 
     .navbar-collapse {
-        border: solid 1px white !important;
+        border: solid 1px #FFF !important;
     }
 
     .cart-icon {
