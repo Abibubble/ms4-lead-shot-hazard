@@ -33,7 +33,8 @@ This file includes a list of all sites I have used for research or testing.
 * [JSHint](https://jshint.com/)
 * [PEP8 Online](http://pep8online.com/)
 * [Flake8](https://flake8.pycqa.org/en/latest/)
-* [Python Support](https://pulp.plan.io/issues/3446) - To explain the `Avoid using null=True on string-based fields such CharField` error message
+* [Python Support](https://pulp.plan.io/issues/3446) - To explain the `Avoid using null=True on string-based fields such CharField` error message.
+* [Django Pep8 compliance](https://code.djangoproject.com/ticket/30555) - To explain the Pep8 error in the migrations files.
 * [WebPageTest](https://www.webpagetest.org/)
 * [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
 * [WebAim's W.A.V.E](https://wave.webaim.org/)

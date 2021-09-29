@@ -83,7 +83,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 ### Initial Discussion
 
 * I wanted to create a website linked to a database, which allows users to login, search for and find merchandise and music.
-* This is something that Lead Shot Hazard; has been discussing for a while, but we haven't had time to create until now.
+* This is something that Lead Shot Hazard has been discussing for a while, but hasn't had time to create until now.
 * I wanted the band to be able to add, edit and delete items of merchandise and music for sale.
 
 ### User Stories
@@ -159,7 +159,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 
 ### Typography
 
-* For the font, I decided to stick with the standard HTML font family. As they're sans-serif fonts, they are easy to read for dyslexic and visually impaired users.
+* For the font, I decided to stick with the standard HTML font family. As they're sans-serif fonts, they are easy to read for dyslexic and partially visually impaired users.
 * As the standard HTML font size is 16px, I kept it at that, ensuring to not have any fonts smaller than that, to aid visually impaired users.
 * The recommended smallest font size for accessible websites is 12px, so I ensured to keep all font sizes above that.
 * A lot of the text on the website, including all headers and buttons, has been transformed to uppercase.
@@ -185,8 +185,6 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 * [Database schema for this project](static/docs/database.pdf).
 
 ### Features
-
-RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED FROM 320PX AND UP'
 
 #### Create and Delete a profile
 
@@ -334,7 +332,7 @@ The navigation bar changes depending on user status and screen size:
   * The Upcoming Gigs page will then take this data automatically and display it clearly on the page for users to see.
   * This allows users to keep up with when and where the band will be performing in the future.
   * The data has been formatted for ease of reading for the user.
-  * The date data using the [calendar](https://docs.python.org/3/library/calendar.html) Python module to get the day of the week that the gig falls on, as well as displaying the date in a user-friendly way.
+  * The date data uses the [calendar](https://docs.python.org/3/library/calendar.html) Python module to get the day of the week that the gig falls on, as well as displaying the date in a user-friendly way.
 
 ![A gig shown on the Upcoming Gigs page, populated from the Songkick API](static/docs/img/gigs.png)
 
@@ -504,6 +502,10 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 [Audio Trimmer](https://audiotrimmer.com/) was used to trim the audio down to sample clips.
 
+#### Calendar
+
+[Python calendar module](https://docs.python.org/3/library/calendar.html) was used to display the date of upcoming gigs in a user-friendly format.
+
 ### Packages
 
 | Name | Purpose |
@@ -667,7 +669,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 * All media on this site is owned by Lead Shot Hazard.
 * As a member of Lead Shot Hazard, I own joint rights to use all media and images of the band.
 * The audio selections were cropped down to a sample size using [Audio Trimmer](https://audiotrimmer.com/).
-* [Manni Silva](https://github.com/manni8436) for the Mobile and Tablet Safari screenshots in the TESTING.md file.
+* [Manni Silva](https://github.com/manni8436) helped me by taking the Mobile and Tablet Safari screenshots in the [TESTING.md file](static/docs/TESTING.md).
 * The Songkick image on the Upcoming Gigs page was found in the [downloadable ZIP file on this site](https://www.songkick.com/developer/api-terms-of-use), as a requirement for using the Songkick API.
 
 ### Acknowledgements

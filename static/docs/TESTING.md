@@ -113,7 +113,7 @@
   * Acer Aspire V Nitro Laptop, running Windows 10
   * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
   * MacBook Air7,2 (13-inch, 2017)
-  * MacBook Pro (15-inch, 2017), running macOS Catalina
+  * MacBook Pro (15-inch, 2017), running macOS Big Sur
   * iPad 6,11 5th generation, running iOS 10.3
   * iPhone 7
   * iPhone X
@@ -152,15 +152,16 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 3. JSHint
     * [JSHint](https://jshint.com/)
     * EXPLANATIONS
-    * ![Image of JSHint results](static/docs/img/jshint.png)
+    * ![Image of JSHint results](static/docs/testing/jshint.png)
 
-4. PEP8 Online
-    * [PEP8 Online](http://pep8online.com/)
+4. Flake8
+    * [Flake8](https://pypi.org/project/flake8/)
     * `Class 'x' has no 'objects' member` and `Class 'UserProfile' has no 'DoesNotExist' member`:
         * These are just warnings from pylint. Django adds the `objects` and 'DoesNotExist' properties to all model classes, so the IDE isn't aware of this.
     * `Avoid using null=True on string-based fields such CharField`:
         * This error is there to avoid a field having two values if left blank - an empty string, and `null`. This would usually be a valid error, but because I need to allow empty values in forms, this is required, as the `null` parameter only affects database storage.
-    * ![Image of PEP8 Online results](static/docs/img/pep8.png)
+    * There are also several warning being shown from the migrations files. These are acceptable to ignore, as they are created by Django, and [this issue has been marked as a 'won't fix'](https://code.djangoproject.com/ticket/30555) by the Django team.
+    * ![Image of Flake8 results](static/docs/testing/flake8.png)
 
 [Back to the top](#testing-steps)
 
@@ -195,7 +196,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 | D2 | Shopper - Sort a category of products - Sort relevant products alphabetically or by price | Just above the products on the chosen category page, the user has a dropdown box allowing them to select how they would like to sort the available products. |
 | D3 | Shopper - Search for a specific product and its information - Find the item that I want | There is a search bar at the top of all pages, so the user can search by product name or description from anywhere on the site. |
 | D4 | Shopper - View a specific type of product - Quickly find items I'm interested in | There is a categories navigation bar at the top of all pages, so the user can quickly search by category from anywhere on the site. |
-| D5 | Shopper - Easily see what I've searched, and total number of results - Decide whether the product I'm looking for is available | At the top fo the search page, the category the user has selected is displayed at the top. If the user has searched by name or description, the search term is visible at the top left, along with the total number of results. |
+| D5 | Shopper - Easily see what I've searched, and total number of results - Decide whether the product I'm looking for is available | At the top of the search page, the category the user has selected is displayed at the top. If the user has searched by name or description, the search term is visible at the top left, along with the total number of results. |
 || **Purchasing & Checkout** ||
 | E1 | Shopper - Buy products online as a guest - Checkout without having to create an account | Registration to the site is not required to make a purchase. |
 | E2 | Shopper - Easily add, update the quantity, or delete products in my bag - Adjust my purchase to fit budget or personal choice | Products can be added to the shopping bag via any product details page. Products can be removed from the shopping bag via the Shopping Bag page, either by pressing the 'Remove' button under that item, or by updating the quantity to 0. Multiples of the same item can be added to the shopping bag by updating the quantity field. This can be done on the product details page, or on the shopping bag page. |
@@ -319,6 +320,7 @@ On every device and browser listed above, I tested the following:
 
 ## External Links
 
+* The email icon opens up the user's email client with the Lead Shot Hazard email in the recipient line.
 * The Facebook social media icon opens up the Lead Shot Hazard Facebook page in a new tab.
 * The Bandcamp social media icon opens up the Lead Shot Hazard Bandcamp page in a new tab.
 * The Instagram social media icon opens up the Lead Shot Hazard Instagram page in a new tab.
@@ -547,7 +549,7 @@ On every device and browser listed above, I tested the following:
 * All text content on the site has a maximum reading level of age 11 using the Automated Readability Index (ARI), to aid people with cognitive impairments, and people who don't speak English as a first language, among others.
 * While this isn't ideal, as the recommended maximum reading level is age 9, given the site is for a ska punk band with swear words in their songs, I decided that this was an acceptable level to be at.
 * All text content on this site has been tested against the ARI on [Readability Formulas](https://readabilityformulas.com/free-readability-formula-tests.php).
-* The full report of all text on the site can be viewed in the [Readability Checker Results](static/docs/READABILITY.md) file.
+* The full report of all text on the site can be viewed in the [Readability Checker Results file](static/docs/READABILITY.md).
 
 [Back to the top](#testing-steps)
 
@@ -563,11 +565,11 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 
 #### Desktop Lighthouse
 
-![Lighthouse desktop first try](static/docs/img/lighthousedesktop.png)
+![Lighthouse desktop first try](static/docs/testing/lighthousedesktop.png)
 
 #### Mobile Lighthouse
 
-![Lighthouse mobile first try](static/docs/img/lighthousemobile.png)
+![Lighthouse mobile first try](static/docs/testing/lighthousemobile.png)
 
 #### Performance Lighthouse
 
