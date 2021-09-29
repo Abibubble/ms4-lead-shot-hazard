@@ -11,6 +11,10 @@
   * [Testing Technologies](#testing-technologies)
   * [Testing User Stories](#testing-user-stories)
 
+* [Automated Testing](#automated-testing)
+  * [Django Testing](#django-testing)
+  * [Travis CI](#travis-ci)
+
 * [Links and Navigation](#links-and-navigation)
   * [Navigation Bar](#navigation-bar)
   * [Modals](#modals)
@@ -217,6 +221,104 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 | G4 | Site Owner - Be confident of the security of the restricted pages - Feel safe from malicious activity | The superuser is set through Django, so there can only be one. If a logged out user tried to access a restricted page, it directs them to the log in page. If a logged in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message informing them of this. |
 
 [Back to the top](#testing-steps)
+
+---
+
+## Automated Testing
+
+### Django Testing
+
+### Travis CI
+
+#### Bag App
+
+##### Bag Views
+
+* Test the view_bag view
+* Test the add_to_bag view
+* Test the adjust_bag view
+* Test the remove_from_bag view
+
+##### Bag Others
+
+* Test that delivery cost is correct
+* Test that calc_subtotal works
+
+![Bag App testing report from coverage](static/docs/testing/bag-testing.png)
+
+#### Checkout App
+
+##### Checkout Forms
+
+* Test that full name is required
+* Test that email is required
+* Test that phone_number is required
+* Test that country is required
+* Test that town_or_city is required
+* Test that street_address1 is required
+* Test that the form fields are correct in the meta class
+
+##### Checkout Models
+
+* Test the checkout_details model
+* Test the update_total model
+* Test that the string method returns the order number
+
+##### Checkout Views
+
+* Test the checkout page view
+* Test the cache_checkout_data view
+
+![Checkout App testing report from coverage](static/docs/testing/checkout-testing.png)
+
+#### Home App
+
+##### Home Views
+
+* Test the home page view
+
+![Home App testing report from coverage](static/docs/testing/home-testing.png)
+
+#### Products
+
+##### Products Models
+
+* Test the product name
+* Test the product description
+* Test the product has_sizes
+* Test the category name
+* Test the category friendly_name
+
+##### Products Views
+
+* Test the products page view
+* Test the product search functionality
+* Test the categories view
+* Test the product_detail view
+
+![Products App testing report from coverage](static/docs/testing/products-testing.png)
+
+#### Profiles
+
+##### Profiles Views
+
+* Test that a logged in user can view the profile
+* Test that the profile information gets saved correctly
+* Test that the order history displays when requested
+
+##### Profiles Forms
+
+* Test that the user profile form fields aren't required
+* Test that the placeholder star is presented correctly
+* Test the meta class of the user profile form
+
+##### Profiles Models
+
+* Test the getting user profile model
+* Test that the string method returns the username
+* Test the user string
+
+![Profiles App testing report from coverage](static/docs/testing/profiles-testing.png)
 
 ---
 
