@@ -14,7 +14,7 @@ This site is a merchandise and music e-commerce site for the band Lead Shot Haza
 
 This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Django, and it uses a SQL database through PostgreSQL.
 
-![Final project image home page](static/docs/img/finalpage.png)
+![Final project mock up screenshot from Am I Responsive](static/docs/img/finalsite.png)
 
 ## Contents
 
