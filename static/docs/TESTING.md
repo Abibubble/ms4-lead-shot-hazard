@@ -228,8 +228,6 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 
 ### Django Testing
 
-### Travis CI
-
 #### Bag App
 
 ##### Bag Views
@@ -319,6 +317,12 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 * Test the user string
 
 ![Profiles App testing report from coverage](testing/profiles-testing.png)
+
+### Travis CI
+
+![Travis CI Build](https://secure.travis-ci.org/abibubble/ms4-lead-shot-hazard.png)
+
+![Travis CI full report](testing/travis.png)
 
 ---
 
