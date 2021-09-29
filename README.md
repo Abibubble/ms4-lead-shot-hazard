@@ -151,9 +151,10 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 ### Color Scheme
 
 * The main colors used in this site are black, white, and yellow.
-* These are the colors in the band's logo, and they permeate through the site.
-* Other colors are used, such as in the social media icons.
-* These colors were used for the band to signify the ray of hope for a society that needs help, which is a popular ideology in the punk scene, and links with the band's song lyrics.
+* These main colors are the colors in the band's logo, and they permeate through the site.
+* These colors were used by the band to signify the ray of hope for a society that needs help, which is a popular ideology in the punk scene, and links with the band's song lyrics.
+* Different colors have also been used on the hover state of the social media icons in the Contact Us page.
+* The social media icon colors have been taken directly from each external website's logo, to reference where the link would take them.
 
 ![Color scheme](static/docs/img/colors.png)
 ![Social media icons color ccheme](static/docs/img/social-colors.png)
@@ -163,6 +164,9 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 * For the font, I decided to stick with the standard HTML font family. As they're sans-serif fonts, they are easy to read for dyslexic and visually impaired users.
 * As the standard HTML font size is 16px, I kept it at that, ensuring to not have any fonts smaller than that, to aid visually impaired users.
 * The recommended smallest font size for accessible websites is 12px, so I ensured to keep all font sizes above that.
+* A lot of the text on the website, including all headers and buttons, has been transformed to uppercase.
+* This is to link with the strong and bold feel of the site.
+* This also connects the site to the band's logos, which all use uppercase text.
 
 ![An example of the font used](static/docs/img/fonts.png)
 
@@ -184,7 +188,6 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 
 ### Features
 
-PROFILE - ALLAUTH, EXPLANATION OF DETAILS
 RESPONSIVE DESIGN, MAJOR SCREEN SIZES 'ALL FUNCTIONALITY AND STYLING MAINTAINED FROM 320PX AND UP'
 
 #### Create and Delete a profile
@@ -321,22 +324,18 @@ The navigation bar changes depending on user status and screen size:
 
 #### Gigs feed
 
-* DESCRIBE
-  * HOW WILL THIS BE DONE - API FROM SONGKICK
+* On the Upcoming Gigs page, the upcoming gigs will automatically update.
+  * This has been connected to the [Songkick API](https://www.songkick.com/developer), which is updated by either the band, the venue, or the promoter each time a new gig is booked.
+  * The Upcoming Gigs page will then take this data automatically and display it clearly on the page for users to see.
+  * This allows users to keep up with when and where the band will be performing in the future.
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
 #### Contact section
 
 * This feature allows the user to:
-  * Contact the band for queries about merchandise or upcoming gigs.
+  * Contact the band via email for queries about merchandise or upcoming gigs.
   * Navigate to any of the band's social media pages.
-
-![Image of feature](static/docs/img/FEATURE.png)
-
-#### SCREEN RECORD ANY ANIMATION, SAVE AS A GIF
-
-* DESCRIBE
 
 ![Image of feature](static/docs/img/FEATURE.png)
 
@@ -630,11 +629,11 @@ This database uses a SQL database through PostgreSQL. They were originally built
 6. The [Songkick API](https://www.songkick.com/developer) wasn't providing the correct data, and was only providing data up to 2016.
     * I checked that my Songkick API key was being accessed correctly, and that my band ID was correct.
     * I read through the [Songkick API docs](https://www.songkick.com/developer), and checked I was using the correct syntax.
-    * I then looked at the raw JSON data, and saw at the bottom it said 'page 1, showing 50 items out of 122'.
+    * I looked at the raw JSON data, and saw at the bottom it said 'page 1, showing 50 items out of 122'.
     * I looked up the correct syntax to display the final page of the data.
-    * I then realised that the data being provided was only of past gigs, not upcoming gigs.
+    * I realised that the data being provided was only of past gigs, not upcoming gigs.
     * I searched in the [Songkick API group](https://groups.google.com/g/songkick-api), and found that I was using the `gigography` rather than `calendar` in the API URL.
-    * I changed this, which then provided me with the correct data.
+    * I changed this, which then provided me with the correct data to populate the Upcoming Gigs page with.
 
 ### Known Bugs
 
@@ -666,6 +665,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 * All media on this site is owned by Lead Shot Hazard.
 * As a member of Lead Shot Hazard, I own joint rights to use all media and images of the band.
 * The audio selections were cropped down to a sample size using [Audio Trimmer](https://audiotrimmer.com/).
+* [Manni Silva](https://github.com/manni8436) for the Mobile and Tablet Safari screenshots in the TESTING.md file.
 
 ### Acknowledgements
 
@@ -676,11 +676,3 @@ This database uses a SQL database through PostgreSQL. They were originally built
 * My bandmates in Lead Shot Hazard, for giving me the inspiration to create this site.
 
 [Back to the top](#lead-shot-hazard)
-
-<!-- Inside Deployment:
-If you want to use the allauth social accounts:
-    * Set up Facebook secrets, add them to your environment variables
-Key	Value
-SOCIAL_AUTH_FACEBOOK_KEY
-SOCIAL_AUTH_FACEBOOK_SECRET
-If you are not using the social accounts login features, comment out lines x and y in settings.py (INSTALLED_APPS) socialaccounts -->
