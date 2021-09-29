@@ -1,10 +1,11 @@
 <div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
+    <ul class="navbar-nav w-auto mx-auto pt-2">
         <li class="nav-item d-block d-md-none">
             <a class="font-weight-bold nav-link mr-5" href="{% url 'home' %}">
                 Home
             </a>
         </li>
+
         <li class="nav-item">
             <a class="font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=tshirts">
                 T-shirts
@@ -38,6 +39,12 @@
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item text-black">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item text-black">All Merch</a>
             </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="font-weight-bold nav-link mr-5" href="{% url 'view_gigs' %}">
+                Upcoming Gigs
+            </a>
         </li>
     </ul>
 </div>
