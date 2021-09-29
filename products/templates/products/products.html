@@ -99,8 +99,30 @@
                                             {% endif %}
                                             {% if request.user.is_superuser %}
                                                 <div class="mt-2">
-                                                    <a href="{% url 'edit_product' product.id %}" class="text-tag-light mr-2">Edit</a>
-                                                    <a href="{% url 'delete_product' product.id %}" class="text-danger">Delete</a>
+                                                    <a href="{% url 'edit_product' product.id %}" class="text-tag-dark mr-2">Edit</a>
+                                                    <a role="button" class="text-danger" data-toggle="modal" data-target="#deleteModal-{{ product.name }}">Delete</a>
+                                                    <div class="modal fade text-black text-transform-none" id="deleteModal-{{ product.name }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel-{{ product.name }}" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h3 class="modal-title text-black" id="deleteModalLabel-{{ product.name }}">Delete Product</h3>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">
+                                                                            <i class="fas fa-times fa-2x"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p>Are you sure you want to delete {{ product.name }}?</p>
+                                                                    <p>This action cannot be undone.</p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-black" data-dismiss="modal">Close</button>
+                                                                    <a href="{% url 'delete_product' product.id %}" class="btn btn-danger">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             {% endif %}
                                         </div>
@@ -137,6 +159,8 @@
 
 {% block post_load_js %}
 {{ block.super }}
+    {% include 'products/includes/delete_modal_script.html' %}
+
     <script type="text/javascript">
         $('.btt-link').click(function(e) {
             window.scrollTo(0,0);
