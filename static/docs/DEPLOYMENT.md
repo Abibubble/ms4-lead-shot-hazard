@@ -1,5 +1,11 @@
 # Deployment Steps
 
+[Click here to return to the main README file](README.md)
+
+---
+
+## Contents
+
 * [Basic Requirements](#basic-requirements)
 
 * [Environment Variables](#environment-variables)
@@ -21,6 +27,8 @@
 * [Email Setup](#email-setup)
   * [Gmail](#gmail)
   * [Outlook](#outlook)
+
+* [Google Signup](#google-signup)
 
 ---
 
@@ -55,6 +63,7 @@
 | EMAIL_HOST_PASS | ## YOUR EMAIL APP PASS CODE ## |
 | AWS_SECRET_ACCESS_KEY | ## YOUR AWS_SECRET_ACCESS_KEY ## |
 | AWS_ACCESS_KEY_ID | ## YOUR AWS_ACCESS_KEY_ID ## |
+| SONGKICK_API_KEY | ## YOUR SONGKICK_API_KEY ## |
 | USE_AWS | True |
 | | |
 
@@ -72,6 +81,7 @@ os.environ["EMAIL_HOST_USER"] = "## YOUR EMAIL ADDRESS ##"
 os.environ["EMAIL_HOST_PASS"] = "## YOUR EMAIL APP PASS CODE ##"
 os.environ["AWS_SECRET_ACCESS_KEY"] = "## YOUR AWS_SECRET_ACCESS_KEY ##"
 os.environ["AWS_ACCESS_KEY_ID"] = "## YOUR AWS_ACCESS_KEY_ID ##"
+os.environ["SONGKICK_API_KEY"] = "## YOUR SONGKICK_API_KEY ##"
 os.environ["USE_AWS"] = True
 os.environ["DEVELOPMENT"] = True
 ```
@@ -89,6 +99,7 @@ To find the values of each key:
 * EMAIL_HOST_PASS: Your pass code from your email client. [See below for instructions](#email-setup).
 * AWS_SECRET_ACCESS_KEY: From the CSV file that you download having created a User in Amazon AWS S3. [See below for instructions](#amazon-aws).
 * AWS_ACCESS_KEY_ID: From the CSV file that you download having created a User in Amazon AWS S3. [See below for instructions](#amazon-aws).
+* SONGKICK_API_KEY: [Apply for a Songkick API key here](https://www.songkick.com/api_key_requests/new).
 
 [Back to the top](#deployment-steps)
 
@@ -280,3 +291,21 @@ Before beginning these steps, go to `settings.py` and change the `DEFAULT_FROM_E
 * For EMAIL_HOST_PASS, please enter your Outlook password.
 
 [Back to the top](#deployment-steps)
+
+---
+
+## Google Signup
+
+To set this up, I followed [this tutorial on YouTube by JustDjango](https://www.youtube.com/watch?v=NG48CLLsb1A). The basic steps are below.
+
+1. Go to [Google Console](https://console.cloud.google.com/), go to '**Credentials**' and set up credientials for your Google app.
+2. You want to create a new '**OAuth 2.0 Client ID**'.
+3. Give it a relevant name for your project.
+4. Under '**Authorised JavaScript origins**', enter your local host domain, and your live site domain, with no `/` at the end.
+5. Under '**Authorised redirect URIs**', enter the same domains as above, and add `/accounts/google/login/callback/` to the end of them.
+6. Click '**Save**'.
+7. Go into this newly created '**Client ID**', and to the right, you'll see your **Client ID** number and your **Client Secret**.
+8. Go to your site's **admin console**, login, click on '**Social Applications**', and click '**Add Social Application**'.
+9. From the dropdown, select the provider of '**Google**'.
+10. Give it a relevant name for your project, and add in your **Client ID** and **Client Secret** from step 7.
+11. Highlight your chosen site from '**Available Sites**', move it into '**Chosen Sites**', and click '**Save**'.

@@ -666,6 +666,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 * As a member of Lead Shot Hazard, I own joint rights to use all media and images of the band.
 * The audio selections were cropped down to a sample size using [Audio Trimmer](https://audiotrimmer.com/).
 * [Manni Silva](https://github.com/manni8436) for the Mobile and Tablet Safari screenshots in the TESTING.md file.
+* The Songkick image on the Upcoming Gigs page was found in the [downloadable ZIP file on this site](https://www.songkick.com/developer/api-terms-of-use), as a requirement for using the Songkick API.
 
 ### Acknowledgements
 
