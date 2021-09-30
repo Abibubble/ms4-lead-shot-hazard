@@ -155,8 +155,18 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 
 3. JSHint
     * [JSHint](https://jshint.com/)
-    * EXPLANATIONS
-    * ![Image of JSHint results](testing/jshint.png)
+    * The only comments from JSHint are about template literals, the `let` keyword, and the `$` from jQuery, all of which are JSHint making the developer aware that those features aren't available outside of ES6 and jQuery.
+    * There are no JavaScript errors in this project.
+    * Stripe payments
+    * ![JSHint results for Stripe payments](testing/validator/stripe.png)
+    * Social media icon hover functions
+    * ![JSHint results for social media hover functions](testing/validator/socials.png)
+    * Delete modal
+    * ![JSHint results for delete modal](testing/validator/delete-modal.png)
+    * Country field functionality
+    * ![JSHint results for country field functionality](testing/validator/country-field.png)
+    * Quantity input field
+    * ![JSHint results for quantity input functionality](testing/validator/quantity-input.png)
 
 4. Flake8
     * [Flake8](https://pypi.org/project/flake8/)
