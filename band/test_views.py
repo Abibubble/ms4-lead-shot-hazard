@@ -12,8 +12,12 @@ class TestBandViews(TestCase):
     def test_the_contact_us_page(self):
         response = self.client.get(reverse('view_contact'))
         self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(
+            response, template_name="band/contact.html")
 
     # Test that the upcoming gigs page loads and redirects as expected
     def test_upcoming_gigs_page(self):
         response = self.client.get(reverse('view_gigs'))
         self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(
+            response, template_name="band/gigs.html")
