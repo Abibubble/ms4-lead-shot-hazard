@@ -58,7 +58,7 @@ https://api.songkick.com/api/3.0/artists/6174339/gigography.json?apikey={SONGKIC
                             {% endfor %}
                         </ul>
                     </p>
-                    <p><a href="{{ event.songkick_link }}">Click here for more details</a></p>
+                    <p><a href="{{ event.songkick_link }}" rel="noopener" target="_blank">Click here to buy tickets</a></p>
                     <img src="{{ MEDIA_URL }}songkick.png" alt="Songkick logo" class="songkick">
                 </div>
             {% endfor %}

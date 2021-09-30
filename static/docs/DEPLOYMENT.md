@@ -298,7 +298,7 @@ Before beginning these steps, go to `settings.py` and change the `DEFAULT_FROM_E
 
 To set this up, I followed [this tutorial on YouTube by JustDjango](https://www.youtube.com/watch?v=NG48CLLsb1A). The basic steps are below.
 
-1. Go to [Google Console](https://console.cloud.google.com/), go to '**Credentials**' and set up credientials for your Google app.
+1. Go to [Google Console](https://console.cloud.google.com/), go to '**APIs**', then '**Credentials**' and set up credientials for your Google app.
 2. You want to create a new '**OAuth 2.0 Client ID**'.
 3. Give it a relevant name for your project.
 4. Under '**Authorised JavaScript origins**', enter your local host domain, and your live site domain, with no `/` at the end.

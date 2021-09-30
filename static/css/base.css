@@ -281,6 +281,10 @@ audio {
     border-radius: .2rem !important;
 }
 
+.product-size {
+    padding-left: 0 !important;
+}
+
 /* -------------------------------- Google login */
 
 .google-login {
