@@ -143,7 +143,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 * Python was validated using [PEP8 Online](http://pep8online.com/) and [Flake8](https://flake8.pycqa.org/en/latest/).
 * Accessibility was checked via [WebAim's W.A.V.E](https://wave.webaim.org/), [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/), and [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse).
 * [Toptal Color Blind Filter](https://www.toptal.com/designers/colorfilter/) was used to check that the site was suitable for color blind users, as well as manually testing it with my color blind partner.
-* Unit Testing was done using [Django’s testing tools](https://docs.djangoproject.com/en/3.2/topics/testing/).
+* Unit Testing was done using [Django’s testing tools](https://docs.djangoproject.com/en/3.2/topics/testing/) and [Travis CI](https://www.travis-ci.com/)'s continuous integration testing functionality.
 
 1. W3C HTML Markup Validator
     * [Homepage](LINK)
@@ -175,7 +175,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
     * `Avoid using null=True on string-based fields such CharField`:
         * This error is there to avoid a field having two values if left blank - an empty string, and `null`. This would usually be a valid error, but because I need to allow empty values in forms, this is required, as the `null` parameter only affects database storage.
     * There are also several warning being shown from the migrations files. These are acceptable to ignore, as they are created by Django, and [this issue has been marked as a 'won't fix'](https://code.djangoproject.com/ticket/30555) by the Django team.
-    * ![Image of Flake8 results](testing/flake8.png)
+    * ![Image of Flake8 results](testing/validator/flake8.png)
 
 [Back to the top](#testing-steps)
 
@@ -235,6 +235,8 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 ---
 
 ## Automated Testing
+
+Automated Unit Testing was done using [Django’s testing tools](https://docs.djangoproject.com/en/3.2/topics/testing/) and [Travis CI](https://www.travis-ci.com/)'s continuous integration testing functionality.
 
 ### Django Testing
 
@@ -330,7 +332,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 
 ### Travis CI
 
-![Travis CI Build](https://secure.travis-ci.org/abibubble/ms4-lead-shot-hazard.png)
+![Travis CI Build Badge](https://secure.travis-ci.org/abibubble/ms4-lead-shot-hazard.png)
 
 ![Travis CI full report](testing/travis.png)
 
