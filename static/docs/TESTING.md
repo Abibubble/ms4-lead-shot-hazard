@@ -269,6 +269,15 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 ![Bag App testing report from coverage](testing/bag-testing.png)
 
+#### Band App
+
+##### Band Views
+
+* Test that the Contact Us page displays correctly
+* Test that the Upcoming Gigs page displays correctly
+
+![Band App testing report from coverage](testing/band-testing.png)
+
 #### Checkout App
 
 ##### Checkout Forms
