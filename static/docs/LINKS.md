@@ -33,8 +33,9 @@ This file includes a list of all sites I have used for research or testing.
 * [JSHint](https://jshint.com/)
 * [PEP8 Online](http://pep8online.com/)
 * [Flake8](https://flake8.pycqa.org/en/latest/)
-* [Python Support](https://pulp.plan.io/issues/3446) - To explain the `Avoid using null=True on string-based fields such CharField` error message.
-* [Django Pep8 compliance](https://code.djangoproject.com/ticket/30555) - To explain the Pep8 error in the migrations files.
+* [Python Support](https://pulp.plan.io/issues/3446) - To explain the `Avoid using null=True on string-based fields such CharField` flake8 error message.
+* [Django Pep8 compliance](https://code.djangoproject.com/ticket/30555) - To explain the flake8 error in the migrations files.
+* [Reddit question and answer thread by a deleted user](https://www.reddit.com/r/django/comments/6nq0bq/class_question_has_no_objects_member/) - To explain the `Class 'x' has no 'objects' member` flake8 error message.
 * [WebPageTest](https://www.webpagetest.org/)
 * [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
 * [WebAim's W.A.V.E](https://wave.webaim.org/)
@@ -42,6 +43,7 @@ This file includes a list of all sites I have used for research or testing.
 * [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse)
 * [Toptal Color Blind Filter](https://www.toptal.com/designers/colorfilter/)
 * [Django’s testing tools](https://docs.djangoproject.com/en/3.2/topics/testing/)
+* [Testing Django with Travis Ci - Adam McKerlie](https://www.youtube.com/watch?v=uFRJsbV8W_4)
 * [Travis CI](https://www.travis-ci.com/)
 * [Am I Responsive Design](http://ami.responsivedesign.is/#)
 * [Responsinator](http://www.responsinator.com/)

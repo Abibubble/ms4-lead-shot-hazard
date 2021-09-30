@@ -129,7 +129,9 @@
   * Samsung A20
   * xBox One
 
-A large amount of testing was done to ensure that all pages were displayed, and all functionality worked as it should. Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
+A large amount of testing was done to ensure that all pages were displayed correctly at all screen sizes, and all functionality worked as it should. Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
+
+Responsive design was tested from 320px to 2500px, to account for the smallest of mobile devices, and the largest of monitors that the general public would be using.
 
 [Back to the top](#testing-steps)
 
@@ -140,17 +142,28 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 * HTML was validated using [W3C HTML Markup Validator](https://validator.w3.org/).
 * CSS was validated using [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/).
 * JavaScript was validated using [JSHint](https://jshint.com/).
-* Python was validated using [PEP8 Online](http://pep8online.com/) and [Flake8](https://flake8.pycqa.org/en/latest/).
+* Python was validated using [Flake8](https://flake8.pycqa.org/en/latest/).
+* Responsive design was tested using a variety of devices, as listed above in [Full devices and browsers](#full-devices-and-browsers), as well as being tested with [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse), [Am I Responsive Design](http://ami.responsivedesign.is/#), and [Responsinator](http://www.responsinator.com/).
 * Accessibility was checked via [WebAim's W.A.V.E](https://wave.webaim.org/), [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/), and [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse).
 * [Toptal Color Blind Filter](https://www.toptal.com/designers/colorfilter/) was used to check that the site was suitable for color blind users, as well as manually testing it with my color blind partner.
 * Unit Testing was done using [Django’s testing tools](https://docs.djangoproject.com/en/3.2/topics/testing/) and [Travis CI](https://www.travis-ci.com/)'s continuous integration testing functionality.
 
 1. W3C HTML Markup Validator
     * [Homepage](LINK)
+    * [Products](LINK)
+    * [Product Details](LINK)
+    * [Shopping Bag](LINK)
+    * [Checkout](LINK)
+    * [Order Confirmation](LINK)
     * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
 
 2. W3C CSS Validator
     * [Homepage](LINK)
+    * [Products](LINK)
+    * [Product Details](LINK)
+    * [Shopping Bag](LINK)
+    * [Checkout](LINK)
+    * [Order Confirmation](LINK)
     * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
 
 3. JSHint
@@ -222,7 +235,7 @@ A large amount of testing was done to ensure that all pages were displayed, and 
 || **Product Management** ||
 | F1 | Site Owner - Edit any product - Update details of products | Only the superuser can edit an existing product. This can be done on any product details page. |
 | F2 | Site Owner - Delete any product - Remove old products from the site | Only the superuser can delete an existing product. This can be done on any product details page. |
-| F3 | Site Owner - Add a new product - Add new products to the site | Only the superuser can add a new product. This can be done on the Manage Products page. |
+| F3 | Site Owner - Add a new product - Add new products to the site | Only the superuser can add a new product. This can be done on the Product Management page. |
 | F4 | Site Owner - Create a stock of products to be sold online - Keep the site's in stock products up to date |  |
 || **Authentication & Security** ||
 | G1 | Site User - Recover my password - Regain access to my account |  |
@@ -347,82 +360,195 @@ On every device and browser listed above, I tested the following:
 #### Logo Testing
 
 * Click the Logo to take the user to the Home page from the Home page.
+* Click the Logo to take the user to the Home page from the Products page.
 * Click the Logo to take the user to the Home page from the Product Details page.
 * Click the Logo to take the user to the Home page from the Shopping Bag page.
 * Click the Logo to take the user to the Home page from the Checkout page.
 * Click the Logo to take the user to the Home page from the Order Success page.
+* &#128100; Click the Logo to take the user to the Home page from the Order Confirmation page.
+* Click the Logo to take the user to the Home page from the Contact Us page.
+* Click the Logo to take the user to the Home page from the Upcoming Gigs page.
 * &#128100; Click the Logo to take the user to the Home page from the Profile page.
-* &#128272; Click the Logo to take the user to the Home page from the Manage Products page.
+* &#128272; Click the Logo to take the user to the Home page from the Product Management page.
 * &#128683; Click the Logo to take the user to the Home page from the Log In page.
 * &#128683; Click the Logo to take the user to the Home page from the Register page.
 
-#### Home Testing
+#### Products Testing
 
-* Click the Home button to take the user to the Home page from the Home page.
-* Click the Home button to take the user to the Home page from the Product Details page.
-* Click the Home button to take the user to the Home page from the Shopping Bag page.
-* Click the Home button to take the user to the Home page from the Checkout page.
-* Click the Home button to take the user to the Home page from the Order Success page.
-* &#128100; Click the Home button to take the user to the Home page from the Profile page.
-* &#128272; Click the Home button to take the user to the Home page from the Manage Products page.
-* &#128683; Click the Home button to take the user to the Home page from the Log In page.
-* &#128683; Click the Home button to take the user to the Home page from the Register page.
+* Click the All Merch button to take the user to the Products page from the Home page.
+* Click the All Merch button to take the user to the Products page from the Products page.
+* Click the All Merch button to take the user to the Products page from the Product Details page.
+* Click the All Merch button to take the user to the Products page from the Shopping Bag page.
+* Click the All Merch button to take the user to the Products page from the Checkout page.
+* Click the All Merch button to take the user to the Products page from the Order Success page.
+* &#128100; Click the All Merch button to take the user to the Products page from the Order Confirmation page.
+* Click the All Merch button to take the user to the Products page from the Contact Us page.
+* Click the All Merch button to take the user to the Products page from the Upcoming Gigs page.
+* &#128100; Click the All Merch button to take the user to the Products page from the Profile page.
+* &#128272; Click the All Merch button to take the user to the Products page from the Product Management page.
+* &#128683; Click the All Merch button to take the user to the Products page from the Log In page.
+* &#128683; Click the All Merch button to take the user to the Products page from the Register page.
+* Click the Keep Shopping button to take the user to the Products page from the Shopping Bag page.
+* Click the Keep Shopping button to take the user to the Products page from the Product Details page.
+
+#### Product Details Testing
+
+* Click the product card to take the user to the Product Details page for that product from the Products page.
+* Click the product card to take the user to the Product Details page for that product from the T-Shirts Products page.
+* Click the product card to take the user to the Product Details page for that product from the Music Products page.
+* Click the product card to take the user to the Product Details page for that product from the Misc. Products page.
+* Click the product card to take the user to the Product Details page for that product from the Product Search page.
+
+#### Shopping Bag Testing
+
+* Click the Shopping Bag icon to take the user to the Shopping Bag page from the Home page.
+* Click the Shopping Bag icon to take the user to the Shopping Bag page from the Products page.
+* Click the Shopping Bag icon to take the user to the Shopping Bag page from the Product Details page.
+* Click the Shopping Bag icon to take the user to the Shopping Bag page from the Shopping Bag page.
+* Click the Shopping Bag icon to take the user to the Shopping Bag page from the Checkout page.
+* Click the Shopping Bag icon to take the user to the Shopping Bag page from the Order Success page.
+* &#128100; Click the Shopping Bag icon to take the user to the Shopping Bag page from the Order Confirmation page.
+* Click the Shopping Bag icon to take the user to the Shopping Bag page from the Contact Us page.
+* Click the Shopping Bag icon to take the user to the Shopping Bag page from the Upcoming Gigs page.
+* &#128100; Click the Shopping Bag icon to take the user to the Shopping Bag page from the Profile page.
+* &#128272; Click the Shopping Bag icon to take the user to the Shopping Bag page from the Product Management page.
+* &#128683; Click the Shopping Bag icon to take the user to the Shopping Bag page from the Log In page.
+* &#128683; Click the Shopping Bag icon to take the user to the Shopping Bag page from the Register page.
+* Click the Go To Secure Checkout button on the toast message to take the user to the Shopping Bag page from any page.
+* Click the Adjust Bag button to take the user to the Shopping Bag page from the Checkout page.
+
+#### Checkout Testing
+
+* Click the Secure Checkout button to take the user to the Checkout page from the Shopping Bag page.
+
+#### Order Success Testing
+
+* Click the Complete Order button and complete a purchase successfully to take the user to the Order Success page from the Checkout page.
+
+#### Order Confirmation Testing
+
+* Click the Order number link for a past purchase to take the user to the Order Confirmation page from the Profile page.
+
+#### Contact Us Testing
+
+* Click the Contact Us button in the footer to take the user to the Contact Us page from the Home page.
+* Click the Contact Us button in the footer to take the user to the Contact Us page from the Products page.
+* Click the Contact Us button in the footer to take the user to the Contact Us page from the Product Details page.
+* Click the Contact Us button in the footer to take the user to the Contact Us page from the Shopping Bag page.
+* Click the Contact Us button in the footer to take the user to the Contact Us page from the Checkout page.
+* Click the Contact Us button in the footer to take the user to the Contact Us page from the Order Success page.
+* &#128100; Click the Contact Us button in the footer to take the user to the Contact Us page from the Order Confirmation page.
+* Click the Contact Us button in the footer to take the user to the Contact Us page from the Contact Us page.
+* Click the Contact Us button in the footer to take the user to the Contact Us page from the Upcoming Gigs page.
+* &#128100; Click the Contact Us button in the footer to take the user to the Contact Us page from the Profile page.
+* &#128272; Click the Contact Us button in the footer to take the user to the Contact Us page from the Product Management page.
+* &#128683; Click the Contact Us button in the footer to take the user to the Contact Us page from the Log In page.
+* &#128683; Click the Contact Us button in the footer to take the user to the Contact Us page from the Register page.
+
+#### Upcoming Gigs Testing
+
+* Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Home page.
+* Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Products page.
+* Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Product Details page.
+* Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Shopping Bag page.
+* Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Checkout page.
+* Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Order Success page.
+* &#128100; Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Order Confirmation page.
+* Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Contact Us page.
+* Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Upcoming Gigs page.
+* &#128100; Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Profile page.
+* &#128272; Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Product Management page.
+* &#128683; Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Log In page.
+* &#128683; Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Register page.
+* Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Home page.
+* Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Products page.
+* Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Product Details page.
+* Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Shopping Bag page.
+* Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Checkout page.
+* Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Order Success page.
+* &#128100; Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Order Confirmation page.
+* Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Contact Us page.
+* Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Upcoming Gigs page.
+* &#128100; Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Profile page.
+* &#128272; Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Product Management page.
+* &#128683; Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Log In page.
+* &#128683; Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Register page.
 
 #### Profile Testing
 
-* &#128100; Click the Profile button to take the user to the Profile page from the Home page.
-* &#128100; Click the Profile button to take the user to the Profile page from the Product Details page.
-* &#128100; Click the Profile button to take the user to the Profile page from the Shopping Bag page.
-* &#128100; Click the Profile button to take the user to the Profile page from the Checkout page.
-* &#128100; Click the Profile button to take the user to the Profile page from the Order Success page.
+* Click the Profile button to take the user to the Profile page from the Home page.
+* Click the Profile button to take the user to the Profile page from the Products page.
+* Click the Profile button to take the user to the Profile page from the Product Details page.
+* Click the Profile button to take the user to the Profile page from the Shopping Bag page.
+* Click the Profile button to take the user to the Profile page from the Checkout page.
+* Click the Profile button to take the user to the Profile page from the Order Success page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Order Confirmation page.
+* Click the Profile button to take the user to the Profile page from the Contact Us page.
+* Click the Profile button to take the user to the Profile page from the Upcoming Gigs page.
 * &#128100; Click the Profile button to take the user to the Profile page from the Profile page.
-* &#128272; Click the Profile button to take the user to the Profile page from the Manage Products page.
+* &#128272; Click the Profile button to take the user to the Profile page from the Product Management page.
+* &#128683; Click the Profile button to take the user to the Profile page from the Log In page.
+* &#128683; Click the Profile button to take the user to the Profile page from the Register page.
 
-#### Manage Products Testing
+#### Product Management Testing
 
-* &#128272; Click the Manage Products button to take the user to the Manage Products page from the Home page.
-* &#128272; Click the Manage Products button to take the user to the Manage Products page from the Product Details page.
-* &#128272; Click the Manage Products button to take the user to the Manage Products page from the Shopping Bag page.
-* &#128272; Click the Manage Products button to take the user to the Manage Products page from the Checkout page.
-* &#128272; Click the Manage Products button to take the user to the Manage Products page from the Order Success page.
-* &#128272; Click the Manage Products button to take the user to the Manage Products page from the Profile page.
-* &#128272; Click the Manage Products button to take the user to the Manage Products page from the Manage Products page.
+* &#128272; Click the Product Management button to take the user to the Product Management page from the Home page.
+* &#128272; Click the Product Management button to take the user to the Product Management page from the Products page.
+* &#128272; Click the Product Management button to take the user to the Product Management page from the Product Details page.
+* &#128272; Click the Product Management button to take the user to the Product Management page from the Shopping Bag page.
+* &#128272; Click the Product Management button to take the user to the Product Management page from the Checkout page.
+* &#128272; Click the Product Management button to take the user to the Product Management page from the Order Success page.
+* &#128272; Click the Product Management button to take the user to the Product Management page from the Order Confirmation page.
+* &#128272; Click the Product Management button to take the user to the Product Management page from the Contact Us page.
+* &#128272; Click the Product Management button to take the user to the Product Management page from the Upcoming Gigs page.
+* &#128272; Click the Product Management button to take the user to the Product Management page from the Profile page.
+* &#128272; Click the Product Management button to take the user to the Product Management page from the Product Management page.
 
-#### Add / Edit / Delete Product Testing
+#### Edit / Delete Product Testing
 
-* &#128272; Click the Add button to take the user to the Add page from the Manage Products page.
-* &#128272; Click the Edit button to take the user to the Edit page from the Manage Products page.
-* &#128272; Click the Delete button to open the Delete modal from the Manage Products page.
+* &#128272; Click the Edit button to take the user to the Edit Product page from the main Products page.
+* &#128272; Click the Edit button to take the user to the Edit Product page from the Product Details page.
+* &#128272; Click the Delete button to open the Delete modal from the main Products page.
+* &#128272; Click the Delete button to open the Delete modal from the Product Details page.
+* &#128272; Click the Delete button on the Delete modal from the main Products page to delete the product.
+* &#128272; Click the Delete button on the Delete modal from the Product Details page to delete the product.
 
 #### Log Out Testing
 
-* &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Home page.
-* &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Product Details page.
-* &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Shopping Bag page.
-* &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Checkout page.
-* &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Order Success page.
-* &#128100; Click the Log Out button to log the user out and take them to the Log In page from the Profile page.
-* &#128272; Click the Log Out button to log the user out and take them to the Log In page from the Manage Products page.
+* &#128100; Click the Log Out button to log the user out and take them to the Home page from the Home page.
+* &#128100; Click the Log Out button to log the user out and take them to the Home page from the Products page.
+* &#128100; Click the Log Out button to log the user out and take them to the Home page from the Product Details page.
+* &#128100; Click the Log Out button to log the user out and take them to the Home page from the Shopping Bag page.
+* &#128100; Click the Log Out button to log the user out and take them to the Home page from the Checkout page.
+* &#128100; Click the Log Out button to log the user out and take them to the Home page from the Order Success page.
+* &#128100; Click the Log Out button to log the user out and take them to the Home page from the Contact Us page.
+* &#128100; Click the Log Out button to log the user out and take them to the Home page from the Upcoming Gigs page.
+* &#128100; Click the Log Out button to log the user out and take them to the Home page from the Profile page.
+* &#128272; Click the Log Out button to log the user out and take them to the Home page from the Product Management page.
 
 #### Log In Testing
 
 * &#128683; Click the Log In button to take the user to the Log In page from the Home page.
-* &#128683; Click the Log In button to take the user to the Log In page from the Log In page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Register page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Product Details page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Shopping Bag page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Checkout page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Order Success page.
+* &#128683; Click the Log In button to take the user to the Log In page from the Contact Us page.
+* &#128683; Click the Log In button to take the user to the Log In page from the Upcoming Gigs page.
+* &#128683; Click the Log In button to take the user to the Log In page from the Log In page.
 
 #### Register Testing
 
 * &#128683; Click the Register button to take the user to the Register page from the Home page.
-* &#128683; Click the Register button to take the user to the Register page from the Log In page.
 * &#128683; Click the Register button to take the user to the Register page from the Register page.
 * &#128683; Click the Register button to take the user to the Register page from the Product Details page.
 * &#128683; Click the Register button to take the user to the Register page from the Shopping Bag page.
 * &#128683; Click the Register button to take the user to the Register page from the Checkout page.
 * &#128683; Click the Register button to take the user to the Register page from the Order Success page.
+* &#128683; Click the Register button to take the user to the Register page from the Contact Us page.
+* &#128683; Click the Register button to take the user to the Register page from the Upcoming Gigs page.
+* &#128683; Click the Register button to take the user to the Register page from the Log In page.
 
 [Back to the top](#testing-steps)
 
@@ -431,6 +557,7 @@ On every device and browser listed above, I tested the following:
 ## Modals
 
 * &#128272; The Delete modal is visible in front of all other items on the screen, and clearly displays the Cancel and Delete buttons.
+* &#128272; The Delete modal only deletes the specific product that it is related to.
 
 [Back to the top](#testing-steps)
 
@@ -455,8 +582,20 @@ On every device and browser listed above, I tested the following:
 ## Styling and Layout
 
 * Ensure all images load correctly.
+* Ensure all images are correctly sized, and the correct aspect ratio is maintained.
 * Ensure all grid layouts size correctly on all screen sizes.
 * Ensure all modals appear in front of all other content on the screen.
+* When hovered over the navbar links turn a dark grey color.
+* When hovered over, other links turn Lead Shot Hazard yellow.
+* When hovered over, the email icon and related text turn yellow.
+* When hovered over, the Facebook social media icon and related text turn blue.
+* When hovered over, the Bandcamp social media icon and related text turn blue.
+* When hovered over, the Instagram social media icon and related text turn pink.
+* When hovered over, the Twitter social media icon and related text turn blue.
+* When hovered over, the YouTube social media icon and related text turn red.
+* When hovered over, the Spotify social media icon and related text turn green.
+* When hovered over, the TikTok social media icon and related text turn light blue.
+* When hovered over, the Soundcloud social media icon and related text turn orange.
 
 [Back to the top](#testing-steps)
 
@@ -467,17 +606,17 @@ On every device and browser listed above, I tested the following:
 ### Logged Out Users
 
 * &#128683;
-* Navigation bar will show Logo, Home, Log In, Register.
+* Navigation bar dropdown shows Log In, Register.
 
 ### Logged In Users
 
 * &#128100;
-* Navigation bar will show Logo, Home, Profile, Log Out.
+* Navigation bar dropdown shows Profile, Log Out.
 
 ### Admin Users
 
 * &#128272;
-* Navigation bar will show Logo, Home, Profile, Manage Products, Log Out.
+* Navigation bar dropdown shows Profile, Product Management, Log Out.
 
 [Back to the top](#testing-steps)
 
@@ -490,17 +629,18 @@ On every device and browser listed above, I tested the following:
 * &#128683;
 * Creates a new user account.
 * Confirm password field is checked against password field to ensure no typos are made.
+* Confirm email field is checked against email field to ensure no typos are made.
 * If the username already exists, it informs the user and clears the form.
-* If the passwords don't match, the user is informed via a toast message.
+* If the passwords don't match, the user is informed.
+* Google Social Register takes the user to sign up via Google.
 
 ### Log In
 
 * &#128683;
 * Logs the user into their existing account.
-* Checks their password entry against the hashed password stored in their user in the database.
+* Checks their password entry against the stored password for their user.
 * If either username or password don't match what's in the database, it returns a message.
-* The message doesn't inform them if it was the username or password that was incorrect.
-* The user is able to view their password before logging in to check for typos.
+* Google Social Sign In takes the user to sign in via Google.
 
 ### Log Out
 
@@ -520,22 +660,12 @@ On every device and browser listed above, I tested the following:
 * Only accessible for logged in users.
 * It allows users to view any order that they have made.
 * It allows users to edit their personal details.
-* There is also a button to allow a user to delete their account.
-
-### Delete Account
-
-* &#128100;
-* Only accessible for logged in users.
-* Creates a modal to confirm if the user wishes to delete their account.
-* Once submitted, it deletes the user from the database, so the user can no longer log in and their address details will be removed.
-* The user will be permanently deleted from the database.
-* &#128272; This function is not able to delete the superuser.
 
 ### Add Products
 
 * &#128272;
 * Only accessible for the superuser.
-* Provides a form for users to fill in, with placeholder text.
+* Provides a form for the superuser to fill in, with placeholder text.
 * All input elements have the correct validation on.
 * Once submitted, it adds an item into the database, which then populates it onto the site.
 
@@ -543,7 +673,7 @@ On every device and browser listed above, I tested the following:
 
 * &#128272;
 * Only accessible for the superuser.
-* Provides a form for users to fill in, with placeholder text.
+* Provides a form for the superuser to fill in, with placeholder text.
 * All input elements have the correct validation on.
 * The form is pre-filled in with the current item details, for easy editing.
 * Once submitted, it edits the item in the database, which then populates those edits onto the site.
@@ -552,7 +682,7 @@ On every device and browser listed above, I tested the following:
 
 * &#128272;
 * Only accessible for the superuser.
-* Creates a modal to confirm if the user wishes to delete this item.
+* Creates a modal to confirm if the superuser wishes to delete this item.
 * Once submitted, it deletes the item from the database, so the item can no longer be viewed on the site.
 * The item will be permanently deleted from the database.
 
@@ -561,8 +691,10 @@ On every device and browser listed above, I tested the following:
 * Accessible by all users.
 * Searches through database for what the user has entered into the search box.
 * It uses the product name and description to search within.
-* It returns all results, or a message if there are no results.
-* The reset button then clears the search bar, and returns the page to it's standard state.
+* It returns all results.
+* It populates a message if there are no results.
+* It displays the search term that the user has searched for.
+* It displays the total number of items returned under that search query.
 
 ### Messages
 
@@ -586,12 +718,12 @@ On every device and browser listed above, I tested the following:
 * The authentication required card was run, asked for authentication, was given authentication, and successfully paid.
 * The authentication required card was run, asked for authentication, was not given authentication, and failed.
 * After each payment event, a message was shown to the user to explain the action that had just happened.
+* After a successful payment, the user is then redirected to the Order Success page.
 
 ### 404
 
 * Accessible by all users
 * This page will display if a user has tried to access a page that doesn't exist, or if a user doesn't have access to the page they're trying to reach.
-* It accesses whether the user is logged in or not, and if logged in, whether they are a superuser or not, and displays the corresponding navigation bar.
 * It states clearly that it's a 404 error, and that the page hasn't been found.
 * It directs the user to the navigation bar to continue back to the safety of the site.
 
@@ -603,7 +735,7 @@ On every device and browser listed above, I tested the following:
 * Adding products to the bag
   * Custom validation has been added to ensure that users can't:
     * Add less than one of a product into their bag (such as adding a 0 quantity of a product).
-    * Add more than 99 of a product into their bag.
+    * Add more than 50 of a product into their bag.
 * Password validation
   * When a user is registering for an account, the site ensures no typos happen by prompting the user to enter the password twice, with the site checking to confirm that the passwords match.
 * Email validation
@@ -626,8 +758,8 @@ On every device and browser listed above, I tested the following:
 ## Database
 
 * When the superuser adds products to the database, the information should be stored.
-* When the superuser edits a product in the database, the information should be populated from the current product data.
-* When the superuser edits a product in the database, the information should be stored.
+* When the superuser edits a product in the database, the information should be populated from the current product data into the form.
+* When the superuser saves an edit to a product in the database, the information should be stored.
 * When the superuser deletes a product from the database, the product should be permanently removed.
 * If products are added to the database, the phrase '{Item} Successfully Added' should display.
 * If products are deleted from the database, the phrase '{Item} Successfully Deleted' should display.
@@ -655,12 +787,14 @@ On every device and browser listed above, I tested the following:
 
 * All images have meaningful alt text.
 * All icons have an aria-label to describe them, unless semantic text is also visible.
-* All buttons that need more description for a visually-impaired user have an aria-labelledby attribute attached to them.
+* All buttons that need more description for a visually-impaired user have an aria-labelledby attribute attached to them if required.
 
 ### Assistive Technologies
 
 * All actions are keyboard-focusable.
 * All interactable elements have hover and focus styling applied to them.
+* All images have meaningful alt text for screen reader users.
+* All icons have an aria-label to describe them, unless semantic text is also visible.
 
 ### Reading Level
 
@@ -720,14 +854,22 @@ I tested my website using WebPageTest, and got these results:
 ### Mobile Testing
 
 * The Home page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Log In page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Products page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Product Details page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Shopping Bag page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Checkout page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Order Success page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Order Confirmation page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Contact Us page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Upcoming Gigs page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Profile page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Product Management page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Edit Product page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Add Product page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Login page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The Log Out page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The Register page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Profile page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Add Merchandise page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Edit Merchandise page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Delete Merchandise modal looks good, is placed in front of all other content, and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-
+* The Delete Product modal looks good, is placed in front of all other content, and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The buttons have well sized text, not so big it takes up too much screen space, and not so small that they're difficult to read.
 * All the font sizes aren't too big or too small for the screen size.
 * All fonts are easy to read.
@@ -736,14 +878,22 @@ I tested my website using WebPageTest, and got these results:
 ### Tablet Testing
 
 * The Home page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Log In page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Products page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Product Details page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Shopping Bag page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Checkout page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Order Success page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Order Confirmation page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Contact Us page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Upcoming Gigs page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Profile page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Product Management page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Edit Product page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Add Product page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Login page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The Log Out page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The Register page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Profile page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Add Merchandise page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Edit Merchandise page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Delete Merchandise modal looks good, is placed in front of all other content, and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-
+* The Delete Product modal looks good, is placed in front of all other content, and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The buttons have well sized text, not so big it takes up too much screen space, and not so small that they're difficult to read.
 * All the font sizes aren't too big or too small for the screen size.
 * All fonts are easy to read.
@@ -752,14 +902,22 @@ I tested my website using WebPageTest, and got these results:
 ### Computer Testing
 
 * The Home page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Log In page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Products page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Product Details page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Shopping Bag page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Checkout page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Order Success page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Order Confirmation page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Contact Us page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Upcoming Gigs page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Profile page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Product Management page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Edit Product page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Add Product page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Login page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The Log Out page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The Register page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Profile page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Add Merchandise page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Edit Merchandise page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-* The Delete Merchandise modal looks good, is placed in front of all other content, and nothing wraps where it shouldn't or disappears off the edge of the viewport.
-
+* The Delete Product modal looks good, is placed in front of all other content, and nothing wraps where it shouldn't or disappears off the edge of the viewport.
 * The buttons have well sized text, not so big it takes up too much screen space, and not so small that they're difficult to read.
 * All the font sizes aren't too big or too small for the screen size.
 * All fonts are easy to read.
