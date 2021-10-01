@@ -634,6 +634,12 @@ This database uses a SQL database through PostgreSQL. They were originally built
     * I realised that the data being provided was only of past gigs, not upcoming gigs.
     * I searched in the [Songkick API group](https://groups.google.com/g/songkick-api), and found that I was using the `gigography` rather than `calendar` in the API URL.
     * I changed this, which then provided me with the correct data to populate the Upcoming Gigs page with.
+7. [Travis CI](https://www.travis-ci.com/) was failing the Band App tests, despite the Django and coverage tests running successfully.
+    * The Travis CI builds were failing with the following error: `File "/home/travis/build/Abibubble/ms4-lead-shot-hazard/band/views.py", line 17, in view_gigs events = result['resultsPage']['results']['event'] KeyError: 'results'`
+    * I tried giving the test some test gig data, which still resulted in the same error.
+    * I then read through the [Travis CI docs about defining variables](https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings) and found that there is a place in Travis CI to include your environment variables.
+    * I added my Songkick API key into the Travis CI environment variables.
+    * I re-ran the build, which fixed this bug.
 
 ### Known Bugs
 
