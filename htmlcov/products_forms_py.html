@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for products/forms.py: 60%</title>
+    <title>Coverage for products/forms.py: 100%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,14 +18,14 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>products/forms.py</b> :
-            <span class="pc_cov">60%</span>
+            <span class="pc_cov">100%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            15 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">9 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">6 missing</button>
-            <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
+            8 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">8 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">0 missing</button>
+            <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">7 excluded</button>
         </h2>
     </div>
 </div>
@@ -66,20 +66,20 @@
     <p id="t12" class="run"><span class="n"><a href="#t12">12</a></span><span class="t">    <span class="nam">image</span> <span class="op">=</span> <span class="nam">forms</span><span class="op">.</span><span class="nam">ImageField</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p id="t13" class="pln"><span class="n"><a href="#t13">13</a></span><span class="t">        <span class="nam">label</span><span class="op">=</span><span class="str">'Image'</span><span class="op">,</span> <span class="nam">required</span><span class="op">=</span><span class="key">False</span><span class="op">,</span> <span class="nam">widget</span><span class="op">=</span><span class="nam">CustomClearableFileInput</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t14" class="pln"><span class="n"><a href="#t14">14</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t15" class="run"><span class="n"><a href="#t15">15</a></span><span class="t">    <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t16" class="mis show_mis"><span class="n"><a href="#t16">16</a></span><span class="t">        <span class="nam">super</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t17" class="mis show_mis"><span class="n"><a href="#t17">17</a></span><span class="t">        <span class="nam">categories</span> <span class="op">=</span> <span class="nam">Category</span><span class="op">.</span><span class="nam">objects</span><span class="op">.</span><span class="nam">all</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t18" class="mis show_mis"><span class="n"><a href="#t18">18</a></span><span class="t">        <span class="nam">friendly_names</span> <span class="op">=</span> <span class="op">[</span><span class="op">(</span><span class="nam">c</span><span class="op">.</span><span class="nam">id</span><span class="op">,</span> <span class="nam">c</span><span class="op">.</span><span class="nam">get_friendly_name</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="key">for</span> <span class="nam">c</span> <span class="key">in</span> <span class="nam">categories</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t15" class="exc show_exc"><span class="n"><a href="#t15">15</a></span><span class="t">    <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span>  <span class="com"># pragma: no cover</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t16" class="exc show_exc"><span class="n"><a href="#t16">16</a></span><span class="t">        <span class="nam">super</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t17" class="exc show_exc"><span class="n"><a href="#t17">17</a></span><span class="t">        <span class="nam">categories</span> <span class="op">=</span> <span class="nam">Category</span><span class="op">.</span><span class="nam">objects</span><span class="op">.</span><span class="nam">all</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t18" class="exc show_exc"><span class="n"><a href="#t18">18</a></span><span class="t">        <span class="nam">friendly_names</span> <span class="op">=</span> <span class="op">[</span><span class="op">(</span><span class="nam">c</span><span class="op">.</span><span class="nam">id</span><span class="op">,</span> <span class="nam">c</span><span class="op">.</span><span class="nam">get_friendly_name</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="key">for</span> <span class="nam">c</span> <span class="key">in</span> <span class="nam">categories</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
     <p id="t19" class="pln"><span class="n"><a href="#t19">19</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t20" class="mis show_mis"><span class="n"><a href="#t20">20</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">fields</span><span class="op">[</span><span class="str">'category'</span><span class="op">]</span><span class="op">.</span><span class="nam">choices</span> <span class="op">=</span> <span class="nam">friendly_names</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t21" class="mis show_mis"><span class="n"><a href="#t21">21</a></span><span class="t">        <span class="key">for</span> <span class="nam">field_name</span><span class="op">,</span> <span class="nam">field</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">fields</span><span class="op">.</span><span class="nam">items</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t22" class="mis show_mis"><span class="n"><a href="#t22">22</a></span><span class="t">            <span class="nam">field</span><span class="op">.</span><span class="nam">widget</span><span class="op">.</span><span class="nam">attrs</span><span class="op">[</span><span class="str">'class'</span><span class="op">]</span> <span class="op">=</span> <span class="str">'border-white rounded-0'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t20" class="exc show_exc"><span class="n"><a href="#t20">20</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">fields</span><span class="op">[</span><span class="str">'category'</span><span class="op">]</span><span class="op">.</span><span class="nam">choices</span> <span class="op">=</span> <span class="nam">friendly_names</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t21" class="exc show_exc"><span class="n"><a href="#t21">21</a></span><span class="t">        <span class="key">for</span> <span class="nam">field_name</span><span class="op">,</span> <span class="nam">field</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">fields</span><span class="op">.</span><span class="nam">items</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t22" class="exc show_exc"><span class="n"><a href="#t22">22</a></span><span class="t">            <span class="nam">field</span><span class="op">.</span><span class="nam">widget</span><span class="op">.</span><span class="nam">attrs</span><span class="op">[</span><span class="str">'class'</span><span class="op">]</span> <span class="op">=</span> <span class="str">'border-white rounded-0'</span>&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-09-30 16:08 +0000
+            created at 2021-10-01 17:02 +0000
         </p>
     </div>
 </div>

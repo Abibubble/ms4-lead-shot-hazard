@@ -1,4 +1,4 @@
-from django.test import TestCase
+from django.test import TestCase, Client
 
 from django.shortcuts import reverse
 from django.contrib.auth.models import User
@@ -11,8 +11,8 @@ class TestProfileViews(TestCase):
     Test that the user profile page displays when logged in
     """
 
-    @classmethod
-    def setUpTestData(cls):
+    def setUp(self):
+        self.client = Client()
         User.objects.create_user(
             username="testuser", email="test@test.com", password="te12345st")
 
@@ -42,6 +42,8 @@ class TestProfileViews(TestCase):
 
     # Test that the user's profile data is saved
     def test_profile_gets_saved(self):
+        self.client.login(
+            username="testuser", email="test@test.com", password="te12345st")
         user_data = {
             'default_phone_number': 'tester',
             'default_street_address1': 'test',

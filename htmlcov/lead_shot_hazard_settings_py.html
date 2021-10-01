@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for lead_shot_hazard/settings.py: 73%</title>
+    <title>Coverage for lead_shot_hazard/settings.py: 100%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,14 +18,14 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>lead_shot_hazard/settings.py</b> :
-            <span class="pc_cov">73%</span>
+            <span class="pc_cov">100%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            73 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">53 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">20 missing</button>
-            <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
+            51 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">51 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">0 missing</button>
+            <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">23 excluded</button>
         </h2>
     </div>
 </div>
@@ -199,8 +199,8 @@
     <p id="t145" class="pln"><span class="n"><a href="#t145">145</a></span><span class="t"><span class="com"># Database</span>&nbsp;</span><span class="r"></span></p>
     <p id="t146" class="pln"><span class="n"><a href="#t146">146</a></span><span class="t"><span class="com"># https://docs.djangoproject.com/en/3.2/ref/settings/#databases</span>&nbsp;</span><span class="r"></span></p>
     <p id="t147" class="pln"><span class="n"><a href="#t147">147</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t148" class="run"><span class="n"><a href="#t148">148</a></span><span class="t"><span class="key">if</span> <span class="str">'DATABASE_URL'</span> <span class="key">in</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t149" class="mis show_mis"><span class="n"><a href="#t149">149</a></span><span class="t">    <span class="nam">DATABASES</span> <span class="op">=</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t148" class="exc show_exc"><span class="n"><a href="#t148">148</a></span><span class="t"><span class="key">if</span> <span class="str">'DATABASE_URL'</span> <span class="key">in</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">:</span>  <span class="com"># pragma: no cover</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t149" class="exc show_exc"><span class="n"><a href="#t149">149</a></span><span class="t">    <span class="nam">DATABASES</span> <span class="op">=</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
     <p id="t150" class="pln"><span class="n"><a href="#t150">150</a></span><span class="t">        <span class="str">'default'</span><span class="op">:</span> <span class="nam">dj_database_url</span><span class="op">.</span><span class="nam">parse</span><span class="op">(</span><span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'DATABASE_URL'</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t151" class="pln"><span class="n"><a href="#t151">151</a></span><span class="t">    <span class="op">}</span>&nbsp;</span><span class="r"></span></p>
     <p id="t152" class="pln"><span class="n"><a href="#t152">152</a></span><span class="t"><span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -257,29 +257,29 @@
     <p id="t203" class="run"><span class="n"><a href="#t203">203</a></span><span class="t"><span class="nam">MEDIA_URL</span> <span class="op">=</span> <span class="str">'/media/'</span>&nbsp;</span><span class="r"></span></p>
     <p id="t204" class="run"><span class="n"><a href="#t204">204</a></span><span class="t"><span class="nam">MEDIA_ROOT</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">BASE_DIR</span><span class="op">,</span> <span class="str">'media'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t205" class="pln"><span class="n"><a href="#t205">205</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t206" class="run"><span class="n"><a href="#t206">206</a></span><span class="t"><span class="key">if</span> <span class="str">'USE_AWS'</span> <span class="key">in</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t206" class="exc show_exc"><span class="n"><a href="#t206">206</a></span><span class="t"><span class="key">if</span> <span class="str">'USE_AWS'</span> <span class="key">in</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">:</span>  <span class="com"># pragma: no cover</span>&nbsp;</span><span class="r"></span></p>
     <p id="t207" class="pln"><span class="n"><a href="#t207">207</a></span><span class="t">    <span class="com"># Cache control</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t208" class="mis show_mis"><span class="n"><a href="#t208">208</a></span><span class="t">    <span class="nam">AWS_S3_OBJECT_PARAMETERS</span> <span class="op">=</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t208" class="exc show_exc"><span class="n"><a href="#t208">208</a></span><span class="t">    <span class="nam">AWS_S3_OBJECT_PARAMETERS</span> <span class="op">=</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
     <p id="t209" class="pln"><span class="n"><a href="#t209">209</a></span><span class="t">        <span class="str">'Expires'</span><span class="op">:</span> <span class="str">'Thu, 31 Dec 2099 23:59:59 GMT'</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t210" class="pln"><span class="n"><a href="#t210">210</a></span><span class="t">        <span class="str">'CacheControl'</span><span class="op">:</span> <span class="str">'max-age=94608000'</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t211" class="pln"><span class="n"><a href="#t211">211</a></span><span class="t">    <span class="op">}</span>&nbsp;</span><span class="r"></span></p>
     <p id="t212" class="pln"><span class="n"><a href="#t212">212</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t213" class="pln"><span class="n"><a href="#t213">213</a></span><span class="t">    <span class="com"># Bucket config</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t214" class="mis show_mis"><span class="n"><a href="#t214">214</a></span><span class="t">    <span class="nam">AWS_STORAGE_BUCKET_NAME</span> <span class="op">=</span> <span class="str">'ms4-lead-shot-hazard'</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t215" class="mis show_mis"><span class="n"><a href="#t215">215</a></span><span class="t">    <span class="nam">AWS_S3_REGION_NAME</span> <span class="op">=</span> <span class="str">'eu-west-2'</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t216" class="mis show_mis"><span class="n"><a href="#t216">216</a></span><span class="t">    <span class="nam">AWS_ACCESS_KEY_ID</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'AWS_ACCESS_KEY_ID'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t217" class="mis show_mis"><span class="n"><a href="#t217">217</a></span><span class="t">    <span class="nam">AWS_SECRET_ACCESS_KEY</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'AWS_SECRET_ACCESS_KEY'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t218" class="mis show_mis"><span class="n"><a href="#t218">218</a></span><span class="t">    <span class="nam">AWS_S3_CUSTOM_DOMAIN</span> <span class="op">=</span> <span class="str">f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t214" class="exc show_exc"><span class="n"><a href="#t214">214</a></span><span class="t">    <span class="nam">AWS_STORAGE_BUCKET_NAME</span> <span class="op">=</span> <span class="str">'ms4-lead-shot-hazard'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t215" class="exc show_exc"><span class="n"><a href="#t215">215</a></span><span class="t">    <span class="nam">AWS_S3_REGION_NAME</span> <span class="op">=</span> <span class="str">'eu-west-2'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t216" class="exc show_exc"><span class="n"><a href="#t216">216</a></span><span class="t">    <span class="nam">AWS_ACCESS_KEY_ID</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'AWS_ACCESS_KEY_ID'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t217" class="exc show_exc"><span class="n"><a href="#t217">217</a></span><span class="t">    <span class="nam">AWS_SECRET_ACCESS_KEY</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'AWS_SECRET_ACCESS_KEY'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t218" class="exc show_exc"><span class="n"><a href="#t218">218</a></span><span class="t">    <span class="nam">AWS_S3_CUSTOM_DOMAIN</span> <span class="op">=</span> <span class="str">f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'</span>&nbsp;</span><span class="r"></span></p>
     <p id="t219" class="pln"><span class="n"><a href="#t219">219</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t220" class="pln"><span class="n"><a href="#t220">220</a></span><span class="t">    <span class="com"># Static and media files</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t221" class="mis show_mis"><span class="n"><a href="#t221">221</a></span><span class="t">    <span class="nam">STATICFILES_STORAGE</span> <span class="op">=</span> <span class="str">'custom_storages.StaticStorage'</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t222" class="mis show_mis"><span class="n"><a href="#t222">222</a></span><span class="t">    <span class="nam">STATICFILES_LOCATION</span> <span class="op">=</span> <span class="str">'static'</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t223" class="mis show_mis"><span class="n"><a href="#t223">223</a></span><span class="t">    <span class="nam">DEFAULT_FILE_STORAGE</span> <span class="op">=</span> <span class="str">'custom_storages.MediaStorage'</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t224" class="mis show_mis"><span class="n"><a href="#t224">224</a></span><span class="t">    <span class="nam">MEDIAFILES_LOCATION</span> <span class="op">=</span> <span class="str">'media'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t221" class="exc show_exc"><span class="n"><a href="#t221">221</a></span><span class="t">    <span class="nam">STATICFILES_STORAGE</span> <span class="op">=</span> <span class="str">'custom_storages.StaticStorage'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t222" class="exc show_exc"><span class="n"><a href="#t222">222</a></span><span class="t">    <span class="nam">STATICFILES_LOCATION</span> <span class="op">=</span> <span class="str">'static'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t223" class="exc show_exc"><span class="n"><a href="#t223">223</a></span><span class="t">    <span class="nam">DEFAULT_FILE_STORAGE</span> <span class="op">=</span> <span class="str">'custom_storages.MediaStorage'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t224" class="exc show_exc"><span class="n"><a href="#t224">224</a></span><span class="t">    <span class="nam">MEDIAFILES_LOCATION</span> <span class="op">=</span> <span class="str">'media'</span>&nbsp;</span><span class="r"></span></p>
     <p id="t225" class="pln"><span class="n"><a href="#t225">225</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t226" class="pln"><span class="n"><a href="#t226">226</a></span><span class="t">    <span class="com"># Override static and media URLs in prod</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t227" class="mis show_mis"><span class="n"><a href="#t227">227</a></span><span class="t">    <span class="nam">STATIC_URL</span> <span class="op">=</span> <span class="str">f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t228" class="mis show_mis"><span class="n"><a href="#t228">228</a></span><span class="t">    <span class="nam">MEDIA_URL</span> <span class="op">=</span> <span class="str">f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t227" class="exc show_exc"><span class="n"><a href="#t227">227</a></span><span class="t">    <span class="nam">STATIC_URL</span> <span class="op">=</span> <span class="str">f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t228" class="exc show_exc"><span class="n"><a href="#t228">228</a></span><span class="t">    <span class="nam">MEDIA_URL</span> <span class="op">=</span> <span class="str">f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'</span>&nbsp;</span><span class="r"></span></p>
     <p id="t229" class="pln"><span class="n"><a href="#t229">229</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t230" class="pln"><span class="n"><a href="#t230">230</a></span><span class="t"><span class="com"># Stripe</span>&nbsp;</span><span class="r"></span></p>
     <p id="t231" class="run"><span class="n"><a href="#t231">231</a></span><span class="t"><span class="nam">FREE_DELIVERY_THRESHOLD</span> <span class="op">=</span> <span class="num">30</span>&nbsp;</span><span class="r"></span></p>
@@ -299,14 +299,14 @@
     <p id="t245" class="run"><span class="n"><a href="#t245">245</a></span><span class="t"><span class="key">if</span> <span class="str">'DEVELOPMENT'</span> <span class="key">in</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t246" class="run"><span class="n"><a href="#t246">246</a></span><span class="t">    <span class="nam">EMAIL_BACKEND</span> <span class="op">=</span> <span class="str">'django.core.mail.backends.console.EmailBackend'</span>&nbsp;</span><span class="r"></span></p>
     <p id="t247" class="run"><span class="n"><a href="#t247">247</a></span><span class="t">    <span class="nam">DEFAULT_FROM_EMAIL</span> <span class="op">=</span> <span class="str">'abi.yamaha.neo@gmail.com'</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t248" class="pln"><span class="n"><a href="#t248">248</a></span><span class="t"><span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t249" class="mis show_mis"><span class="n"><a href="#t249">249</a></span><span class="t">    <span class="nam">EMAIL_BACKEND</span> <span class="op">=</span> <span class="str">'django.core.mail.backends.smtp.EmailBackend'</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t250" class="mis show_mis"><span class="n"><a href="#t250">250</a></span><span class="t">    <span class="nam">EMAIL_USE_TLS</span> <span class="op">=</span> <span class="key">True</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t251" class="mis show_mis"><span class="n"><a href="#t251">251</a></span><span class="t">    <span class="nam">EMAIL_PORT</span> <span class="op">=</span> <span class="num">587</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t252" class="mis show_mis"><span class="n"><a href="#t252">252</a></span><span class="t">    <span class="nam">EMAIL_HOST</span> <span class="op">=</span> <span class="str">'smtp.gmail.com'</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t253" class="mis show_mis"><span class="n"><a href="#t253">253</a></span><span class="t">    <span class="nam">EMAIL_HOST_USER</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'EMAIL_HOST_USER'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t254" class="mis show_mis"><span class="n"><a href="#t254">254</a></span><span class="t">    <span class="nam">EMAIL_HOST_PASSWORD</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'EMAIL_HOST_PASS'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t255" class="mis show_mis"><span class="n"><a href="#t255">255</a></span><span class="t">    <span class="nam">DEFAULT_FROM_EMAIL</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'EMAIL_HOST_USER'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t248" class="exc show_exc"><span class="n"><a href="#t248">248</a></span><span class="t"><span class="key">else</span><span class="op">:</span>  <span class="com"># pragma: no cover</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t249" class="exc show_exc"><span class="n"><a href="#t249">249</a></span><span class="t">    <span class="nam">EMAIL_BACKEND</span> <span class="op">=</span> <span class="str">'django.core.mail.backends.smtp.EmailBackend'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t250" class="exc show_exc"><span class="n"><a href="#t250">250</a></span><span class="t">    <span class="nam">EMAIL_USE_TLS</span> <span class="op">=</span> <span class="key">True</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t251" class="exc show_exc"><span class="n"><a href="#t251">251</a></span><span class="t">    <span class="nam">EMAIL_PORT</span> <span class="op">=</span> <span class="num">587</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t252" class="exc show_exc"><span class="n"><a href="#t252">252</a></span><span class="t">    <span class="nam">EMAIL_HOST</span> <span class="op">=</span> <span class="str">'smtp.gmail.com'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t253" class="exc show_exc"><span class="n"><a href="#t253">253</a></span><span class="t">    <span class="nam">EMAIL_HOST_USER</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'EMAIL_HOST_USER'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t254" class="exc show_exc"><span class="n"><a href="#t254">254</a></span><span class="t">    <span class="nam">EMAIL_HOST_PASSWORD</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'EMAIL_HOST_PASS'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t255" class="exc show_exc"><span class="n"><a href="#t255">255</a></span><span class="t">    <span class="nam">DEFAULT_FROM_EMAIL</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">environ</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'EMAIL_HOST_USER'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t256" class="pln"><span class="n"><a href="#t256">256</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t257" class="pln"><span class="n"><a href="#t257">257</a></span><span class="t"><span class="com"># Default primary key field type</span>&nbsp;</span><span class="r"></span></p>
     <p id="t258" class="pln"><span class="n"><a href="#t258">258</a></span><span class="t"><span class="com"># https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field</span>&nbsp;</span><span class="r"></span></p>
@@ -317,7 +317,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-09-30 16:08 +0000
+            created at 2021-10-01 17:04 +0000
         </p>
     </div>
 </div>

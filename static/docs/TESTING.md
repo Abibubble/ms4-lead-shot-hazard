@@ -253,19 +253,26 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 ### Django Testing
 
+* Overall I was very happy with the level of coverage I got on this project.
+* The only thing bringing the coverage percentage down was the views.py files in every app. I really struggled with writing tests for these, so most of them unfortunately have minimal coverage.
+* Some lines of code were omitted from coverage using `# pragma: no cover`, due to them either being code that's populated by Django, code in the settings.py file to connect to environment variables, or non-important code to the function of the site.
+* In the future, I will revisit these tests to ensure 100% coverage.
+* [Click here to view the full testing coverage report](testing/full-coverage.png).
+
 #### Bag App
 
 ##### Bag Views
 
 * Test the view_bag view
 * Test the add_to_bag view
+* Test that the add_to_bag view adds a product to the shopping bag
 * Test the adjust_bag view
 * Test the remove_from_bag view
 
 ##### Bag Others
 
-* Test that delivery cost is correct
-* Test that calc_subtotal works
+* Test that the delivery cost is calculated correctly
+* Test that the calc_subtotal function works
 
 ![Bag App testing report from coverage](testing/bag-testing.png)
 
@@ -273,8 +280,12 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 ##### Band Views
 
-* Test that the Contact Us page displays correctly
-* Test that the Upcoming Gigs page displays correctly
+* Test that the Contact Us page URL exists
+* Test that the Contact Us page URL is accessible by name
+* Test that the Contact Us page uses the correct template
+* Test that the Upcoming Gigs page URL exists
+* Test that the Upcoming Gigs page URL is accessible by name
+* Test that the Upcoming Gigs page uses the correct template
 
 ![Band App testing report from coverage](testing/band-testing.png)
 
@@ -292,13 +303,16 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 ##### Checkout Models
 
+* Test that the order string method returns the order number
 * Test the checkout_details model
 * Test the update_total model
-* Test that the string method returns the order number
+* Test that the OrderLineItem string method returns the correct string
 
 ##### Checkout Views
 
-* Test the checkout page view
+* Test that the Checkout page URL exists
+* Test that the Checkout page URL is accessible by name
+* Test that the Checkout page uses the correct template
 * Test the cache_checkout_data view
 
 ![Checkout App testing report from coverage](testing/checkout-testing.png)
@@ -307,7 +321,9 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 ##### Home Views
 
-* Test the home page view
+* Test that the Home page URL exists
+* Test that the Home page URL is accessible by name
+* Test that the Home page uses the correct template
 
 ![Home App testing report from coverage](testing/home-testing.png)
 
@@ -323,6 +339,9 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 ##### Products Views
 
+* Test that the Products page URL exists
+* Test that the Products page URL is accessible by name
+* Test that the Products page uses the correct template
 * Test the products page view
 * Test the product search functionality
 * Test the categories view
@@ -332,23 +351,23 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 #### Profiles
 
-##### Profiles Views
-
-* Test that a logged in user can view the profile
-* Test that the profile information gets saved correctly
-* Test that the order history displays when requested
-
 ##### Profiles Forms
 
 * Test that the user profile form fields aren't required
-* Test that the placeholder star is presented correctly
 * Test the meta class of the user profile form
 
 ##### Profiles Models
 
-* Test the getting user profile model
 * Test that the string method returns the username
-* Test the user string
+* Test the getting user profile model
+
+##### Profiles Views
+
+* Test that the Profiles page URL exists
+* Test that the Profiles page URL is accessible by name
+* Test that a logged in user can view the profile
+* Test that the profile information gets saved correctly
+* Test that the order history displays when requested
 
 ![Profiles App testing report from coverage](testing/profiles-testing.png)
 

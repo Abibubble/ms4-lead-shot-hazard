@@ -11,3 +11,4 @@ class TestTemplateTags(TestCase):
     def test_calc_subtotal_works(self):
         self.assertEqual(calc_subtotal(10, 5), 50)
         self.assertEqual(calc_subtotal(5, 2), 10)
+        self.assertNotEqual(calc_subtotal(5, 2), 12)

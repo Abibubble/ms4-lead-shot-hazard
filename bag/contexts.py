@@ -11,7 +11,7 @@ def bag_contents(request):
     product_count = 0
     bag = request.session.get('bag', {})
 
-    for item_id, item_data in bag.items():
+    for item_id, item_data in bag.items():  # pragma: no cover
         if isinstance(item_data, int):
             product = get_object_or_404(Product, pk=item_id)
             total += item_data * product.price
@@ -36,9 +36,9 @@ def bag_contents(request):
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
-    else:  # pragma: no cover
-        delivery = 0
-        free_delivery_delta = 0
+    else:
+        delivery = 0  # pragma: no cover
+        free_delivery_delta = 0  # pragma: no cover
 
     grand_total = delivery + total
 

@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for checkout/models.py: 82%</title>
+    <title>Coverage for checkout/models.py: 100%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,14 +18,14 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>checkout/models.py</b> :
-            <span class="pc_cov">82%</span>
+            <span class="pc_cov">100%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            51 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">42 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">9 missing</button>
-            <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
+            39 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">39 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">0 missing</button>
+            <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">15 excluded</button>
         </h2>
     </div>
 </div>
@@ -104,20 +104,20 @@
     <p id="t50" class="run"><span class="n"><a href="#t50">50</a></span><span class="t">            <span class="nam">self</span><span class="op">.</span><span class="nam">order_number</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_generate_order_number</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t51" class="run"><span class="n"><a href="#t51">51</a></span><span class="t">        <span class="nam">super</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">save</span><span class="op">(</span><span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t52" class="pln"><span class="n"><a href="#t52">52</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t53" class="run"><span class="n"><a href="#t53">53</a></span><span class="t">    <span class="key">def</span> <span class="nam">update_total</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t54" class="pln"><span class="n"><a href="#t54">54</a></span><span class="t">        <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t53" class="exc show_exc"><span class="n"><a href="#t53">53</a></span><span class="t">    <span class="key">def</span> <span class="nam">update_total</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>  <span class="com"># pragma: no cover</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t54" class="exc show_exc"><span class="n"><a href="#t54">54</a></span><span class="t">        <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
     <p id="t55" class="pln"><span class="n"><a href="#t55">55</a></span><span class="t"><span class="str">        Update grand total each time a line item is added,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t56" class="pln"><span class="n"><a href="#t56">56</a></span><span class="t"><span class="str">        accounting for delivery costs.</span>&nbsp;</span><span class="r"></span></p>
     <p id="t57" class="pln"><span class="n"><a href="#t57">57</a></span><span class="t"><span class="str">        """</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t58" class="mis show_mis"><span class="n"><a href="#t58">58</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">order_total</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">lineitems</span><span class="op">.</span><span class="nam">aggregate</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t58" class="exc show_exc"><span class="n"><a href="#t58">58</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">order_total</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">lineitems</span><span class="op">.</span><span class="nam">aggregate</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p id="t59" class="pln"><span class="n"><a href="#t59">59</a></span><span class="t">            <span class="nam">Sum</span><span class="op">(</span><span class="str">'lineitem_total'</span><span class="op">)</span><span class="op">)</span><span class="op">[</span><span class="str">'lineitem_total__sum'</span><span class="op">]</span> <span class="key">or</span> <span class="num">0</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t60" class="mis show_mis"><span class="n"><a href="#t60">60</a></span><span class="t">        <span class="key">if</span> <span class="nam">self</span><span class="op">.</span><span class="nam">order_total</span> <span class="op">&lt;</span> <span class="nam">settings</span><span class="op">.</span><span class="nam">FREE_DELIVERY_THRESHOLD</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t61" class="mis show_mis"><span class="n"><a href="#t61">61</a></span><span class="t">            <span class="nam">self</span><span class="op">.</span><span class="nam">delivery_cost</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">order_total</span> <span class="op">*</span> <span class="xx">\</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t60" class="exc show_exc"><span class="n"><a href="#t60">60</a></span><span class="t">        <span class="key">if</span> <span class="nam">self</span><span class="op">.</span><span class="nam">order_total</span> <span class="op">&lt;</span> <span class="nam">settings</span><span class="op">.</span><span class="nam">FREE_DELIVERY_THRESHOLD</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t61" class="exc show_exc"><span class="n"><a href="#t61">61</a></span><span class="t">            <span class="nam">self</span><span class="op">.</span><span class="nam">delivery_cost</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">order_total</span> <span class="op">*</span> <span class="xx">\</span>&nbsp;</span><span class="r"></span></p>
     <p id="t62" class="pln"><span class="n"><a href="#t62">62</a></span><span class="t">                <span class="nam">settings</span><span class="op">.</span><span class="nam">STANDARD_DELIVERY_PERCENTAGE</span> <span class="op">/</span> <span class="num">100</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t63" class="pln"><span class="n"><a href="#t63">63</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t64" class="mis show_mis"><span class="n"><a href="#t64">64</a></span><span class="t">            <span class="nam">self</span><span class="op">.</span><span class="nam">delivery_cost</span> <span class="op">=</span> <span class="num">0</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t65" class="mis show_mis"><span class="n"><a href="#t65">65</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">grand_total</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">order_total</span> <span class="op">+</span> <span class="nam">self</span><span class="op">.</span><span class="nam">delivery_cost</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t66" class="mis show_mis"><span class="n"><a href="#t66">66</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">save</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t63" class="exc show_exc"><span class="n"><a href="#t63">63</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t64" class="exc show_exc"><span class="n"><a href="#t64">64</a></span><span class="t">            <span class="nam">self</span><span class="op">.</span><span class="nam">delivery_cost</span> <span class="op">=</span> <span class="num">0</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t65" class="exc show_exc"><span class="n"><a href="#t65">65</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">grand_total</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">order_total</span> <span class="op">+</span> <span class="nam">self</span><span class="op">.</span><span class="nam">delivery_cost</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t66" class="exc show_exc"><span class="n"><a href="#t66">66</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">save</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t67" class="pln"><span class="n"><a href="#t67">67</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t68" class="run"><span class="n"><a href="#t68">68</a></span><span class="t">    <span class="key">def</span> <span class="nam">__str__</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t69" class="run"><span class="n"><a href="#t69">69</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">order_number</span>&nbsp;</span><span class="r"></span></p>
@@ -136,22 +136,22 @@
     <p id="t82" class="pln"><span class="n"><a href="#t82">82</a></span><span class="t">        <span class="nam">max_digits</span><span class="op">=</span><span class="num">6</span><span class="op">,</span> <span class="nam">decimal_places</span><span class="op">=</span><span class="num">2</span><span class="op">,</span> <span class="nam">null</span><span class="op">=</span><span class="key">False</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t83" class="pln"><span class="n"><a href="#t83">83</a></span><span class="t">        <span class="nam">blank</span><span class="op">=</span><span class="key">False</span><span class="op">,</span> <span class="nam">editable</span><span class="op">=</span><span class="key">False</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t84" class="pln"><span class="n"><a href="#t84">84</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t85" class="run"><span class="n"><a href="#t85">85</a></span><span class="t">    <span class="key">def</span> <span class="nam">save</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t86" class="pln"><span class="n"><a href="#t86">86</a></span><span class="t">        <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t85" class="exc show_exc"><span class="n"><a href="#t85">85</a></span><span class="t">    <span class="key">def</span> <span class="nam">save</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span>  <span class="com"># pragma: no cover</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t86" class="exc show_exc"><span class="n"><a href="#t86">86</a></span><span class="t">        <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
     <p id="t87" class="pln"><span class="n"><a href="#t87">87</a></span><span class="t"><span class="str">        Override the original save method to set the lineitem total</span>&nbsp;</span><span class="r"></span></p>
     <p id="t88" class="pln"><span class="n"><a href="#t88">88</a></span><span class="t"><span class="str">        and update the order total.</span>&nbsp;</span><span class="r"></span></p>
     <p id="t89" class="pln"><span class="n"><a href="#t89">89</a></span><span class="t"><span class="str">        """</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t90" class="mis show_mis"><span class="n"><a href="#t90">90</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">lineitem_total</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">product</span><span class="op">.</span><span class="nam">price</span> <span class="op">*</span> <span class="nam">self</span><span class="op">.</span><span class="nam">quantity</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t91" class="mis show_mis"><span class="n"><a href="#t91">91</a></span><span class="t">        <span class="nam">super</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">save</span><span class="op">(</span><span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t90" class="exc show_exc"><span class="n"><a href="#t90">90</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">lineitem_total</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">product</span><span class="op">.</span><span class="nam">price</span> <span class="op">*</span> <span class="nam">self</span><span class="op">.</span><span class="nam">quantity</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t91" class="exc show_exc"><span class="n"><a href="#t91">91</a></span><span class="t">        <span class="nam">super</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">save</span><span class="op">(</span><span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t92" class="pln"><span class="n"><a href="#t92">92</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t93" class="run"><span class="n"><a href="#t93">93</a></span><span class="t">    <span class="key">def</span> <span class="nam">__str__</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t94" class="mis show_mis"><span class="n"><a href="#t94">94</a></span><span class="t">        <span class="key">return</span> <span class="str">f'SKU {self.product.sku} on order {self.order.order_number}'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t93" class="exc show_exc"><span class="n"><a href="#t93">93</a></span><span class="t">    <span class="key">def</span> <span class="nam">__str__</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>  <span class="com"># pragma: no cover</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t94" class="exc show_exc"><span class="n"><a href="#t94">94</a></span><span class="t">        <span class="key">return</span> <span class="str">f'SKU {self.product.sku} on order {self.order.order_number}'</span>&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-10-01 14:42 +0000
+            created at 2021-10-01 17:08 +0000
         </p>
     </div>
 </div>

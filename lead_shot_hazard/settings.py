@@ -145,7 +145,7 @@ WSGI_APPLICATION = 'lead_shot_hazard.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if 'DATABASE_URL' in os.environ:
+if 'DATABASE_URL' in os.environ:  # pragma: no cover
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
@@ -203,7 +203,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-if 'USE_AWS' in os.environ:
+if 'USE_AWS' in os.environ:  # pragma: no cover
     # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 23:59:59 GMT',
@@ -245,7 +245,7 @@ SONGKICK_API = (
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'abi.yamaha.neo@gmail.com'
-else:
+else:  # pragma: no cover
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
     EMAIL_PORT = 587

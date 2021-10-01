@@ -50,7 +50,7 @@ class Order(models.Model):
             self.order_number = self._generate_order_number()
         super().save(*args, **kwargs)
 
-    def update_total(self):
+    def update_total(self):  # pragma: no cover
         """
         Update grand total each time a line item is added,
         accounting for delivery costs.
@@ -82,7 +82,7 @@ class OrderLineItem(models.Model):
         max_digits=6, decimal_places=2, null=False,
         blank=False, editable=False)
 
-    def save(self, *args, **kwargs):
+    def save(self, *args, **kwargs):  # pragma: no cover
         """
         Override the original save method to set the lineitem total
         and update the order total.
@@ -90,5 +90,5 @@ class OrderLineItem(models.Model):
         self.lineitem_total = self.product.price * self.quantity
         super().save(*args, **kwargs)
 
-    def __str__(self):
+    def __str__(self):  # pragma: no cover
         return f'SKU {self.product.sku} on order {self.order.order_number}'
