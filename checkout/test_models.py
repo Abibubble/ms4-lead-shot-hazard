@@ -5,7 +5,7 @@ from .models import Order, OrderLineItem
 from products.models import Product
 
 
-class TestOrderModels(TestCase):
+class TestOrderModels(TestCase):  # pragma: no cover
     """
     Test that the order models work as expected
     """

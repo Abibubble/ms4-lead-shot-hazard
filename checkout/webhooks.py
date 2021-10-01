@@ -10,7 +10,7 @@ import stripe
 
 @require_POST
 @csrf_exempt
-def webhook(request):
+def webhook(request):  # pragma: no cover
     """
     Listen for webhooks from Stripe
     """

@@ -11,7 +11,7 @@ import json
 import time
 
 
-class StripeWH_Handler:
+class StripeWH_Handler:  # pragma: no cover
     """
     Handle Stripe webhooks
     """

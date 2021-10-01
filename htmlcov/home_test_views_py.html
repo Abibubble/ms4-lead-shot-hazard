@@ -22,8 +22,8 @@
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            7 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">7 run</button>
+            13 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">13 run</button>
             <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">0 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
@@ -62,17 +62,28 @@
     <p id="t8" class="pln"><span class="n"><a href="#t8">8</a></span><span class="t"><span class="str">    Test that the home page displays correctly</span>&nbsp;</span><span class="r"></span></p>
     <p id="t9" class="pln"><span class="n"><a href="#t9">9</a></span><span class="t"><span class="str">    """</span>&nbsp;</span><span class="r"></span></p>
     <p id="t10" class="pln"><span class="n"><a href="#t10">10</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t11" class="pln"><span class="n"><a href="#t11">11</a></span><span class="t">    <span class="com"># Test that the homepage returns a 200 response</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t12" class="run"><span class="n"><a href="#t12">12</a></span><span class="t">    <span class="key">def</span> <span class="nam">test_home_page</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t13" class="run"><span class="n"><a href="#t13">13</a></span><span class="t">        <span class="nam">response</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">client</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="nam">reverse</span><span class="op">(</span><span class="str">'home'</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t11" class="pln"><span class="n"><a href="#t11">11</a></span><span class="t">    <span class="com"># Test that the home page URL exists</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t12" class="run"><span class="n"><a href="#t12">12</a></span><span class="t">    <span class="key">def</span> <span class="nam">test_the_home_page_url_exists</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t13" class="run"><span class="n"><a href="#t13">13</a></span><span class="t">        <span class="nam">response</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">client</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'/'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t14" class="run"><span class="n"><a href="#t14">14</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEqual</span><span class="op">(</span><span class="nam">response</span><span class="op">.</span><span class="nam">status_code</span><span class="op">,</span> <span class="num">200</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t15" class="run"><span class="n"><a href="#t15">15</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertTemplateUsed</span><span class="op">(</span><span class="nam">response</span><span class="op">,</span> <span class="nam">template_name</span><span class="op">=</span><span class="str">"home/index.html"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t15" class="pln"><span class="n"><a href="#t15">15</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t16" class="pln"><span class="n"><a href="#t16">16</a></span><span class="t">    <span class="com"># Test that the home page is accessible via name</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t17" class="run"><span class="n"><a href="#t17">17</a></span><span class="t">    <span class="key">def</span> <span class="nam">test_the_home_url_is_accessible_by_name</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t18" class="run"><span class="n"><a href="#t18">18</a></span><span class="t">        <span class="nam">response</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">client</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="nam">reverse</span><span class="op">(</span><span class="str">'home'</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t19" class="run"><span class="n"><a href="#t19">19</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEqual</span><span class="op">(</span><span class="nam">response</span><span class="op">.</span><span class="nam">status_code</span><span class="op">,</span> <span class="num">200</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t20" class="pln"><span class="n"><a href="#t20">20</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t21" class="pln"><span class="n"><a href="#t21">21</a></span><span class="t">    <span class="com"># Test that the home page uses the correct template</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t22" class="run"><span class="n"><a href="#t22">22</a></span><span class="t">    <span class="key">def</span> <span class="nam">test_home_view_uses_correct_template</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t23" class="run"><span class="n"><a href="#t23">23</a></span><span class="t">        <span class="nam">response</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">client</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="nam">reverse</span><span class="op">(</span><span class="str">'home'</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t24" class="run"><span class="n"><a href="#t24">24</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEqual</span><span class="op">(</span><span class="nam">response</span><span class="op">.</span><span class="nam">status_code</span><span class="op">,</span> <span class="num">200</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t25" class="run"><span class="n"><a href="#t25">25</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertTemplateUsed</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t26" class="pln"><span class="n"><a href="#t26">26</a></span><span class="t">            <span class="nam">response</span><span class="op">,</span> <span class="nam">template_name</span><span class="op">=</span><span class="str">"home/index.html"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-09-10 16:23 +0000
+            created at 2021-10-01 15:27 +0000
         </p>
     </div>
 </div>
