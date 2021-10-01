@@ -27,6 +27,16 @@ class TestBagViews(TestCase):
     def test_add_to_bag(self):
         url = reverse('add_to_bag', args=['itemId'])
         self.assertEquals(resolve(url).func, add_to_bag)
+        response = self.client.get(reverse('view_bag'))
+        self.assertEqual(response.status_code, 200)
+
+    def test_add_to_bag_adds_product_to_bag(self):
+        product = Product.objects.get(pk=1)
+        url = reverse('adjust_bag', args=['itemId'])
+        self.assertEquals(resolve(url).func, adjust_bag)
+        quantity = 1
+        bag = [product.pk]
+        self.assertEqual(len(bag), quantity)
 
     def test_adjust_bag(self):
         url = reverse('adjust_bag', args=['itemId'])

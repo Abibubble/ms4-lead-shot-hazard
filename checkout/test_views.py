@@ -14,8 +14,18 @@ class TestCheckoutViews(TestCase):
         User.objects.create_user(
             username="testuser", email="test@test.com", password="te12345st")
 
-    # Test that the checkout page loads and redirects as expected
-    def test_the_checkout_page(self):
+    # Test that the checkout page URL exists
+    def test_the_checkout_page_url_exists(self):
+        response = self.client.get('/checkout/')
+        self.assertEqual(response.status_code, 302)
+
+    # Test that the checkout page is accessible via name
+    def test_the_checkout_url_is_accessible_by_name(self):
+        response = self.client.get(reverse('checkout'))
+        self.assertEqual(response.status_code, 302)
+
+    # Test that the checkout page redirects correctly
+    def test_checkout_view_uses_correct_template(self):
         response = self.client.get(reverse('checkout'))
         self.assertEqual(response.status_code, 302)
         self.assertRedirects(response, "/products/")

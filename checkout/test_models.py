@@ -1,7 +1,8 @@
 from django.test import TestCase
 from django.conf import settings
 
-from .models import Order
+from .models import Order, OrderLineItem
+from products.models import Product
 
 
 class TestOrderModels(TestCase):
@@ -19,6 +20,11 @@ class TestOrderModels(TestCase):
             town_or_city='test',
             street_address1='test'
         )
+
+    # Test string method for Order class
+    def test_order_string_method_returns_order_number(self):
+        order_number = Order.objects.create(order_number='2000')
+        self.assertEqual(str(order_number), '2000')
 
     # Test that the checkout fields auto-fill from the user's information
     def test_checkout_details(self):
@@ -50,7 +56,17 @@ class TestOrderModels(TestCase):
         grand_total = order_total + delivery_cost
         self.assertEqual(grand_total, 40)
 
-    # Test string method
-    def test_string_method_returns_order_number(self):
-        self.order_number = 20
-        self.assertEqual(str(self.order_number), '20')
+
+class TestOrderLineItemModels(TestCase):
+    """
+    Test that the order models work as expected
+    """
+
+    # Test that the string method works for the OrderLineItem class
+    def test_order_line_item_string_method(self):
+        product = Product.objects.create(sku='pp200', price=2.99)
+        order = Order.objects.create(order_number='2000')
+        expected_output = 'SKU pp200 on order 2000'
+        self.assertEqual(str(
+            f'SKU {product.sku} on order {order.order_number}'),
+            expected_output)

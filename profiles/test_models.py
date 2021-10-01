@@ -13,16 +13,13 @@ class UserProfileTest(TestCase):
         self.user.set_password('te12345st')
         self.user.save()
 
+    # Test string method on profiles models
+    def test_profiles_string_method(self):
+        self.assertEqual(str(self.user.username), 'testuser')
+
     # Test retrieving the user profile
     def test_getting_user_profile(self):
         self.client.login(username='testuser', password='te12345st')
         response = self.client.get('/profile/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'profiles/profile.html')
-
-    # Test string method
-    def test_string_method_returns_username(self):
-        self.assertEqual(str(self.user.username), "testuser")
-
-    def test_user_string(self):
-        self.assertEqual(self.user.__str__(),  self.user.username)

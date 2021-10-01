@@ -14,6 +14,23 @@ class TestProductViews(TestCase):
         'products.json',
     ]
 
+    # Test that the products page URL exists
+    def test_the_products_page_url_exists(self):
+        response = self.client.get('/products/')
+        self.assertEqual(response.status_code, 200)
+
+    # Test that the products page is accessible via name
+    def test_the_products_url_is_accessible_by_name(self):
+        response = self.client.get(reverse('products'))
+        self.assertEqual(response.status_code, 200)
+
+    # Test that the products page uses the correct template
+    def test_products_view_uses_correct_template(self):
+        response = self.client.get(reverse('products'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(
+            response, template_name="products/products.html")
+
     # Test that a product can be retrieved
     def test_products(self):
         product = Product.objects.get(id=11)
@@ -41,7 +58,4 @@ class TestProductViews(TestCase):
     def test_product_detail(self):
         product = Product.objects.get(id=11)
         response = self.client.get(reverse('products'))
-        self.assertEqual(response.status_code, 200)
         self.assertContains(response, product.name)
-        self.assertTemplateUsed(
-            response, template_name="products/products.html")

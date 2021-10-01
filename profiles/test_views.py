@@ -16,6 +16,20 @@ class TestProfileViews(TestCase):
         User.objects.create_user(
             username="testuser", email="test@test.com", password="te12345st")
 
+    # Test that the profiles page URL exists
+    def test_the_profiles_page_url_exists(self):
+        self.client.login(
+            username="testuser", email="test@test.com", password="te12345st")
+        response = self.client.get('/profile/')
+        self.assertEqual(response.status_code, 200)
+
+    # Test that the profiles page is accessible via name
+    def test_the_profiles_url_is_accessible_by_name(self):
+        self.client.login(
+            username="testuser", email="test@test.com", password="te12345st")
+        response = self.client.get(reverse('profile'))
+        self.assertEqual(response.status_code, 200)
+
     # Test that a logged in user can access their
     # profile page, and a logged out user can't
     def test_logged_in_user_profile_page(self):
