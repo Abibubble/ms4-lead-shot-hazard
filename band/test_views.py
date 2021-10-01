@@ -8,20 +8,6 @@ class TestBandViews(TestCase):
     Test that the contact us and upcoming gigs pages work as expected
     """
 
-    @classmethod
-    def setUpTestData(cls):
-        current_event = {
-            'venue_name': 'test venue',
-            'band_line_up': ['test band'],
-            'year': 2021,
-            'month': 'December',
-            'day': 25,
-            'weekday': 'Monday',
-            'time': '14:00',
-            'location': 'Leicester, UK',
-            'songkick_link': 'https://www.google.com'
-        }
-
     # Test that the contact us page loads and redirects as expected
     def test_the_contact_us_page(self):
         response = self.client.get(reverse('view_contact'))
