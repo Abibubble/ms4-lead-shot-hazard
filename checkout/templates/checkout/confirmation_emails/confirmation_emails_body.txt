@@ -1,14 +1,14 @@
 Hello {{ order.full_name }},
 
-This is a confirmation of your order from Lead Shot Hazard. Your order information is below:
+This is a confirmation of your order from Lead Shot Hazard. Your order summary is below:
 
-Order Number: {{ order.order_number }}
+Order Number:   {{ order.order_number }}
 
-Order Date: {{ order.date }}
+Order Date:     {{ order.date }}
 
-Order Total: £{{ order.order_total }}
-Delivery: £{{ order.delivery_cost }}
-Grand Total: £{{ order.grand_total }}
+Order Total:    £{{ order.order_total }}
+Delivery:       £{{ order.delivery_cost }}
+Grand Total:    £{{ order.grand_total }}
 
 Your order will be shipped to the following address:
 
@@ -23,10 +23,10 @@ Country:                {{ order.country }}
 Your order consists of the following items:
 
 {% for item in order.lineitems.all %}
-    Product: {{ item.product.name }}{% if item.product_size %}
-    Size: {{ item.product_size|upper }}{% endif %}
-    Quantity: {{ item.quantity }}
-    Price Each: £{{ item.product.price }}
+Product:        {{ item.product.name }}{% if item.product_size %}
+Size:           {{ item.product_size|upper }}{% endif %}
+Quantity:       {{ item.quantity }}
+Price Each:     £{{ item.product.price }}
 {% endfor %}
 
 We've got your phone number saved as {{ order.phone_number }}.
