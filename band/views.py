@@ -5,13 +5,19 @@ import calendar
 
 
 def view_contact(request):
-    """ A view to return the Contact Us page """
+    """
+    A view to return the Contact Us page
+    """
+
     template = 'band/contact.html'
     return render(request, template)
 
 
 def view_gigs(request):
-    """ A view to return the Upcoming Gigs page """
+    """
+    A view to return the Upcoming Gigs page
+    """
+
     requestURL = settings.SONGKICK_API
     result = requests.get(requestURL).json()
     events = result['resultsPage']['results']['event']

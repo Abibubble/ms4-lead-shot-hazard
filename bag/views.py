@@ -6,13 +6,17 @@ from products.models import Product
 
 
 def view_bag(request):
-    """ A view to return the shopping bag """
+    """
+    A view to return the shopping bag
+    """
 
     return render(request, 'bag/bag.html')
 
 
 def add_to_bag(request, item_id):
-    """ Add a quantity of a product to the shopping bag """
+    """
+    Add a quantity of a product to the shopping bag
+    """
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -54,7 +58,9 @@ def add_to_bag(request, item_id):
 
 
 def adjust_bag(request, item_id):
-    """ Adjust the quantity of a product in the shopping bag """
+    """
+    Adjust the quantity of a product in the shopping bag
+    """
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -88,7 +94,9 @@ def adjust_bag(request, item_id):
 
 
 def remove_from_bag(request, item_id):
-    """ Remove a product from the shopping bag """
+    """
+    Remove a product from the shopping bag
+    """
 
     try:
         product = get_object_or_404(Product, pk=item_id)
@@ -108,5 +116,5 @@ def remove_from_bag(request, item_id):
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
-    except Exception as e:
+    except Exception:
         return HttpResponse(status=500)

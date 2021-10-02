@@ -35,6 +35,7 @@ class TestOrderModels(TestCase):  # pragma: no cover
         self.assertEqual(order.country, 'GB')
         self.assertEqual(order.street_address1, 'test')
 
+    # Test that the order total is updated correctly
     def test_update_total(self):
         sdp = settings.STANDARD_DELIVERY_PERCENTAGE
         order_total = 10

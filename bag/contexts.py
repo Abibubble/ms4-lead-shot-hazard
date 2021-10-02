@@ -5,6 +5,11 @@ from products.models import Product
 
 
 def bag_contents(request):
+    """
+    Retreive the contents of the bag
+    Pass the details through
+    Update the delivery cost
+    """
 
     bag_items = []
     total = 0

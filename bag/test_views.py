@@ -16,6 +16,7 @@ class TestBagViews(TestCase):
         'products.json',
     ]
 
+    # Test that the view_bag view responds correctly
     def test_view_bag(self):
         url = reverse('view_bag')
         self.assertEquals(resolve(url).func, view_bag)
@@ -24,12 +25,14 @@ class TestBagViews(TestCase):
         self.assertTemplateUsed(
             response, template_name="bag/bag.html")
 
+    # Test that the add_to_bag view responds correctly
     def test_add_to_bag(self):
         url = reverse('add_to_bag', args=['itemId'])
         self.assertEquals(resolve(url).func, add_to_bag)
         response = self.client.get(reverse('view_bag'))
         self.assertEqual(response.status_code, 200)
 
+    # Test that the add_to_bag function adds products to the bag
     def test_add_to_bag_adds_product_to_bag(self):
         product = Product.objects.get(pk=1)
         url = reverse('adjust_bag', args=['itemId'])
@@ -38,6 +41,8 @@ class TestBagViews(TestCase):
         bag = [product.pk]
         self.assertEqual(len(bag), quantity)
 
+    # Test that the adjust_bag view adjusts the quantity of a
+    # product in the bag
     def test_adjust_bag(self):
         url = reverse('adjust_bag', args=['itemId'])
         self.assertEquals(resolve(url).func, adjust_bag)
@@ -49,6 +54,7 @@ class TestBagViews(TestCase):
         bag_total += product.price * quantity
         self.assertEqual(bag_total, 50)
 
+    # Test that the remove_from_bag view remobves a product from the bag
     def test_remove_from_bag(self):
         url = reverse('remove_from_bag', args=['itemId'])
         self.assertEquals(resolve(url).func, remove_from_bag)

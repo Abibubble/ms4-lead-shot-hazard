@@ -14,6 +14,7 @@ def webhook(request):  # pragma: no cover
     """
     Listen for webhooks from Stripe
     """
+
     # Setup
     wh_secret = settings.STRIPE_WH_SECRET
     stripe.api_key = settings.STRIPE_SECRET_KEY

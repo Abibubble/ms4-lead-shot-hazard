@@ -23,6 +23,7 @@ class StripeWH_Handler:  # pragma: no cover
         """
         Send a confirmation email
         """
+
         customer_email = order.email
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_emails_subject.txt',
@@ -36,12 +37,12 @@ class StripeWH_Handler:  # pragma: no cover
             settings.DEFAULT_FROM_EMAIL,
             [customer_email]
         )
-        print(body)
 
     def handle_event(self, event):
         """
         Handle a generic / unknown / unexpected webhook event
         """
+
         return HttpResponse(
             content=f'Unhandled webhook received: {event["type"]}',
             status=200)
@@ -50,6 +51,7 @@ class StripeWH_Handler:  # pragma: no cover
         """
         Handle a payment_intent.succeeded webhook event
         """
+
         intent = event.data.object
         pid = intent.id
         bag = intent.metadata.bag
@@ -162,6 +164,7 @@ class StripeWH_Handler:  # pragma: no cover
         """
         Handle a payment_intent.payment_failed webhook event
         """
+
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)

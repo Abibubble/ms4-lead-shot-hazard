@@ -13,6 +13,7 @@ def profile(request):
     """
     Display the user's profile
     """
+
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == "POST":
@@ -40,6 +41,10 @@ def profile(request):
 
 
 def order_history(request, order_number):
+    """
+    Retreive the order history data for the current user
+    """
+
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(

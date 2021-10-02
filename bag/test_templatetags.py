@@ -5,7 +5,8 @@ from .templatetags.bag_tools import calc_subtotal
 
 class TestTemplateTags(TestCase):
     """
-    Test teplate tag function works as expected
+    Test template tag calc_subtotal function
+    calculates the subtotal for each item correctly
     """
 
     def test_calc_subtotal_works(self):
