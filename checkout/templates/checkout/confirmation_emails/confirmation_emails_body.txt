@@ -20,7 +20,14 @@ County:                 {{ order.county }}{% endif %}
 Postcode:               {{ order.postcode }}
 Country:                {{ order.country }}
 
-{{ order }}
+Your order consists of the following items:
+
+{% for item in order.lineitems.all %}
+    Product: {{ item.product.name }}{% if item.product_size %}
+    Size: {{ item.product_size|upper }}{% endif %}
+    Quantity: {{ item.quantity }}
+    Price Each: £{{ item.product.price }}
+{% endfor %}
 
 We've got your phone number saved as {{ order.phone_number }}.
 
