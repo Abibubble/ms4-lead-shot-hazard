@@ -13,16 +13,14 @@ Grand Total: £{{ order.grand_total }}
 Your order will be shipped to the following address:
 
 Name:                   {{ order.full_name }}
-Address Line 1:         {{ order.street_address1 }}
-{% if order.street_address2 %}
-    Address Line 2:         {{ order.street_address2 }}
-{% endif %}
-Town or City:           {{ order.town_or_city }}
-{% if order.county %}
-County:                 {{ order.county }}
-{% endif %}
+Address Line 1:         {{ order.street_address1 }}{% if order.street_address2 %}
+Address Line 2:         {{ order.street_address2 }}{% endif %}
+Town or City:           {{ order.town_or_city }}{% if order.county %}
+County:                 {{ order.county }}{% endif %}
 Postcode:               {{ order.postcode }}
 Country:                {{ order.country }}
+
+{{ order }}
 
 We've got your phone number saved as {{ order.phone_number }}.
 
