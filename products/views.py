@@ -59,8 +59,9 @@ def all_products(request):
         'current_categories': categories,
         'current_sorting': current_sorting,
     }
+    template = 'products/products.html'
 
-    return render(request, 'products/products.html', context)
+    return render(request, template, context)
 
 
 def product_detail(request, product_id):
@@ -89,6 +90,7 @@ def add_product(request):
 
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
+        print(form)
         if form.is_valid():
             product = form.save()
             messages.success(request, 'Successfully added product.')
