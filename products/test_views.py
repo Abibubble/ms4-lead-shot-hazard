@@ -207,6 +207,65 @@ class TestProductViews(TestCase):
             response = self.client.get(f'/products/edit/{product.pk}/')
             self.assertEqual(response.status_code, 200)
 
+    # Test that the superuser can edit a valid product
+    def test_superuser_can_edit_valid_product(self):
+        my_admin = User.objects.create_superuser(
+            username='testadmin', email='test@example.com',
+            password='password')
+        self.client.login(
+            username=my_admin.username, email=my_admin.email,
+            password='password')
+        data = {
+            'category': '1',
+            'sku': '',
+            'name': 'test',
+            'description': 'test description',
+            'has_sizes': 'false',
+            'has_audio': 'false',
+            'audio': '',
+            'price': '2.99',
+            'image_url': '',
+            'image': ''}
+        products = Product.objects.all()
+        for product in products:
+            product.name = 'test'
+            self.client.post(f'/products/edit/{product.pk}/', data)
+            response = self.client.get(f'/products/edit/{product.pk}/')
+            messages = list(get_messages(response.wsgi_request))
+            self.assertEqual(messages[0].tags, 'success')
+            self.assertEqual(
+                str(messages[0]), f'Successfully updated {product.name}.')
+
+    # Test that the superuser cannot edit an invalid product
+    def test_superuser_cannot_edit_invalid_product(self):
+        my_admin = User.objects.create_superuser(
+            username='testadmin', email='test@example.com',
+            password='password')
+        self.client.login(
+            username=my_admin.username, email=my_admin.email,
+            password='password')
+        data = {
+            'category': '1',
+            'sku': '',
+            'name': 'test',
+            'description': 'test description',
+            'has_sizes': 'false',
+            'has_audio': 'false',
+            'audio': '',
+            'price': '2.99',
+            'image_url': '',
+            'image': ''}
+        products = Product.objects.all()
+        for product in products:
+            product.description = ''
+            response = self.client.post(
+                f'/products/edit/{product.pk}/', data, product.description)
+            messages = list(get_messages(response.wsgi_request))
+            self.assertEqual(messages[0].tags, 'error')
+            self.assertEqual(
+                str(messages[0]),
+                f'Failed to update {product.name}. Please check that the form is valid.')
+
     # Test the delete_product view doesn't allow
     # non-superusers to access the page
     def test_delete_product_for_regular_users_view(self):
