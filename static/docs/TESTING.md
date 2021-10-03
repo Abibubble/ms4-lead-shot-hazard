@@ -274,7 +274,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the delivery cost is calculated correctly
 * Test that the calc_subtotal function works
 
-![Bag App testing report from coverage](testing/bag-testing.png)
+![Bag App testing report from coverage](testing/bag-testing.jpg)
 
 #### Band App
 
@@ -287,7 +287,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the Upcoming Gigs page URL is accessible by name
 * Test that the Upcoming Gigs page uses the correct template
 
-![Band App testing report from coverage](testing/band-testing.png)
+![Band App testing report from coverage](testing/band-testing.jpg)
 
 #### Checkout App
 
@@ -315,7 +315,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the Checkout page uses the correct template
 * Test the cache_checkout_data view
 
-![Checkout App testing report from coverage](testing/checkout-testing.png)
+![Checkout App testing report from coverage](testing/checkout-testing.jpg)
 
 #### Home App
 
@@ -325,7 +325,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the Home page URL is accessible by name
 * Test that the Home page uses the correct template
 
-![Home App testing report from coverage](testing/home-testing.png)
+![Home App testing report from coverage](testing/home-testing.jpg)
 
 #### Products
 
@@ -343,11 +343,24 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the Products page URL is accessible by name
 * Test that the Products page uses the correct template
 * Test the products page view
-* Test the product search functionality
 * Test the categories view
 * Test the product_detail view
+* Test that the product detail page URL exists
+* Test the product sort functionality
+* Test the product search functionality
+* Test the product search error message shows correctly
+* Test that a regular user cannot access the add a product page
+* Test that the add a product page displays for a superuser
+* Test that a superuser can add a new valid product
+* Test that a superuser cannot add a new invalid product
+* Test that a regular user cannot access the edit a product page
+* Test that the edit a product page displays for a superuser
+* Test that a superuser can edit a valid product
+* Test that a superuser cannot edit an invalid product
+* Test that a regular user cannot access the delete a product view
+* Test that the delete a product view works for a superuser
 
-![Products App testing report from coverage](testing/products-testing.png)
+![Products App testing report from coverage](testing/products-testing.jpg)
 
 #### Profiles
 
@@ -369,7 +382,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the profile information gets saved correctly
 * Test that the order history displays when requested
 
-![Profiles App testing report from coverage](testing/profiles-testing.png)
+![Profiles App testing report from coverage](testing/profiles-testing.jpg)
 
 ### Travis CI
 
