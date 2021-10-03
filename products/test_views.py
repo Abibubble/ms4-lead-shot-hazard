@@ -1,12 +1,9 @@
-from django.test import TestCase, RequestFactory
+from django.test import TestCase
 from django.shortcuts import reverse
 from django.contrib.messages import get_messages
 from django.contrib.auth.models import User
-from django.http import HttpRequest
 
 from .models import Category, Product
-from .forms import ProductForm
-from .views import add_product
 
 
 class TestProductViews(TestCase):
@@ -264,7 +261,8 @@ class TestProductViews(TestCase):
             self.assertEqual(messages[0].tags, 'error')
             self.assertEqual(
                 str(messages[0]),
-                f'Failed to update {product.name}. Please check that the form is valid.')
+                f'Failed to update {product.name}. '
+                'Please check that the form is valid.')
 
     # Test the delete_product view doesn't allow
     # non-superusers to access the page
