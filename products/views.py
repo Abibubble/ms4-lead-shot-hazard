@@ -90,7 +90,6 @@ def add_product(request):
 
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
-        print(form)
         if form.is_valid():
             product = form.save()
             messages.success(request, 'Successfully added product.')
