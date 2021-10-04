@@ -1,9 +1,10 @@
 from django.test import TestCase, Client
 
 from django.shortcuts import reverse
+from django.contrib.messages import get_messages
 from django.contrib.auth.models import User
 
-from .forms import UserProfileForm
+from checkout.models import Order
 
 
 class TestProfileViews(TestCase):
@@ -40,10 +41,13 @@ class TestProfileViews(TestCase):
         self.assertTemplateUsed(
             response, template_name="profiles/profile.html")
 
-    # Test that the user's profile data is saved
-    def test_profile_gets_saved(self):
+    # Test that the user's profile data is saved if the form is valid
+    def test_profile_gets_saved_for_valid_form(self):
+        user = User.objects.create_user(
+            username="testprofileuser", email="test@testprofile.com",
+            password="te12345st")
         self.client.login(
-            username="testuser", email="test@test.com", password="te12345st")
+            username=user.username, email=user.email, password="te12345st")
         user_data = {
             'default_phone_number': 'tester',
             'default_street_address1': 'test',
@@ -52,13 +56,23 @@ class TestProfileViews(TestCase):
             'default_county': 'test',
             'default_country': 'GB'
         }
-        form = UserProfileForm(data=user_data)
-        self.assertTrue(form.is_valid())
+        self.client.post('/profile/', user_data)
+        response = self.client.post('/profile/', user_data)
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(len(messages), 1)
+        self.assertEqual(messages[0].tags, 'success')
+        self.assertEqual(
+            str(messages[0]), 'Profile updated successfully!')
 
     # Test that the order history is shown in full when user is logged in
     def test_order_history_displays_when_requested(self):
         self.client.login(
             username="testuser", email="test@test.com", password="te12345st")
-        response = self.client.get(reverse('profile'))
+        Order.objects.create(
+            order_number='1EC'
+        )
+        order_number = '1EC'
+        response = self.client.get(
+            f'/profile/order_history/{order_number}/')
         self.assertTemplateUsed(
-            response, template_name="profiles/profile.html")
+            response, template_name="checkout/checkout_success.html")
