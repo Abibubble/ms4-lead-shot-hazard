@@ -5,6 +5,7 @@ from django.contrib.messages import get_messages
 from django.contrib.auth.models import User
 
 from checkout.models import Order
+from .forms import UserProfileForm
 
 
 class TestProfileViews(TestCase):
