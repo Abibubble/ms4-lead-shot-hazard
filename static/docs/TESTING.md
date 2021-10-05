@@ -254,9 +254,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 ### Django Testing
 
 * Overall I was very happy with the level of coverage I got on this project.
-* The only thing bringing the coverage percentage down was the views.py files in every app. I really struggled with writing tests for these, so most of them unfortunately have minimal coverage.
 * Some lines of code were omitted from coverage using `# pragma: no cover`, due to them either being code that's populated by Django, code in the settings.py file to connect to environment variables, or non-important code to the function of the site.
-* In the future, I will revisit these tests to ensure 100% coverage.
 * [Click here to view the full testing coverage report](testing/full-coverage.png).
 
 #### Bag App
@@ -310,10 +308,11 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 ##### Checkout Views
 
+* Test the cache_checkout_data view
 * Test that the Checkout page URL exists
 * Test that the Checkout page URL is accessible by name
 * Test that the Checkout page uses the correct template
-* Test the cache_checkout_data view
+* Test that an error displays when there is nothing is the shopping bag
 
 ![Checkout App testing report from coverage](testing/checkout-testing.jpg)
 

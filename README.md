@@ -659,7 +659,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 * [Stack Overflow](https://stackoverflow.com/) has been used to help with deciphering the django error codes.
 * [Chris Anstey](https://github.com/ansteychris), a Digital Experience Lead at Google, for the discussion we had about Lighthouse vs WebPageTest.
 * I followed [this video from JustDjango](https://www.youtube.com/watch?v=NG48CLLsb1A) to add the Google social login functionality.
-* [Dave Horrocks](https://github.com/DaveyJH) helped me with working out the logic and syntax for the Songkick API data.
+* [Dave Horrocks](https://github.com/DaveyJH) helped me with working out the logic and syntax for the Songkick API data and the Django testing.
 
 ### Content
 
@@ -681,5 +681,6 @@ This database uses a SQL database through PostgreSQL. They were originally built
 * The team at [Code Institute](https://codeinstitute.net/), for teaching me the necessary skills to create this site.
 * My partner Conor Nye for his continuous support throughout my coding journey.
 * My bandmates in Lead Shot Hazard, for giving me the inspiration to create this site.
+* [Dave Horrocks](https://github.com/DaveyJH) for helping me understand the Django testing for this project, and for being incredibly patient with me through the process.
 
 [Back to the top](#lead-shot-hazard)
