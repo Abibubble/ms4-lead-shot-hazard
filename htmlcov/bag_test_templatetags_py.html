@@ -59,19 +59,20 @@
     <p id="t5" class="pln"><span class="n"><a href="#t5">5</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t6" class="run"><span class="n"><a href="#t6">6</a></span><span class="t"><span class="key">class</span> <span class="nam">TestTemplateTags</span><span class="op">(</span><span class="nam">TestCase</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t7" class="pln"><span class="n"><a href="#t7">7</a></span><span class="t">    <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t8" class="pln"><span class="n"><a href="#t8">8</a></span><span class="t"><span class="str">    Test teplate tag function works as expected</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t9" class="pln"><span class="n"><a href="#t9">9</a></span><span class="t"><span class="str">    """</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t10" class="pln"><span class="n"><a href="#t10">10</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t11" class="run"><span class="n"><a href="#t11">11</a></span><span class="t">    <span class="key">def</span> <span class="nam">test_calc_subtotal_works</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t12" class="run"><span class="n"><a href="#t12">12</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEqual</span><span class="op">(</span><span class="nam">calc_subtotal</span><span class="op">(</span><span class="num">10</span><span class="op">,</span> <span class="num">5</span><span class="op">)</span><span class="op">,</span> <span class="num">50</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t13" class="run"><span class="n"><a href="#t13">13</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEqual</span><span class="op">(</span><span class="nam">calc_subtotal</span><span class="op">(</span><span class="num">5</span><span class="op">,</span> <span class="num">2</span><span class="op">)</span><span class="op">,</span> <span class="num">10</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t14" class="run"><span class="n"><a href="#t14">14</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertNotEqual</span><span class="op">(</span><span class="nam">calc_subtotal</span><span class="op">(</span><span class="num">5</span><span class="op">,</span> <span class="num">2</span><span class="op">)</span><span class="op">,</span> <span class="num">12</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t8" class="pln"><span class="n"><a href="#t8">8</a></span><span class="t"><span class="str">    Test template tag calc_subtotal function</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t9" class="pln"><span class="n"><a href="#t9">9</a></span><span class="t"><span class="str">    calculates the subtotal for each item correctly</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t10" class="pln"><span class="n"><a href="#t10">10</a></span><span class="t"><span class="str">    """</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t11" class="pln"><span class="n"><a href="#t11">11</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t12" class="run"><span class="n"><a href="#t12">12</a></span><span class="t">    <span class="key">def</span> <span class="nam">test_calc_subtotal_works</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t13" class="run"><span class="n"><a href="#t13">13</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEqual</span><span class="op">(</span><span class="nam">calc_subtotal</span><span class="op">(</span><span class="num">10</span><span class="op">,</span> <span class="num">5</span><span class="op">)</span><span class="op">,</span> <span class="num">50</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t14" class="run"><span class="n"><a href="#t14">14</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEqual</span><span class="op">(</span><span class="nam">calc_subtotal</span><span class="op">(</span><span class="num">5</span><span class="op">,</span> <span class="num">2</span><span class="op">)</span><span class="op">,</span> <span class="num">10</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t15" class="run"><span class="n"><a href="#t15">15</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertNotEqual</span><span class="op">(</span><span class="nam">calc_subtotal</span><span class="op">(</span><span class="num">5</span><span class="op">,</span> <span class="num">2</span><span class="op">)</span><span class="op">,</span> <span class="num">12</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-10-01 17:30 +0000
+            created at 2021-10-04 16:52 +0000
         </p>
     </div>
 </div>
