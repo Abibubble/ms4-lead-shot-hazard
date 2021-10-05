@@ -41,22 +41,31 @@
         <div class="row text-transform-none">
             {% for event in content %}
                 <div class="col-12 col-md-5 event-listing">
-                    <h2><b>Venue:</b> {{ event.venue_name }}</h2>
-                    <p><b>Location:</b> {{ event.location }}</p>
-                    <p><b>Date:</b> {{ event.weekday }} {{ event.day }} {{ event.month }}, {{ event.year }}</p>
-                    <p><b>Time:</b> {{ event.time }}</p>
-                    <p><b>Line Up:</b>
-                        <ul>
-                            {% for band in event.band_line_up %}
-                                {% if band == 'Lead Shot Hazard' %}
-                                    <li><strong>{{ band }}</strong></li>
-                                {% else %}
-                                    <li>{{ band }}</li>
-                                {% endif %}
-                            {% endfor %}
-                        </ul>
+                    <h2>
+                        <b>Venue:</b> {{ event.venue_name }}
+                    </h2>
+                    <p>
+                        <b>Location:</b> {{ event.location }}
                     </p>
-                    <p><a href="{{ event.songkick_link }}" rel="noopener" target="_blank">Click here to buy tickets</a></p>
+                    <p>
+                        <b>Date:</b> {{ event.weekday }} {{ event.day }} {{ event.month }}, {{ event.year }}
+                    </p>
+                    <p>
+                        <b>Time:</b> {{ event.time }}
+                    </p>
+                    <b>Line Up:</b>
+                    <ul>
+                        {% for band in event.band_line_up %}
+                            {% if band == 'Lead Shot Hazard' %}
+                                <li><strong>{{ band }}</strong></li>
+                            {% else %}
+                                <li>{{ band }}</li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                    <p></p>
+                        <a href="{{ event.songkick_link }}" rel="noopener" target="_blank">Click here to buy tickets</a>
+                    </p>
                     <img src="{{ MEDIA_URL }}songkick.png" alt="Songkick logo" class="songkick">
                 </div>
             {% endfor %}
