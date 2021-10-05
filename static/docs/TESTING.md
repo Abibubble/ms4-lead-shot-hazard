@@ -325,7 +325,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the Home page URL is accessible by name
 * Test that the Home page uses the correct template
 
-![Home App testing report from coverage](testing/home-testing.jpg)
+![Home App testing report from coverage](testing/home-testing.png)
 
 #### Products
 
@@ -381,7 +381,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the profile information gets saved correctly
 * Test that the order history displays when requested
 
-![Profiles App testing report from coverage](testing/profiles-testing.jpg)
+![Profiles App testing report from coverage](testing/profiles-testing.png)
 
 ### Travis CI
 
