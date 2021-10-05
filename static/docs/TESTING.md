@@ -6,21 +6,19 @@
 
 * [Icon Key](#icon-key)
 
-* [Manual Testing](#manual-testing)
-  * [Devices and Browsers](#devices-and-browsers)
-  * [Testing Technologies](#testing-technologies)
-  * [Testing User Stories](#testing-user-stories)
-
 * [Automated Testing](#automated-testing)
   * [Django Testing](#django-testing)
   * [Travis CI](#travis-ci)
 
-* [Links and Navigation](#links-and-navigation)
-  * [Navigation Bar](#navigation-bar)
-  * [Modals](#modals)
-  * [External Links](#external-links)
-
-* [Styling and Layout](#styling-and-layout)
+* [Manual Testing](#manual-testing)
+  * [Devices and Browsers](#devices-and-browsers)
+  * [Testing User Stories](#testing-user-stories)
+  * [Testing Technologies](#testing-technologies)
+  * [Links and Navigation](#links-and-navigation)
+    * [Navigation Bar](#navigation-bar)
+    * [Modals](#modals)
+    * [External Links](#external-links)
+  * [Styling and Layout](#styling-and-layout)
 
 * [User Access](#user-access)
 
@@ -74,183 +72,6 @@
 
 ---
 
-## Manual Testing
-
-### Devices and Browsers
-
-#### Desktop / Laptop
-
-1. Google Chrome
-    * All tested and working correctly.
-
-2. Microsoft Edge
-    * All tested and working correctly.
-
-3. Mozilla Firefox
-    * All tested and working correctly.
-
-4. Safari
-    * All tested and working correctly.
-
-#### Tablet
-
-1. Safari
-    * All tested and working correctly.
-
-#### Mobile
-
-1. Google Chrome
-    * All tested and working correctly.
-
-2. Safari
-    * All tested and working correctly.
-
-3. Samsung Internet
-    * All tested and working correctly.
-
-#### Full devices and browsers
-
-* The website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge, Safari and Samsung Internet browsers.
-* Testing was not done on Internet Explorer due to it being depreciated in favour of Microsoft Edge.
-* The website was viewed on a variety of devices, including:
-  * Custom built desktop PC, running Windows 10
-  * Acer Aspire V Nitro Laptop, running Windows 10
-  * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
-  * MacBook Air7,2 (13-inch, 2017)
-  * MacBook Pro (15-inch, 2017), running macOS Big Sur
-  * iPad 6,11 5th generation, running iOS 10.3
-  * iPhone 7
-  * iPhone X
-  * iPhone 12
-  * OPPO Find X2 Lite
-  * OPPO Find X2
-  * Samsung Galaxy A70
-  * Samsung Galaxy S9
-  * Samsung A20
-  * xBox One
-
-A large amount of testing was done to ensure that all pages were displayed correctly at all screen sizes, and all functionality worked as it should. Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
-
-Responsive design was tested from 320px to 2500px, to account for the smallest of mobile devices, and the largest of monitors that the general public would be using.
-
-[Back to the top](#testing-steps)
-
----
-
-### Testing technologies
-
-* HTML was validated using [W3C HTML Markup Validator](https://validator.w3.org/).
-* CSS was validated using [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/).
-* JavaScript was validated using [JSHint](https://jshint.com/).
-* Python was validated using [Flake8](https://flake8.pycqa.org/en/latest/).
-* Responsive design was tested using a variety of devices, as listed above in [Full devices and browsers](#full-devices-and-browsers), as well as being tested with [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse), [Am I Responsive Design](http://ami.responsivedesign.is/#), and [Responsinator](http://www.responsinator.com/).
-* Accessibility was checked via [WebAim's W.A.V.E](https://wave.webaim.org/), [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/), and [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse).
-* [Toptal Color Blind Filter](https://www.toptal.com/designers/colorfilter/) was used to check that the site was suitable for color blind users, as well as manually testing it with my color blind partner.
-* Unit Testing was done using [Django’s testing tools](https://docs.djangoproject.com/en/3.2/topics/testing/) and [Travis CI](https://www.travis-ci.com/)'s continuous integration testing functionality.
-
-1. W3C HTML Markup Validator
-    * [Homepage](LINK)
-    * [Products](LINK)
-    * [Product Details](LINK)
-    * [Shopping Bag](LINK)
-    * [Checkout](LINK)
-    * [Order Confirmation](LINK)
-    * [Contact Us](LINK)
-    * [Upcoming Gigs](LINK)
-    * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
-
-2. W3C CSS Validator
-    * [Homepage](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-    * [Products](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fproducts%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-    * [Product Details](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fproducts%2F2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-    * [Shopping Bag](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fbag%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-    * [Checkout](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fcheckout%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-    * [Order Confirmation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fcheckout%2Fcheckout_success%2FD4C0F37FA19D4F51B2D16392BCE55B7C&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-    * [Contact Us](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fband%2Fcontact-us%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-    * [Upcoming Gigs](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fband%2Fgigs%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-    * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
-
-3. JSHint
-    * [JSHint](https://jshint.com/)
-    * The only comments from JSHint are about template literals, the `let` keyword, and the `$` from jQuery, all of which are JSHint making the developer aware that those features aren't available outside of ES6 and jQuery.
-    * There are no JavaScript errors in this project.
-    * Stripe payments
-    * ![JSHint results for Stripe payments](testing/validator/stripe.png)
-    * Social media icon hover functions
-    * ![JSHint results for social media hover functions](testing/validator/socials.png)
-    * Delete modal
-    * ![JSHint results for delete modal](testing/validator/delete-modal.png)
-    * Country field functionality
-    * ![JSHint results for country field functionality](testing/validator/country-field.png)
-    * Quantity input field
-    * ![JSHint results for quantity input functionality](testing/validator/quantity-input.png)
-
-4. Flake8
-    * [Flake8](https://pypi.org/project/flake8/)
-    * `Class 'x' has no 'objects' member` and `Class 'UserProfile' has no 'DoesNotExist' member`:
-        * These are just warnings from pylint. Django adds the `objects` and 'DoesNotExist' properties to all model classes, so the IDE isn't aware of this.
-    * `Avoid using null=True on string-based fields such CharField`:
-        * This error is there to avoid a field having two values if left blank - an empty string, and `null`. This would usually be a valid error, but because I need to allow empty values in forms, this is required, as the `null` parameter only affects database storage.
-    * There are also several warning being shown from the migrations files. These are acceptable to ignore, as they are created by Django, and [this issue has been marked as a 'won't fix'](https://code.djangoproject.com/ticket/30555) by the Django team.
-    * ![Image of Flake8 results](testing/validator/flake8.png)
-
-[Back to the top](#testing-steps)
-
-### Testing User Stories
-
-| **User Story Id** | **User Story Statement** | **Testing** |
-| --- | --- | --- |
-|| **Overall** ||
-| A1 | Band member - Sell merchandise and music - Have an online form of income | This site provides a secure method for the band to earn money from their merchandise sales |
-| A2 | Band member - Match the design and personality of the band with that of the site - Easily show fans that this site is linked to the band | The color scheme and images have been directly taken from the band's artwork |
-| A3 | Band member - Offer a website that is easy to navigate and free of confusion - Avoid stress of fans needing more assistance than necessary | Every page has the full navigation bar across the top of the page. For long pages, there is a 'Back to top' button to help the user easily get back to the top. |
-| A4 | Band member - Have another source of revenue for the band - Spend more time making music | Currently the band is only able to sell merchandise at gigs, or via their Bandcamp page. This site provides a dedicated site to sell all merchandise. This can be linked to from all social media platforms, to allow easy online sales. This means that the band can be earning money from merchandise sales whilst not actively gigging. |
-| A5 | Band member - Have a platform where fans can follow the future gigs of the band - Ensure our fans know when and where our upcoming gigs are | All future gigs will be updated onto the site. This will be collated on the 'Gigs' page, which is available in the footer. |
-|| **Viewing & Navigation** ||
-| B1 | Shopper - Easily navigate the site - Have a good user experience | Every page has the full navigation bar across the top of the page. For long pages, there is a 'Back to top' button to help the user easily get back to the top. Everything is clearly laid out. All buttons describe what they're for in simple terms. Icons are used to help convey meaning. |
-| B2 | Shopper - View all products - Choose some to buy | The user can scroll through all available merch via a link in the navigation bar. |
-| B3 | Shopper - Search for a specific product and its information - Find the item that I want | There is a search bar at the top of all pages, so the user can search by product name or description from anywhere on the site. |
-| B4 | Shopper - View a specific type of product - Quickly find items I'm interested in | There is a categories navigation bar at the top of all pages, so the user can quickly search by category from anywhere on the site. |
-| B5 | Shopper - View full product information - See the details of a specific product including price, description, image and sizes | A user can click on any product to view the full product information. |
-| B6 | Shopper - Easily see my bag total - Stick to a budget | Every time the shopping bag is updated, a preview is shown in a message in the top right of the screen, which displays the total at the bottom. The total is also visible on the shopping bag and checkout pages, and a warning message is shown by the 'Checkout Securely' button, including the grand total, so the user is never unsure of their total. |
-| B7 | Shopper - Get visual feedback when an action on the site is completed - Easily see when an action has been completed | When any action is completed, a message will appear to inform the user of the action. A full list of actions and messages can be found below in [Messages](#messages). |
-| B9 | Shopper - Contact the band through the website - Ask questions | A contact page is available in the footer. Users can fill in the form to send a message to the band. |
-|| **Registration & User Accounts** ||
-| C1 | Site User - Create an account for future purchases - View my order history or checkout quicker | The user can navigate to the Register page via the navigation bar, which is visible on every page. The registration process is clearly decribed, and all instructions are clear. It only requires a username, an email address, a password, and a confirmation of that password to register an account. The user then needs to verify their email address to gain full access to their account. The user can then view their order history, and save their details on their Profile. |
-| C2 | Site User - Log In - Access my account | The Log In and Log Out button is visible in the navigation bar. The Log In and Log Out process is intuitive and simple to use. If the user is logged out, the Log In button will show. |
-| C3 | Site User - Log Out - Keep my account private on a shared device | The Log In and Log Out button is visible in the navigation bar. The Log In and Log Out process is intuitive and simple to use. If the user is logged in, the Log Out button will show. |
-| C4 | Site User - Get an email confirmation after registering - Verify my registration was successful | Once a user has registered, they will be sent an email to confirm their email address. Once they have verified their email address, a message appears to confirm their email address is verified. |
-| C5 | Site User - See a history of my previous purchases - Check what I have bought before | All previous purchases of an account are listed on the user's profile under 'Order History'. |
-| C6 | Site User - Create, update or delete my personal information - Always have up-to-date personal information | Once a user has created an account, they can store their name, phone number, email address and address details for faster checkout in the future. |
-|| **Sorting & Searching** ||
-| D1 | Shopper - Sort the available products - Sort alphabetically or by price | Just above the products on the Products page, the user has a dropdown box allowing them to select how they would like to sort the available products. |
-| D2 | Shopper - Sort a category of products - Sort relevant products alphabetically or by price | Just above the products on the chosen category page, the user has a dropdown box allowing them to select how they would like to sort the available products. |
-| D3 | Shopper - Search for a specific product and its information - Find the item that I want | There is a search bar at the top of all pages, so the user can search by product name or description from anywhere on the site. |
-| D4 | Shopper - View a specific type of product - Quickly find items I'm interested in | There is a categories navigation bar at the top of all pages, so the user can quickly search by category from anywhere on the site. |
-| D5 | Shopper - Easily see what I've searched, and total number of results - Decide whether the product I'm looking for is available | At the top of the search page, the category the user has selected is displayed at the top. If the user has searched by name or description, the search term is visible at the top left, along with the total number of results. |
-|| **Purchasing & Checkout** ||
-| E1 | Shopper - Buy products online as a guest - Checkout without having to create an account | Registration to the site is not required to make a purchase. |
-| E2 | Shopper - Easily add, update the quantity, or delete products in my bag - Adjust my purchase to fit budget or personal choice | Products can be added to the shopping bag via any product details page. Products can be removed from the shopping bag via the Shopping Bag page, either by pressing the 'Remove' button under that item, or by updating the quantity to 0. Multiples of the same item can be added to the shopping bag by updating the quantity field. This can be done on the product details page, or on the shopping bag page. |
-| E5 | Shopper - Receive an update of the shopping bag when I perform an action - Be aware of the status of my shopping bag | When any action is completed, a message will appear to inform the user of the action. This message will include a summary of the user's shopping bag. A full list of actions and messages can be found below in [Messages](#messages). |
-| E4 | Shopper - View details about items in my bag - Decide if I want to purchase an item | All item deatils except description will display in the shopping bag. If the user wishes to view the item description again, they can click on the product in the shopping bag to return to that product's details page to view the description. |
-| E4 | Shopper - Revisit my shopping bag after logging out and in - Continue my purchase | The user's shopping bag is stored until they checkout. If they log out and back in, the shopping bag will still be saved. |
-| E6 | Shopper - Purchase products securely on the site - Be confident that my card and personal details are safe | Stripe is used to handle all card payments on this site. Stripe is certified to PCI Service Provider Level 1, which is the most stringent level of certification available in the payments industry. All card numbers are encrypted with AES-256 (Advanced Encryption Standard - 256 bits), and decryption keys are stored on separate machines. |
-| E2 | Shopper - Receive a confirmation email with information of my order - View my order details | Once an order has been paid for successfully, an email will be sent out with full order details. |
-|| **Product Management** ||
-| F1 | Site Owner - Edit any product - Update details of products | Only the superuser can edit an existing product. This can be done on any product details page. |
-| F2 | Site Owner - Delete any product - Remove old products from the site | Only the superuser can delete an existing product. This can be done on any product details page. |
-| F3 | Site Owner - Add a new product - Add new products to the site | Only the superuser can add a new product. This can be done on the Product Management page. |
-| F4 | Site Owner - Create a stock of products to be sold online - Keep the site's in stock products up to date |  |
-|| **Authentication & Security** ||
-| G1 | Site User - Recover my password - Regain access to my account |  |
-| G2 | Site User - Verify my email address - Ensure my account is set up securely | Once a user has registered, they will be sent an email to confirm their email address. Once they have verified their email address, a message appears to confirm their email address is verified. The user's account will not be accessible until the user has verified their email address. |
-| G3 | Site User - Be confident that my password is stored securely - Feel safe from malicious activity |  |
-| G4 | Site Owner - Be confident of the security of the restricted pages - Feel safe from malicious activity | The superuser is set through Django, so there can only be one. If a logged out user tried to access a restricted page, it directs them to the log in page. If a logged in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message informing them of this. |
-
-[Back to the top](#testing-steps)
-
----
-
 ## Automated Testing
 
 Automated Unit Testing was done using [Django’s testing tools](https://docs.djangoproject.com/en/3.2/topics/testing/) and [Travis CI](https://www.travis-ci.com/)'s continuous integration testing functionality.
@@ -259,7 +80,6 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 * Overall I was very happy with the level of coverage I got on this project.
 * Some lines of code were omitted from coverage using `# pragma: no cover`, due to them either being code that's populated by Django, code in the settings.py file to connect to environment variables, or non-important code to the function of the site.
-* The Profiles App models.py still has one line of untested code - the `__str__()` function, as I wasn't able to target it.
 * [Click here to view the full testing coverage report](testing/full-coverage.png).
 
 #### Bag App
@@ -387,6 +207,21 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 ![Profiles App testing report from coverage](testing/profiles-testing.png)
 
+#### Omitted Code
+
+* The main `manage.py` file has been omitted, as this is all required for the site to run.
+* The Bag App `contexts.py` file has a few lines of omitted code, as these are either from the Code Institute Boutique Ado walkthrough, or are simply defining variables.
+* The Band App `test_views.py` file has been omitted, as this is just testing code.
+* The Checkout App `update_total`, `__str__()` and `save` functions has been omitted, as these are taken from the Code Institute Boutique Ado walkthrough.
+* The Checkout App `signals.py` file has been omitted, as this sets up the basic update functionality that is used in other files, which is clear to be working, because other functions wouldn't work without it.
+* The Checkout App `test_models.py` file has been omitted, as this is just testing code.
+* The Checkout App `cache_checkout_data` function has been omitted, as this Code is from the Code Institute Boutique Ado walkthrough and Stripe.
+* The Checkout App `webhook_handler.py` and `webhooks.py` files have been omitted, as this Code is from the Code Institute Boutique Ado walkthrough and Stripe.
+* The Products App `__init__()` function has been omitted, as this code is not necessary to the functionality of the site.
+* One line in the Profiles App `__init__()` function has been omitted, as this code is not necessary to the functionality of the site.
+* The Profiles App `models.py` still has one line of omitted code - the `__str__()` function. I could not find a place where this function was called across the site.
+* Various lines from the `settings.py` file have been omitted, as these set the variables for use throughout the site, and do not require testing.
+
 ### Travis CI
 
 ![Travis CI Build Badge](https://secure.travis-ci.org/abibubble/ms4-lead-shot-hazard.png)
@@ -395,13 +230,192 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 ---
 
-## Links and Navigation
+## Manual Testing
+
+### Devices and Browsers
+
+#### Desktop / Laptop
+
+1. Google Chrome
+    * All tested and working correctly.
+
+2. Microsoft Edge
+    * All tested and working correctly.
+
+3. Mozilla Firefox
+    * All tested and working correctly.
+
+4. Safari
+    * All tested and working correctly.
+
+#### Tablet
+
+1. Safari
+    * All tested and working correctly.
+
+#### Mobile
+
+1. Google Chrome
+    * All tested and working correctly.
+
+2. Safari
+    * All tested and working correctly.
+
+3. Samsung Internet
+    * All tested and working correctly.
+
+#### Full devices and browsers
+
+* The website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge, Safari and Samsung Internet browsers.
+* Testing was not done on Internet Explorer due to it being depreciated in favour of Microsoft Edge.
+* The website was viewed on a variety of devices, including:
+  * Custom built desktop PC, running Windows 10
+  * Acer Aspire V Nitro Laptop, running Windows 10
+  * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
+  * MacBook Air7,2 (13-inch, 2017)
+  * MacBook Pro (15-inch, 2017), running macOS Big Sur
+  * iPad 6,11 5th generation, running iOS 10.3
+  * iPhone 7
+  * iPhone X
+  * iPhone 12
+  * OPPO Find X2 Lite
+  * OPPO Find X2
+  * Samsung Galaxy A70
+  * Samsung Galaxy S9
+  * Samsung A20
+  * xBox One
+
+A large amount of manual testing was done to ensure that all pages were displayed correctly at all screen sizes, and all functionality worked as it should. Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
+
+Responsive design was tested from 320px to 2500px, to account for the smallest of mobile devices, and the largest of monitors that the general public would be using.
+
+[Back to the top](#testing-steps)
+
+---
+
+### Testing User Stories
+
+| **User Story Id** | **User Story Statement** | **Testing** |
+| --- | --- | --- |
+|| **Overall** ||
+| A1 | Band member - Sell merchandise and music - Have an online form of income | This site provides a secure method for the band to earn money from their merchandise sales |
+| A2 | Band member - Match the design and personality of the band with that of the site - Easily show fans that this site is linked to the band | The color scheme and images have been directly taken from the band's artwork |
+| A3 | Band member - Offer a website that is easy to navigate and free of confusion - Avoid stress of fans needing more assistance than necessary | Every page has the full navigation bar across the top of the page. For long pages, there is a 'Back to top' button to help the user easily get back to the top. |
+| A4 | Band member - Have another source of revenue for the band - Spend more time making music | Currently the band is only able to sell merchandise at gigs, or via their Bandcamp page. This site provides a dedicated site to sell all merchandise. This can be linked to from all social media platforms, to allow easy online sales. This means that the band can be earning money from merchandise sales whilst not actively gigging. |
+| A5 | Band member - Have a platform where fans can follow the future gigs of the band - Ensure our fans know when and where our upcoming gigs are | All future gigs will be updated onto the site. This will be collated on the 'Gigs' page, which is available in the footer. |
+|| **Viewing & Navigation** ||
+| B1 | Shopper - Easily navigate the site - Have a good user experience | Every page has the full navigation bar across the top of the page. For long pages, there is a 'Back to top' button to help the user easily get back to the top. Everything is clearly laid out. All buttons describe what they're for in simple terms. Icons are used to help convey meaning. |
+| B2 | Shopper - View all products - Choose some to buy | The user can scroll through all available merch via a link in the navigation bar. |
+| B3 | Shopper - Search for a specific product and its information - Find the item that I want | There is a search bar at the top of all pages, so the user can search by product name or description from anywhere on the site. |
+| B4 | Shopper - View a specific type of product - Quickly find items I'm interested in | There is a categories navigation bar at the top of all pages, so the user can quickly search by category from anywhere on the site. |
+| B5 | Shopper - View full product information - See the details of a specific product including price, description, image and sizes | A user can click on any product to view the full product information. |
+| B6 | Shopper - Easily see my bag total - Stick to a budget | Every time the shopping bag is updated, a preview is shown in a message in the top right of the screen, which displays the total at the bottom. The total is also visible on the shopping bag and checkout pages, and a warning message is shown by the 'Checkout Securely' button, including the grand total, so the user is never unsure of their total. |
+| B7 | Shopper - Get visual feedback when an action on the site is completed - Easily see when an action has been completed | When any action is completed, a message will appear to inform the user of the action. A full list of actions and messages can be found below in [Messages](#messages). |
+| B9 | Shopper - Contact the band through the website - Ask questions | A contact page is available in the footer. Users can fill in the form to send a message to the band. |
+|| **Registration & User Accounts** ||
+| C1 | Site User - Create an account for future purchases - View my order history or checkout quicker | The user can navigate to the Register page via the navigation bar, which is visible on every page. The registration process is clearly decribed, and all instructions are clear. It only requires a username, an email address, a password, and a confirmation of that password to register an account. The user then needs to verify their email address to gain full access to their account. The user can then view their order history, and save their details on their Profile. |
+| C2 | Site User - Log In - Access my account | The Log In and Log Out button is visible in the navigation bar. The Log In and Log Out process is intuitive and simple to use. If the user is logged out, the Log In button will show. |
+| C3 | Site User - Log Out - Keep my account private on a shared device | The Log In and Log Out button is visible in the navigation bar. The Log In and Log Out process is intuitive and simple to use. If the user is logged in, the Log Out button will show. |
+| C4 | Site User - Get an email confirmation after registering - Verify my registration was successful | Once a user has registered, they will be sent an email to confirm their email address. Once they have verified their email address, a message appears to confirm their email address is verified. |
+| C5 | Site User - See a history of my previous purchases - Check what I have bought before | All previous purchases of an account are listed on the user's profile under 'Order History'. |
+| C6 | Site User - Create, update or delete my personal information - Always have up-to-date personal information | Once a user has created an account, they can store their name, phone number, email address and address details for faster checkout in the future. |
+|| **Sorting & Searching** ||
+| D1 | Shopper - Sort the available products - Sort alphabetically or by price | Just above the products on the Products page, the user has a dropdown box allowing them to select how they would like to sort the available products. |
+| D2 | Shopper - Sort a category of products - Sort relevant products alphabetically or by price | Just above the products on the chosen category page, the user has a dropdown box allowing them to select how they would like to sort the available products. |
+| D3 | Shopper - Search for a specific product and its information - Find the item that I want | There is a search bar at the top of all pages, so the user can search by product name or description from anywhere on the site. |
+| D4 | Shopper - View a specific type of product - Quickly find items I'm interested in | There is a categories navigation bar at the top of all pages, so the user can quickly search by category from anywhere on the site. |
+| D5 | Shopper - Easily see what I've searched, and total number of results - Decide whether the product I'm looking for is available | At the top of the search page, the category the user has selected is displayed at the top. If the user has searched by name or description, the search term is visible at the top left, along with the total number of results. |
+|| **Purchasing & Checkout** ||
+| E1 | Shopper - Buy products online as a guest - Checkout without having to create an account | Registration to the site is not required to make a purchase. |
+| E2 | Shopper - Easily add, update the quantity, or delete products in my bag - Adjust my purchase to fit budget or personal choice | Products can be added to the shopping bag via any product details page. Products can be removed from the shopping bag via the Shopping Bag page, either by pressing the 'Remove' button under that item, or by updating the quantity to 0. Multiples of the same item can be added to the shopping bag by updating the quantity field. This can be done on the product details page, or on the shopping bag page. |
+| E5 | Shopper - Receive an update of the shopping bag when I perform an action - Be aware of the status of my shopping bag | When any action is completed, a message will appear to inform the user of the action. This message will include a summary of the user's shopping bag. A full list of actions and messages can be found below in [Messages](#messages). |
+| E4 | Shopper - View details about items in my bag - Decide if I want to purchase an item | All item deatils except description will display in the shopping bag. If the user wishes to view the item description again, they can click on the product in the shopping bag to return to that product's details page to view the description. |
+| E4 | Shopper - Revisit my shopping bag after logging out and in - Continue my purchase | The user's shopping bag is stored until they checkout. If they log out and back in, the shopping bag will still be saved. |
+| E6 | Shopper - Purchase products securely on the site - Be confident that my card and personal details are safe | Stripe is used to handle all card payments on this site. Stripe is certified to PCI Service Provider Level 1, which is the most stringent level of certification available in the payments industry. All card numbers are encrypted with AES-256 (Advanced Encryption Standard - 256 bits), and decryption keys are stored on separate machines. |
+| E2 | Shopper - Receive a confirmation email with information of my order - View my order details | Once an order has been paid for successfully, an email will be sent out with full order details. |
+|| **Product Management** ||
+| F1 | Site Owner - Edit any product - Update details of products | Only the superuser can edit an existing product. This can be done on any product details page. |
+| F2 | Site Owner - Delete any product - Remove old products from the site | Only the superuser can delete an existing product. This can be done on any product details page. |
+| F3 | Site Owner - Add a new product - Add new products to the site | Only the superuser can add a new product. This can be done on the Product Management page. |
+| F4 | Site Owner - Create a stock of products to be sold online - Keep the site's in stock products up to date |  |
+|| **Authentication & Security** ||
+| G1 | Site User - Recover my password - Regain access to my account |  |
+| G2 | Site User - Verify my email address - Ensure my account is set up securely | Once a user has registered, they will be sent an email to confirm their email address. Once they have verified their email address, a message appears to confirm their email address is verified. The user's account will not be accessible until the user has verified their email address. |
+| G3 | Site User - Be confident that my password is stored securely - Feel safe from malicious activity |  |
+| G4 | Site Owner - Be confident of the security of the restricted pages - Feel safe from malicious activity | The superuser is set through Django, so there can only be one. If a logged out user tried to access a restricted page, it directs them to the log in page. If a logged in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message informing them of this. |
+
+[Back to the top](#testing-steps)
+
+---
+
+### Testing technologies
+
+* HTML was validated using [W3C HTML Markup Validator](https://validator.w3.org/).
+* CSS was validated using [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/).
+* JavaScript was validated using [JSHint](https://jshint.com/).
+* Python was validated using [Flake8](https://flake8.pycqa.org/en/latest/).
+* Responsive design was tested using a variety of devices, as listed above in [Full devices and browsers](#full-devices-and-browsers), as well as being tested with [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse), [Am I Responsive Design](http://ami.responsivedesign.is/#), and [Responsinator](http://www.responsinator.com/).
+* Accessibility was checked via [WebAim's W.A.V.E](https://wave.webaim.org/), [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/), and [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse).
+* [Toptal Color Blind Filter](https://www.toptal.com/designers/colorfilter/) was used to check that the site was suitable for color blind users, as well as manually testing it with my color blind partner.
+* Unit Testing was done using [Django’s testing tools](https://docs.djangoproject.com/en/3.2/topics/testing/) and [Travis CI](https://www.travis-ci.com/)'s continuous integration testing functionality.
+
+1. W3C HTML Markup Validator
+    * [Homepage](https://validator.w3.org/nu/?doc=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2F)
+    * [Products](https://validator.w3.org/nu/?doc=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fproducts%2F)
+    * [Product Details](https://validator.w3.org/nu/?doc=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fproducts%2F2%2F)
+    * [Shopping Bag](https://validator.w3.org/nu/?doc=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fbag%2F)
+    * [Checkout](https://validator.w3.org/nu/?doc=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fcheckout%2F)
+    * [Order Confirmation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fcheckout%2Fcheckout_success%2FD4C0F37FA19D4F51B2D16392BCE55B7C)
+    * [Contact Us](https://validator.w3.org/nu/?doc=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fband%2Fcontact-us%2F)
+    * [Upcoming Gigs](https://validator.w3.org/nu/?doc=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fband%2Fgigs%2F)
+    * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
+
+2. W3C CSS Validator
+    * [Homepage](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Products](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fproducts%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Product Details](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fproducts%2F2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Shopping Bag](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fbag%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Checkout](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fcheckout%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Order Confirmation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fcheckout%2Fcheckout_success%2FD4C0F37FA19D4F51B2D16392BCE55B7C&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Contact Us](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fband%2Fcontact-us%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Upcoming Gigs](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fband%2Fgigs%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
+
+3. JSHint
+    * [JSHint](https://jshint.com/)
+    * The only comments from JSHint are about template literals, the `let` keyword, and the `$` from jQuery, all of which are JSHint making the developer aware that those features aren't available outside of ES6 and jQuery.
+    * There are no JavaScript errors in this project.
+    * Stripe payments
+    * ![JSHint results for Stripe payments](testing/validator/stripe.png)
+    * Social media icon hover functions
+    * ![JSHint results for social media hover functions](testing/validator/socials.png)
+    * Delete modal
+    * ![JSHint results for delete modal](testing/validator/delete-modal.png)
+    * Country field functionality
+    * ![JSHint results for country field functionality](testing/validator/country-field.png)
+    * Quantity input field
+    * ![JSHint results for quantity input functionality](testing/validator/quantity-input.png)
+
+4. Flake8
+    * [Flake8](https://pypi.org/project/flake8/)
+    * `Class 'x' has no 'objects' member` and `Class 'UserProfile' has no 'DoesNotExist' member`:
+        * These are just warnings from pylint. Django adds the `objects` and 'DoesNotExist' properties to all model classes, so the IDE isn't aware of this.
+    * `Avoid using null=True on string-based fields such CharField`:
+        * This error is there to avoid a field having two values if left blank - an empty string, and `null`. This would usually be a valid error, but because I need to allow empty values in forms, this is required, as the `null` parameter only affects database storage.
+    * There are also several warning being shown from the migrations files. These are acceptable to ignore, as they are created by Django, and [this issue has been marked as a 'won't fix'](https://code.djangoproject.com/ticket/30555) by the Django team.
+    * ![Image of Flake8 results](testing/validator/flake8.png)
+
+[Back to the top](#testing-steps)
+
+---
+
+### Links and Navigation
 
 On every device and browser listed above, I tested the following:
 
-### Navigation Bar
+#### Navigation Bar
 
-#### Logo Testing
+##### Logo Testing
 
 * Click the Logo to take the user to the Home page from the Home page.
 * Click the Logo to take the user to the Home page from the Products page.
@@ -417,7 +431,7 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Logo to take the user to the Home page from the Log In page.
 * &#128683; Click the Logo to take the user to the Home page from the Register page.
 
-#### Products Testing
+##### Products Testing
 
 * Click the All Merch button to take the user to the Products page from the Home page.
 * Click the All Merch button to take the user to the Products page from the Products page.
@@ -435,7 +449,7 @@ On every device and browser listed above, I tested the following:
 * Click the Keep Shopping button to take the user to the Products page from the Shopping Bag page.
 * Click the Keep Shopping button to take the user to the Products page from the Product Details page.
 
-#### Product Details Testing
+##### Product Details Testing
 
 * Click the product card to take the user to the Product Details page for that product from the Products page.
 * Click the product card to take the user to the Product Details page for that product from the T-Shirts Products page.
@@ -443,7 +457,7 @@ On every device and browser listed above, I tested the following:
 * Click the product card to take the user to the Product Details page for that product from the Misc. Products page.
 * Click the product card to take the user to the Product Details page for that product from the Product Search page.
 
-#### Shopping Bag Testing
+##### Shopping Bag Testing
 
 * Click the Shopping Bag icon to take the user to the Shopping Bag page from the Home page.
 * Click the Shopping Bag icon to take the user to the Shopping Bag page from the Products page.
@@ -461,19 +475,19 @@ On every device and browser listed above, I tested the following:
 * Click the Go To Secure Checkout button on the toast message to take the user to the Shopping Bag page from any page.
 * Click the Adjust Bag button to take the user to the Shopping Bag page from the Checkout page.
 
-#### Checkout Testing
+##### Checkout Testing
 
 * Click the Secure Checkout button to take the user to the Checkout page from the Shopping Bag page.
 
-#### Order Success Testing
+##### Order Success Testing
 
 * Click the Complete Order button and complete a purchase successfully to take the user to the Order Success page from the Checkout page.
 
-#### Order Confirmation Testing
+##### Order Confirmation Testing
 
 * Click the Order number link for a past purchase to take the user to the Order Confirmation page from the Profile page.
 
-#### Contact Us Testing
+##### Contact Us Testing
 
 * Click the Contact Us button in the footer to take the user to the Contact Us page from the Home page.
 * Click the Contact Us button in the footer to take the user to the Contact Us page from the Products page.
@@ -489,7 +503,7 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Contact Us button in the footer to take the user to the Contact Us page from the Log In page.
 * &#128683; Click the Contact Us button in the footer to take the user to the Contact Us page from the Register page.
 
-#### Upcoming Gigs Testing
+##### Upcoming Gigs Testing
 
 * Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Home page.
 * Click the Upcoming Gigs button in the footer to take the user to the Upcoming Gigs page from the Products page.
@@ -518,7 +532,7 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Log In page.
 * &#128683; Click the Upcoming Gigs button in the main nav bar to take the user to the Upcoming Gigs page from the Register page.
 
-#### Profile Testing
+##### Profile Testing
 
 * Click the Profile button to take the user to the Profile page from the Home page.
 * Click the Profile button to take the user to the Profile page from the Products page.
@@ -534,7 +548,7 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Profile button to take the user to the Profile page from the Log In page.
 * &#128683; Click the Profile button to take the user to the Profile page from the Register page.
 
-#### Product Management Testing
+##### Product Management Testing
 
 * &#128272; Click the Product Management button to take the user to the Product Management page from the Home page.
 * &#128272; Click the Product Management button to take the user to the Product Management page from the Products page.
@@ -548,7 +562,7 @@ On every device and browser listed above, I tested the following:
 * &#128272; Click the Product Management button to take the user to the Product Management page from the Profile page.
 * &#128272; Click the Product Management button to take the user to the Product Management page from the Product Management page.
 
-#### Edit / Delete Product Testing
+##### Edit / Delete Product Testing
 
 * &#128272; Click the Edit button to take the user to the Edit Product page from the main Products page.
 * &#128272; Click the Edit button to take the user to the Edit Product page from the Product Details page.
@@ -557,7 +571,7 @@ On every device and browser listed above, I tested the following:
 * &#128272; Click the Delete button on the Delete modal from the main Products page to delete the product.
 * &#128272; Click the Delete button on the Delete modal from the Product Details page to delete the product.
 
-#### Log Out Testing
+##### Log Out Testing
 
 * &#128100; Click the Log Out button to log the user out and take them to the Home page from the Home page.
 * &#128100; Click the Log Out button to log the user out and take them to the Home page from the Products page.
@@ -570,7 +584,7 @@ On every device and browser listed above, I tested the following:
 * &#128100; Click the Log Out button to log the user out and take them to the Home page from the Profile page.
 * &#128272; Click the Log Out button to log the user out and take them to the Home page from the Product Management page.
 
-#### Log In Testing
+##### Log In Testing
 
 * &#128683; Click the Log In button to take the user to the Log In page from the Home page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Register page.
@@ -582,7 +596,7 @@ On every device and browser listed above, I tested the following:
 * &#128683; Click the Log In button to take the user to the Log In page from the Upcoming Gigs page.
 * &#128683; Click the Log In button to take the user to the Log In page from the Log In page.
 
-#### Register Testing
+##### Register Testing
 
 * &#128683; Click the Register button to take the user to the Register page from the Home page.
 * &#128683; Click the Register button to take the user to the Register page from the Register page.
@@ -598,7 +612,7 @@ On every device and browser listed above, I tested the following:
 
 ---
 
-## Modals
+#### Modals
 
 * &#128272; The Delete modal is visible in front of all other items on the screen, and clearly displays the Cancel and Delete buttons.
 * &#128272; The Delete modal only deletes the specific product that it is related to.
@@ -607,7 +621,7 @@ On every device and browser listed above, I tested the following:
 
 ---
 
-## External Links
+#### External Links
 
 * The email icon opens up the user's email client with the Lead Shot Hazard email in the recipient line.
 * The Facebook social media icon opens up the Lead Shot Hazard Facebook page in a new tab.
@@ -623,7 +637,7 @@ On every device and browser listed above, I tested the following:
 
 ---
 
-## Styling and Layout
+### Styling and Layout
 
 * Ensure all images load correctly.
 * Ensure all images are correctly sized, and the correct aspect ratio is maintained.
