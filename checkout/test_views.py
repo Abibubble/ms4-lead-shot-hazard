@@ -49,19 +49,19 @@ class TestCheckoutViews(TestCase):
             str(messages[0]), "There's nothing in your bag at the moment.")
 
     # Test that the bag can be retrieved from the session
-    def test_bag_from_session(self):
-        session = self.client.session
-        bag = {'14': 1, '11': 1}
-        session['bag'] = bag
-        session.save()
+    # def test_bag_from_session(self):
+    #     session = self.client.session
+    #     bag = {'14': 1, '11': 1}
+    #     session['bag'] = bag
+    #     session.save()
 
-    # Test that an error message is shown when Stripe key is missing
-    def test_no_stripe_key_error(self):
-        stripe_public_key = 'somekey'
-        del stripe_public_key
-        response = self.client.get('/checkout/')
-        messages = list(get_messages(response.wsgi_request))
-        self.assertEqual(len(messages), 1)
-        self.assertEqual(messages[0].tags, 'error')
-        self.assertEqual(
-            str(messages[0]), 'Stripe public key is missing.')
+    # # Test that an error message is shown when Stripe key is missing
+    # def test_no_stripe_key_error(self):
+    #     stripe_public_key = 'somekey'
+    #     del stripe_public_key
+    #     response = self.client.get('/checkout/')
+    #     messages = list(get_messages(response.wsgi_request))
+    #     self.assertEqual(len(messages), 1)
+    #     self.assertEqual(messages[0].tags, 'error')
+    #     self.assertEqual(
+    #         str(messages[0]), 'Stripe public key is missing.')

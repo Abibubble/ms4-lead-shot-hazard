@@ -155,15 +155,19 @@ Responsive design was tested from 320px to 2500px, to account for the smallest o
     * [Shopping Bag](LINK)
     * [Checkout](LINK)
     * [Order Confirmation](LINK)
+    * [Contact Us](LINK)
+    * [Upcoming Gigs](LINK)
     * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
 
 2. W3C CSS Validator
-    * [Homepage](LINK)
-    * [Products](LINK)
-    * [Product Details](LINK)
-    * [Shopping Bag](LINK)
-    * [Checkout](LINK)
-    * [Order Confirmation](LINK)
+    * [Homepage](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Products](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fproducts%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Product Details](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fproducts%2F2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Shopping Bag](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fbag%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Checkout](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fcheckout%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Order Confirmation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fcheckout%2Fcheckout_success%2FD4C0F37FA19D4F51B2D16392BCE55B7C&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Contact Us](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fband%2Fcontact-us%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [Upcoming Gigs](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fms4-lead-shot-hazard.herokuapp.com%2Fband%2Fgigs%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
     * Unfortunately, as it's not possible to log in using the Validator, it was only possible to test the pages available to a user who isn't logged in.
 
 3. JSHint
