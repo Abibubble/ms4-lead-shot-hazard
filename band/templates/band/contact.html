@@ -8,7 +8,7 @@
     <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
     <!-- Facebook, LinkedIn, Google -->
     <meta property="og:title" name="title" content="Lead Shot Hazard" />
-    <meta property="og:description" name="description" content="Contact the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
+    <meta property="og:description" content="Contact the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
     <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
     <!-- Twitter -->
     <meta name="twitter:title" content="Lead Shot Hazard">
@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="mb-4">Contact Us</h2>
+                <h1 class="mb-4">Contact Us</h1>
                 <hr>
             </div>
         </div>
@@ -102,5 +102,5 @@
 
 {% block post_load_js %}
     {{ block.super }}
-    <script type="text/javascript" src="{% static 'band/js/social_hover.js' %}"></script>
+    <script src="{% static 'band/js/social_hover.js' %}"></script>
 {% endblock %}

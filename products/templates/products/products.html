@@ -8,7 +8,7 @@
     <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
     <!-- Facebook, LinkedIn, Google -->
     <meta property="og:title" name="title" content="Lead Shot Hazard Products" />
-    <meta property="og:description" name="description" content="The products list on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
+    <meta property="og:description" content="The products list on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
     <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
     <!-- Twitter -->
     <meta name="twitter:title" content="Lead Shot Hazard Products">
@@ -182,13 +182,11 @@
 {{ block.super }}
     {% include 'products/includes/delete_modal_script.html' %}
 
-    <script type="text/javascript">
+    <script>
         $('.btt-link').click(function(e) {
             window.scrollTo(0,0);
         })
-    </script>
 
-    <script type="text/javascript">
         $('#sort-selector').change(function() {
             var selector = $(this);
             var currentUrl = new URL(window.location);

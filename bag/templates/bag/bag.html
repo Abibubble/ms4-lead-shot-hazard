@@ -9,7 +9,7 @@
     <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
     <!-- Facebook, LinkedIn, Google -->
     <meta property="og:title" name="title" content="Lead Shot Hazard Shopping Bag" />
-    <meta property="og:description" name="description" content="A shopping bag on the  merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
+    <meta property="og:description" content="A shopping bag on the  merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
     <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
     <!-- Twitter -->
     <meta name="twitter:title" content="Lead Shot Hazard Shopping Bag">
@@ -32,11 +32,11 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container mb-2">
+    <section class="container mb-2">
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="mb-4">Shopping Bag</h2>
+                <h1 class="mb-4">Shopping Bag</h1>
                 <hr>
             </div>
         </div>
@@ -132,7 +132,7 @@
                 {% endif %}
             </div>
         </div>
-    </div>
+    </section>
     <div class="btt-button shadow-sm rounded-0 border border-white">
         <a href="#" class="btt-link d-flex h-100">
             <i class="fas fa-arrow-up mx-auto my-auto"></i>
@@ -142,7 +142,7 @@
 
 {% block post_load_js %}
     {{ block.super }}
-    <script type="text/javascript">
+    <script>
         // Back to top link
         $('.btt-link').click(function(e) {
             window.scrollTo(0,0);

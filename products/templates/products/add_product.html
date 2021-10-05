@@ -8,7 +8,7 @@
     <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
     <!-- Facebook, LinkedIn, Google -->
     <meta property="og:title" name="title" content="Lead Shot Hazard Product Management" />
-    <meta property="og:description" name="description" content="Product Management page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
+    <meta property="og:description" content="Product Management page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
     <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
     <!-- Twitter -->
     <meta name="twitter:title" content="Lead Shot Hazard Product Management">
@@ -29,12 +29,12 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
+    <section class="container">
         <div class="row">
             <div class="col text-center">
                 <hr>
-                <h2 class="mb-4">Product Management</h2>
-                <h3 class="text-tag-dark text-transform-none">Add a Product</h3>
+                <h1 class="mb-4">Product Management</h1>
+                <h2 class="text-tag-dark text-transform-none">Add a Product</h2>
                 <hr>
             </div>
         </div>
@@ -57,13 +57,13 @@
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 {% endblock %}
 
 {% block post_load_js %}
     {{ block.super }}
     <!-- Thanks to the Boutique Ado tutorials for this code -->
-    <script type="text/javascript">
+    <script>
         $('#js-new-image').change(function() {
             var file = $('#js-new-image')[0].files[0];
             $('#js-filename').text(`Image will be set to: ${file.name}`);

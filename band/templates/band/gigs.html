@@ -8,7 +8,7 @@
     <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
     <!-- Facebook, LinkedIn, Google -->
     <meta property="og:title" name="title" content="Lead Shot Hazard" />
-    <meta property="og:description" name="description" content="Upcoming Gigs for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
+    <meta property="og:description" content="Upcoming Gigs for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
     <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
     <!-- Twitter -->
     <meta name="twitter:title" content="Lead Shot Hazard">
@@ -18,8 +18,6 @@
 {% block extra_title %}
     Upcoming Gigs
 {% endblock %}
-
-https://api.songkick.com/api/3.0/artists/6174339/gigography.json?apikey={SONGKICK_API_KEY}
 
 {% block page_header %}
     <div class="container header-container">
@@ -36,14 +34,14 @@ https://api.songkick.com/api/3.0/artists/6174339/gigography.json?apikey={SONGKIC
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="mb-4">Upcoming Gigs</h2>
+                <h1 class="mb-4">Upcoming Gigs</h1>
                 <hr>
             </div>
         </div>
         <div class="row text-transform-none">
             {% for event in content %}
                 <div class="col-12 col-md-5 event-listing">
-                    <h3><b>Venue:</b> {{ event.venue_name }}</h3>
+                    <h2><b>Venue:</b> {{ event.venue_name }}</h2>
                     <p><b>Location:</b> {{ event.location }}</p>
                     <p><b>Date:</b> {{ event.weekday }} {{ event.day }} {{ event.month }}, {{ event.year }}</p>
                     <p><b>Time:</b> {{ event.time }}</p>

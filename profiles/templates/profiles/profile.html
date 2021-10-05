@@ -8,7 +8,7 @@
     <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
     <!-- Facebook, LinkedIn, Google -->
     <meta property="og:title" name="title" content="Lead Shot Hazard Profile" />
-    <meta property="og:description" name="description" content="Profile page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
+    <meta property="og:description" content="Profile page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
     <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
     <!-- Twitter -->
     <meta name="twitter:title" content="Lead Shot Hazard Profile">
@@ -33,11 +33,11 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
+    <section class="container">
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="mb-4">{{ user }}'s Profile</h2>
+                <h1 class="mb-4">{{ user }}'s Profile</h1>
                 <hr>
             </div>
         </div>
@@ -93,11 +93,10 @@
                 </div>
             </div>
         </div>
-        </div>
-    </div>
+    </section>
 {% endblock %}
 
 {% block post_load_js %}
     {{ block.super }}
-    <script type="text/javascript" src="{% static 'profiles/js/country-field.js' %}"></script>
+    <script src="{% static 'profiles/js/country-field.js' %}"></script>
 {% endblock %}
