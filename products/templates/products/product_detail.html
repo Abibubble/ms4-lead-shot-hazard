@@ -76,7 +76,7 @@
                                         </audio>
                                         <p class="text-tag-dark mb-1">Chase This Down</p>
                                         <audio controls controlsList="nodownload">
-                                            <source src="{{ MEDIA_URL }}{{ product.audio }}chase.mp3" type="audio/mpeg">
+                                            <source src="{{ MEDIA_URL }}{{ product.audio }}chase2.mp3" type="audio/mpeg">
                                             Your browser does not support the audio element.
                                         </audio>
                                         <p class="text-tag-dark mb-1">Hacky Sack? Let's Have A Rebellion</p>
@@ -143,6 +143,11 @@
                                         <p class="text-tag-dark mb-1">Safe From Harm</p>
                                         <audio controls controlsList="nodownload">
                                             <source src="{{ MEDIA_URL }}{{ product.audio }}sfh.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    {% else %}
+                                        <audio controls controlsList="nodownload">
+                                            <source src="{{ MEDIA_URL }}{{ product.audio }}" type="audio/mpeg">
                                             Your browser does not support the audio element.
                                         </audio>
                                     {% endif %}
