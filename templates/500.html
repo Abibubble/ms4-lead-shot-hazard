@@ -30,8 +30,8 @@
 {% block content %}
     <div class="overlay"></div>
     <section class="container">
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 offset-md-3">
                 <hr>
                 <h1 class="mb-4">Error 500</h1>
                 <hr>
@@ -41,7 +41,9 @@
             <div class="col">
                 <h2 class="mt-2 mb-4 text-danger">Oh no!</h2>
                 <p class="text-danger mb-2">Something went wrong!</p>
-                <a href="/">Click here to head back to safety!</a>
+                <a href="/">Click here to head back to safety!
+                    <img src="{{ MEDIA_URL }}roundall.png" alt="The Lead Shot Hazard roundall logo" class="w-100">
+                </a>
             </div>
         </div>
     </section>
