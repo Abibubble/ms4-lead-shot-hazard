@@ -152,6 +152,8 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 * The main colors used in this site are black, white, and yellow.
 * These main colors are the colors in the band's logo, and they permeate through the site.
 * These colors were used by the band to signify the ray of hope for a society that needs help, which is a popular ideology in the punk scene, and links with the band's song lyrics.
+* A slightly dark red has been used for all Delete buttons, to signify that this is a destructive action.
+* Two grey colors have been used for tags on the site, one slightly darker than the other to maintain AAA color contrast compliance.
 * Different colors have also been used on the hover state of the social media icons in the Contact Us page.
 * The social media icon colors have been taken directly from each external website's logo, to reference where the link would take them.
 
@@ -161,9 +163,9 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 
 * For the font, I decided to stick with the standard HTML font family. As they're sans-serif fonts, they are easy to read for dyslexic and partially visually impaired users.
 * As the standard HTML font size is 16px, I kept it at that, ensuring to not have any fonts smaller than that, to aid visually impaired users.
-* The recommended smallest font size for accessible websites is 12px, so I ensured to keep all font sizes above that.
-* A lot of the text on the website, including all headers and buttons, has been transformed to uppercase.
-* This is to link with the strong and bold feel of the site.
+* The recommended smallest font size for accessible websites is 12px, so I kept all font sizes above that.
+* A lot of the text on the website, including all headers and buttons, has been transformed to uppercase, to link with the strong and bold feel of the site.
+* Lowercase text has been used in some places to avoid the site feeling aggressive.
 * This also connects the site to the band's logos, which all use uppercase text.
 
 ![An example of the font used](static/docs/img/fonts.png)
@@ -177,7 +179,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 * All links have their underlines removed for stylistic purposes. The links in the footer re-gain their underlines when they're hovered over or focused on.
 * All interactable objects have hover and focus styles applied to make it clear to the user that those objects are interactable.
 * Icons from [Font Awesome](https://fontawesome.com/) have been used throughout the site to add meaning where relevant. These icons also have text either visible or in aria labels where required.
-* Button colors have been used to convey meaning, mainly in the use of the color red to convey 'Delete' or 'Cancel' as dangerous actions.
+* Button and link colors have been used to convey meaning, mainly in the use of the color red to convey 'Delete' or 'Cancel' as dangerous actions.
 
 ### Wireframes
 
@@ -191,6 +193,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 * This feature allows the user to:
   * Register for an account with email address, username and password.
   * Ensure no typos by entering the password twice, with the site checking to confirm that the passwords match.
+  * Ensure no typos by entering the email twice, with the site checking to confirm that the emails match.
   * Ensure the correct email address by sending a verification email to the email address the user has supplied.
   * &#128100; Store their details for a faster checkout.
   * &#128100; Keep a record of their full order history.
@@ -208,6 +211,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
     * Alphabetically (Z-A)
     * By price (low to high)
     * By price (high to low)
+  * Click the 'Add to Bag' button for a faster shopping experience, including the ability to choose a size on products with sizes.
   * Click on a product card to view the full product details, including:
     * Name
     * Category
@@ -215,6 +219,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
     * Image
     * Description
     * Sizes (if relevant)
+    * Audio (if relevant)
   * Click the back to top arrow button to return to the top of the page.
 
 ![Products page with back to top button](static/docs/img/products-feature.png)
@@ -226,6 +231,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
   * Edit an existing product.
   * Delete an existing product.
   * Include images, either by URL, or by uploading directly from the superuser's computer.
+  * Include audio, by uploading directly from the superuser's computer.
 
 ![Admin functionality to create and update products](static/docs/img/crud-feature.png)
 
@@ -257,7 +263,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
   * Safely and securely buy the items in their shopping bag through Stripe.
   * &#128100; The shipping details will be filled from any details given in the user profile.
   * &#128100; The user can select the 'Remember my details' checkbox in the checkout form to save their latest details. This is helpful when:
-    * No details are saved in the user's profile.
+    * No details are currently saved in the user's profile, and the user wishes to save their details.
     * Any of the user's details have changed from what is saved in their profile.
 * The card details form is connected to Stripe, a payment platform. This ensures a fully secure payment.
 * When the user confirms checkout, an animated loading screen shows whilst the payment details are checked by Stripe.
@@ -271,7 +277,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
   * The user is shown a message that the payment failed.
 * If the payment succeeds:
   * The user will be sent a confirmation email.
-  * The email contains the order details and order number.
+  * The email contains the full order details and order number.
   * The user will be redirected to the checkout success page.
   * A message will display, informing the user that the payment succeeded, containing of the order details and order number.
   * &#128100; The order will be added to the user's order history in their profile.
@@ -288,6 +294,7 @@ The navigation bar changes depending on user status and screen size:
 | Home | &#9989; | &#9989; | &#9989; |
 | Products | &#9989; | &#9989; | &#9989; |
 | Product Details | &#9989; | &#9989; | &#9989; |
+| Contact Us | &#9989; | &#9989; | &#9989; |
 | Upcoming Gigs | &#9989; | &#9989; | &#9989; |
 | Product Management | &#10060; | &#10060; | &#9989; |
 | Profile | &#10060; | &#9989; | &#9989; |
@@ -330,6 +337,7 @@ The navigation bar changes depending on user status and screen size:
   * This allows users to keep up with when and where the band will be performing in the future.
   * The data has been formatted for ease of reading for the user.
   * The date data uses the [calendar](https://docs.python.org/3/library/calendar.html) Python module to get the day of the week that the gig falls on, as well as displaying the date in a user-friendly way.
+  * There is also a link to the Songkick webpage for each gig, which allows the user to purchase tickets for a specific gig.
 
 ![A gig shown on the Upcoming Gigs page, populated from the Songkick API](static/docs/img/gigs.png)
 
@@ -365,7 +373,7 @@ The navigation bar changes depending on user status and screen size:
 * Adding products to the bag
   * Custom validation has been added to ensure that users can't:
     * Add less than one of a product into their bag (such as adding a 0 quantity of a product).
-    * Add more than 99 of a product into their bag.
+    * Add more than 50 of a product into their bag.
 * Messages when an action is completed
   * A message will appear in the top right of the screen when the following actions are completed:
     * The user adds a product to their shopping bag.
@@ -381,8 +389,9 @@ The navigation bar changes depending on user status and screen size:
 * Default image
   * A default image will display if there is no image added.
   * A default image will display if the image link has broken.
-* Custom error pages - 404
+* Custom error pages
   * A custom 404 error page will show if the user attempts to visit a page that doesn't exist.
+  * A custom 500 error page will show if an internal server error occurs.
 * Webhooks
   * Webhooks form a notification system for every secure action on your site (most notably, payment intents).
   * Webhooks return an event object, containing all the relevant information about the action, including the type of action, and the data associated with it.
@@ -664,7 +673,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 ### Content
 
 * All content was created by [Abi Harrison](https://github.com/Abibubble).
-* [Click here to view links to all sites I used for research or testing](static/docs/LINKS.md)
+* [Click here to view links to all sites I used for research or testing](static/docs/LINKS.md).
 
 ### Media
 
@@ -677,10 +686,10 @@ This database uses a SQL database through PostgreSQL. They were originally built
 ### Acknowledgements
 
 * My mentor, Antonio Rodriguez, at [Code Institute](https://codeinstitute.net/), for continuous helpful feedback and support.
-* [Eve Crabb](https://github.com/evecrabb), for her support through my learning, for being a sounding board for bug fixes, and for being the best boss ever.
 * The team at [Code Institute](https://codeinstitute.net/), for teaching me the necessary skills to create this site.
-* My partner Conor Nye for his continuous support throughout my coding journey.
-* My bandmates in Lead Shot Hazard, for giving me the inspiration to create this site.
 * [Dave Horrocks](https://github.com/DaveyJH) for helping me understand the Django testing for this project, and for being incredibly patient with me through the process.
+* My partner Conor Nye for his continuous support throughout my coding journey.
+* [Eve Crabb](https://github.com/evecrabb), for her support through my learning.
+* My bandmates in Lead Shot Hazard, for giving me the inspiration to create this site.
 
 [Back to the top](#lead-shot-hazard)
