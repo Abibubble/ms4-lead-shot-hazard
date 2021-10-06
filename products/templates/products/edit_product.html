@@ -68,5 +68,10 @@
             var file = $('#js-new-image')[0].files[0];
             $('#js-filename').text(`Image will be set to: ${file.name}`);
         })
+
+        $('#js-new-audio').change(function() {
+            var file = $('#js-new-audio')[0].files[0];
+            $('#js-filename-audio').text(`Audio will be set to: ${file.name}`);
+        })
     </script>
 {% endblock %}

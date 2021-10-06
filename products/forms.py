@@ -1,5 +1,7 @@
 from django import forms
-from .widgets import CustomClearableFileInput
+from .widgets import (
+    CustomImageClearableFileInput,
+    CustomAudioClearableFileInput)
 from .models import Product, Category
 
 
@@ -10,7 +12,10 @@ class ProductForm(forms.ModelForm):
         fields = '__all__'
 
     image = forms.ImageField(
-        label='Image', required=False, widget=CustomClearableFileInput)
+        label='Image', required=False, widget=CustomImageClearableFileInput)
+
+    audio = forms.FileField(
+        label='Audio', required=False, widget=CustomAudioClearableFileInput)
 
     def __init__(self, *args, **kwargs):  # pragma: no cover
         super().__init__(*args, **kwargs)

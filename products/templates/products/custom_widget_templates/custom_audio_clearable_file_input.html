@@ -1,0 +1,19 @@
+{% if widget.is_initial %}
+    <p>{{ widget.initial_text }}:</p>
+    <audio controls controlsList="nodownload">
+        <source src="{{ widget.value.url }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    {% if not widget.required %}
+        <div class="custom-control custom-checkbox mt-2">
+            <input class="custom-control-input" type="checkbox" name="{{ widget.checkbox_name }}" id="{{ widget.checkbox_id }}">
+            <label class="custom-control-label text-danger" for="{{ widget.checkbox_id }}">{{ widget.clear_checkbox_label }}</label>
+        </div>
+    {% endif %}
+    <br>
+    {{ widget.input_text }}
+{% endif %}
+<span class="btn btn-black rounded-0 btn-file">
+    Select Audio <input id="js-new-audio" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+</span>
+<strong><p class="text-danger mt-2" id="js-filename-audio"></p></strong>
