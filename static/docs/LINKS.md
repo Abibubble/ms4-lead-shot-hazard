@@ -21,6 +21,7 @@ This file includes a list of all sites I have used for research or testing.
 * [Travis CI documentation](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml)
 * [Songkick API documentation](https://www.songkick.com/developer)
 * [Songkick API Help Group](https://groups.google.com/g/songkick-api)
+* [Validating file types for testing uploaded audio files](https://stackoverflow.com/questions/3648421/only-accept-a-certain-file-type-in-filefield-server-side)
 
 [Back to the top](#links)
 

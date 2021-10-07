@@ -218,8 +218,8 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
     * Price
     * Image
     * Description
-    * Sizes (if relevant)
     * Audio (if relevant)
+    * Sizes (if relevant)
   * Click the back to top arrow button to return to the top of the page.
 
 ![Products page with back to top button](static/docs/img/products-feature.png)
@@ -588,6 +588,10 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 [Songkick API](https://www.songkick.com/developer) was used to populate and auto-update the data of upcoming gigs for the band.
 
+#### python-magic
+
+[python-magic](https://pypi.org/project/python-magic/) was used to validate that the files being uploaded as audio are genuinely audio files, not just validating my file extension.
+
 [Back to the top](#lead-shot-hazard)
 
 ---
@@ -668,6 +672,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 * [Stack Overflow](https://stackoverflow.com/) has been used to help with deciphering the django error codes.
 * [Chris Anstey](https://github.com/ansteychris), a Digital Experience Lead at Google, for the discussion we had about Lighthouse vs WebPageTest.
 * I followed [this video from JustDjango](https://www.youtube.com/watch?v=NG48CLLsb1A) to add the Google social login functionality.
+* [This stackoverflow post](https://stackoverflow.com/questions/3648421/only-accept-a-certain-file-type-in-filefield-server-side) helped me validate that the audio files being uploaded are genuine audio files.
 * [Dave Horrocks](https://github.com/DaveyJH) helped me with working out the logic and syntax for the Songkick API data and the Django testing.
 
 ### Content
