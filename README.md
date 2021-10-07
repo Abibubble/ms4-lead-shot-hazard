@@ -370,6 +370,8 @@ The navigation bar changes depending on user status and screen size:
 * Form validation
   * This has been used on every form input on the site to ensure the correct data is added.
   * If incorrect data is added, red warning text appears, to instruct the user of how to fix the error.
+  * Image file uploads are validated by [Django's ImageField](https://docs.djangoproject.com/en/3.2/ref/models/fields/#imagefield), to ensure that the images that are uploaded are genuine images, and aren't malicious.
+  * Audio file uploads are validated by [python-magic](https://pypi.org/project/python-magic/), to ensure that the audio files that are uploaded are genuine audio files, and aren't malicious.
 * Adding products to the bag
   * Custom validation has been added to ensure that users can't:
     * Add less than one of a product into their bag (such as adding a 0 quantity of a product).
