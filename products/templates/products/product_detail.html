@@ -68,7 +68,7 @@
                             <div class="col">
                                 <details>
                                     <summary class="text-tag-dark">Click here to listen to the music on this album</summary>
-                                    {% if product.audio == "fires-" %}
+                                    {% if product.audio|truncatechars:6 == "fires-" %}
                                         <p class="text-tag-dark mb-1 mt-2">Jokers, Then Kings & Queens</p>
                                         <audio controls controlsList="nodownload">
                                             <source src="{{ MEDIA_URL }}{{ product.audio }}jokers.mp3" type="audio/mpeg">
@@ -129,7 +129,7 @@
                                             <source src="{{ MEDIA_URL }}{{ product.audio }}hell.mp3" type="audio/mpeg">
                                             Your browser does not support the audio element.
                                         </audio>
-                                    {% elif product.audio == "war-and-pieces-" %}
+                                    {% elif product.audio|truncatechars:14 == "war-and-pieces-" %}
                                         <p class="text-tag-dark mb-1 mt-2">Current State Of Play</p>
                                         <audio controls controlsList="nodownload">
                                             <source src="{{ MEDIA_URL }}{{ product.audio }}csop.mp3" type="audio/mpeg">
