@@ -1,7 +1,9 @@
+"""
+This module tests the models in the profiles app
+"""
+
 from django.test import TestCase, Client
 from django.contrib.auth.models import User
-
-from .models import UserProfile, create_or_update_user_profile
 
 
 class UserProfileTest(TestCase):
@@ -17,8 +19,10 @@ class UserProfileTest(TestCase):
         self.client.login(
             username='testuser', email='test@test.com', password='te12345st')
 
-    # Test retrieving the user profile
     def test_getting_user_profile(self):
+        """
+        Test retrieving the user profile
+        """
         self.client.login(username='testuser', password='te12345st')
         response = self.client.get('/profile/')
         self.assertEqual(response.status_code, 200)

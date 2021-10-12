@@ -1,8 +1,12 @@
+"""
+This module tests the models in the checkout app
+"""
+
 from django.test import TestCase
 from django.conf import settings
 
-from .models import Order, OrderLineItem
 from products.models import Product
+from .models import Order
 
 
 class TestOrderModels(TestCase):  # pragma: no cover
@@ -21,13 +25,17 @@ class TestOrderModels(TestCase):  # pragma: no cover
             street_address1='test'
         )
 
-    # Test string method for Order class
     def test_order_string_method_returns_order_number(self):
+        """
+        Test string method for Order class
+        """
         order_number = Order.objects.create(order_number='2000')
         self.assertEqual(str(order_number), '2000')
 
-    # Test that the checkout fields auto-fill from the user's information
     def test_checkout_details(self):
+        """
+        Test that the checkout fields auto-fill from the user's information
+        """
         order = Order.objects.get(id=1)
         self.assertEqual(order.full_name, 'tester test')
         self.assertEqual(order.email, 'test@example.com')
@@ -35,8 +43,10 @@ class TestOrderModels(TestCase):  # pragma: no cover
         self.assertEqual(order.country, 'GB')
         self.assertEqual(order.street_address1, 'test')
 
-    # Test that the order total is updated correctly
     def test_update_total(self):
+        """
+        Test that the order total is updated correctly
+        """
         sdp = settings.STANDARD_DELIVERY_PERCENTAGE
         order_total = 10
         if order_total < settings.FREE_DELIVERY_THRESHOLD:
@@ -63,8 +73,10 @@ class TestOrderLineItemModels(TestCase):
     Test that the order models work as expected
     """
 
-    # Test that the string method works for the OrderLineItem class
     def test_order_line_item_string_method(self):
+        """
+        Test that the string method works for the OrderLineItem class
+        """
         product = Product.objects.create(sku='pp200', price=2.99)
         order = Order.objects.create(order_number='2000')
         expected_output = 'SKU pp200 on order 2000'
