@@ -992,10 +992,20 @@ I tested my website using WebPageTest, and got these results:
 #### Chrome Desktop Screenshots
 
 ![Home page](testing/desktop/chrome/home.png)
+![Products page](testing/desktop/chrome/Products.png)
+![Order Confirmation page](testing/desktop/chrome/order-conf.png)
+![Order Success page](testing/desktop/chrome/order-success.png)
+![Toast](testing/desktop/chrome/toast.png)
+![Shopping Bag page](testing/desktop/chrome/bag.png)
+![Checkout page](testing/desktop/chrome/checkout.png)
+![Upcoming Gigs page](testing/desktop/chrome/gigs.png)
+![Contact Us page](testing/desktop/chrome/contact.png)
 ![Log In page](testing/desktop/chrome/log-in.png)
+![Log Out page](testing/desktop/chrome/log-out.png)
 ![Register page](testing/desktop/chrome/register.png)
 ![Add Merchandise page](testing/desktop/chrome/add-merch.png)
 ![Edit Merchandise page](testing/desktop/chrome/edit-merch.png)
+![Delete Merchandise modal](testing/desktop/chrome/delete-merch.png)
 
 [Back to the top](#testing-steps)
 
@@ -1003,11 +1013,21 @@ I tested my website using WebPageTest, and got these results:
 
 #### Edge Desktop Screenshots
 
-![Home page](testing/desktop/edge/home.jpeg)
-![Log In page](testing/desktop/edge/log-in.jpeg)
-![Register page](testing/desktop/edge/register.jpeg)
-![Add Merchandise page](testing/desktop/edge/add-merch.jpeg)
-![Edit Merchandise page](testing/desktop/edge/edit-merch.jpeg)
+![Home page](testing/desktop/edge/home.png)
+![Products page](testing/desktop/edge/Products.png)
+![Order Confirmation page](testing/desktop/edge/order-conf.png)
+![Order Success page](testing/desktop/edge/order-success.png)
+![Toast](testing/desktop/edge/toast.png)
+![Shopping Bag page](testing/desktop/edge/bag.png)
+![Checkout page](testing/desktop/edge/checkout.png)
+![Upcoming Gigs page](testing/desktop/edge/gigs.png)
+![Contact Us page](testing/desktop/edge/contact.png)
+![Log In page](testing/desktop/edge/log-in.png)
+![Log Out page](testing/desktop/edge/log-out.png)
+![Register page](testing/desktop/edge/register.png)
+![Add Merchandise page](testing/desktop/edge/add-merch.png)
+![Edit Merchandise page](testing/desktop/edge/edit-merch.png)
+![Delete Merchandise modal](testing/desktop/edge/delete-merch.png)
 
 [Back to the top](#testing-steps)
 
@@ -1016,10 +1036,20 @@ I tested my website using WebPageTest, and got these results:
 #### Mozilla Firefox Desktop Screenshots
 
 ![Home page](testing/desktop/moz/home.png)
+![Products page](testing/desktop/moz/Products.png)
+![Order Confirmation page](testing/desktop/moz/order-conf.png)
+![Order Success page](testing/desktop/moz/order-success.png)
+![Toast](testing/desktop/moz/toast.png)
+![Shopping Bag page](testing/desktop/moz/bag.png)
+![Checkout page](testing/desktop/moz/checkout.png)
+![Upcoming Gigs page](testing/desktop/moz/gigs.png)
+![Contact Us page](testing/desktop/moz/contact.png)
 ![Log In page](testing/desktop/moz/log-in.png)
+![Log Out page](testing/desktop/moz/log-out.png)
 ![Register page](testing/desktop/moz/register.png)
 ![Add Merchandise page](testing/desktop/moz/add-merch.png)
 ![Edit Merchandise page](testing/desktop/moz/edit-merch.png)
+![Delete Merchandise modal](testing/desktop/moz/delete-merch.png)
 
 [Back to the top](#testing-steps)
 
@@ -1028,10 +1058,20 @@ I tested my website using WebPageTest, and got these results:
 #### Safari Desktop Screenshots
 
 ![Home page](testing/desktop/safari/home.png)
+![Products page](testing/desktop/safari/Products.png)
+![Order Confirmation page](testing/desktop/safari/order-conf.png)
+![Order Success page](testing/desktop/safari/order-success.png)
+![Toast](testing/desktop/safari/toast.png)
+![Shopping Bag page](testing/desktop/safari/bag.png)
+![Checkout page](testing/desktop/safari/checkout.png)
+![Upcoming Gigs page](testing/desktop/safari/gigs.png)
+![Contact Us page](testing/desktop/safari/contact.png)
 ![Log In page](testing/desktop/safari/log-in.png)
+![Log Out page](testing/desktop/safari/log-out.png)
 ![Register page](testing/desktop/safari/register.png)
 ![Add Merchandise page](testing/desktop/safari/add-merch.png)
 ![Edit Merchandise page](testing/desktop/safari/edit-merch.png)
+![Delete Merchandise modal](testing/desktop/safari/delete-merch.png)
 
 [Back to the top](#testing-steps)
 
@@ -1041,12 +1081,21 @@ I tested my website using WebPageTest, and got these results:
 
 #### Safari Tablet Screenshots
 
-![Home page](testing/tablet/safari/home.jpg)
-![Log In page](testing/tablet/safari/log-in.jpg)
-![Register page](testing/tablet/safari/register.jpg)
-![Add Merchandise page](testing/tablet/safari/add-merch.jpg)
-![Edit Merchandise page](testing/tablet/safari/edit-merch.jpg)
-![Menu](testing/tablet/safari/menu.jpg)
+![Home page](testing/tablet/safari/home.png)
+![Products page](testing/tablet/safari/Products.png)
+![Order Confirmation page](testing/tablet/safari/order-conf.png)
+![Order Success page](testing/tablet/safari/order-success.png)
+![Toast](testing/tablet/safari/toast.png)
+![Shopping Bag page](testing/tablet/safari/bag.png)
+![Checkout page](testing/tablet/safari/checkout.png)
+![Upcoming Gigs page](testing/tablet/safari/gigs.png)
+![Contact Us page](testing/tablet/safari/contact.png)
+![Log In page](testing/tablet/safari/log-in.png)
+![Log Out page](testing/tablet/safari/log-out.png)
+![Register page](testing/tablet/safari/register.png)
+![Add Merchandise page](testing/tablet/safari/add-merch.png)
+![Edit Merchandise page](testing/tablet/safari/edit-merch.png)
+![Delete Merchandise modal](testing/tablet/safari/delete-merch.png)
 
 [Back to the top](#testing-steps)
 
@@ -1056,12 +1105,21 @@ I tested my website using WebPageTest, and got these results:
 
 #### Chrome Mobile Screenshots
 
-![Home page](testing/mobile/chrome/home.jpg)
-![Log In page](testing/mobile/chrome/log-in.jpg)
-![Register page](testing/mobile/chrome/register.jpg)
-![Add Merchandise page](testing/mobile/chrome/add-merch.jpg)
-![Edit Merchandise page](testing/mobile/chrome/edit-merch.jpg)
-![Navigation menu](testing/mobile/chrome/menu.jpg)
+![Home page](testing/mobile/chrome/home.png)
+![Products page](testing/mobile/chrome/Products.png)
+![Order Confirmation page](testing/mobile/chrome/order-conf.png)
+![Order Success page](testing/mobile/chrome/order-success.png)
+![Toast](testing/mobile/chrome/toast.png)
+![Shopping Bag page](testing/mobile/chrome/bag.png)
+![Checkout page](testing/mobile/chrome/checkout.png)
+![Upcoming Gigs page](testing/mobile/chrome/gigs.png)
+![Contact Us page](testing/mobile/chrome/contact.png)
+![Log In page](testing/mobile/chrome/log-in.png)
+![Log Out page](testing/mobile/chrome/log-out.png)
+![Register page](testing/mobile/chrome/register.png)
+![Add Merchandise page](testing/mobile/chrome/add-merch.png)
+![Edit Merchandise page](testing/mobile/chrome/edit-merch.png)
+![Delete Merchandise modal](testing/mobile/chrome/delete-merch.png)
 
 [Back to the top](#testing-steps)
 
@@ -1069,12 +1127,21 @@ I tested my website using WebPageTest, and got these results:
 
 #### Safari Mobile Screenshots
 
-![Home page](testing/mobile/safari/home.jpg)
-![Log In page](testing/mobile/safari/log-in.jpg)
-![Register page](testing/mobile/safari/register.jpg)
-![Add Merchandise page](testing/mobile/safari/add-merch.jpg)
-![Edit Merchandise page](testing/mobile/safari/edit-merch.jpg)
-![Navigation menu](testing/mobile/safari/menu.jpg)
+![Home page](testing/mobile/safari/home.png)
+![Products page](testing/mobile/safari/Products.png)
+![Order Confirmation page](testing/mobile/safari/order-conf.png)
+![Order Success page](testing/mobile/safari/order-success.png)
+![Toast](testing/mobile/safari/toast.png)
+![Shopping Bag page](testing/mobile/safari/bag.png)
+![Checkout page](testing/mobile/safari/checkout.png)
+![Upcoming Gigs page](testing/mobile/safari/gigs.png)
+![Contact Us page](testing/mobile/safari/contact.png)
+![Log In page](testing/mobile/safari/log-in.png)
+![Log Out page](testing/mobile/safari/log-out.png)
+![Register page](testing/mobile/safari/register.png)
+![Add Merchandise page](testing/mobile/safari/add-merch.png)
+![Edit Merchandise page](testing/mobile/safari/edit-merch.png)
+![Delete Merchandise modal](testing/mobile/safari/delete-merch.png)
 
 [Back to the top](#testing-steps)
 
@@ -1082,11 +1149,20 @@ I tested my website using WebPageTest, and got these results:
 
 #### Samsung Internet Mobile Screenshots
 
-![Home page](testing/mobile/samsung/home.jpg)
-![Log In page](testing/mobile/samsung/log-in.jpg)
-![Register page](testing/mobile/samsung/register.jpg)
-![Add Merchandise page](testing/mobile/samsung/add-merch.jpg)
-![Edit Merchandise page](testing/mobile/samsung/edit-merch.jpg)
-![Navigation menu](testing/mobile/samsung/menu.jpg)
+![Home page](testing/mobile/samsung/home.png)
+![Products page](testing/mobile/samsung/Products.png)
+![Order Confirmation page](testing/mobile/samsung/order-conf.png)
+![Order Success page](testing/mobile/samsung/order-success.png)
+![Toast](testing/mobile/samsung/toast.png)
+![Shopping Bag page](testing/mobile/samsung/bag.png)
+![Checkout page](testing/mobile/samsung/checkout.png)
+![Upcoming Gigs page](testing/mobile/samsung/gigs.png)
+![Contact Us page](testing/mobile/samsung/contact.png)
+![Log In page](testing/mobile/samsung/log-in.png)
+![Log Out page](testing/mobile/samsung/log-out.png)
+![Register page](testing/mobile/samsung/register.png)
+![Add Merchandise page](testing/mobile/samsung/add-merch.png)
+![Edit Merchandise page](testing/mobile/samsung/edit-merch.png)
+![Delete Merchandise modal](testing/mobile/samsung/delete-merch.png)
 
 [Back to the top](#testing-steps)
