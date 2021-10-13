@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for checkout/views.py: 27%</title>
+    <title>Coverage for checkout/views.py: 46%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>checkout/views.py</b> :
-            <span class="pc_cov">27%</span>
+            <span class="pc_cov">46%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             81 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">22 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">59 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">37 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">44 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">9 excluded</button>
         </h2>
     </div>
@@ -156,19 +156,19 @@
     <p id="t102" class="pln"><span class="n"><a href="#t102">102</a></span><span class="t">                <span class="nam">request</span><span class="op">,</span> <span class="str">"There's nothing in your bag at the moment."</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t103" class="run"><span class="n"><a href="#t103">103</a></span><span class="t">            <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">reverse</span><span class="op">(</span><span class="str">'products'</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t104" class="pln"><span class="n"><a href="#t104">104</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t105" class="mis show_mis"><span class="n"><a href="#t105">105</a></span><span class="t">        <span class="nam">current_bag</span> <span class="op">=</span> <span class="nam">bag_contents</span><span class="op">(</span><span class="nam">request</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t106" class="mis show_mis"><span class="n"><a href="#t106">106</a></span><span class="t">        <span class="nam">total</span> <span class="op">=</span> <span class="nam">current_bag</span><span class="op">[</span><span class="str">'grand_total'</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t107" class="mis show_mis"><span class="n"><a href="#t107">107</a></span><span class="t">        <span class="nam">stripe_total</span> <span class="op">=</span> <span class="nam">round</span><span class="op">(</span><span class="nam">total</span> <span class="op">*</span> <span class="num">100</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t108" class="mis show_mis"><span class="n"><a href="#t108">108</a></span><span class="t">        <span class="nam">stripe</span><span class="op">.</span><span class="nam">api_key</span> <span class="op">=</span> <span class="nam">stripe_secret_key</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t109" class="mis show_mis"><span class="n"><a href="#t109">109</a></span><span class="t">        <span class="nam">intent</span> <span class="op">=</span> <span class="nam">stripe</span><span class="op">.</span><span class="nam">PaymentIntent</span><span class="op">.</span><span class="nam">create</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t105" class="run"><span class="n"><a href="#t105">105</a></span><span class="t">        <span class="nam">current_bag</span> <span class="op">=</span> <span class="nam">bag_contents</span><span class="op">(</span><span class="nam">request</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t106" class="run"><span class="n"><a href="#t106">106</a></span><span class="t">        <span class="nam">total</span> <span class="op">=</span> <span class="nam">current_bag</span><span class="op">[</span><span class="str">'grand_total'</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t107" class="run"><span class="n"><a href="#t107">107</a></span><span class="t">        <span class="nam">stripe_total</span> <span class="op">=</span> <span class="nam">round</span><span class="op">(</span><span class="nam">total</span> <span class="op">*</span> <span class="num">100</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t108" class="run"><span class="n"><a href="#t108">108</a></span><span class="t">        <span class="nam">stripe</span><span class="op">.</span><span class="nam">api_key</span> <span class="op">=</span> <span class="nam">stripe_secret_key</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t109" class="run"><span class="n"><a href="#t109">109</a></span><span class="t">        <span class="nam">intent</span> <span class="op">=</span> <span class="nam">stripe</span><span class="op">.</span><span class="nam">PaymentIntent</span><span class="op">.</span><span class="nam">create</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p id="t110" class="pln"><span class="n"><a href="#t110">110</a></span><span class="t">            <span class="nam">amount</span><span class="op">=</span><span class="nam">stripe_total</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t111" class="pln"><span class="n"><a href="#t111">111</a></span><span class="t">            <span class="nam">currency</span><span class="op">=</span><span class="nam">settings</span><span class="op">.</span><span class="nam">STRIPE_CURRENCY</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t112" class="pln"><span class="n"><a href="#t112">112</a></span><span class="t">        <span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t113" class="pln"><span class="n"><a href="#t113">113</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t114" class="mis show_mis"><span class="n"><a href="#t114">114</a></span><span class="t">        <span class="key">if</span> <span class="nam">request</span><span class="op">.</span><span class="nam">user</span><span class="op">.</span><span class="nam">is_authenticated</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t115" class="mis show_mis"><span class="n"><a href="#t115">115</a></span><span class="t">            <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t116" class="mis show_mis"><span class="n"><a href="#t116">116</a></span><span class="t">                <span class="nam">profile</span> <span class="op">=</span> <span class="nam">UserProfile</span><span class="op">.</span><span class="nam">objects</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="nam">user</span><span class="op">=</span><span class="nam">request</span><span class="op">.</span><span class="nam">user</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t117" class="mis show_mis"><span class="n"><a href="#t117">117</a></span><span class="t">                <span class="nam">order_form</span> <span class="op">=</span> <span class="nam">OrderForm</span><span class="op">(</span><span class="nam">initial</span><span class="op">=</span><span class="op">{</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t114" class="run"><span class="n"><a href="#t114">114</a></span><span class="t">        <span class="key">if</span> <span class="nam">request</span><span class="op">.</span><span class="nam">user</span><span class="op">.</span><span class="nam">is_authenticated</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t115" class="run"><span class="n"><a href="#t115">115</a></span><span class="t">            <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t116" class="run"><span class="n"><a href="#t116">116</a></span><span class="t">                <span class="nam">profile</span> <span class="op">=</span> <span class="nam">UserProfile</span><span class="op">.</span><span class="nam">objects</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="nam">user</span><span class="op">=</span><span class="nam">request</span><span class="op">.</span><span class="nam">user</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t117" class="run"><span class="n"><a href="#t117">117</a></span><span class="t">                <span class="nam">order_form</span> <span class="op">=</span> <span class="nam">OrderForm</span><span class="op">(</span><span class="nam">initial</span><span class="op">=</span><span class="op">{</span>&nbsp;</span><span class="r"></span></p>
     <p id="t118" class="pln"><span class="n"><a href="#t118">118</a></span><span class="t">                    <span class="str">'full_name'</span><span class="op">:</span> <span class="nam">profile</span><span class="op">.</span><span class="nam">user</span><span class="op">.</span><span class="nam">get_full_name</span><span class="op">(</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t119" class="pln"><span class="n"><a href="#t119">119</a></span><span class="t">                    <span class="str">'email'</span><span class="op">:</span> <span class="nam">profile</span><span class="op">.</span><span class="nam">user</span><span class="op">.</span><span class="nam">email</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t120" class="pln"><span class="n"><a href="#t120">120</a></span><span class="t">                    <span class="str">'phone_number'</span><span class="op">:</span> <span class="nam">profile</span><span class="op">.</span><span class="nam">default_phone_number</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
@@ -182,19 +182,19 @@
     <p id="t128" class="mis show_mis"><span class="n"><a href="#t128">128</a></span><span class="t">            <span class="key">except</span> <span class="nam">UserProfile</span><span class="op">.</span><span class="nam">DoesNotExist</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t129" class="mis show_mis"><span class="n"><a href="#t129">129</a></span><span class="t">                <span class="nam">order_form</span> <span class="op">=</span> <span class="nam">OrderForm</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t130" class="pln"><span class="n"><a href="#t130">130</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t131" class="mis show_mis"><span class="n"><a href="#t131">131</a></span><span class="t">            <span class="nam">order_form</span> <span class="op">=</span> <span class="nam">OrderForm</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t131" class="run"><span class="n"><a href="#t131">131</a></span><span class="t">            <span class="nam">order_form</span> <span class="op">=</span> <span class="nam">OrderForm</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t132" class="pln"><span class="n"><a href="#t132">132</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t133" class="mis show_mis"><span class="n"><a href="#t133">133</a></span><span class="t">    <span class="key">if</span> <span class="key">not</span> <span class="nam">stripe_public_key</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t134" class="mis show_mis"><span class="n"><a href="#t134">134</a></span><span class="t">        <span class="nam">messages</span><span class="op">.</span><span class="nam">warning</span><span class="op">(</span><span class="nam">request</span><span class="op">,</span> <span class="str">'Stripe public key is missing.'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t133" class="run"><span class="n"><a href="#t133">133</a></span><span class="t">    <span class="key">if</span> <span class="key">not</span> <span class="nam">stripe_public_key</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t134" class="run"><span class="n"><a href="#t134">134</a></span><span class="t">        <span class="nam">messages</span><span class="op">.</span><span class="nam">warning</span><span class="op">(</span><span class="nam">request</span><span class="op">,</span> <span class="str">'Stripe public key is missing.'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t135" class="pln"><span class="n"><a href="#t135">135</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t136" class="mis show_mis"><span class="n"><a href="#t136">136</a></span><span class="t">    <span class="nam">template</span> <span class="op">=</span> <span class="str">'checkout/checkout.html'</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t137" class="mis show_mis"><span class="n"><a href="#t137">137</a></span><span class="t">    <span class="nam">context</span> <span class="op">=</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t136" class="run"><span class="n"><a href="#t136">136</a></span><span class="t">    <span class="nam">template</span> <span class="op">=</span> <span class="str">'checkout/checkout.html'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t137" class="run"><span class="n"><a href="#t137">137</a></span><span class="t">    <span class="nam">context</span> <span class="op">=</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
     <p id="t138" class="pln"><span class="n"><a href="#t138">138</a></span><span class="t">        <span class="str">'order_form'</span><span class="op">:</span> <span class="nam">order_form</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t139" class="pln"><span class="n"><a href="#t139">139</a></span><span class="t">        <span class="str">'stripe_public_key'</span><span class="op">:</span> <span class="nam">stripe_public_key</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t140" class="pln"><span class="n"><a href="#t140">140</a></span><span class="t">        <span class="str">'client_secret'</span><span class="op">:</span> <span class="nam">intent</span><span class="op">.</span><span class="nam">client_secret</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t141" class="pln"><span class="n"><a href="#t141">141</a></span><span class="t">    <span class="op">}</span>&nbsp;</span><span class="r"></span></p>
     <p id="t142" class="pln"><span class="n"><a href="#t142">142</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t143" class="mis show_mis"><span class="n"><a href="#t143">143</a></span><span class="t">    <span class="key">return</span> <span class="nam">render</span><span class="op">(</span><span class="nam">request</span><span class="op">,</span> <span class="nam">template</span><span class="op">,</span> <span class="nam">context</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t143" class="run"><span class="n"><a href="#t143">143</a></span><span class="t">    <span class="key">return</span> <span class="nam">render</span><span class="op">(</span><span class="nam">request</span><span class="op">,</span> <span class="nam">template</span><span class="op">,</span> <span class="nam">context</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t144" class="pln"><span class="n"><a href="#t144">144</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t145" class="pln"><span class="n"><a href="#t145">145</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t146" class="run"><span class="n"><a href="#t146">146</a></span><span class="t"><span class="key">def</span> <span class="nam">checkout_success</span><span class="op">(</span><span class="nam">request</span><span class="op">,</span> <span class="nam">order_number</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -243,7 +243,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-10-04 14:47 +0000
+            created at 2021-10-13 15:26 +0000
         </p>
     </div>
 </div>
