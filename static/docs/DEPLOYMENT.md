@@ -96,7 +96,7 @@ To find the values of each key:
 * STRIPE_SECRET_KEY: On the Stripe Dashboard in the Developer's API section - Secret key.
 * STRIPE_WH_SECRET: In the Developer's Webhooks section after creating an endpoint for your webhook - Signing secret.
 * EMAIL_HOST_USER: Your email address or username. [See below for instructions](#email-setup).
-* EMAIL_HOST_PASS: Your pass code from your email client. [See below for instructions](#email-setup).
+* EMAIL_HOST_PASS: Your passcode from your email client. [See below for instructions](#email-setup).
 * AWS_SECRET_ACCESS_KEY: From the CSV file that you download having created a User in Amazon AWS S3. [See below for instructions](#amazon-aws).
 * AWS_ACCESS_KEY_ID: From the CSV file that you download having created a User in Amazon AWS S3. [See below for instructions](#amazon-aws).
 * SONGKICK_API_KEY: [Apply for a Songkick API key here](https://www.songkick.com/api_key_requests/new).
@@ -116,17 +116,17 @@ This site was deployed to Heroku by following these steps:
 3. Login or sign up to [Heroku](https://www.heroku.com).
 4. Select '**Create New App**' in the top right of your dashboard.
 5. Choose a unique app name, and select the region closest to you, before clicking '**Create App**'.
-6. Go to the '**Deploy**' tab, find '**Deployment Method**' and select '**GitHub**'.
+6. Go to the '**Deploy**' tab, find '**Deployment Method**', and select '**GitHub**'.
 7. Search to find your GitHub repository, and click '**Connect**'. Don't enable automatic deployment yet, as this can cause errors.
 8. Go to the '**Settings**' tab, find '**Config Vars**', and click '**Reveal Config Vars**'.
-9. Enter key value pairs that match those in your project files, as shown above in [Environment Variables](#environment-variables).
+9. Enter key-value pairs that match those in your project files, as shown above in [Environment Variables](#environment-variables).
 10. In Heroku, go to the '**Resources**' tab, and add on '**Heroku Postgres**' with the free plan.
 11. Make migrations to start using PostgreSQL by running `python3 manage.py makemigrations` then `python3 manage.py migrate`.
 12. If it returns `django.db.utils.OperationalError: FATAL: role "xxxxxxxx" does not exist`, then run `unset PGHOSTADDR` in your terminal and run the commands in step 11 again.
 13. Load the category and product fixtures by running `python3 manage.py loaddata categories`, then `python3 manage.py loaddata products`.
 14. Create a superuser to access the Django admin panel by running `python3 manage.py createsuperuser` then following the instructions in the terminal.
 15. Remove the DATABASE_URL from your environment variables or env.py file.
-16. Install the Heroku CLI and login using either `heroku login` or `heroku login -i`.
+16. Install the Heroku CLI and log in using either `heroku login` or `heroku login -i`.
 17. Run `heroku config:set DISABLE_COLLECTSTATIC=1 --app ms4-lead-shot-hazard`.
 18. Run `git add .`, `git commit -m "Your commit message here"`, `git push`.
 19. Add the hostname of your Heroku app to '**ALLOWED HOSTS**' in your settings.py file. This can be found in Heroku Settings > App Name.
@@ -282,7 +282,7 @@ Before beginning these steps, go to `settings.py` and change the `DEFAULT_FROM_E
 5. Verify using your preferred method, and then turn on 2-step verification.
 6. Go back to '**Security**', '**Signing in to Google**', then go to '**App Passwords**'.
 7. Enter your password again if prompted, then set '**App**' to `Mail`, '**Device**' to `Other`, and type in `Django`.
-8. Copy and paste the pass code that shows up, this is your '**EMAIL_HOST_PASS**' variable.
+8. Copy and paste the passcode that shows up, this is your '**EMAIL_HOST_PASS**' variable.
 
 ### Outlook
 
@@ -298,10 +298,10 @@ Before beginning these steps, go to `settings.py` and change the `DEFAULT_FROM_E
 
 To set this up, I followed [this tutorial on YouTube by JustDjango](https://www.youtube.com/watch?v=NG48CLLsb1A). The basic steps are below.
 
-1. Go to [Google Console](https://console.cloud.google.com/), go to '**APIs**', then '**Credentials**' and set up credientials for your Google app.
+1. Go to [Google Console](https://console.cloud.google.com/), go to '**APIs**', then '**Credentials**' and set up credentials for your Google app.
 2. You want to create a new '**OAuth 2.0 Client ID**'.
 3. Give it a relevant name for your project.
-4. Under '**Authorised JavaScript origins**', enter your local host domain, and your live site domain, with no `/` at the end.
+4. Under '**Authorised JavaScript origins**', enter your localhost domain, and your live site domain, with no `/` at the end.
 5. Under '**Authorised redirect URIs**', enter the same domains as above, and add `/accounts/google/login/callback/` to the end of them.
 6. Click '**Save**'.
 7. Go into this newly created '**Client ID**', and to the right, you'll see your **Client ID** number and your **Client Secret**.

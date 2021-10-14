@@ -1,6 +1,6 @@
 # Links
 
-This file includes a list of all sites I have used for research or testing.
+This file includes a list of all the sites that I have used for research or testing.
 
 [Click here to return to the main README file](README.md)
 
@@ -19,6 +19,8 @@ This file includes a list of all sites I have used for research or testing.
 * [Github Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
 * [Size Matters - Medium](https://medium.com/@zacdicko/size-matters-accessibility-and-touch-targets-56e942adc0cc)
 * [Travis CI documentation](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml)
+* [Penn State University Accessibility and Usability Guidelines](https://accessibility.psu.edu/fontsizehtml/)
+* [WCAG Guidelines on fonts](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html)
 * [Songkick API documentation](https://www.songkick.com/developer)
 * [Songkick API Help Group](https://groups.google.com/g/songkick-api)
 * [Validating file types for testing uploaded audio files](https://stackoverflow.com/questions/3648421/only-accept-a-certain-file-type-in-filefield-server-side)
