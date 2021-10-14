@@ -14,7 +14,7 @@ This site is a merchandise and music e-commerce site for the band Lead Shot Haza
 
 This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Django, and it uses a SQL database through PostgreSQL.
 
-![Final project mock up screenshot from Am I Responsive](media/finalsite.png)
+![Final project mockup screenshot from Am I Responsive](media/finalsite.png)
 
 ## Contents
 
@@ -82,7 +82,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 
 ### Initial Discussion
 
-* I wanted to create a website linked to a database, which allows users to login, search for and find merchandise and music.
+* I wanted to create a website linked to a database, which allows users to log in, search for, and find merchandise and music.
 * This is something that Lead Shot Hazard has been discussing for a while, but hasn't had time to create until now.
 * I wanted the band to be able to add, edit and delete items of merchandise and music for sale.
 
@@ -93,7 +93,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 ||| **Overall** ||
 | A1 | Band member | Sell merchandise and music | Have an online form of income |
 | A2 | Band member | Match the design and personality of the band with that of the site | Easily show fans that this site is linked to the band |
-| A3 | Band member | Offer a website that is easy to navigate and free of confusion | Avoid stress of fans needing more assistance than necessary |
+| A3 | Band member | Offer a website that is easy to navigate and free of confusion | Avoid the stress of fans needing more assistance than necessary |
 | A4 | Band member | Have another source of revenue for the band | Spend more time making music |
 | A5 | Band member | Have a platform where fans can follow the future gigs of the band | Ensure our fans know when and where our upcoming gigs are |
 ||| **Viewing & Navigation** ||
@@ -101,7 +101,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 | B2 | Shopper | View all products | Choose some to buy |
 | B3 | Shopper | Search for a specific product and its information | Find the item that I want |
 | B4 | Shopper | View a specific type of product | Quickly find items I'm interested in |
-| B5 | Shopper | View full product information | See the details of a specific product including price, description, image and sizes |
+| B5 | Shopper | View full product information | See the details of a specific product including price, description, image, and sizes |
 | B6 | Shopper | Easily see my bag total | Stick to a budget |
 | B7 | Shopper | Get visual feedback when an action on the site is completed | Easily see when an action has been completed |
 | B9 | Shopper | Contact the band through the website | Ask questions |
@@ -116,10 +116,11 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 | D1 | Shopper | Sort the available products | Sort alphabetically or by price |
 | D2 | Shopper | Sort a category of products | Sort relevant products alphabetically or by price |
 | D3 | Shopper | Search for a specific product by name or description | Quickly find items I'm interested in |
-| D4 | Shopper | Easily see what I've searched, and total number of results | Decide whether the product I'm looking for is available |
+| D4 | Shopper | View a specific type of product | Quickly find items I'm interested in |
+| D5 | Shopper | Easily see what I've searched, and the total number of results | Decide whether the product I'm looking for is available |
 ||| **Purchasing & Checkout** ||
 | E1 | Shopper | Buy products online as a guest | Checkout without having to create an account |
-| E2 | Shopper | Easily add, update the quantity, or delete products in my bag | Adjust my purchase to fit budget or personal choice |
+| E2 | Shopper | Easily add, update the quantity, or delete products in my bag | Adjust my purchase to fit my budget or personal choice |
 | E5 | Shopper | Receive an update of the shopping bag when I perform an action | Be aware of the status of my shopping bag |
 | E4 | Shopper | View details about items in my bag | Decide if I want to purchase an item |
 | E4 | Shopper | Revisit my shopping bag after logging out and in | Continue my purchase |
@@ -129,12 +130,10 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 | F1 | Site Owner | Edit any product | Update details of products |
 | F2 | Site Owner | Delete any product | Remove old products from the site |
 | F3 | Site Owner | Add a new product | Add new products to the site |
-| F4 | Site Owner | Create a stock of products to be sold online | Keep the site's in stock products up to date |
 ||| **Authentication & Security** ||
-| G1 | Site User | Recover my password | Regain access to my account |
-| G2 | Site User | Verify my email address | Ensure my account is set up securely |
-| G3 | Site User | Be confident that my password is stored securely | Feel safe from malicious activity |
-| G4 | Site Owner | Be confident of the security of the restricted pages | Feel safe from malicious activity |
+| G1 | Site User | Verify my email address | Ensure my account is set up securely |
+| G2 | Site User | Be confident that my password is stored securely | Feel safe from malicious activity |
+| G3 | Site Owner | Be confident of the security of the restricted pages | Feel safe from malicious activity |
 
 ### Project Goals
 
@@ -154,7 +153,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 * These colors were used by the band to signify the ray of hope for a society that needs help, which is a popular ideology in the punk scene, and links with the band's song lyrics.
 * A slightly dark red has been used for all Delete buttons, to signify that this is a destructive action.
 * Two grey colors have been used for tags on the site, one slightly darker than the other to maintain AAA color contrast compliance.
-* Different colors have also been used on the hover state of the social media icons in the Contact Us page.
+* Different colors have also been used on the hover state of the social media icons on the Contact Us page.
 * The social media icon colors have been taken directly from each external website's logo, to reference where the link would take them.
 
 ![Color scheme](static/docs/img/colors.png)
@@ -163,10 +162,11 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 
 * For the font, I decided to stick with the standard HTML font family. As they're sans-serif fonts, they are easy to read for dyslexic and partially visually impaired users.
 * As the standard HTML font size is 16px, I kept it at that, ensuring to not have any fonts smaller than that, to aid visually impaired users.
-* The recommended smallest font size for accessible websites is 12px, so I kept all font sizes above that.
+* Also, the recommended smallest font size for accessible websites is 12px, so by keeping all font sizes at the HTML standard of 16px or above, I ensured to be fully compliant with the [Penn State University Accessibility and Usability Guidelines](https://accessibility.psu.edu/fontsizehtml/).
+* Font sizes are also able to be zoomed to 200% without losing contrast or functionality, to comply with the [WCAG Guidelines on fonts](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html).
 * A lot of the text on the website, including all headers and buttons, has been transformed to uppercase, to link with the strong and bold feel of the site.
-* Lowercase text has been used in some places to avoid the site feeling aggressive.
 * This also connects the site to the band's logos, which all use uppercase text.
+* Lowercase text has been used in some places to avoid the site feeling aggressive.
 
 ![An example of the font used](static/docs/img/fonts.png)
 
@@ -174,7 +174,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 
 * The images used in this project are all photos of the band Lead Shot Hazard, their merchandise, or their logo.
 * These have been used to create a strong link between the band and the website, ensuring that all visitors can tell at first glance that this site is for Lead Shot Hazard.
-* As I am a member of Lead Shot Hazard, I own joint rights to use all images and designs that the band have created.
+* As I am a member of Lead Shot Hazard, I own joint rights to use all images and designs that the band has created.
 * No box shadows or gradients have been used, to link with the styling of the Lead Shot Hazard graphics, which use strong, bold colors with harsh lines.
 * All links have their underlines removed for stylistic purposes. The links in the footer re-gain their underlines when they're hovered over or focused on.
 * All interactable objects have hover and focus styles applied to make it clear to the user that those objects are interactable.
@@ -183,7 +183,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 
 ### Wireframes
 
-* [Wireframes for desktop, mobile and tablet for this project](static/docs/wireframes.pdf).
+* [Wireframes for desktop, mobile, and tablet for this project](static/docs/wireframes.pdf).
 * [Database schema for this project](static/docs/database.pdf).
 
 ### Features
@@ -191,11 +191,11 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 #### Create a user profile
 
 * This feature allows the user to:
-  * Register for an account with email address, username and password.
+  * Register for an account with an email address, username, and password.
   * Ensure no typos by entering the password twice, with the site checking to confirm that the passwords match.
   * Ensure no typos by entering the email twice, with the site checking to confirm that the emails match.
   * Ensure the correct email address by sending a verification email to the email address the user has supplied.
-  * &#128100; Store their details for a faster checkout.
+  * &#128100; Store their details for faster checkout.
   * &#128100; Keep a record of their full order history.
 
 ![User's profile, including details update form and order history](static/docs/img/profile-feature.png)
@@ -230,7 +230,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
   * Add a new product to the store.
   * Edit an existing product.
   * Delete an existing product.
-  * Include images, either by URL, or by uploading directly from the superuser's computer.
+  * Include images, either by URL or by uploading directly from the superuser's computer.
   * Include audio, by uploading directly from the superuser's computer.
 
 ![Admin functionality to create and update products](static/docs/img/crud-feature.png)
@@ -259,7 +259,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
 #### Checkout
 
 * This feature allows the user to:
-  * Checkout as a guest.
+  * Check out as a guest.
   * Safely and securely buy the items in their shopping bag through Stripe.
   * &#128100; The shipping details will be filled from any details given in the user profile.
   * &#128100; The user can select the 'Remember my details' checkbox in the checkout form to save their latest details. This is helpful when:
@@ -279,7 +279,7 @@ This site was built using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Djan
   * The user will be sent a confirmation email.
   * The email contains the full order details and order number.
   * The user will be redirected to the checkout success page.
-  * A message will display, informing the user that the payment succeeded, containing of the order details and order number.
+  * A message will display, informing the user that the payment succeeded, containing the order details and order number.
   * &#128100; The order will be added to the user's order history in their profile.
 
 ![Stripe's card information form, with a validation error showing](static/docs/img/payment-feature.png)
@@ -352,24 +352,24 @@ The navigation bar changes depending on user status and screen size:
 
 ### Future Features
 
+* Stock count for each product size, including out-of-stock sizes.
 * Add to bag button is disabled if the product is out of stock.
 * Recommended products at the bottom of the checkout page.
-* Retrieve or re-set a forgotten password.
-* Stock count for each product size, including out of stock sizes.
-* Social media login via Facebook
-* Special offers
+* Retrieve or reset a forgotten password.
+* Social media login via Facebook.
+* Special offers.
 
 ### Audio
 
 * All audio is owned by the band Lead Shot Hazard.
 * As I am a member of Lead Shot Hazard, I own joint rights to use all audio that the band has created.
-* The audio that is available on the individual product details pages has been trimmed down to approximately 30 seconds, to allow the user to hear a sample of the band's music, without being able to listen to the entire songs for free.
+* The audio that is available on the individual product details pages has been trimmed down to approximately 30 seconds, to allow the user to hear a sample of the band's music, without being able to listen to the entire song for free.
 
 ### Defensive Design
 
 * Form validation
   * This has been used on every form input on the site to ensure the correct data is added.
-  * If incorrect data is added, red warning text appears, to instruct the user of how to fix the error.
+  * If incorrect data is added, red warning text appears, to instruct the user on how to fix the error.
   * Image file uploads are validated by [Django's ImageField](https://docs.djangoproject.com/en/3.2/ref/models/fields/#imagefield), to ensure that the images that are uploaded are genuine images, and aren't malicious.
   * Audio file uploads are validated by [python-magic](https://pypi.org/project/python-magic/), to ensure that the audio files that are uploaded are genuine audio files, and aren't malicious.
 * Adding products to the bag
@@ -397,7 +397,7 @@ The navigation bar changes depending on user status and screen size:
 * Webhooks
   * Webhooks form a notification system for every secure action on your site (most notably, payment intents).
   * Webhooks return an event object, containing all the relevant information about the action, including the type of action, and the data associated with it.
-  * If the user leaves the page before the order is complete but the payment goes through, the billing details and shipping address will be sent with the payment, and can be accessed via the webhooks.
+  * If the user leaves the page before the order is complete but the payment goes through, the billing details and shipping address will be sent with the payment and can be accessed via the webhooks.
 
 [Back to the top](#lead-shot-hazard)
 
@@ -525,7 +525,8 @@ This database uses a SQL database through PostgreSQL. They were originally built
 | Stripe | Secure Payment Services |
 | Boto3 | AWS Management |
 | django-storages | Custom Storage Backends |
-| django-countries | Django Countries |
+| django-countries | Country Form Field |
+| python-magic | Audio Form Field |
 | gunicorn | WSGI HTTP Server |
 | django-crispy-forms | Front End Form Rendering |
 | dj-database-url | Database Configuration |
@@ -544,7 +545,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 [Amazon AWS S3](https://s3.console.aws.amazon.com/s3) was used to host this project's images and static files.
 
-### Frameworks, Libraries and Others
+### Frameworks, Libraries, and Others
 
 #### Google DevTools
 
@@ -552,11 +553,11 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 #### Lighthouse
 
-[Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to ensure that the code was as performant as possible, confirming to best practices, and SEO and Accessibility guidelines.
+[Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to ensure that the code was as performant as possible, conforming to best practices, and SEO and Accessibility guidelines.
 
 #### WebPageTest
 
-[WebPageTest](https://www.webpagetest.org/) was used to ensure that the code was as performant as possible, confirming to best practices, and SEO and Accessibility guidelines. As it is often more reliable than Lighthouse, this was used near the end of the project to fix any remaining issues.
+[WebPageTest](https://www.webpagetest.org/) was used to ensure that the code was as performant as possible, conforming to best practices, and SEO and Accessibility guidelines. As it is often more reliable than Lighthouse, this was used near the end of the project to fix any remaining issues.
 
 #### Flask
 
@@ -580,11 +581,11 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 #### pip
 
-[pip](https://pip.pypa.io/en/stable/) was used to install the required dependancies for this site.
+[pip](https://pip.pypa.io/en/stable/) was used to install the required dependencies for this site.
 
 #### Slack
 
-[Slack](https://slack.com/intl/en-gb/) was used to communicate with the [Code Institute](https://codeinstitute.net/) community for help and support with bug fixes, and for a peer code review.
+[Slack](https://slack.com/intl/en-gb/) was used to communicate with the [Code Institute](https://codeinstitute.net/) community for help and support with bug fixes, and a peer code review.
 
 #### Songkick API
 
@@ -615,8 +616,8 @@ This database uses a SQL database through PostgreSQL. They were originally built
 1. No images are being displayed.
     * I checked my `MEDIA_URL` and `MEDIA_ROOT` in `settings.py` were defined.
     * I looked through the HTML and the project app's `urls.py` for any discrepancies.
-    * I searched on the Code Institute Slack channels and on Stack Overflow for anyone who had a similar issue, but didn't find anything.
-    * I then asked on Slack, and was prompted to check my use of a tuple in the `settings.py` file.
+    * I searched on the Code Institute Slack channels and Stack Overflow for anyone who had a similar issue but didn't find anything.
+    * I then asked on Slack and was prompted to check my use of a tuple in the `settings.py` file.
     * I had set `MEDIA_ROOT = (os.path.join(BASE_DIR, 'media'),)` instead of `MEDIA_ROOT = os.path.join(BASE_DIR, 'media')`.
     * I changed this, which fixed this bug.
 2. The Stripe card section of the checkout form wasn't appearing.
@@ -624,30 +625,30 @@ This database uses a SQL database through PostgreSQL. They were originally built
     * I checked through my environment variables, to ensure no variables were missing.
     * I re-set my `STRIPE_WH_SECRET` variable to ensure that it was set correctly.
     * I re-started my Gitpod workspace for the new `STRIPE_WH_SECRET` variable to take effect.
-    * Finally, I double checked my file paths to ensure my script file was being accessed correctly.
-    * I had accidently created my `js` file inside my `css` file, so I moved it into the `static` file, which fixed this bug.
+    * Finally, I double-checked my file paths to ensure my script file was being accessed correctly.
+    * I had accidentally created my `js` file inside my `css` file, so I moved it into the `static` file, which fixed this bug.
 3. `OperationalError at /accounts/login/ no such column: profiles_userprofile.user_id` was occurring when I tried to log in to the site as superuser for the first time.
     * I checked through my code, to see if I'd referenced something incorrectly.
     * I saw that inside the `def __str__` of the `UserProfile` class in `profiles/models.py`, the `self` in `return self.user.username` was showing an `Instance of 'OneToOneField' has no 'username' member` error.
     * I realised I had previously named the variable `default_user` instead of `user`.
     * I ran migrations to update this, which fixed the bug.
 4. When I added the `has_audio` and `audio` fields to my products fixture, it wasn't taking effect on my live site.
-    * I checked that I'd run `python3 manage.py makemigrations`, `python3 manage.py migrate`, `python3 manage.py loaddata categories` and `python3 manage.py loaddata products` in GitPod.
+    * I checked that I'd run `python3 manage.py makemigrations`, `python3 manage.py migrate`, `python3 manage.py loaddata categories`, and `python3 manage.py loaddata products` in GitPod.
     * Everything was correct there, so I checked that I'd updated my `models.py` file to include the new fields.
     * I then asked for advice on the [Code Institute](https://codeinstitute.net/) Slack channel, and [Simen Daehlin](https://github.com/Eventyret) suggested that I hadn't run the above commands in my Heroku CLI as well.
     * I ran the commands in the Heroku CLI, which fixed this issue.
 5. Travis CI builds were failing with an output error of `django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.`.
     * I considered the context in which the error was occurring.
     * I realised this error started happening once I'd deployed my site and moved my environment variables.
-    * I looked through the [Travis CI documentation](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml), and realised I could include a dummy SECRET_KEY in my travis.yml file.
+    * I looked through the [Travis CI documentation](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml) and realised I could include a dummy SECRET_KEY in my travis.yml file.
     * I included `SECRET_KEY="whatever" python manage.py test` in my travis.yml file, which fixed this issue.
 6. The [Songkick API](https://www.songkick.com/developer) wasn't providing the correct data, and was only providing data up to 2016.
     * I checked that my Songkick API key was being accessed correctly, and that my band ID was correct.
-    * I read through the [Songkick API docs](https://www.songkick.com/developer), and checked I was using the correct syntax.
+    * I read through the [Songkick API docs](https://www.songkick.com/developer) and checked I was using the correct syntax.
     * I looked at the raw JSON data, and saw at the bottom it said 'page 1, showing 50 items out of 122'.
     * I looked up the correct syntax to display the final page of the data.
-    * I realised that the data being provided was only of past gigs, not upcoming gigs.
-    * I searched in the [Songkick API group](https://groups.google.com/g/songkick-api), and found that I was using the `gigography` rather than `calendar` in the API URL.
+    * I realised that the data being provided was only of past gigs, rather than upcoming gigs.
+    * I searched in the [Songkick API group](https://groups.google.com/g/songkick-api) and found that I was using the `gigography` rather than `calendar` in the API URL.
     * I changed this, which then provided me with the correct data to populate the Upcoming Gigs page with.
 7. [Travis CI](https://www.travis-ci.com/) was failing the Band App tests, despite the Django and coverage tests running successfully.
     * The Travis CI builds were failing with the following error: `File "/home/travis/build/Abibubble/ms4-lead-shot-hazard/band/views.py", line 17, in view_gigs events = result['resultsPage']['results']['event'] KeyError: 'results'`
@@ -697,6 +698,6 @@ This database uses a SQL database through PostgreSQL. They were originally built
 * [Dave Horrocks](https://github.com/DaveyJH) for helping me understand the Django testing for this project, and for being incredibly patient with me through the process.
 * My partner Conor Nye for his continuous support throughout my coding journey.
 * [Eve Crabb](https://github.com/evecrabb), for her support through my learning.
-* My bandmates in Lead Shot Hazard, for giving me the inspiration to create this site.
+* My bandmates in Lead Shot Hazard, for inspiring me to create this site.
 
 [Back to the top](#lead-shot-hazard)
