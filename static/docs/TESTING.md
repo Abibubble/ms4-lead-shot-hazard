@@ -895,33 +895,41 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 
 #### Desktop Lighthouse
 
-![Lighthouse desktop first try](testing/lighthousedesktop.png)
+![Lighthouse desktop first try](testing/lighthouse-desktop.png)
 
 #### Mobile Lighthouse
 
-![Lighthouse mobile first try](testing/lighthousemobile.png)
+![Lighthouse mobile first try](testing/lighthouse-mobile.png)
 
 #### Performance Lighthouse
 
-*
+* On mobile screens, this score was brought down due to the images not being of a set width and height. This is because I wanted the images to be fully responsive, so explicit width and height have not been set to achieve this.
+* Besides this issue on mobile, I was happy with this score.
 
 #### Accessibility Lighthouse
 
-*
+* I was very happy with this score.
+* Please see the [Accessibility section](#accessibility) for full details of the steps I took to ensure this site was fully accessible.
 
 #### Best Practices Lighthouse
 
-*
+* I was very happy with this score.
+* All external links are secure.
+* All images are displayed with the correct aspect ratio and resolution.
+* There are no issues in the Devtools Issues panel.
 
 #### SEO Lighthouse
 
-*
+* I was very happy with this score.
+* All relevant meta tags were included.
+* Each page has different meta tags, to relate to the page content.
+* All links have descriptive text.
 
 ### WebPageTest
 
 I tested my website using WebPageTest, and got these results:
 
-* [WebPageTest Results](LINK)
+* [WebPageTest Results](https://www.webpagetest.org/result/211025_BiDc17_4454be0499acb618820ee9541dd16b2a/)
 
 [Back to the top](#testing-steps)
 
