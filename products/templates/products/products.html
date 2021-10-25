@@ -103,12 +103,12 @@
                                             {% if request.user.is_superuser %}
                                                 <div class="mt-2">
                                                     <a href="{% url 'edit_product' product.id %}" class="text-tag-dark mr-2">Edit</a>
-                                                    <a role="button" class="text-danger" data-toggle="modal" data-target="#deleteModal-{{ product.name }}">Delete</a>
-                                                    <div class="modal fade text-black text-transform-none" id="deleteModal-{{ product.name }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel-{{ product.name }}" aria-hidden="true">
+                                                    <a role="button" class="text-danger" data-toggle="modal" data-target="#deleteModal-{{ product.id }}">Delete</a>
+                                                    <div class="modal fade text-black text-transform-none" id="deleteModal-{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel-{{ product.name }}" aria-hidden="true">
                                                         <div class="modal-dialog" role="document">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
-                                                                    <h3 class="modal-title text-black" id="deleteModalLabel-{{ product.name }}">Delete Product</h3>
+                                                                    <h3 class="modal-title text-black" id="deleteModalLabel-{{ product.id }}">Delete Product</h3>
                                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                         <span aria-hidden="true">
                                                                             <i class="fas fa-times fa-2x"></i>
