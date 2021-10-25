@@ -8,7 +8,7 @@
 ![Travis CI Build](https://secure.travis-ci.org/abibubble/ms4-lead-shot-hazard.png)
 ![GitHub forks](https://img.shields.io/github/forks/abibubble/ms4-lead-shot-hazard?style=social)
 
-[Here is a link to the final project](https://ms4-lead-shot-hazard.herokuapp.com/homepage)
+[Here is a link to the final project](https://ms4-lead-shot-hazard.herokuapp.com/)
 
 This site is a merchandise and music e-commerce site for the band Lead Shot Hazard, a ska punk band from West London. This site is fully responsive on all modern screen sizes, and it allows the band to easily add, edit or delete the merchandise and music that they have to sell.
 
@@ -398,6 +398,9 @@ The navigation bar changes depending on user status and screen size:
   * Webhooks form a notification system for every secure action on your site (most notably, payment intents).
   * Webhooks return an event object, containing all the relevant information about the action, including the type of action, and the data associated with it.
   * If the user leaves the page before the order is complete but the payment goes through, the billing details and shipping address will be sent with the payment and can be accessed via the webhooks.
+* Login validation
+  * The `@login_required` decorator has been used to ensure that the restricted pages are secure.
+  * If a logged-out user tries to access a restricted page, they will be redirected to the login page.
 
 [Back to the top](#lead-shot-hazard)
 
@@ -559,9 +562,9 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 [WebPageTest](https://www.webpagetest.org/) was used to ensure that the code was as performant as possible, conforming to best practices, and SEO and Accessibility guidelines. As it is often more reliable than Lighthouse, this was used near the end of the project to fix any remaining issues.
 
-#### Flask
+#### Jinja
 
-[Flask](https://flask.palletsprojects.com/en/2.0.x/) was used to help create the templating for this site.
+[Jinja](https://jinja.palletsprojects.com/en/3.0.x/) was used to help create the templating for this site.
 
 #### Bootstrap
 
