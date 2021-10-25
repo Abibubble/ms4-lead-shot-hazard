@@ -33,6 +33,7 @@
   * [Messages](#messages)
   * [Stripe](#stripe)
   * [404](#404)
+  * [500](#500)
   * [Validation](#validation)
 
 * [Database](#database)
@@ -80,7 +81,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 * Overall I was very happy with the level of coverage I got on this project.
 * Some lines of code were omitted from coverage using `# pragma: no cover`, due to them either being code that's populated by Django, code in the settings.py file to connect to environment variables, or non-important code to the function of the site.
-* [Click here to view the full testing coverage report](testing/full-coverage.png).
+* [Click here to view the full testing coverage report](testing/automated/full-coverage.png).
 
 #### Bag App
 
@@ -103,7 +104,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the delivery cost is calculated correctly
 * Test that the calc_subtotal function works
 
-![Bag App testing report from coverage](testing/bag-testing.jpg)
+![Bag App testing report from coverage](testing/automated/bag-testing.jpg)
 
 #### Band App
 
@@ -116,7 +117,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the Upcoming Gigs page URL is accessible by name
 * Test that the Upcoming Gigs page uses the correct template
 
-![Band App testing report from coverage](testing/band-testing.jpg)
+![Band App testing report from coverage](testing/automated/band-testing.jpg)
 
 #### Checkout App
 
@@ -148,7 +149,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test the get in the checkout view
 * Test that the user's details are auto-filled if the user is logged in and has saved information
 
-![Checkout App testing report from coverage](testing/checkout-testing.jpg)
+![Checkout App testing report from coverage](testing/automated/checkout-testing.jpg)
 
 #### Home App
 
@@ -158,7 +159,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the Home page URL is accessible by name
 * Test that the Home page uses the correct template
 
-![Home App testing report from coverage](testing/home-testing.png)
+![Home App testing report from coverage](testing/automated/home-testing.png)
 
 #### Products
 
@@ -193,7 +194,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that a regular user cannot access the delete a product view
 * Test that the delete a product view works for a superuser
 
-![Products App testing report from coverage](testing/products-testing.jpg)
+![Products App testing report from coverage](testing/automated/products-testing.jpg)
 
 #### Profiles
 
@@ -214,7 +215,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the profile information gets saved correctly
 * Test that the order history displays when requested
 
-![Profiles App testing report from coverage](testing/profiles-testing.png)
+![Profiles App testing report from coverage](testing/automated/profiles-testing.png)
 
 #### Omitted Code
 
@@ -235,7 +236,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 ![Travis CI Build Badge](https://secure.travis-ci.org/abibubble/ms4-lead-shot-hazard.png)
 
-![Travis CI full report](testing/travis.png)
+![Travis CI full report](testing/automated/travis.png)
 
 ---
 
@@ -766,9 +767,9 @@ On every device and browser listed above, I tested the following:
 * If products are added to the database, the phrase '{Item} Successfully Added' should display.
 * If products are deleted from the database, the phrase '{Item} Successfully Deleted' should display.
 * If products are edited in the database, the phrase '{Item} Successfully Updated' should display.
-* If a product is added to the user's shopping bag, the phrase '{Item} successfully added to your bag' should display, with a summary of the user's shopping bag shown.
-* If a product is removed from the user's shopping bag, the phrase '{Item} successfully removed from your bag' should display, with a summary of the user's shopping bag shown.
-* If a product quantity is updated in the user's shopping bag, the phrase '{Item} quantity successfully updated to {quantity}' should display, with a summary of the user's shopping bag shown.
+* If a product is added to the user's shopping bag, the phrase '{Item} successfully added to your bag' should display, with a summary of the user's shopping bag.
+* If a product is removed from the user's shopping bag, the phrase '{Item} successfully removed from your bag' should display, with a summary of the user's shopping bag.
+* If a product quantity is updated in the user's shopping bag, the phrase '{Item} quantity successfully updated to {quantity}' should display, with a summary of the user's shopping bag.
 * If a logged-in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message saying 'You do not have access to this page'.
 
 ### Stripe
@@ -789,8 +790,17 @@ On every device and browser listed above, I tested the following:
 
 * Accessible by all users
 * This page will display if a user has tried to access a page that doesn't exist, or if a user doesn't have access to the page they're trying to reach.
-* It states clearly that it's a 404 error, and that the page hasn't been found.
-* It directs the user to the navigation bar to continue back to the safety of the site.
+* It states clearly that it's a 404 error, and that the page does not exist.
+* It directs the user to click the button to continue back to the safety of the site.
+* The navigation bar is also available for the user to navigate back to the main site.
+
+### 500
+
+* Accessible by all users
+* This page will display if an internal server error occurs.
+* It states clearly that it's a 500 error, and that something went wrong.
+* It directs the user to click the button to continue back to the safety of the site.
+* The navigation bar is also available for the user to navigate back to the main site.
 
 ### Validation
 
@@ -815,6 +825,9 @@ On every device and browser listed above, I tested the following:
   * Webhooks form a notification system for every secure action on your site.
   * Webhooks return an event object, containing all the relevant information about the action, including the type of action, and the data associated with it.
   * If the user leaves the page before the order is complete but the payment goes through, the billing details and shipping address will be sent with the payment and can be accessed via webhooks.
+* Login validation
+  * If a logged-out user tries to access a restricted page, they will be redirected to the login page.
+  * If a logged-in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message saying 'You do not have access to this page'.
 
 [Back to the top](#testing-steps)
 

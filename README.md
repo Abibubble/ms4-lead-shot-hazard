@@ -401,6 +401,7 @@ The navigation bar changes depending on user status and screen size:
 * Login validation
   * The `@login_required` decorator has been used to ensure that the restricted pages are secure.
   * If a logged-out user tries to access a restricted page, they will be redirected to the login page.
+  * If a logged-in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message saying 'You do not have access to this page'.
 
 [Back to the top](#lead-shot-hazard)
 
