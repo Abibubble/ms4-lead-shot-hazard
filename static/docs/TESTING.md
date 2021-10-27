@@ -104,7 +104,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the delivery cost is calculated correctly
 * Test that the calc_subtotal function works
 
-![Bag App testing report from coverage](testing/automated/bag-testing.jpg)
+![Bag App testing report from coverage](testing/automated/bag-testing.png)
 
 #### Band App
 
@@ -117,7 +117,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that the Upcoming Gigs page URL is accessible by name
 * Test that the Upcoming Gigs page uses the correct template
 
-![Band App testing report from coverage](testing/automated/band-testing.jpg)
+![Band App testing report from coverage](testing/automated/band-testing.png)
 
 #### Checkout App
 
@@ -149,7 +149,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test the get in the checkout view
 * Test that the user's details are auto-filled if the user is logged in and has saved information
 
-![Checkout App testing report from coverage](testing/automated/checkout-testing.jpg)
+![Checkout App testing report from coverage](testing/automated/checkout-testing.png)
 
 #### Home App
 
@@ -194,7 +194,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test that a regular user cannot access the delete a product view
 * Test that the delete a product view works for a superuser
 
-![Products App testing report from coverage](testing/automated/products-testing.jpg)
+![Products App testing report from coverage](testing/automated/products-testing.png)
 
 #### Profiles
 
