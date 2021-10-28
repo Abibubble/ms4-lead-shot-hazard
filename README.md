@@ -3,9 +3,9 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/abibubble/ms4-lead-shot-hazard)
 ![GitHub last commit](https://img.shields.io/github/last-commit/abibubble/ms4-lead-shot-hazard)
 ![GitHub language count](https://img.shields.io/github/languages/count/abibubble/ms4-lead-shot-hazard)
-![GitHub top language](https://img.shields.io/github/languages/top/abibubble/ms4-lead-shot-hazard)
 ![Font Awesome version](https://img.shields.io/badge/Font%20Awesome-v5.15.1-blue)
 ![Travis CI Build](https://secure.travis-ci.org/abibubble/ms4-lead-shot-hazard.png)
+![Testing coverage](https://img.shields.io/badge/coverage-92%25-brightgreen)
 ![GitHub forks](https://img.shields.io/github/forks/abibubble/ms4-lead-shot-hazard?style=social)
 
 [Here is a link to the final project](https://ms4-lead-shot-hazard.herokuapp.com/)
@@ -580,7 +580,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 [Stripe.js](https://stripe.com/docs/js) library was used for handling Stripe payment objects.
 
-#### RandomKeygen
+#### Djecrety
 
 [Djecrety](https://djecrety.ir/) was used to generate a strong `SECRET_KEY`.
 
@@ -598,7 +598,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 #### python-magic
 
-[python-magic](https://pypi.org/project/python-magic/) was used to validate that the files being uploaded as audio are genuinely audio files, not just validating my file extension.
+[python-magic](https://pypi.org/project/python-magic/) was used to validate that the files being uploaded as audio are genuinely audio files, not just validating by file extension.
 
 [Back to the top](#lead-shot-hazard)
 
@@ -675,9 +675,9 @@ This database uses a SQL database through PostgreSQL. They were originally built
 ### Code
 
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
-* This website was made with the tutorials from Code institute for the Boutique Ado project by Chris Zielinski. The code has been customised and improved to fit this project.
+* This website was made with the help of the tutorials from Code institute for the Boutique Ado project by Chris Zielinski. The code has been customised and improved to fit this project.
 * [Django Documentation](https://docs.djangoproject.com/en/3.2/) has been used to ensure correct syntax usage throughout the code.
-* [Stack Overflow](https://stackoverflow.com/) has been used to help with deciphering the django error codes.
+* [Stack Overflow](https://stackoverflow.com/) has been used to help with deciphering the django error codes, and searching for bug fixes.
 * [Chris Anstey](https://github.com/ansteychris), a Digital Experience Lead at Google, for the discussion we had about Lighthouse vs WebPageTest.
 * I followed [this video from JustDjango](https://www.youtube.com/watch?v=NG48CLLsb1A) to add the Google social login functionality.
 * [This stackoverflow post](https://stackoverflow.com/questions/3648421/only-accept-a-certain-file-type-in-filefield-server-side) helped me validate that the audio files being uploaded are genuine audio files.
@@ -693,7 +693,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 * All media on this site is owned by Lead Shot Hazard.
 * As a member of Lead Shot Hazard, I own joint rights to use all media and images of the band.
 * The audio selections were cropped down to a sample size using [Audio Trimmer](https://audiotrimmer.com/).
-* [Manni Silva](https://github.com/manni8436) helped me by taking the Mobile and Tablet Safari screenshots in the [TESTING.md file](static/docs/TESTING.md).
+* [Manni Silva](https://github.com/manni8436) helped me by taking the Mobile Safari and Tablet Safari screenshots in the [TESTING.md file](static/docs/TESTING.md).
 * The Songkick image on the Upcoming Gigs page was found in the [downloadable ZIP file on this site](https://www.songkick.com/developer/api-terms-of-use), as a requirement for using the Songkick API.
 
 ### Acknowledgements
@@ -702,7 +702,7 @@ This database uses a SQL database through PostgreSQL. They were originally built
 * The team at [Code Institute](https://codeinstitute.net/), for teaching me the necessary skills to create this site.
 * [Dave Horrocks](https://github.com/DaveyJH) for helping me understand the Django testing for this project, and for being incredibly patient with me through the process.
 * My partner Conor Nye for his continuous support throughout my coding journey.
-* [Eve Crabb](https://github.com/evecrabb), for her support through my learning.
+* [Eve Crabb](https://github.com/evecrabb), for her endless support through my learning.
 * My bandmates in Lead Shot Hazard, for inspiring me to create this site.
 
 [Back to the top](#lead-shot-hazard)
