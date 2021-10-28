@@ -27,7 +27,9 @@ class UserProfileForm(forms.ModelForm):
         for field in self.fields:
             if field != 'default_country':
                 if self.fields[field].required:
-                    placeholder = f'{placeholders[field]} (required)'  # pragma: no cover
+                    placeholder = (
+                        f'{placeholders[field]}'
+                        ' (required)')  # pragma: no cover
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder

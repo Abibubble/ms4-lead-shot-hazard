@@ -1,7 +1,3 @@
-"""
-This module tests the models in the profiles app
-"""
-
 from django.test import TestCase, Client
 from django.contrib.auth.models import User
 

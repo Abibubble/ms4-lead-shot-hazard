@@ -1,7 +1,3 @@
-"""
-This module tests the views in the bag app
-"""
-
 from django.test import TestCase
 
 from django.urls import reverse, resolve

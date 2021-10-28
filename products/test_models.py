@@ -1,7 +1,3 @@
-"""
-This module tests the models in the products app
-"""
-
 from django.test import TestCase
 
 from .models import Category, Product

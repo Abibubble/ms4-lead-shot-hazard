@@ -1,7 +1,3 @@
-"""
-This module tests the forms in the checkout app
-"""
-
 from django.test import TestCase
 from .forms import OrderForm
 

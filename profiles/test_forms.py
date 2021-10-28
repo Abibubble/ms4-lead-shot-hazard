@@ -1,7 +1,3 @@
-"""
-This module tests the forms in the profiles app
-"""
-
 from django.test import TestCase
 
 from .forms import UserProfileForm

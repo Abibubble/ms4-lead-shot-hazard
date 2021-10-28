@@ -1,7 +1,3 @@
-"""
-This module tests the views in the profiles app
-"""
-
 from django.test import TestCase, Client
 
 from django.shortcuts import reverse

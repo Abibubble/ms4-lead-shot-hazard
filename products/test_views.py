@@ -1,7 +1,3 @@
-"""
-This module tests the views in the products app
-"""
-
 from django.test import TestCase
 
 from django.shortcuts import reverse

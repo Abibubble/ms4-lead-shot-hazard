@@ -1,7 +1,3 @@
-"""
-This module tests the views in the checkout app
-"""
-
 from django.test import TestCase
 
 from django.shortcuts import reverse, get_object_or_404
@@ -9,13 +5,9 @@ from django.contrib.auth.models import User
 from django.contrib.messages import get_messages
 from django.conf import settings
 
-import stripe
-
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from products.models import Product, Category
-from .models import Order, OrderLineItem
-from .forms import OrderForm
 
 
 class TestCheckoutViews(TestCase):

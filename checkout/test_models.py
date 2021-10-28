@@ -1,7 +1,3 @@
-"""
-This module tests the models in the checkout app
-"""
-
 from django.test import TestCase
 from django.conf import settings
 
