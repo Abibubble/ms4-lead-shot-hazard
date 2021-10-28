@@ -358,6 +358,7 @@ The navigation bar changes depending on user status and screen size:
 * Retrieve or reset a forgotten password.
 * Social media login via Facebook.
 * Special offers.
+* Regex or number validation on phone number fields.
 
 ### Audio
 
