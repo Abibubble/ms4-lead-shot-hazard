@@ -1,62 +1,67 @@
 <ul>
     <!-- To open search bar -->
     <li class="list-inline-item">
-      <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class="text-center">
-              <div><i class="fas fa-search fa-lg" aria-label="Search our merch"></i></div>
-              <p class="my-0">Search</p>
-          </div>
-      </a>
-      <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
-          <form class="form" method="GET" action="{% url 'products' %}">
-              <div class="input-group w-100">
-                  <input class="form-control border border-white rounded-0" type="text" name="q" placeholder="Search our merch">
-                  <div class="input-group-append">
-                      <button class="form-control form-control btn btn-white border border-white rounded-0" type="submit">
-                          <span class="icon">
-                              <i class="fas fa-search" aria-label="Search our merch"></i>
-                              <p class="sr-only">Search our merch</p>
-                          </span>
-                      </button>
-                  </div>
-              </div>
-          </form>
-      </div>
-  </li>
-  <!-- To open my account drop-down -->
-  <li class="list-inline-item dropdown">
-      <a class="nav-link d-block d-lg-none" href="#" id="user-options-m" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class="text-center">
-              <div><i class="fas fa-user fa-lg" aria-label="Account"></i></div>
-              <p class="my-0">Account</p>
-          </div>
-      </a>
-      <div class="dropdown-menu border-0" aria-labelledby="user-options-m">
-          {% if request.user.is_authenticated %}
-              {% if request.user.is_superuser %}
-                  <a href="{% url 'add_product' %}" class="dropdown-item text-black">Management</a>
-              {% endif %}
-              <a href="{% url 'profile' %}" class="dropdown-item text-black">My Profile</a>
-              <a href="{% url 'account_logout' %}" class="dropdown-item text-black">Logout</a>
-          {% else %}
-              <a href="{% url 'account_signup' %}" class="dropdown-item text-black">Register</a>
-              <a href="{% url 'account_login' %}" class="dropdown-item text-black">Login</a>
-          {% endif %}
-      </div>
-  </li>
-  <!-- To access the shopping bag -->
-  <li class="list-inline-item cart-icon">
-      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-yellow{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
-          <div class="text-center">
-              <div><i class="fas fa-shopping-bag fa-lg" aria-label="Shopping bag"></i></div>
-              <p class="my-0">
-                  {% if grand_total %}
-                      £{{ grand_total|floatformat:2 }}
-                  {% else %}
-                      £0.00
-                  {% endif %}
-              </p>
-          </div>
-      </a>
+        <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <div class="text-center">
+                <div><i class="fas fa-search fa-lg" aria-label="Search our merch"></i></div>
+                <p class="my-0">Search</p>
+            </div>
+        </a>
+        <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+            <form class="form" method="GET" action="{% url 'products' %}">
+                <div class="input-group w-100">
+                    <input class="form-control border border-white rounded-0" type="text" name="q"
+                        placeholder="Search our merch">
+                    <div class="input-group-append">
+                        <button class="form-control form-control btn btn-white border border-white rounded-0"
+                            type="submit">
+                            <span class="icon">
+                                <i class="fas fa-search" aria-label="Search our merch"></i>
+                                <p class="sr-only">Search our merch</p>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </li>
-  </ul>
+    <!-- To open my account drop-down -->
+    <li class="list-inline-item dropdown">
+        <a class="nav-link d-block d-lg-none" href="#" id="user-options-m" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <div class="text-center">
+                <div><i class="fas fa-user fa-lg" aria-label="Account"></i></div>
+                <p class="my-0">Account</p>
+            </div>
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="user-options-m">
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <a href="{% url 'add_product' %}" class="dropdown-item text-black">Management</a>
+            {% endif %}
+            <a href="{% url 'profile' %}" class="dropdown-item text-black">My Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item text-black">Logout</a>
+            {% else %}
+            <a href="{% url 'account_signup' %}" class="dropdown-item text-black">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item text-black">Login</a>
+            {% endif %}
+        </div>
+    </li>
+    <!-- To access the shopping bag -->
+    <li class="list-inline-item cart-icon">
+        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-yellow{% endif %} nav-link d-block d-lg-none"
+            href="{% url 'view_bag' %}">
+            <div class="text-center">
+                <i class="fas fa-shopping-bag fa-lg" aria-label="Shopping bag"></i>
+                <p class="my-0">
+                    {% if grand_total %}
+                    £{{ grand_total|floatformat:2 }}
+                    {% else %}
+                    £0.00
+                    {% endif %}
+                </p>
+            </div>
+        </a>
+    </li>
+</ul>
