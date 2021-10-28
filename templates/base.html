@@ -69,12 +69,12 @@
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <form method="GET" action="{% url 'products' %}">
                         <div class="input-group w-100">
-                            <input class="form-control border border-black rounded-0 tap-target" type="text" name="q" placeholder="Search our site">
+                            <input class="form-control border border-black rounded-0 tap-target" type="text" name="q" placeholder="Search our merch">
                             <div class="input-group-append icon">
                                 <button class="form-control btn btn-black border border-black rounded-0 tap-target" type="submit">
                                     <span class="icon">
-                                        <i class="fas fa-search" aria-label="Search our site"></i>
-                                        <p class="sr-only">Search our site</p>
+                                        <i class="fas fa-search" aria-label="Search our merch"></i>
+                                        <p class="sr-only">Search our merch</p>
                                     </span>
                                 </button>
                             </div>
@@ -86,7 +86,7 @@
                         <li class="list-inline-item dropdown">
                             <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
-                                    <div><i class="fas fa-user fa-lg"></i></div>
+                                    <div><i class="fas fa-user fa-lg" aria-label="User account icon"></i></div>
                                     <p class="my-0 text-capitalize">My Account</p>
                                 </div>
                             </a>
@@ -106,7 +106,7 @@
                         <li class="list-inline-item">
                             <a class="{% if grand_total %}text-tag-dark font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
                                 <div class="text-center">
-                                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                    <div><i class="fas fa-shopping-bag fa-lg" aria-label="Shopping bag"></i></div>
                                     <p class="my-0">
                                         {% if grand_total %}
                                             £{{ grand_total|floatformat:2 }}
@@ -125,7 +125,7 @@
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
-                            <i class="fas fa-bars fa-lg"></i>
+                            <i class="fas fa-bars fa-lg" aria-label="Menu dropdown"></i>
                         </span>
                     </button>
                     {% include 'includes/mobile-top-header.html' %}
