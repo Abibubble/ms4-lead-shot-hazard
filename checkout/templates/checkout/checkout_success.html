@@ -57,7 +57,8 @@
                             <p class="mb-0 font-weight-bold">Order Number</p>
                         </div>
                         <div class="col-12 col-md-6 text-md-right">
-                            <p class="mb-0">{{ order.order_number }}</p>
+                            <p class="mb-0 order-number-full">{{ order.order_number }}</p>
+                            <p class="mb-0 order-number-trunc">{{ order.order_number|truncatechars:30 }}</p>
                         </div>
                     </div>
 

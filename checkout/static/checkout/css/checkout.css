@@ -64,3 +64,21 @@ select option[value=""] {
   margin: 0;
   height: 100%;
 }
+
+.order-number-full {
+  display: inline;
+}
+
+.order-number-trunc {
+  display: none;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .order-number-full {
+    display: none;
+  }
+
+  .order-number-trunc {
+    display: inline;
+  }
+}
