@@ -166,7 +166,8 @@
                                             <h3 class="modal-title text-black" id="deleteModalLabel">Delete Product</h3>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">
-                                                    <i class="fas fa-times fa-2x" aria-label="Close"></i>
+                                                    <i class="fas fa-times fa-2x"></i>
+                                                    <p class="sr-only">Close</p>
                                                 </span>
                                             </button>
                                         </div>
@@ -207,7 +208,8 @@
                                                 <button class="decrement-qty btn btn-black rounded-0" 
                                                     data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                                                     <span class="icon">
-                                                        <i class="fas fa-minus" aria-label="Decrement quantity"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                        <p class="sr-only">Decrement quantity</p>
                                                     </span>
                                                 </button>
                                             </div>
@@ -219,7 +221,8 @@
                                                 <button class="increment-qty btn btn-black rounded-0"
                                                     data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
                                                     <span class="icon">
-                                                        <i class="fas fa-plus" aria-label="Increment quantity"></i>
+                                                        <i class="fas fa-plus"></i>
+                                                        <p class="sr-only">Increment quantity</p>
                                                     </span>
                                                 </button>
                                             </div>
