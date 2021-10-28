@@ -17,7 +17,7 @@
                         <button class="form-control form-control btn btn-white border border-white rounded-0"
                             type="submit">
                             <span class="icon">
-                                <i class="fas fa-search" aria-label="Search our merch"></i>
+                                <i class="fas fa-search"></i>
                                 <p class="sr-only">Search our merch</p>
                             </span>
                         </button>
@@ -31,7 +31,7 @@
         <a class="nav-link d-block d-lg-none" href="#" id="user-options-m" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <div class="text-center">
-                <div><i class="fas fa-user fa-lg" aria-label="Account"></i></div>
+                <div><i class="fas fa-user fa-lg"></i></div>
                 <p class="my-0">Account</p>
             </div>
         </a>
@@ -54,6 +54,7 @@
             href="{% url 'view_bag' %}">
             <div class="text-center">
                 <i class="fas fa-shopping-bag fa-lg" aria-label="Shopping bag" aria-hidden="false"></i>
+                <p class="sr-only">Shopping bag</p>
                 <p class="my-0">
                     {% if grand_total %}
                     £{{ grand_total|floatformat:2 }}
