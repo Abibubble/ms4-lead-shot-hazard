@@ -236,7 +236,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 ![Travis CI Build Badge](https://secure.travis-ci.org/abibubble/ms4-lead-shot-hazard.png)
 
-![Travis CI full report](testing/automated/travis.png)
+[Click here to view the Travis CI full report](testing/automated/travis.png)
 
 ---
 
@@ -411,7 +411,7 @@ Responsive design was tested from 320px to 2500px, to account for the smallest o
     * `Avoid using null=True on string-based fields such CharField`:
         * This error is there to avoid a field having two values if left blank - an empty string, and `null`. This would usually be a valid error, but because I need to allow empty values in forms, this is required, as the `null` parameter only affects database storage.
     * There are also several warnings being shown from the migrations files. These are acceptable to ignore, as they are created by Django, and [this issue has been marked as a 'won't fix'](https://code.djangoproject.com/ticket/30555) by the Django team.
-    * ![Image of Flake8 results](testing/validator/flake8.png)
+    * [Click here to view the full Flake8 results](testing/validator/flake8.png)
 
 [Back to the top](#testing-steps)
 
@@ -542,19 +542,17 @@ On every device and browser listed above, I tested the following:
 
 ##### Profile Testing
 
-* Click the Profile button to take the user to the Profile page from the Home page.
-* Click the Profile button to take the user to the Profile page from the Products page.
-* Click the Profile button to take the user to the Profile page from the Product Details page.
-* Click the Profile button to take the user to the Profile page from the Shopping Bag page.
-* Click the Profile button to take the user to the Profile page from the Checkout page.
-* Click the Profile button to take the user to the Profile page from the Order Success page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Home page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Products page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Product Details page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Shopping Bag page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Checkout page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Order Success page.
 * &#128100; Click the Profile button to take the user to the Profile page from the Order Confirmation page.
-* Click the Profile button to take the user to the Profile page from the Contact Us page.
-* Click the Profile button to take the user to the Profile page from the Upcoming Gigs page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Contact Us page.
+* &#128100; Click the Profile button to take the user to the Profile page from the Upcoming Gigs page.
 * &#128100; Click the Profile button to take the user to the Profile page from the Profile page.
 * &#128272; Click the Profile button to take the user to the Profile page from the Product Management page.
-* &#128683; Click the Profile button to take the user to the Profile page from the Log In page.
-* &#128683; Click the Profile button to take the user to the Profile page from the Register page.
 
 ##### Product Management Testing
 
@@ -671,18 +669,15 @@ On every device and browser listed above, I tested the following:
 
 ### Logged Out Users
 
-* &#128683;
-* Navigation bar dropdown shows Log In, Register.
+* &#128683; Navigation bar dropdown shows Log In, Register.
 
 ### Logged In Users
 
-* &#128100;
-* Navigation bar dropdown shows Profile, Log Out.
+* &#128100; Navigation bar dropdown shows Profile, Log Out.
 
 ### Admin Users
 
-* &#128272;
-* Navigation bar dropdown shows Profile, Product Management, Log Out.
+* &#128272; Navigation bar dropdown shows Profile, Product Management, Log Out.
 
 [Back to the top](#testing-steps)
 
@@ -764,13 +759,13 @@ On every device and browser listed above, I tested the following:
 
 ### Messages
 
-* If products are added to the database, the phrase '{Item} Successfully Added' should display.
-* If products are deleted from the database, the phrase '{Item} Successfully Deleted' should display.
-* If products are edited in the database, the phrase '{Item} Successfully Updated' should display.
+* &#128272; If products are added to the database, the phrase '{Item} Successfully Added' should display.
+* &#128272; If products are deleted from the database, the phrase '{Item} Successfully Deleted' should display.
+* &#128272; If products are edited in the database, the phrase '{Item} Successfully Updated' should display.
 * If a product is added to the user's shopping bag, the phrase '{Item} successfully added to your bag' should display, with a summary of the user's shopping bag.
 * If a product is removed from the user's shopping bag, the phrase '{Item} successfully removed from your bag' should display, with a summary of the user's shopping bag.
 * If a product quantity is updated in the user's shopping bag, the phrase '{Item} quantity successfully updated to {quantity}' should display, with a summary of the user's shopping bag.
-* If a logged-in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message saying 'You do not have access to this page'.
+* &#128100; If a logged-in user without access rights tries to access a restricted page, it redirects them to the homepage, and presents them with a message saying 'You do not have access to this page'.
 
 ### Stripe
 
@@ -1015,15 +1010,15 @@ I tested my website using WebPageTest, and got these results:
 
 ## Images
 
-In some of the images, the footer is hovering in the middle of the page content. This is an issue with the screenshotting tools on various browsers, rather than an issue with the site. Please disregard these issues.
+In some of the images, the footer is hovering in the middle of the page content. This is an issue with the screenshotting tools on various browsers, rather than an issue with the site. Please disregard these issues, as they do not match the site itself.
 
 ### Desktop and Laptop Screenshots
 
 #### Chrome Desktop Screenshots
 
-![Home page](testing/desktop/chrome/home.jpg)
+![Home page](testing/desktop/chrome/home.png)
 
-![Products page](testing/desktop/chrome/products.jpg)
+![Products page](testing/desktop/chrome/products.png)
 
 ![Product detail page](testing/desktop/chrome/product-detail.png)
 
@@ -1265,11 +1260,11 @@ In some of the images, the footer is hovering in the middle of the page content.
 
 #### Safari Mobile Screenshots
 
-![Home page](testing/mobile/safari/home.png)
+![Home page](testing/mobile/safari/home.jpg)
 
 ![Products page](testing/mobile/safari/products.png)
 
-![Product detail page](testing/mobile/safari/product-detail.png)
+![Product detail page](testing/mobile/safari/product-detail.jpg)
 
 ![Order Confirmation page](testing/mobile/safari/order-conf.png)
 
@@ -1291,13 +1286,13 @@ In some of the images, the footer is hovering in the middle of the page content.
 
 ![Log Out page](testing/mobile/safari/log-out.png)
 
-![Register page](testing/mobile/safari/register.png)
+![Register page](testing/mobile/safari/register.jpg)
 
 ![Add Merchandise page](testing/mobile/safari/add-merch.png)
 
-![Edit Merchandise page](testing/mobile/safari/edit-merch.png)
+![Edit Merchandise page](testing/mobile/safari/edit-merch.jpg)
 
-![Delete Merchandise modal](testing/mobile/safari/delete-merch.png)
+![Delete Merchandise modal](testing/mobile/safari/delete-merch.jpg)
 
 [Back to the top](#testing-steps)
 
