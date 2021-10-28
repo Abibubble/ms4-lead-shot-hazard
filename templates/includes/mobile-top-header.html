@@ -53,7 +53,7 @@
         <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-yellow{% endif %} nav-link d-block d-lg-none"
             href="{% url 'view_bag' %}">
             <div class="text-center">
-                <i class="fas fa-shopping-bag fa-lg" aria-label="Shopping bag"></i>
+                <i class="fas fa-shopping-bag fa-lg" aria-label="Shopping bag" aria-hidden="false"></i>
                 <p class="my-0">
                     {% if grand_total %}
                     £{{ grand_total|floatformat:2 }}
