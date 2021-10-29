@@ -90,6 +90,15 @@
                             {% endfor %}
                         </tbody>
                     </table>
+                    {% if orders|length == 0 %}
+                        <p class="text-danger mb-3">You haven't ordered anything yet!</p>
+                        <a href="{% url 'products' %}" class="btn btn-black rounded-0 btn-lg">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span>Keep Shopping</span>
+                        </a>
+                    {% endif %}
                 </div>
             </div>
         </div>
