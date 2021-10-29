@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_meta %}
+    <!-- Metas -->
+    <meta name="description" content="403 page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+    <meta name="keywords" content="lead, shot, hazard, ska, punk, band, merch, shopping, bag, 404, music, merchandise, skapunk, london, brass, trombone, saxophone">
+    <link rel="canonical" href="https://ms4-lead-shot-hazard.herokuapp.com/">
+    <!-- Facebook, LinkedIn, Google -->
+    <meta property="og:title" name="title" content="Lead Shot Hazard 403" />
+    <meta property="og:description" content="403 page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig." />
+    <meta property="og:url" content="https://ms4-lead-shot-hazard.herokuapp.com/" />
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Lead Shot Hazard 403">
+    <meta name="twitter:description" content="403 page on the merchandise site for the ska punk band, Lead Shot Hazard. Based in West London, you can also pick up their merch at any gig.">
+{% endblock %}
+
+{% block extra_title %}
+    403
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <section class="container justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <hr>
+                <h1 class="mb-4 text-center">Error 403</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3 text-center">
+                <h2 class="mt-2 mb-4 text-danger">Oh no!</h2>
+                <p class="text-danger mb-2">I'm afraid you don't have access to this page!</p>
+                <a href="/" class="btn btn-black">Click here to head back to safety!</a>
+                <a href="/">
+                    <img src="{{ MEDIA_URL }}roundall.png" alt="The Lead Shot Hazard roundall logo" class="w-50">
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
