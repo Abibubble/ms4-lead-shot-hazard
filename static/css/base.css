@@ -1,10 +1,11 @@
 :root {
-    --tag-dark: #799CAF;
-    --tag-light: #3F5B69;
-    --lsh-yellow: #FEE101;
-    --placeholder: #828A90;
+    --tag-dark: #799caf;
+    --tag-light: #3f5b69;
+    --lsh-yellow: #fee101;
+    --placeholder: #828a90;
     --allauth: #222222;
-    --warning-red: #D81B2E;
+    --warning-red: #d81b2e;
+    --google-blue: #2d88ff;
 }
 
 html {
@@ -14,7 +15,7 @@ html {
 body {
     background-color: #000 !important;
     height: calc(100vh - 164px);
-    color: #FFF !important;
+    color: #fff !important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     text-transform: uppercase;
 }
@@ -30,7 +31,7 @@ body {
 }
 
 .navbar-toggler {
-    border-color: #FFF !important;
+    border-color: #fff !important;
 }
 
 .navbar-toggler-icon {
@@ -39,7 +40,7 @@ body {
 
 .navbar-toggler-icon i {
     padding-top: 5px;
-    color: #FFF;
+    color: #fff;
 }
 
 .navbar-nav .dropdown-menu {
@@ -49,7 +50,7 @@ body {
 /* -------------------------------- Text */
 
 a {
-    color: #FFF !important;
+    color: #fff !important;
 }
 
 h4 {
@@ -69,7 +70,7 @@ h4 {
 }
 
 .table {
-    color: #FFF !important;
+    color: #fff !important;
 }
 
 .placeholder {
@@ -89,7 +90,7 @@ h4 {
 /* -------------------------------- Borders */
 
 .border {
-    border: 1px solid #FFF !important;
+    border: 1px solid #fff !important;
 }
 
 .border-black {
@@ -99,18 +100,18 @@ h4 {
 /* -------------------------------- Buttons */
 
 .btn {
-    color: #FFF !important;
+    color: #fff !important;
     text-transform: uppercase;
 }
 
 .btn-black {
     background-color: #000 !important;
-    color: #FFF !important;
-    border: 1px solid #FFF !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
 }
 
 .btn-white {
-    background-color: #FFF !important;
+    background-color: #fff !important;
     color: #000 !important;
     border: 1px solid #000 !important;
 }
@@ -131,7 +132,7 @@ h4 {
 }
 
 .btn-disabled {
-    background-color: #D3D3D3 !important;
+    background-color: #d3d3d3 !important;
     color: #000 !important;
     cursor: none;
 }
@@ -172,7 +173,8 @@ hr {
     margin: auto;
 }
 
-.tap-target, .nav-item {
+.nav-item,
+.tap-target {
     height: 48px !important;
 }
 
@@ -291,8 +293,8 @@ audio {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFF;
-    background: #2D88FF;
+    color: #fff;
+    background: var(--google-blue);
     height: 48px;
     width: 250px;
     border-radius: 24px;
@@ -304,7 +306,7 @@ audio {
     position: absolute;
     left: 10px;
     width: 35px;
-    background: #FFF;
+    background: #fff;
     border-radius: 50%;
     padding: 5px;
 }
@@ -315,26 +317,27 @@ audio {
 
 /* -------------------------------- States */
 
-.nav-link:hover, a:hover {
+.nav-link:hover,
+a:hover {
     color: var(--lsh-yellow) !important;
 }
 
 a.category-badge > span.badge:hover {
     background-color: #000 !important;
-    color: #FFF !important;
-    border: 1px solid #FFF !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
 }
 
 .btn-black:hover {
-    background-color: #FFF !important;
+    background-color: #fff !important;
     color: #000 !important;
     border: 1px solid #000 !important;
 }
 
 .btn-white:hover {
     background-color: #000 !important;
-    color: #FFF !important;
-    border: 1px solid #FFF !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
 }
 
 .update-link:hover,
@@ -344,7 +347,7 @@ a.category-badge > span.badge:hover {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-    color: #FFF;
+    color: #fff;
     background-color: var(--allauth);
     border-color: var(--allauth);
 }
@@ -429,7 +432,7 @@ a.category-badge > span.badge:hover {
     }
 
     .navbar-collapse {
-        border: solid 1px #FFF !important;
+        border: solid 1px #fff !important;
     }
 
     .cart-icon {
@@ -440,13 +443,14 @@ a.category-badge > span.badge:hover {
         font-size: .9rem !important;
     }
 
-    .btn.btn-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-black.rounded-0,
+    .btn.btn-black.rounded-0.btn-lg {
         padding: .5rem;
         font-size: .8rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .decrement-qty,
+    .increment-qty {
         padding: .25rem .5rem !important;
     }
 
