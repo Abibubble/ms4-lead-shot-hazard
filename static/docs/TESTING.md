@@ -185,12 +185,8 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 * Test the product search error message shows correctly
 * Test that a regular user cannot access the add a product page
 * Test that the add a product page displays for a superuser
-* Test that a superuser can add a new valid product
-* Test that a superuser cannot add a new invalid product
 * Test that a regular user cannot access the edit a product page
 * Test that the edit a product page displays for a superuser
-* Test that a superuser can edit a valid product
-* Test that a superuser cannot edit an invalid product
 * Test that a regular user cannot access the delete a product view
 * Test that the delete a product view works for a superuser
 

@@ -163,65 +163,6 @@ class TestProductViewsAddData(TestCase):
         self.assertTemplateUsed(
             response, template_name='products/add_product.html')
 
-    # def test_superuser_can_add_valid_product(self):
-    #     """
-    #     Test that the superuser can add a valid product
-    #     """
-    #     my_admin = User.objects.create_superuser(
-    #         username='testadmin', email='test@example.com',
-    #         password='password')
-    #     self.client.login(
-    #         username=my_admin.username, email=my_admin.email,
-    #         password='password')
-    #     data = {
-    #         'category': '1',
-    #         'sku': '',
-    #         'name': 'test',
-    #         'description': 'test description',
-    #         'has_sizes': False,
-    #         'has_audio': False,
-    #         'audio': '',
-    #         'price': '2.99',
-    #         'image_url': '',
-    #         'image': ''}
-    #     self.client.post('/products/add/', data)
-    #     response = self.client.get('/products/add/')
-    #     messages = list(get_messages(response.wsgi_request))
-    #     self.assertEqual(len(messages), 1)
-    #     self.assertEqual(messages[0].tags, 'success')
-    #     self.assertEqual(
-    #         str(messages[0]), 'Successfully added product.')
-
-    # def test_superuser_cannot_add_invalid_product(self):
-    #     """
-    #     Test that the superuser cannot add an invalid product
-    #     """
-    #     my_admin = User.objects.create_superuser(
-    #         username='testadmin', email='test@example.com',
-    #         password='password')
-    #     self.client.login(
-    #         username=my_admin.username, email=my_admin.email,
-    #         password='password')
-    #     data = {
-    #         'category': '1',
-    #         'sku': '',
-    #         'name': '',
-    #         'description': 'test description',
-    #         'has_sizes': 'false',
-    #         'has_audio': 'false',
-    #         'audio': '',
-    #         'price': '2.99',
-    #         'image_url': '',
-    #         'image': ''}
-    #     self.client.post('/products/add/', data)
-    #     response = self.client.post('/products/add/', data)
-    #     messages = list(get_messages(response.wsgi_request))
-    #     self.assertEqual(len(messages), 1)
-    #     self.assertEqual(messages[0].tags, 'error')
-    #     self.assertEqual(
-    #         str(messages[0]),
-    #         'Failed to add product. Please check that the form is valid.')
-
     def test_edit_product_for_regular_users_view(self):
         """
         Test the edit_product view doesn't allow
@@ -253,70 +194,6 @@ class TestProductViewsAddData(TestCase):
         for product in products:
             response = self.client.get(f'/products/edit/{product.pk}/')
             self.assertEqual(response.status_code, 200)
-
-    # def test_superuser_can_edit_valid_product(self):
-    #     """
-    #     Test that the superuser can edit a valid product
-    #     """
-    #     my_admin = User.objects.create_superuser(
-    #         username='testadmin', email='test@example.com',
-    #         password='password')
-    #     self.client.login(
-    #         username=my_admin.username, email=my_admin.email,
-    #         password='password')
-    #     data = {
-    #         'category': '1',
-    #         'sku': '',
-    #         'name': 'test',
-    #         'description': 'test description',
-    #         'has_sizes': 'false',
-    #         'has_audio': 'false',
-    #         'audio': '',
-    #         'price': '2.99',
-    #         'image_url': '',
-    #         'image': ''}
-    #     products = Product.objects.all()
-    #     for product in products:
-    #         product.name = 'test'
-    #         self.client.post(f'/products/edit/{product.pk}/', data)
-    #         response = self.client.get(f'/products/edit/{product.pk}/')
-    #         messages = list(get_messages(response.wsgi_request))
-    #         self.assertEqual(messages[0].tags, 'success')
-    #         self.assertEqual(
-    #             str(messages[0]), f'Successfully updated {product.name}.')
-
-    # def test_superuser_cannot_edit_invalid_product(self):
-    #     """
-    #     Test that the superuser cannot edit an invalid product
-    #     """
-    #     my_admin = User.objects.create_superuser(
-    #         username='testadmin', email='test@example.com',
-    #         password='password')
-    #     self.client.login(
-    #         username=my_admin.username, email=my_admin.email,
-    #         password='password')
-    #     data = {
-    #         'category': '1',
-    #         'sku': '',
-    #         'name': 'test',
-    #         'description': 'test description',
-    #         'has_sizes': 'false',
-    #         'has_audio': 'false',
-    #         'audio': '',
-    #         'price': '2.99',
-    #         'image_url': '',
-    #         'image': ''}
-    #     products = Product.objects.all()
-    #     for product in products:
-    #         product.description = ''
-    #         response = self.client.post(
-    #             f'/products/edit/{product.pk}/', data, product.description)
-    #         messages = list(get_messages(response.wsgi_request))
-    #         self.assertEqual(messages[0].tags, 'error')
-    #         self.assertEqual(
-    #             str(messages[0]),
-    #             f'Failed to update {product.name}. '
-    #             'Please check that the form is valid.')
 
     def test_delete_product_for_regular_users_view(self):
         """
