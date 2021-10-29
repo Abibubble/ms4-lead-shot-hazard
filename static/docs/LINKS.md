@@ -39,6 +39,7 @@ This file includes a list of all the sites that I have used for research or test
 * [Python Support](https://pulp.plan.io/issues/3446) - To explain the `Avoid using null=True on string-based fields such CharField` flake8 error message.
 * [Django Pep8 compliance](https://code.djangoproject.com/ticket/30555) - To explain the flake8 error in the migrations files.
 * [Reddit question and answer thread by a deleted user](https://www.reddit.com/r/django/comments/6nq0bq/class_question_has_no_objects_member/) - To explain the `Class 'x' has no 'objects' member` flake8 error message.
+* [Py4U.net](https://www.py4u.net/discuss/1259737) - To explain how to test error messages.
 * [WebPageTest](https://www.webpagetest.org/)
 * [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
 * [WebAim's W.A.V.E](https://wave.webaim.org/)
