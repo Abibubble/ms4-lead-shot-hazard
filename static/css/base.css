@@ -125,9 +125,11 @@ h4 {
     background-color: #000;
 }
 
+select,
 .btt-link,
-.update-link,
-.remove-item {
+.delete-btn,
+.remove-item,
+.update-link {
     cursor: pointer;
 }
 
