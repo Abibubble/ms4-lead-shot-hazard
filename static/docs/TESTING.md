@@ -232,7 +232,7 @@ Automated Unit Testing was done using [Django’s testing tools](https://docs.dj
 
 ![Travis CI Build Badge](https://secure.travis-ci.org/abibubble/ms4-lead-shot-hazard.png)
 
-[Click here to view the Travis CI full report](testing/automated/travis.png)
+[Click here to view the Travis CI full build report](testing/automated/travis-ci.png)
 
 ---
 
