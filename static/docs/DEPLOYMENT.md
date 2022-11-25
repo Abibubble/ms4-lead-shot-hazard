@@ -15,6 +15,8 @@
 
 * [Initial Deployment](#initial-deployment)
 
+* [Migration to Render](#migration-to-render)
+
 * [Amazon AWS](#amazon-aws)
   * [S3 Bucket](#s3-bucket)
   * [IAM](#iam)
@@ -43,6 +45,8 @@
 * AWS S3 account
 * Stripe account
 * Email account
+* Render account
+* ElephantSQL account
 
 [Back to the top](#deployment-steps)
 
@@ -139,6 +143,78 @@ This site was deployed to Heroku by following these steps:
 22. If you don't want to automatically deploy to Heroku, do the following:
     * Enter `git push -u heroku main` or `git push -u heroku master`.
 23. Your app will now be running at **<https://{your-app-name}.herokuapp.com/>**
+
+[Back to the top](#deployment-steps)
+
+---
+
+## Migration to Render
+
+This site was migrated to Render by following these steps:
+
+1. Go to your ElephantSQL Dashboard and click '**Create New Instance**'.
+2. Name the plan the same as the project.
+3. Select the Tiny Turtle (free) plan.
+4. Click '**Select Region**', and choose the data center nearest to your location.
+5. Click '**Review**'.
+6. Check the details are correct, and click '**Create instance**'.
+7. Return to your Dashboard and click on the name of this database instance.
+8. Go to the [Postgres Migrationn Tool repo](https://github.com/Code-Institute-Org/postgres-migration-tool).
+9. Open it, either via Gitpod, or by cloning the repo and opening it in your terminnal.
+10. Run the following script `python3 reel2reel.py`.
+11. Go to your Heroku '**Settings**' tab and click the '**Reveal Config Vars**' button.
+12. Copy the value of the '**DATABASE_URL**' config var (it starts with `postgres://`).
+13. Return to your terminal, and enter that string in where prompted.
+14. Go to your new ElephantSQL database.
+15. Copy the value of the '**URL**' config var (it also starts with `postgres://`).
+16. Return to your terminal, and enter that string in where prompted.
+17. When the script finishes, your database should have been moved from Heroku to ElephantSQL.
+18. To check this, select '**BROWSER**' in ElephantSQL.
+19. Click '**Table queries**' and you should see entries. This confirms that the database migration has worked.
+20. In your repo, add a `build.sh` file at the root, including the following code:
+    ```
+    set -o errexit
+    pip install -r requirements.txt
+    python manage.py collectstatic --noinput
+    python manage.py makemigrations && python manage.py migrate
+    ```
+21. In your `settings.py`, add the following below the declaration of your '**ALLOWED_HOSTS**' variable:
+    ```
+    # Add Render.com URL to allowed hosts
+    RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+    if RENDER_EXTERNAL_HOSTNAME:
+        ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+    ```
+22. Delete the Procfile.
+23. Add, commit and push your changes to GitHub.
+24. Login or sign up to Render.
+25. Select 'New' in the top right of your dashboard, and select 'Web Service'.
+26. Search for your repo, and click 'Connect'.
+27. Enter a unique name for your web service (ideally the project name).
+28. Use the following settings:
+| Setting Name	| Value |
+| --- | --- |
+| Root Directory	| {blank} |
+| Environment	| Python 3 |
+| Region	| Frankfurt (EU Central)|
+| Branch	| main |
+29. Set the 'Build Command' to `./build.sh`.
+30. Set the 'Start Command' to `gunicorn <PROJECT_NAME>.wsgi:application`, replacing `<PROJECT_NAME>` with the directory name of your project (not the repo name, the name of the folder inside your repo that's similar to your repo name).
+31. Select the 'Free plan $0/month'.
+32. Click 'Advanced', then 'Add Secret File'.
+33. Click '**Advanced**', and '**Add Environment Variable**'.
+34. Enter a key of `WEB_CONCURRENCY` and a value of `4`.
+35. Copy and paste the content of your env.py file into the 'File Contents' section.
+36. Remove any gitpod-specific environment variables, like `DEV` or `DEPLOYMENT`.
+37. Check your Heroku variables to ensure you have all environment variables included that you may need, as some of these may not be stored in your `env.py`, such as your STRIPE keys.
+38. Set the 'Filename' to env.py, and click 'Save'.
+39. Select whether you want the repo to auto-deploy or not.
+40. Click 'Create web service'.
+41. Wait for this to deploy.
+42. Your app will now be running at **<https://{your-app-name}.onrender.com/>**.
+43. Log in to Stripe.
+44. Go to '**Developers -> Webooks -> Add endpoint**'.
+45. Paste in your new deployed URL, and add `/checkout/wh/` to the end of it.
 
 [Back to the top](#deployment-steps)
 
