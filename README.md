@@ -8,7 +8,7 @@
 ![Testing coverage](https://img.shields.io/badge/coverage-92%25-brightgreen)
 ![GitHub forks](https://img.shields.io/github/forks/abibubble/ms4-lead-shot-hazard?style=social)
 
-[Here is a link to the final project](https://ms4-lead-shot-hazard.herokuapp.com/)
+[Here is a link to the final project](https://ms4-lead-shot-hazard.onrender.com/)
 
 This site is a merchandise and music e-commerce site for the band Lead Shot Hazard, a ska punk band from West London. This site is fully responsive on all modern screen sizes, and it allows the band to easily add, edit or delete the merchandise and music that they have to sell.
 
@@ -544,7 +544,11 @@ This database uses a SQL database through PostgreSQL. They were originally built
 
 #### Heroku
 
-[Heroku](https://www.heroku.com) was used to deploy the live site.
+[Heroku](https://www.heroku.com) was used to deploy the live site initially.
+
+#### Render
+
+[Render](https://render.com) was used to deploy the live site after submission.
 
 #### Amazon AWS S3
 
